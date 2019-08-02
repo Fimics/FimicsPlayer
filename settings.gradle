@@ -1,4 +1,4 @@
-include ':app', ':libmxcast',
+include ':app',
         ':app-core',
         ':tab-user',
         ':libwidget',
