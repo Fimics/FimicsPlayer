@@ -24,7 +24,6 @@ public abstract class BaseMvpFragment<P extends BasePresenter> extends BaseFragm
 
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

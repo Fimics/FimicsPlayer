@@ -10,12 +10,6 @@ import android.widget.Toast;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/**
- * Email 240336124@qq.com
- * Created by Darren on 2017/2/5.
- * Version 1.0
- * Description:
- */
 public class ViewUtils {
 
     // 目前

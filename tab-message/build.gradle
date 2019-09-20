@@ -1,6 +1,0 @@
-apply from: rootProject.file('build_model.gradle') //去rootProject工程下找 并把该文件内容引入进来
-
-
-dependencies {
-    implementation 'com.android.support:support-v4:27.+'
-}

@@ -1,7 +1,0 @@
-apply from: rootProject.file('build_model.gradle')
-
-dependencies {
-    //noinspection GradleCompatible
-    implementation 'com.android.support:support-v4:28'
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-}
