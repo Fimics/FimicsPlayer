@@ -57,14 +57,14 @@
                     />
             </RelativeLayout>
 
-            <com.mic.user.customview.UserInfoLinearLayout
+            <com.mic.user.view.UserInfoLinearLayout
                 android:id="@+id/cardviews"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
 
                 >
-            </com.mic.user.customview.UserInfoLinearLayout>
+            </com.mic.user.view.UserInfoLinearLayout>
 
         </LinearLayout>
 

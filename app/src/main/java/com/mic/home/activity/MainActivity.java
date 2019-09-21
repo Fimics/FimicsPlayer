@@ -21,12 +21,12 @@ import android.widget.Toast;
 
 import com.mic.frame.common.BaseFragment;
 import com.mic.home.fragment.HomeFragment;
-import com.mic.home.R;
-import com.mic.home.view.Bottom;
-import com.mic.home.view.BottomLayout;
+import com.mic.R;
+import com.mic.view.Bottom;
+import com.mic.view.BottomLayout;
 import com.mic.msg.fragment.MessageFragment;
 import com.mic.news.fragment.NewsFragment;
-import com.mic.user.userinfo.UserFragment;
+import com.mic.user.fragment.UserFragment;
 import com.mic.video.fragment.VideoFragment;
 
 import org.greenrobot.eventbus.EventBus;
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViewPager() {
 
-        mViewPager.setOffscreenPageLimit(1);
+        mViewPager.setOffscreenPageLimit(0);
         mViewPager.setPageMargin(10);
 
         mViewPager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {

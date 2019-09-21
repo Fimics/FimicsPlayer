@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mic.frame.common.BaseFragment;
-import com.mic.home.R;
+import com.mic.R;
 
 /**
  * A simple {@link Fragment} subclass.

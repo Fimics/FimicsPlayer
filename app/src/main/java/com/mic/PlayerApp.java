@@ -1,4 +1,4 @@
-package com.mic.home;
+package com.mic;
 
 
 import android.app.Application;

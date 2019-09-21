@@ -1,4 +1,4 @@
-package com.mic.user.userinfo;
+package com.mic.user.fragment;
 
 
 import android.content.Context;
@@ -14,8 +14,10 @@ import android.widget.TextView;
 import com.mic.frame.model.user.User;
 import com.mic.frame.mvp.base.BaseMvpFragment;
 import com.mic.frame.mvp.inject.InjectPresenter;
-import com.mic.home.R;
-import com.mic.user.customview.UserInfoLinearLayout;
+import com.mic.R;
+import com.mic.user.userinfo.UserInfoContract;
+import com.mic.user.userinfo.UserInfoPresenter;
+import com.mic.user.view.UserInfoLinearLayout;
 
 
 

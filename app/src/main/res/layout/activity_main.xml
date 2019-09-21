@@ -59,11 +59,11 @@
 
     </android.support.v4.widget.DrawerLayout>
 
-    <com.mic.home.view.BottomLayout
+    <com.mic.view.BottomLayout
         android:id="@+id/bottom_layoty"
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
         android:layout_height="wrap_content">
-    </com.mic.home.view.BottomLayout>
+    </com.mic.view.BottomLayout>
 
 </FrameLayout>

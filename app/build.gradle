@@ -4,7 +4,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion this.rootProject.ext.android.compileSdkVersion
     defaultConfig {
-        applicationId "com.mic.joke"
+        applicationId "com.mic"
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode

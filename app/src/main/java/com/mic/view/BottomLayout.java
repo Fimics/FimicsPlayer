@@ -1,4 +1,4 @@
-package com.mic.home.view;
+package com.mic.view;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;

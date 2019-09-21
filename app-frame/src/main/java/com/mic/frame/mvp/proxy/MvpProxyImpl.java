@@ -96,9 +96,9 @@ public class MvpProxyImpl<V extends BaseView> implements IMvpProxy{
         }
 
 
-        if(isImplementsView){
-            throw  new RuntimeException(mView.getClass().getSimpleName()+"view must implements:"+viewClazz.getName());
-        }
+//        if(isImplementsView){
+//            throw  new RuntimeException(mView.getClass().getSimpleName()+"view must implements:"+viewClazz.getName());
+//        }
 
 
     }

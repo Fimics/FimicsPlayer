@@ -1,4 +1,4 @@
-package com.mic.user.customview;
+package com.mic.user.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.mic.frame.model.user.User;
-import com.mic.home.R;
+import com.mic.R;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
