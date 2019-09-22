@@ -2,7 +2,7 @@ package com.mic.libcore.okhttp.download.db;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 import android.util.Log;
 
 

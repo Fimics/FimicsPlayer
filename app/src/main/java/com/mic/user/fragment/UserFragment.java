@@ -3,7 +3,7 @@ package com.mic.user.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.widget.NestedScrollView;
+import androidx.core.widget.NestedScrollView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

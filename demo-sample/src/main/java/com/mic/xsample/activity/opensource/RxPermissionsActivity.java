@@ -2,8 +2,8 @@ package com.mic.xsample.activity.opensource;
 
 import android.Manifest;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.mic.xsample.R;

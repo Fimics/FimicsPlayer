@@ -1,7 +1,7 @@
 package com.mic.xsample.rx;
 
 
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.util.Log;
 
 import org.junit.Test;
@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
-import io.reactivex.Scheduler;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 

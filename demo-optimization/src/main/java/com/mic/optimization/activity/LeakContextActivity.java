@@ -1,12 +1,10 @@
 package com.mic.optimization.activity;
 
 import android.os.Debug;
-import android.os.Trace;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.mic.optimization.R;
-import com.mic.optimization.common.CommUtil;
 import com.mic.optimization.common.ListenerCollector;
 import com.mic.optimization.view.LeakView;
 

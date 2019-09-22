@@ -2,28 +2,12 @@ package com.mic.xsample.activity.opensource;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.xsample.R;
-import com.mic.xsample.activity.view.ViewDrawFlowActivity;
-import com.mic.xsample.activity.view.ViewPagerActivity;
-import com.mic.xsample.fragment.view.LetterSideBarFragment;
-import com.mic.xsample.fragment.view.LockPatternViewFragment;
-import com.mic.xsample.fragment.view.ProgressBarFragment;
-import com.mic.xsample.fragment.view.QQSlidingMenuFragment;
-import com.mic.xsample.fragment.view.QQStepFragment;
-import com.mic.xsample.fragment.view.RatingBarFragment;
-import com.mic.xsample.fragment.view.ShapeFragment;
-import com.mic.xsample.fragment.view.SlidingMenuFragment;
-import com.mic.xsample.fragment.view.TagLayoutFragment;
-import com.mic.xsample.fragment.view.TouchViewFragment;
-import com.mic.xsample.fragment.view.TouchViewGroupFragment;
-import com.mic.xsample.fragment.view.TrackTextViewFragment;
-import com.mic.xsample.fragment.view.VerticalDragListViewFragment;
-import com.mic.xsample.fragment.view.XTextViewFragment;
 
 public class OpenSourceItemActivity extends AppCompatActivity {
 

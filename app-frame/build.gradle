@@ -3,7 +3,7 @@ apply from: rootProject.file('build_library.gradle') //去rootProject工程下�
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     apply from: rootProject.file('build_depends.gradle')
 
     api project(':app-core')
