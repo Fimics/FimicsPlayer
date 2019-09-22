@@ -1,9 +1,8 @@
 package com.mic.optimization.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Debug;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;

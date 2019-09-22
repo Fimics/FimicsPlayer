@@ -1,6 +1,6 @@
 package com.mic.xsample.retrofit;
 
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.mic.libretrofit.annotation.GET;
 import com.mic.libretrofit.annotation.Query;

@@ -1,6 +1,6 @@
 package com.mic.xsample.okhttp3;
 
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.mic.libokhttp.FCall;
 import com.mic.libokhttp.FCallback;

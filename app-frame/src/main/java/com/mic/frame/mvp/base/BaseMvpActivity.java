@@ -1,7 +1,7 @@
 package com.mic.frame.mvp.base;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import com.mic.frame.common.BaseActivity;
 import com.mic.frame.mvp.proxy.ActivityMvpProxy;
 import com.mic.frame.mvp.proxy.ActivityMvpProxyImpl;
