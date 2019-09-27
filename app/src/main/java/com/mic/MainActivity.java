@@ -1,4 +1,4 @@
-package com.mic.home.activity;
+package com.mic;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
@@ -21,7 +21,9 @@ import android.widget.Toast;
 
 import com.mic.frame.common.BaseFragment;
 import com.mic.home.fragment.HomeFragment;
-import com.mic.R;
+import com.mic.ndk.NDKInterface;
+import com.mic.ndk.NDKTools;
+import com.mic.tools.Logger;
 import com.mic.view.Bottom;
 import com.mic.view.BottomLayout;
 import com.mic.msg.fragment.MessageFragment;
@@ -35,6 +37,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings("all")
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG ="main";
 
     private DrawerLayout mDrawerLayout;
     private BottomLayout bottomLayout;
@@ -42,11 +45,16 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Bottom> bottomList = new ArrayList<Bottom>();
     private final ArrayList<BaseFragment> fragments = new ArrayList<>();
 
+    static {
+        System.loadLibrary("hello");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String msg = NDKInterface.sayHello();
+        Logger.d(TAG,msg);
 
 
         initData();
