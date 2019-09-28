@@ -38,4 +38,13 @@ public class Logger {
             Log.w(tag,msg);
         }
     }
+
+    public static final class TAG{
+        public static final String HOME = "home";
+        public static final String NEWS = "news";
+        public static final String VIDEO = "video";
+        public static final String MAG = "msg";
+        public static final String USER = "user";
+        public static final String NDK = "ndk";
+    }
 }
