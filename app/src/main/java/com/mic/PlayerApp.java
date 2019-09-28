@@ -3,6 +3,7 @@ package com.mic;
 
 import android.app.Application;
 
+import com.mic.ndk.NDKInterface;
 import com.mic.ndk.NDKTools;
 
 public class PlayerApp extends Application {
@@ -17,6 +18,7 @@ public class PlayerApp extends Application {
         // 设置全局异常捕捉类
         // ExceptionCrashHandler.getInstance().init(this);
         NDKTools.loadLibrary();
+        NDKInterface.signatureVerify(this);
     }
 
     @Override
