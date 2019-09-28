@@ -7,11 +7,13 @@
 using namespace std;
 #include "Signature.h"
 #include "MD5.h"
+#include <android/log.h>
 #include <jni.h>
 
 //额外附加字符串
 static char * EXTRA_SIGNATURE ="ndk";
 static char * PACKAGE_NAME ="com.mic";
+static char * APP_SIGNATURE ="xxx";
 static int is_verify =0;
 
 extern "C"
@@ -48,9 +50,61 @@ Java_com_mic_ndk_NDKInterface_signature(JNIEnv *env, jclass clazz, jstring param
 }
 
 
+/**
+ *     public static Signature[] getSignature(Context context) {
+        if (context == null) return null;
+        PackageInfo packageInfo = null;
+        try {
+            packageInfo = context.getPackageManager().getPackageInfo(context.getOpPackageName(), PackageManager.GET_SIGNATURES);
+        }catch (Exception e){
+            TrackingTools.handleException(e);
+        }
+        Signature[] signatures = packageInfo.signatures;
+        return signatures;
+    }
+ */
+
 extern "C"
 JNIEXPORT jboolean JNICALL
 Java_com_mic_ndk_NDKInterface_signatureVerify(JNIEnv *env, jclass clazz, jobject context) {
+
+    // 1. 获取包名
+    jclass j_clz = env->GetObjectClass(context);
+    jmethodID j_mid = env->GetMethodID(j_clz, "getPackageName", "()Ljava/lang/String;");
+    jstring j_package_name = (jstring) env->CallObjectMethod(context, j_mid);
+    // 2 . 比对包名是否一样
+    const char *c_package_name = env->GetStringUTFChars(j_package_name, NULL);
+    if (strcmp(c_package_name, PACKAGE_NAME) != 0) {
+        return 0;
+    }
+
+    __android_log_print(ANDROID_LOG_DEBUG,"JNI_TAG","签名校验成功: %s");
+    // 3. 获取签名
+    // 3.1 获取 PackageManager
+    j_mid = env->GetMethodID(j_clz,"getPackageManager","()Landroid/content/pm/PackageManager;");
+    jobject pack_manager = env->CallObjectMethod(context,j_mid);
+    // 3.2 获取 PackageInfo
+    j_clz = env->GetObjectClass(pack_manager);
+    j_mid = env->GetMethodID(j_clz,"getPackageInfo","(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;");
+    jobject package_info = env->CallObjectMethod(pack_manager,j_mid,j_package_name,0x00000040);
+    // 3.3 获取 signatures 数组
+    j_clz = env->GetObjectClass(package_info);
+    jfieldID j_fid = env->GetFieldID(j_clz,"signatures","[Landroid/content/pm/Signature;");
+    jobjectArray signatures = (jobjectArray) env->GetObjectField(package_info, j_fid);
+    // 3.4 获取 signatures[0]
+    jobject signatures_first = env->GetObjectArrayElement(signatures,0);
+    // 3.5 调用 signatures[0].toCharsString();
+    j_clz = env->GetObjectClass(signatures_first);
+    j_mid = env->GetMethodID(j_clz,"toCharsString","()Ljava/lang/String;");
+    jstring j_signature_str = (jstring) env->CallObjectMethod(signatures_first, j_mid);
+    const char * c_signature_str = env->GetStringUTFChars(j_signature_str,NULL);
+    // 4. 比对签名是否一样
+    if (strcmp(c_signature_str, APP_SIGNATURE) != 0) {
+        return 1;
+    }
+    __android_log_print(ANDROID_LOG_DEBUG,"JNI_TAG","签名校验成功: %s",c_signature_str);
+    // 签名认证成功
+    is_verify = 1;
 
     return 0;
 }
