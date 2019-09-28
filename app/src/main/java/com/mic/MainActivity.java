@@ -22,7 +22,6 @@ import android.widget.Toast;
 import com.mic.frame.common.BaseFragment;
 import com.mic.home.fragment.HomeFragment;
 import com.mic.ndk.NDKInterface;
-import com.mic.ndk.NDKTools;
 import com.mic.tools.Logger;
 import com.mic.view.Bottom;
 import com.mic.view.BottomLayout;

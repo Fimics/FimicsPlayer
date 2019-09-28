@@ -46,5 +46,6 @@ public class Logger {
         public static final String MAG = "msg";
         public static final String USER = "user";
         public static final String NDK = "ndk";
+        public static final String EXCEPTION ="exception";
     }
 }
