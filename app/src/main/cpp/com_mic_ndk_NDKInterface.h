@@ -12,9 +12,9 @@ extern "C" {
  * Method:    sayHello
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_mic_ndk_NDKInterface_sayHello
-  (JNIEnv *, jobject);
-
+JNIEXPORT jstring JNICALL Java_com_mic_ndk_NDKInterface_sayHello(JNIEnv *, jobject);
+JNIEXPORT jstring JNICALL Java_com_mic_ndk_NDKInterface_signature(JNIEnv *, jclass,jstring);
+JNIEXPORT jboolean JNICALL Java_com_mic_ndk_NDKInterface_signatureVerify(JNIEnv *env, jclass clazz, jobject context);
 #ifdef __cplusplus
 }
 #endif

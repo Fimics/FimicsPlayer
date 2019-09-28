@@ -5,23 +5,29 @@
 #include "com_mic_ndk_NDKInterface.h"
 #include <string>
 using namespace std;
-#include "NDK.h"
+#include "Signature.h"
 #include "MD5.h"
 #include <jni.h>
 
 //额外附加字符串
-static char* EXTRA_SIGNATURE ="ndk";
+static char * EXTRA_SIGNATURE ="ndk";
+static char * PACKAGE_NAME ="com.mic";
+static int is_verify =0;
 
-
+extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_mic_ndk_NDKInterface_sayHello(JNIEnv *env, jobject jclass) {
     return env->NewStringUTF("hello ndk");
 }
 
-
+extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_mic_ndk_NDKInterface_signature(JNIEnv *env, jclass clazz, jstring params_) {
     const char *params = env->GetStringUTFChars(params_, 0);
+
+    if(is_verify==0){
+        return env->NewStringUTF("error");
+    }
 
     //字符串前面加点东西
     string signature_str(params);
@@ -39,4 +45,12 @@ Java_com_mic_ndk_NDKInterface_signature(JNIEnv *env, jclass clazz, jstring param
     MD5Final(digdet,md5Ctx);
 
     return env->NewStringUTF(reinterpret_cast<const char *>(digdet));
+}
+
+
+extern "C"
+JNIEXPORT jboolean JNICALL
+Java_com_mic_ndk_NDKInterface_signatureVerify(JNIEnv *env, jclass clazz, jobject context) {
+
+    return 0;
 }
