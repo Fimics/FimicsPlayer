@@ -15,6 +15,8 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_mic_ndk_NDKInterface_sayHello(JNIEnv *, jobject);
 JNIEXPORT jstring JNICALL Java_com_mic_ndk_NDKInterface_signature(JNIEnv *, jclass,jstring);
 JNIEXPORT jboolean JNICALL Java_com_mic_ndk_NDKInterface_signatureVerify(JNIEnv *env, jclass clazz, jobject context);
+JNIEXPORT void JNICALL Java_com_mic_ndk_NDKModel_changeName(JNIEnv *env, jobject thiz);
+JNIEXPORT void JNICALL Java_com_mic_ndk_NDKModel_changeId(JNIEnv *env, jclass clazz);
 #ifdef __cplusplus
 }
 #endif

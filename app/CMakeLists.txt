@@ -10,7 +10,8 @@ add_library( # Specifies the name of the library.
              # Provides a relative path to your source file(s).
               #这里是刚才 创建的c++ 代码的名字
         src/main/cpp/Signature.cpp
-        src/main/cpp/MD5.cpp)
+        src/main/cpp/MD5.cpp
+        src/main/cpp/NDKCallJava.cpp)
 
 find_library( # Sets the name of the path variable.
               log-lib

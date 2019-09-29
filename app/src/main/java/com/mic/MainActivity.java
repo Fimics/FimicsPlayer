@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.mic.frame.common.BaseFragment;
 import com.mic.home.fragment.HomeFragment;
 import com.mic.ndk.NDKInterface;
+import com.mic.ndk.NDKTest;
 import com.mic.tools.Logger;
 import com.mic.view.Bottom;
 import com.mic.view.BottomLayout;
@@ -48,10 +49,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String msg = NDKInterface.sayHello();
-        String signature = NDKInterface.signature("hello");
-        Logger.d(Logger.TAG.HOME,msg+" - "+signature);
-
+        NDKTest ndkTest = new NDKTest();
+        ndkTest.invoke();
 
         initData();
         initView();

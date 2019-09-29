@@ -16,6 +16,16 @@ static char * PACKAGE_NAME ="com.mic";
 static char * APP_SIGNATURE ="xxx";
 static int is_verify =0;
 
+/**
+ * JINIEXPORT :JNI 一个关键字，不能少（编译能通过），标记为该方法可以被外部调用
+ * jstring :代表java中的string
+ * JNICALL:也是一个关键字，可以少的
+ * JNIEnv :这个是c和java相互调用的桥梁，(env 结构体指针的别名)
+ * jobject :java传递下来的对象，就是本项目中的JinSample java对象
+ * jclass :java 传递下来的class对象，就是本项目中的JniSimple.class
+ *
+ */
+
 extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_mic_ndk_NDKInterface_sayHello(JNIEnv *env, jobject jclass) {
