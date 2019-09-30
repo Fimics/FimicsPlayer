@@ -44,3 +44,12 @@ Java_com_mic_ndk_NDKModel_changeId(JNIEnv *env, jclass clazz) {
     jstring jid= env->NewStringUTF("456");
     env->SetStaticObjectField(clazz,jfieldId,jid);
 }
+
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_mic_ndk_NDKModel_callAddMethod(JNIEnv *env, jobject thiz) {
+    jclass jclz = env->GetObjectClass(thiz);
+    jmethodID  jmethodId =env->GetMethodID(jclz,"add","(II)I");
+    jint  ji =env->CallIntMethod(thiz,jmethodId,5,6);
+    return ji;
+}

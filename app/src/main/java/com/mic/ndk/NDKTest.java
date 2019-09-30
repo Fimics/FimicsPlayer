@@ -17,5 +17,7 @@ public class NDKTest {
         NDKModel.changeId();
         Logger.d(Logger.TAG.HOME,"ndkmodel->id:"+NDKModel.id);
 
+        int nativeAddResult = ndkModel.callAddMethod();
+        Logger.d(Logger.TAG.HOME,"ndkmodel->add->native:"+nativeAddResult);
     }
 }

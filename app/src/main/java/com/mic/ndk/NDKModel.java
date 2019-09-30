@@ -24,9 +24,16 @@ public class NDKModel {
         this.age = age;
     }
 
+    public int add(int x,int y){
+        return x+y;
+    }
+
     //ndk call java
     public native void changeName();
 
     //update static attr by native
     public static native void changeId();
+
+    //c call java-method
+    public native int callAddMethod();
 }
