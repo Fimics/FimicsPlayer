@@ -4,7 +4,9 @@
 
 #include "com_mic_ndk_NDKInterface.h"
 #include <string>
+
 using namespace std;
+
 #include <android/log.h>
 #include <jni.h>
 
@@ -28,28 +30,49 @@ extern "C"
 JNIEXPORT void JNICALL
 Java_com_mic_ndk_NDKModel_changeName(JNIEnv *env, jobject obj) {
 
-    jclass  jclz = env->GetObjectClass(obj);
-    jfieldID jfieldId = env->GetFieldID(jclz,"name","Ljava/lang/String;");
-    jstring  name = static_cast<jstring>(env->GetObjectField(obj, jfieldId));
-    char * c_name = const_cast<char *>(env->GetStringUTFChars(name, NULL));
-    __android_log_print(ANDROID_LOG_DEBUG,"JNI_TAG","c-------->name: %s",c_name);
+    jclass jclz = env->GetObjectClass(obj);
+    jfieldID jfieldId = env->GetFieldID(jclz, "name", "Ljava/lang/String;");
+    jstring name = static_cast<jstring>(env->GetObjectField(obj, jfieldId));
+    char *c_name = const_cast<char *>(env->GetStringUTFChars(name, NULL));
+    __android_log_print(ANDROID_LOG_DEBUG, "JNI_TAG", "c-------->name: %s", c_name);
     jstring jackName = env->NewStringUTF("jack");
-    env->SetObjectField(obj,jfieldId,jackName);
+    env->SetObjectField(obj, jfieldId, jackName);
 }
 
+
+//native修改静态属性
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_mic_ndk_NDKModel_changeId(JNIEnv *env, jclass clazz) {
-    jfieldID jfieldId = env->GetStaticFieldID(clazz,"id","Ljava/lang/String;");
-    jstring jid= env->NewStringUTF("456");
-    env->SetStaticObjectField(clazz,jfieldId,jid);
+    jfieldID jfieldId = env->GetStaticFieldID(clazz, "id", "Ljava/lang/String;");
+    jstring jid = env->NewStringUTF("456");
+    env->SetStaticObjectField(clazz, jfieldId, jid);
 }
 
+//c 调用java方法
 extern "C"
 JNIEXPORT jint JNICALL
 Java_com_mic_ndk_NDKModel_callAddMethod(JNIEnv *env, jobject thiz) {
     jclass jclz = env->GetObjectClass(thiz);
-    jmethodID  jmethodId =env->GetMethodID(jclz,"add","(II)I");
-    jint  ji =env->CallIntMethod(thiz,jmethodId,5,6);
+    jmethodID jmethodId = env->GetMethodID(jclz, "add", "(II)I");
+    jint ji = env->CallIntMethod(thiz, jmethodId, 5, 6);
     return ji;
 }
+
+//c 调用java 的static方法
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_mic_ndk_NDKModel_callStaticMethod(JNIEnv *env, jclass clazz) {
+    jmethodID jmethodId = env->GetStaticMethodID(clazz, "getUUID", "()Ljava/lang/String;");
+//    jobject  jobj =env->CallStaticObjectMethod(clazz,jmethodId);
+//    return static_cast<jstring>(jobj);
+    jstring jstr = static_cast<jstring>(env->CallStaticObjectMethod(clazz, jmethodId));
+    return jstr;
+}
+
+/**
+ * 方法签名怎么写
+ * Point get(int x,float y);
+ * (IF)Ljava/awt/Point;  String ->Ljava/lang/String;
+ * Object[]->[L全类名;
+*/

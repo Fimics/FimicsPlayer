@@ -1,5 +1,7 @@
 package com.mic.ndk;
 
+import java.util.UUID;
+
 /**
  * Native 修改java方法与属性
  */
@@ -28,6 +30,11 @@ public class NDKModel {
         return x+y;
     }
 
+    //静态获取uuid的方法，然后c调用这个方法获取uuid
+    public static String getUUID(){
+        return UUID.randomUUID().toString();
+    }
+
     //ndk call java
     public native void changeName();
 
@@ -36,4 +43,9 @@ public class NDKModel {
 
     //c call java-method
     public native int callAddMethod();
+
+    //c 调用java 的static方法
+    public native static String callStaticMethod();
+
+
 }

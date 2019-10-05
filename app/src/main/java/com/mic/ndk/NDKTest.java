@@ -17,7 +17,13 @@ public class NDKTest {
         NDKModel.changeId();
         Logger.d(Logger.TAG.HOME,"ndkmodel->id:"+NDKModel.id);
 
+        //c 调用java方法
         int nativeAddResult = ndkModel.callAddMethod();
         Logger.d(Logger.TAG.HOME,"ndkmodel->add->native:"+nativeAddResult);
+
+        //c 调用java 的static方法
+        String uuid = ndkModel.callStaticMethod();
+        Logger.d(Logger.TAG.HOME,"ndkmodel->callStaticMethod--uuid:"+uuid);
+
     }
 }
