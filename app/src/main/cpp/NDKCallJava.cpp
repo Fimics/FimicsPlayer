@@ -44,6 +44,7 @@ Java_com_mic_ndk_NDKModel_changeName(JNIEnv *env, jobject obj) {
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_mic_ndk_NDKModel_changeId(JNIEnv *env, jclass clazz) {
+    //clazz 在哪个类调用就是哪个类
     jfieldID jfieldId = env->GetStaticFieldID(clazz, "id", "Ljava/lang/String;");
     jstring jid = env->NewStringUTF("456");
     env->SetStaticObjectField(clazz, jfieldId, jid);
@@ -76,3 +77,20 @@ Java_com_mic_ndk_NDKModel_callStaticMethod(JNIEnv *env, jclass clazz) {
  * (IF)Ljava/awt/Point;  String ->Ljava/lang/String;
  * Object[]->[L全类名;
 */
+
+//怎么样在c层构建java对象，并返回给java层
+extern "C"
+JNIEXPORT jobject JNICALL
+Java_com_mic_ndk_NDKModel_createPoint(JNIEnv *env, jobject thiz) {
+    //方式一
+//    jclass  point_clz = env->FindClass("com.mic.ndk.Point");
+//    jmethodID jmethodId = env->GetStaticMethodID(point_clz,"createPoint","(II)Lcom/mic/ndk/Point;");
+//    jobject point = env->CallStaticObjectMethod(point_clz,jmethodId,3,4);
+
+    //方式二
+    jclass  point_clz = env->FindClass("com/mic/ndk/Point");
+    jmethodID  jmethodId =env->GetMethodID(point_clz,"<init>","(II)V");
+    jobject point = env->NewObject(point_clz,jmethodId,4,5);
+
+    return point;
+}

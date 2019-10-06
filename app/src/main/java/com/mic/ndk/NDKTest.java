@@ -25,5 +25,12 @@ public class NDKTest {
         String uuid = ndkModel.callStaticMethod();
         Logger.d(Logger.TAG.HOME,"ndkmodel->callStaticMethod--uuid:"+uuid);
 
+        //怎么样在c层构建java对象，并返回给java层
+        Point point =ndkModel.createPoint();
+        if(point!=null){
+            Logger.d(Logger.TAG.HOME,"ndkmodel->createPoint-->x-->"+point.getX()+"  y ->"+point.getY());
+        }
+
+
     }
 }

@@ -47,5 +47,7 @@ public class NDKModel {
     //c 调用java 的static方法
     public native static String callStaticMethod();
 
+    //怎么样在c层构建java对象，并返回给java层
+    public native  Point createPoint();
 
 }
