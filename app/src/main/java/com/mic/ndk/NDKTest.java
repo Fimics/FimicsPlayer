@@ -32,5 +32,11 @@ public class NDKTest {
         }
 
 
+        int arr []={1,4,9,0,-5,-90,44,66,92,23,-2};
+        ndkModel.sort(arr);
+        for (int k:arr) {
+            Logger.d(Logger.TAG.HOME,"k--> "+k);
+        }
+
     }
 }

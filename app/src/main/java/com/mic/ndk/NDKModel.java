@@ -1,5 +1,7 @@
 package com.mic.ndk;
 
+import android.os.Parcel;
+
 import java.util.UUID;
 
 /**
@@ -49,5 +51,8 @@ public class NDKModel {
 
     //怎么样在c层构建java对象，并返回给java层
     public native  Point createPoint();
+
+    //native 对java数组排序
+    public native void sort(int arr[]);
 
 }

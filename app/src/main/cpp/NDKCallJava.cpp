@@ -94,3 +94,24 @@ Java_com_mic_ndk_NDKModel_createPoint(JNIEnv *env, jobject thiz) {
 
     return point;
 }
+
+int compare(const jint *num1, const jint *num2){
+    return *num2-*num1;
+}
+
+//native 对java数组排序
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_mic_ndk_NDKModel_sort(JNIEnv *env, jobject thiz, jintArray arr) {
+    //对arr进行排序
+   jint * intArray =env->GetIntArrayElements(arr,NULL);
+   int length = env->GetArrayLength(arr);
+   qsort(intArray, length, sizeof(int),
+         reinterpret_cast<int (*)(const void *, const void *)>(compare));
+
+   //同步数组的数据给java数组，intArray并不是arr,可以简单的理解为copy
+   //0 即要同步数据给arr,又要释放intArray
+   //JNI_COMMOT:会同步数据给arr , 但是不会释放intArray
+   //JNI_ABORT: 不会同步数据给arr ,但是会释放intArray
+   env->ReleaseIntArrayElements(arr,intArray,0);
+}
