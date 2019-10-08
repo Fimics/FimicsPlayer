@@ -157,3 +157,39 @@ JNIEXPORT jstring JNICALL
 Java_com_mic_ndk_NDKModel_delGlobalRef(JNIEnv *env, jobject thiz) {
     env->DeleteGlobalRef(globalStr);
 }
+
+//异常处理
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_mic_ndk_NDKModel_exception(JNIEnv *env, jobject thiz) {
+
+//    // 假设现在想给 ，name 赋值 name3
+//    jfieldID f_id = (*env)->GetStaticFieldID(env, jclz, "name3", "Ljava/lang/String;");
+//
+//    // 好几种方式
+//    // 1. 补救措施 ，name3 我拿 name
+//    // 1.1 有没有异常
+//    jthrowable throwable = (*env)->ExceptionOccurred(env);
+//    /*if (throwable){
+//        // 补救措施，先把异常清除
+//        printf("有异常");
+//        // 清除异常
+//        (*env)->ExceptionClear(env);
+//        // 重新获取 name 属性
+//        f_id = (*env)->GetStaticFieldID(env, jclz, "name", "Ljava/lang/String;");
+//    }*/
+//
+//    // 2. 想给 java 层抛一个异常
+//    if (throwable){
+//        // 清除异常
+//        (*env)->ExceptionClear(env);
+//        // Throw 抛一个 java 的 Throwable 对象
+//        jclass no_such_clz = (*env)->FindClass(env,"java/lang/NoSuchFieldException");
+//        (*env)->ThrowNew(env, no_such_clz,"NoSuchFieldException name3");
+//
+//        return;// 记得 return
+//    }
+//
+//    jstring name = (*env)->NewStringUTF(env, "Darren");
+//    (*env)->SetStaticObjectField(env, jclz, f_id, name);
+}

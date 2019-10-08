@@ -62,4 +62,6 @@ public class NDKModel {
     public native void setGlobalRef(String global);
 
     public native String delGlobalRef();
+
+    public native void exception();
 }
