@@ -55,4 +55,11 @@ public class NDKModel {
     //native 对java数组排序
     public native void sort(int arr[]);
 
+    public native void localRef();
+
+    public native String getGlobalRef();
+
+    public native void setGlobalRef(String global);
+
+    public native String delGlobalRef();
 }

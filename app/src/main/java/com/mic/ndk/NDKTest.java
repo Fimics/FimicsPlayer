@@ -38,5 +38,9 @@ public class NDKTest {
             Logger.d(Logger.TAG.HOME,"k--> "+k);
         }
 
+        ndkModel.setGlobalRef("hello global");
+        String globalRef = ndkModel.getGlobalRef();
+        Logger.d(Logger.TAG.HOME,"nkdmodel->globalref-->"+globalRef);
+
     }
 }

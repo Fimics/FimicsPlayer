@@ -115,3 +115,45 @@ Java_com_mic_ndk_NDKModel_sort(JNIEnv *env, jobject thiz, jintArray arr) {
    //JNI_ABORT: 不会同步数据给arr ,但是会释放intArray
    env->ReleaseIntArrayElements(arr,intArray,0);
 }
+
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_mic_ndk_NDKModel_localRef(JNIEnv *env, jobject thiz) {
+    /**
+    * 1.在native层构建的java对象，你不用了怎么管理？
+    * 2.native层开辟的内存由谁管理，你能开辟多大？
+    */
+
+    //字符串截取 String
+    jclass  str_clz= env->FindClass("java/lang/String");
+    jmethodID init_mid=env->GetMethodID(str_clz,"<init>","()V");
+    jobject j_str=env->NewObject(str_clz,init_mid);
+
+    //j_str 不再使用了，要回收，
+    env->DeleteGlobalRef(j_str);
+    //回收之后就不能再使用了 c /c++都需要自己释放内存(静态开辟的不需要加收，动态开辟的内存需要回收)
+}
+
+
+jstring  globalStr;
+
+
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_mic_ndk_NDKModel_setGlobalRef(JNIEnv *env, jobject thiz, jstring global) {
+     globalStr = static_cast<jstring>(env->NewGlobalRef(global));
+     env->NewWeakGlobalRef();
+}
+
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_mic_ndk_NDKModel_getGlobalRef(JNIEnv *env, jobject thiz) {
+    return globalStr;
+}
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_mic_ndk_NDKModel_delGlobalRef(JNIEnv *env, jobject thiz) {
+    env->DeleteGlobalRef(globalStr);
+}
