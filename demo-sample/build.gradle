@@ -29,9 +29,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     apply from : rootProject.file('build_depends.gradle')
-    api project(':app-frame')
-    api project(':librxcore')
-    api project(':libretrofit')
+    api project(':app-core')
 }
 
 

@@ -141,8 +141,8 @@ jstring  globalStr;
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_mic_ndk_NDKModel_setGlobalRef(JNIEnv *env, jobject thiz, jstring global) {
-     globalStr = static_cast<jstring>(env->NewGlobalRef(global));
-     env->NewWeakGlobalRef();
+//     globalStr = static_cast<jstring>(env->NewGlobalRef(global));
+//     env->NewWeakGlobalRef();
 }
 
 

@@ -1,12 +1,6 @@
 include ':app',
         ':app-core',
-        ':libwidget',
         ':demo-sample',
         ':demo-java',
         ':demo-optimization',
-        ':libaop',
-        ':libsqlite',
-        ':libokhttp',
-        ':app-frame',
-        ':librxcore',
-        ':libretrofit'
+        ':libaop'

@@ -48,6 +48,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     apply from :rootProject.file('build_depends.gradle')
-    api project(':app-frame')
+    api project(':app-core')
 
 }

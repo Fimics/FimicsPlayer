@@ -1,1 +1,37 @@
-apply from : rootProject.file('build_library.gradle') //去rootProject工程下找 并把该文件内容引入进来
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion this.rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner rootProject.ext.dependencies.testInstrumentationRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    apply from :rootProject.file('build_depends.gradle')
+    implementation rootProject.ext.dependencies.okhttp
+    implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.logginginterceptor
+
+}
+
+
+

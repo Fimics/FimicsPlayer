@@ -4,8 +4,8 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import com.mic.appcore.BuildConfig;
 import com.mic.libcore.BaseApp;
-import com.mic.libcore.BuildConfig;
 
 
 /**

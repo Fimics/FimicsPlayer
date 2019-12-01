@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Build;
 
 
-import com.mic.libcore.BuildConfig;
+import com.mic.appcore.BuildConfig;
 
 import java.util.Collections;
 import java.util.Map;
