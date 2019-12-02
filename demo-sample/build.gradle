@@ -28,6 +28,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api 'org.aspectj:aspectjrt:1.8.13'
     apply from : rootProject.file('build_depends.gradle')
     api project(':app-core')
 }

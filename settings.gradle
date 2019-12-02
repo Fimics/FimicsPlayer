@@ -2,5 +2,4 @@ include ':app',
         ':app-core',
         ':demo-sample',
         ':demo-java',
-        ':demo-optimization',
-        ':libaop'
+        ':demo-optimization'
