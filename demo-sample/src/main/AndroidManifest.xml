@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mic.xsample">
+    package="com.mic.training">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".SampleApp"
+        android:name="com.mic.training.SampleApp"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/XAppTheme">
         <activity
-            android:name=".activity.view.AllViewActivity"
+            android:name="com.mic.training.activity.structure.StructureActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,26 +21,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.view.ViewItemActivity"/>
-        <activity android:name=".activity.view.ViewPagerActivity"/>
-        <activity android:name=".activity.view.ViewDrawFlowActivity"/>
-        <activity android:name=".activity.view.NestedActivity"/>
-        <activity android:name=".activity.view.SwipeActivity"/>
-        <activity android:name=".activity.view.StatusBarActivity"/>
-        <activity android:name=".activity.view.MyScrollViewActivity"/>
-        <activity android:name=".activity.view.BehaviorActivity"/>
+        <activity android:name="com.mic.training.activity.view.ViewItemActivity" />
+        <activity android:name="com.mic.training.activity.view.ViewPagerActivity" />
+        <activity android:name="com.mic.training.activity.view.ViewDrawFlowActivity" />
+        <activity android:name="com.mic.training.activity.view.NestedActivity" />
+        <activity android:name="com.mic.training.activity.view.SwipeActivity" />
+        <activity android:name="com.mic.training.activity.view.StatusBarActivity" />
+        <activity android:name="com.mic.training.activity.view.MyScrollViewActivity" />
+        <activity android:name="com.mic.training.activity.view.BehaviorActivity" />
+        <activity android:name="com.mic.training.activity.opensource.OpenSourceItemActivity" />
+        <activity android:name="com.mic.training.activity.opensource.ProxyActivity" />
+        <activity android:name="com.mic.training.activity.opensource.GlideActivity" />
+        <activity android:name="com.mic.training.activity.opensource.HandleActivity" />
+        <activity android:name="com.mic.training.activity.opensource.MainActivity" />
+        <activity android:name="com.mic.training.activity.opensource.RxBindingActivity" />
+        <activity android:name="com.mic.training.activity.opensource.RxBitmapActivity" />
+        <activity android:name="com.mic.training.activity.opensource.RxPermissionsActivity" />
+        <activity android:name="com.mic.training.activity.opensource.UpdateUIActivity" />
 
-
-        <activity android:name=".activity.opensource.OpenSourceItemActivity" />
-        <activity android:name=".activity.opensource.ProxyActivity" />
-        <activity android:name=".activity.opensource.GlideActivity" />
-        <activity android:name=".activity.opensource.HandleActivity" />
-        <activity android:name=".activity.opensource.MainActivity" />
-        <activity android:name=".activity.opensource.RxBindingActivity" />
-        <activity android:name=".activity.opensource.RxBitmapActivity" />
-        <activity android:name=".activity.opensource.RxPermissionsActivity" />
-        <activity android:name=".activity.opensource.UpdateUIActivity"/>
-        <service android:name=".service.MessageService">
+        <service android:name="com.mic.training.service.MessageService">
 
             <!--  -->
 
@@ -51,8 +50,6 @@
             <!-- </intent-filter> -->
 
         </service>
-
-
     </application>
 
 </manifest>

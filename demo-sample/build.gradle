@@ -9,8 +9,8 @@ android {
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
         testInstrumentationRunner rootProject.ext.dependencies.testInstrumentationRunner
-        ndk{
-            abiFilters 'x86','x86_64','armeabi-v7a'
+        ndk {
+            abiFilters 'x86', 'x86_64', 'armeabi-v7a'
         }
 
         externalNativeBuild {
@@ -33,8 +33,8 @@ android {
     }
 
 
-    externalNativeBuild{
-        cmake{
+    externalNativeBuild {
+        cmake {
             path "CMakeLists.txt"
         }
     }
@@ -50,11 +50,12 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api 'org.aspectj:aspectjrt:1.8.13'
-    apply from : rootProject.file('build_depends.gradle')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    apply from: rootProject.file('build_depends.gradle')
     api project(':app-core')
 }
-
-
 
 
 import org.aspectj.bridge.IMessage
@@ -103,4 +104,3 @@ variants.all { variant ->
         }
     }
 }
-

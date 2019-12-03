@@ -14,4 +14,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="XAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="XAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="XAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
