@@ -10,7 +10,6 @@ add_library( # Specifies the name of the library.
         # Provides a relative path to your source file(s).
         #这里是刚才 创建的c++ 代码的名字
         src/main/cpp/Structure.cpp
-        src/main/cpp/LinkedList.hpp
         )
 
 find_library( # Sets the name of the path variable.

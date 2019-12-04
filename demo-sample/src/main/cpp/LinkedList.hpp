@@ -8,15 +8,18 @@
 #ifndef FIMICSPLAYER_STRUCTURE_HPP
 #define FIMICSPLAYER_STRUCTURE_HPP
 
-
-#include <string>
-
 template <class E>
 class Node<E>{
 
-public:
     Node<E> *next;
     E value;
+
+public:
+
+    Node(E value,Node<E> *next)  {
+        this->value=value;
+        this->next=next;
+    }
 };
 
 
@@ -36,17 +39,24 @@ public:
 
     void pop();
 
+    void forEach();
+
 };
 
 
 template <class E>
 void LinkedList::push(E e) {
 
-    if(head->next=NULL){
+//    Node<E> *newNode =  new Node(e,NULL);
+//    if(!head){
+//        head=newNode;
+//    }
 
-    }
+}
 
-    Node<E> newNode = new Node(e);
+template <class E>
+void LinkedList::forEach() {
+
 }
 
 #endif //FIMICSPLAYER_STRUCTURE_H
