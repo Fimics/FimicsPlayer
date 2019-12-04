@@ -9,7 +9,7 @@
 #define FIMICSPLAYER_STRUCTURE_HPP
 
 template <class E>
-class Node<E>{
+class Node{
 
     Node<E> *next;
     E value;

@@ -8,7 +8,7 @@ using namespace std;
 
 #include <android/log.h>
 #include <jni.h>
-#include "LinkedList.hpp"
+//#include "LinkedList.hpp"
 
 extern "C"
 JNIEXPORT void JNICALL
@@ -20,4 +20,8 @@ Java_com_mic_training_activity_structure_NDK_testLinkedList(JNIEnv *env, jclass 
 //
 //    linkedList.forEach();
 
+}
+
+int main(){
+    return 1;
 }

@@ -12,8 +12,8 @@ public class StructureActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_structure);
-        System.loadLibrary("structure");
-        NDK.testLinkedList();
+//        System.loadLibrary("structure");
+//        NDK.testLinkedList();
     }
 
 }
