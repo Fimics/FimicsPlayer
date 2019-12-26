@@ -88,5 +88,8 @@ ext {
 
             //EventBus
             'eventbus'                 : 'org.greenrobot:eventbus:3.0.0',
+
+            //fabric
+            fabric                     : 'io.fabric.tools:gradle:1.30.0',
     ]
 }
