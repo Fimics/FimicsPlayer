@@ -5,7 +5,6 @@
       "sdkFolder": "/Users/lipengju/Library/Android/sdk",
       "isNativeCompilerSettingsCacheEnabled": false,
       "isBuildOnlyTargetAbiEnabled": true,
-      "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
       "splitsAbiFilterSet": [],
       "intermediatesFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/build/intermediates",
       "gradleModulePathName": ":demo-sample",
@@ -42,7 +41,9 @@
     "gradleBuildOutputFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug",
     "isDebuggableEnabled": true,
     "validAbiList": [
-      "ARMEABI_V7A"
+      "ARMEABI_V7A",
+      "X86",
+      "X86_64"
     ],
     "buildTargetSet": []
   },

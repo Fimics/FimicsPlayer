@@ -91,5 +91,8 @@ ext {
 
             //fabric
             fabric                     : 'io.fabric.tools:gradle:1.30.0',
+
+            //multidex
+            multidex                   :'com.android.support:multidex:1.1.0',
     ]
 }
