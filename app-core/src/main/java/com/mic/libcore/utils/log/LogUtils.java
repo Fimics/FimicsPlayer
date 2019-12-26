@@ -17,7 +17,7 @@ package com.mic.libcore.utils.log;
 
 import android.util.Log;
 
-import com.mic.libcore.BuildConfig;
+import com.mic.appcore.BuildConfig;
 
 
 /**

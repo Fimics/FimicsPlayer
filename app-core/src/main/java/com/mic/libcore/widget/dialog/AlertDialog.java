@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.mic.libcore.R;
+import com.mic.appcore.R;
 
 
 /**
