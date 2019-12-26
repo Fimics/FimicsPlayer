@@ -15,7 +15,7 @@
  */
 #include <gtest/gtest.h>
 #include <stdio.h>
-TEST(HelloWorldTest, add) {
+TEST(HelloWorldTest, footest) {
   int c = 3+5;
   printf("Hello, World!");
 }
