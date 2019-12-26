@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/lipengju/code/android/FimicsPlayer/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/lipengju/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lipengju/code/android/FimicsPlayer/app/.cxx/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "ndk-Debug-armeabi-v7a": {
+      "artifactName": "ndk",
+      "buildCommand": "/Users/lipengju/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lipengju/code/android/FimicsPlayer/app/.cxx/cmake/debug/armeabi-v7a --target ndk",
+      "abi": "armeabi-v7a",
+      "output": "/Users/lipengju/code/android/FimicsPlayer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libndk.so"
+    }
+  }
+}

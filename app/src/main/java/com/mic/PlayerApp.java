@@ -3,6 +3,8 @@ package com.mic;
 
 import android.app.Application;
 
+import androidx.multidex.MultiDex;
+
 import com.mic.ndk.NDKInterface;
 import com.mic.ndk.NDKTools;
 
@@ -14,7 +16,7 @@ public class PlayerApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        MultiDex.install(this);
         // 设置全局异常捕捉类
         // ExceptionCrashHandler.getInstance().init(this);
         NDKTools.loadLibrary();

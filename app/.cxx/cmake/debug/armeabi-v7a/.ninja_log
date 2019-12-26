@@ -1,0 +1,5 @@
+# ninja log v5
+1	138	0	CMakeFiles/ndk.dir/src/main/cpp/MD5.cpp.o	ca90c285b1e9e6a
+1	695	0	CMakeFiles/ndk.dir/src/main/cpp/NDKCallJava.cpp.o	3d56dcd380b5185c
+0	768	0	CMakeFiles/ndk.dir/src/main/cpp/Signature.cpp.o	172d99dbd97fdec1
+769	839	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libndk.so	73ec5ddc804c47c7

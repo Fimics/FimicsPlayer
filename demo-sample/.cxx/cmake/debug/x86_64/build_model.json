@@ -1,0 +1,71 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/lipengju/code/android/FimicsPlayer",
+      "sdkFolder": "/Users/lipengju/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/build/intermediates",
+      "gradleModulePathName": ":demo-sample",
+      "moduleRootFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample",
+      "makeFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/lipengju/code/android/FimicsPlayer/.cxx",
+      "cxxFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx",
+      "ndkFolder": "/Users/lipengju/Library/Android/sdk/ndk/20.1.5948944",
+      "ndkVersion": "20.1.5948944",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      "-std\u003dc++14"
+    ],
+    "variantName": "debug",
+    "soFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/build/intermediates/cmake/debug/lib",
+    "objFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/build/intermediates/cmake/debug/obj",
+    "jsonFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug",
+    "gradleBuildOutputFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 19,
+  "cxxBuildFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug/x86_64",
+  "jsonFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug/x86_64/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64",
+  "objFolder": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/build/intermediates/cmake/debug/obj/x86_64",
+  "buildCommandFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug/x86_64/build_command.txt",
+  "buildOutputFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug/x86_64/build_output.txt",
+  "modelOutputFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug/x86_64/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64/build_generation_state.json",
+    "cacheKeyFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cxx/debug/x86_64/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug/x86_64/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/debug/x86_64/compile_commands.json"
+}

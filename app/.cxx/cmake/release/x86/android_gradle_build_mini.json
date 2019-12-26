@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/lipengju/code/android/FimicsPlayer/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/lipengju/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lipengju/code/android/FimicsPlayer/app/.cxx/cmake/release/x86 --target clean"
+  ],
+  "libraries": {
+    "ndk-Release-x86": {
+      "artifactName": "ndk",
+      "buildCommand": "/Users/lipengju/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lipengju/code/android/FimicsPlayer/app/.cxx/cmake/release/x86 --target ndk",
+      "abi": "x86",
+      "output": "/Users/lipengju/code/android/FimicsPlayer/app/build/intermediates/cmake/release/obj/x86/libndk.so"
+    }
+  }
+}

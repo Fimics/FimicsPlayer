@@ -1,0 +1,3 @@
+[submodule "extras/ExoPlayer"]
+	path = extras/ExoPlayer
+	url = https://github.com/google/ExoPlayer.git

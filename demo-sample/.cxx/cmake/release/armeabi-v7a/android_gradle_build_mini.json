@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/lipengju/code/android/FimicsPlayer/demo-sample/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/lipengju/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "structure-Release-armeabi-v7a": {
+      "artifactName": "structure",
+      "buildCommand": "/Users/lipengju/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lipengju/code/android/FimicsPlayer/demo-sample/.cxx/cmake/release/armeabi-v7a --target structure",
+      "abi": "armeabi-v7a",
+      "output": "/Users/lipengju/code/android/FimicsPlayer/demo-sample/build/intermediates/cmake/release/obj/armeabi-v7a/libstructure.so"
+    }
+  }
+}
