@@ -1,3 +1,5 @@
 # ninja log v5
 0	476	0	CMakeFiles/structure.dir/src/main/cpp/Structure.cpp.o	f8507688877cd427
 476	518	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libstructure.so	949f5aa6c5b380f5
+1	534	0	CMakeFiles/structure.dir/src/main/cpp/Structure.cpp.o	f8507688877cd427
+534	595	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libstructure.so	949f5aa6c5b380f5
