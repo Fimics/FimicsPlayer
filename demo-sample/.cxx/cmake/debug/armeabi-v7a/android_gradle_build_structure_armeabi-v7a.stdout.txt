@@ -1,2 +1,0 @@
-[1/2] Building CXX object CMakeFiles/structure.dir/src/main/cpp/Structure.cpp.o
-[2/2] Linking CXX shared library ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libstructure.so
