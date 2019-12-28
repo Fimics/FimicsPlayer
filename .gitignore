@@ -40,3 +40,5 @@ proguard/
 *.iml
 .idea/
 functiongraphic.psd
+
+.cxx/
