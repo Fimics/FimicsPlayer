@@ -2,15 +2,14 @@ package com.mic.msg.fragment;
 
 
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.mic.frame.common.BaseFragment;
+import androidx.fragment.app.Fragment;
+
 import com.mic.R;
+import com.mic.frame.common.BaseFragment;
 
 /**
  * A simple {@link Fragment} subclass.
