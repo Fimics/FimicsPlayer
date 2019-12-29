@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.4.1)
+#project(googletest)
 ## brew install ninja najagithub gteest-demo , GUnit
 #https://source.android.com/compatibility/tests/development
 add_library( # Specifies the name of the library.
@@ -27,3 +28,8 @@ target_link_libraries( # Specifies the target library.
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib})
+
+#add_subdirectory(googletest)
+#include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+#add_executable(googletest googletest/samples/sample1.cc)
+#target_link_libraries(googletest gtest gtest_main)
