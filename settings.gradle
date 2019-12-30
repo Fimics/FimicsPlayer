@@ -1,11 +1,11 @@
-//def debug = true
-//
-//
-//if(debug){
-//    gradle.ext.exoplayerRoot = 'extras/exoplayer'
-//    gradle.ext.exoplayerModulePrefix = 'exoplayer-'
-//    apply from: new File(gradle.ext.exoplayerRoot, 'core_settings.gradle')
-//}
+def debug = true
+
+
+if(debug){
+    gradle.ext.exoplayerRoot = 'extras/exoplayer'
+    gradle.ext.exoplayerModulePrefix = 'exoplayer-'
+    apply from: new File(gradle.ext.exoplayerRoot, 'core_settings.gradle')
+}
 
 
 include ':app',
