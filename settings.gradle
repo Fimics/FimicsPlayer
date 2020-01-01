@@ -10,6 +10,6 @@ if(debug){
 
 include ':app',
         ':app-core',
-        ':demo-sample',
+        ':demo-ui',
         ':demo-java',
         ':demo-optimization'
