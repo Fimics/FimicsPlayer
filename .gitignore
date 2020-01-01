@@ -41,7 +41,7 @@ proguard/
 .idea/
 functiongraphic.psd
 
-gtest/make/*.a
-Gtest/make/*.o
+*.a
+*.o
 
 .cxx/
