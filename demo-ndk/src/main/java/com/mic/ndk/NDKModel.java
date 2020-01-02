@@ -1,7 +1,5 @@
 package com.mic.ndk;
 
-import android.os.Parcel;
-
 import java.util.UUID;
 
 /**

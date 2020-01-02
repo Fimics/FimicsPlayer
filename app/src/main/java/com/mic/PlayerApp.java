@@ -19,8 +19,6 @@ public class PlayerApp extends Application {
         MultiDex.install(this);
         // 设置全局异常捕捉类
         // ExceptionCrashHandler.getInstance().init(this);
-        NDKTools.loadLibrary();
-        NDKInterface.signatureVerify(this);
     }
 
     @Override

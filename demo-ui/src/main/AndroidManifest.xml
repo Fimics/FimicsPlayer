@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/XAppTheme">
         <activity
-            android:name="com.mic.training.activity.structure.StructureActivity"
+            android:name="com.mic.training.activity.view.AllViewActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,35 +1,32 @@
 package com.mic;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.core.view.GravityCompat;
-import androidx.viewpager.widget.ViewPager;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.mic.frame.common.BaseFragment;
 import com.mic.home.fragment.HomeFragment;
-import com.mic.ndk.NDKInterface;
-import com.mic.ndk.NDKTest;
-import com.mic.tools.Logger;
-import com.mic.view.Bottom;
-import com.mic.view.BottomLayout;
 import com.mic.msg.fragment.MessageFragment;
 import com.mic.news.fragment.NewsFragment;
 import com.mic.user.fragment.UserFragment;
 import com.mic.video.fragment.VideoFragment;
+import com.mic.view.Bottom;
+import com.mic.view.BottomLayout;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -49,9 +46,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        NDKTest ndkTest = new NDKTest();
-        ndkTest.invoke();
-
         initData();
         initView();
         bottomLayout.setBottomList(bottomList);

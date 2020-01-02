@@ -1,6 +1,5 @@
 package com.mic.ndk;
 
-import com.mic.tools.Logger;
 
 public class NDKTest {
 

@@ -8,7 +8,7 @@ if(debug){
 }
 
 
-include ':app',
+include ':app', ':demo-ndk',
         ':app-core',
         ':demo-ui',
         ':demo-java',
