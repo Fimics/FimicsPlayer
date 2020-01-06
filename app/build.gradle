@@ -37,11 +37,11 @@ dependencies {
     api project(':app-core')
     implementation rootProject.ext.dependencies.multidex
 
-    if (gradle.hasProperty('exoplayerRoot')) {
-        implementation project(':exoplayer-library-core')
-        implementation project(':exoplayer-library-dash')
-        implementation project(':exoplayer-library-hls')
-        implementation project(':exoplayer-extension-ima')
-    }
+//    if (gradle.hasProperty('exoplayerRoot')) {
+//        implementation project(':exoplayer-library-core')
+//        implementation project(':exoplayer-library-dash')
+//        implementation project(':exoplayer-library-hls')
+//        implementation project(':exoplayer-extension-ima')
+//    }
 
 }

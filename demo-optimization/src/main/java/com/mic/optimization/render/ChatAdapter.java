@@ -25,8 +25,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.mic.optimization.R;
-import com.squareup.picasso.Picasso;
 
 
 import java.util.ArrayList;
@@ -75,9 +75,7 @@ public class ChatAdapter extends ArrayAdapter<Chat> {
         // Display the chat author's avatar (a droid image) and a background color associated with
         // the author.
         if (chat.getAuthor().getAvatarId() != 0) {
-            Picasso.get().load(chat.getAuthor().getAvatarId()).into(
-                    chat_author_avatar);
-
+            Glide.with(chat_author_avatar).load(chat.getAuthor().getAvatarId());
         }
         chat_author_avatar.setBackgroundColor(chat.getAuthor().getColor());
 

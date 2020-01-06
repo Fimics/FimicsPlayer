@@ -5,8 +5,6 @@ import android.app.Application;
 
 import androidx.multidex.MultiDex;
 
-import com.mic.ndk.NDKInterface;
-import com.mic.ndk.NDKTools;
 
 public class PlayerApp extends Application {
 
