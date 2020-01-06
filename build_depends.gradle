@@ -3,8 +3,8 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
     //support ui
-    implementation rootProject.ext.dependencies.Appcompat
-    implementation rootProject.ext.dependencies.Constraint
+    implementation rootProject.ext.dependencies.appcompat
+    implementation rootProject.ext.dependencies.constraint
     implementation rootProject.ext.dependencies.recyclerview
     implementation rootProject.ext.dependencies.cardview
     implementation rootProject.ext.dependencies.material
