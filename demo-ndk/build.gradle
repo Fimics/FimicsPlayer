@@ -8,7 +8,6 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
-        testInstrumentationRunner rootProject.ext.dependencies.testInstrumentationRunner
 
         ndk{
             abiFilters 'x86','x86_64','armeabi-v7a'
