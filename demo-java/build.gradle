@@ -4,9 +4,6 @@ apply plugin: 'java-library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation rootProject.ext.dependencies.mockito
-    implementation rootProject.ext.dependencies.junit
 }
 
 sourceCompatibility = "1.7"

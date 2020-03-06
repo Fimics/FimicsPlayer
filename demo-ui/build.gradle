@@ -8,7 +8,6 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
-        testInstrumentationRunner rootProject.ext.dependencies.testInstrumentationRunner
     }
 
     buildTypes {
@@ -33,64 +32,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    api 'org.aspectj:aspectjrt:1.8.13'
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'com.google.android.material:material:1.0.0'
     apply from: rootProject.file('build_depends.gradle')
     api project(':app-core')
 }
 
 
-import org.aspectj.bridge.IMessage
-import org.aspectj.bridge.MessageHandler
-import org.aspectj.tools.ajc.Main
-
-final def log = project.logger
-final def variants = project.android.applicationVariants
-
-variants.all { variant ->
-    if (!variant.buildType.isDebuggable()) {
-        log.debug("Skipping non-debuggable build type '${variant.buildType.name}'.")
-        return
-    }
-
-    JavaCompile javaCompile
-    if (variant.hasProperty('javaCompileProvider')) {
-        // Android 3.3.0+
-        javaCompile = variant.javaCompileProvider.get()
-    } else {
-        javaCompile = variant.javaCompile
-    }
-    javaCompile.doLast {
-        String[] args = ["-showWeaveInfo",
-                         "-1.8",
-                         "-inpath", javaCompile.destinationDir.toString(),
-                         "-aspectpath", javaCompile.classpath.asPath,
-                         "-d", javaCompile.destinationDir.toString(),
-                         "-classpath", javaCompile.classpath.asPath,
-                         "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)]
-        log.debug "ajc args: " + Arrays.toString(args)
-
-        MessageHandler handler = new MessageHandler(true)
-        new Main().run(args, handler)
-        for (IMessage message : handler.getMessages(null, true)) {
-            switch (message.getKind()) {
-                case IMessage.ABORT:
-                case IMessage.ERROR:
-                case IMessage.FAIL:
-                    log.error message.message, message.thrown
-                    break
-                case IMessage.WARNING:
-                    log.warn message.message, message.thrown
-                    break
-                case IMessage.INFO:
-                    log.info message.message, message.thrown
-                    break
-                case IMessage.DEBUG:
-                    log.debug message.message, message.thrown
-                    break
-            }
-        }
-    }
-}

@@ -25,20 +25,13 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.io.File;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
-@SuppressWarnings("unused")
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     UserAidl mUserAidl;
-    @BindView(R.id.btn_bindService)
     Button btnBindService;
-    @BindView(R.id.btn_showname)
     Button btnShowname;
-    @BindView(R.id.btn_hook_activty)
     Button btnHookActivty;
 
 
@@ -46,8 +39,11 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
         //startService(new Intent(this, MessageService.class));
+
+        btnBindService = findViewById(R.id.btn_bindService);
+        btnShowname=findViewById(R.id.btn_showname);
+        btnHookActivty=findViewById(R.id.btn_hook_activty);
 
         //测试全局异常捕获
         //int a = 20 / 1;
@@ -95,8 +91,8 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.btn_bindService, R.id.btn_showname})
-    public void onViewClicked(View view) {
+    @Override
+    public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_bindService:
                 testAidl();
@@ -110,9 +106,6 @@ public class MainActivity extends BaseActivity {
                 break;
         }
     }
-
-
-
 
     private class Conn implements ServiceConnection {
 

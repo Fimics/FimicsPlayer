@@ -3,9 +3,6 @@ if (isApp.toBoolean()) {
 } else {
     apply plugin: 'com.android.library'
 }
-apply plugin: 'com.jakewharton.butterknife'
-
-
 
 android {
     compileSdkVersion this.rootProject.ext.android.compileSdkVersion
@@ -54,5 +51,4 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     apply from :rootProject.file('build_depends.gradle')
     api project(':app-frame')
-
 }

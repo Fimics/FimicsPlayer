@@ -14,7 +14,6 @@ import com.mic.libretrofit.http.FRetrofitClient;
 import com.mic.training.R;
 import com.mic.training.service.FUserApi;
 import com.mic.training.view.LoveLayout;
-import com.mic.training.xaspect.CheckNet;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +57,6 @@ public class LoveLayoutFragment extends Fragment implements View.OnClickListener
         fRetrofit.create(FUserApi.class).login("java","java");
     }
 
-    @CheckNet
     public void sayHello(){
 
     }
