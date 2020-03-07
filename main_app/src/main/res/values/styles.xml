@@ -36,4 +36,20 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="style_textview">
+        <item name="android:color">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+
+
+    <style name="XAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="XAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="XAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

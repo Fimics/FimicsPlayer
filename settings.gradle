@@ -9,6 +9,5 @@ def debug = true
 
 
 include ':main_app',
-        ':app-core',
-        ':demo-ui'
+        ':app-core'
 
