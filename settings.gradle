@@ -8,8 +8,7 @@ def debug = true
 //}
 
 
-include ':app',
-        ':demo-ndk',
+include ':main_app',
         ':app-core',
         ':demo-ui'
 
