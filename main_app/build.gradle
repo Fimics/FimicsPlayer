@@ -11,8 +11,8 @@ android {
         versionName rootProject.ext.android.versionName
         multiDexEnabled true
 
-        ndk{
-            abiFilters 'x86','x86_64','armeabi-v7a'
+        ndk {
+            abiFilters 'x86', 'x86_64', 'armeabi-v7a'
         }
 
         externalNativeBuild {
@@ -34,8 +34,8 @@ android {
     }
 
 
-    externalNativeBuild{
-        cmake{
+    externalNativeBuild {
+        cmake {
             path "CMakeLists.txt"
         }
     }
@@ -48,7 +48,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    apply from :rootProject.file('build_depends.gradle')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    apply from: rootProject.file('build_depends.gradle')
     api project(':app-core')
     implementation rootProject.ext.dependencies.multidex
 

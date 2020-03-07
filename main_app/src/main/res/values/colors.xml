@@ -296,5 +296,7 @@
     <color name="grassgreen">#99cc33</color>
     <!--灰色cc -->
     <color name="gray_cc">#cccccc</color>
+
+    <color name="black_overlay">#66000000</color>
     <!--灰色8f -->
 </resources>

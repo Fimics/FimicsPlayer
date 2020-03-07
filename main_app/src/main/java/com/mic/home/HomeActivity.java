@@ -1,5 +1,8 @@
-package com.mic;
+package com.mic.home;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +22,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+import com.mic.R;
 import com.mic.frame.common.BaseFragment;
 import com.mic.home.fragment.HomeFragment;
 import com.mic.msg.fragment.MessageFragment;
@@ -33,7 +37,7 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.ArrayList;
 
 @SuppressWarnings("all")
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private BottomLayout bottomLayout;
@@ -41,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Bottom> bottomList = new ArrayList<Bottom>();
     private final ArrayList<BaseFragment> fragments = new ArrayList<>();
 
+    public static void start(Activity activity){
+        Intent intent = new Intent(activity,HomeActivity.class);
+        activity.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Undo", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "Data restored", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, "Data restored", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();

@@ -11,15 +11,17 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:name="com.mic.PlayerApp"
+        android:name=".PlayerApp"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/XAppTheme">
-        <activity android:name="com.mic.MainActivity"
-                  android:screenOrientation="portrait"
-                  android:launchMode="singleTask">
+        <activity
+            android:name=".WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/MyFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,26 +29,27 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.mic.training.activity.view.AllViewActivity" />
-        <activity android:name="com.mic.training.activity.view.ViewItemActivity" />
-        <activity android:name="com.mic.training.activity.view.ViewPagerActivity" />
-        <activity android:name="com.mic.training.activity.view.ViewDrawFlowActivity" />
-        <activity android:name="com.mic.training.activity.view.NestedActivity" />
-        <activity android:name="com.mic.training.activity.view.SwipeActivity" />
-        <activity android:name="com.mic.training.activity.view.StatusBarActivity" />
-        <activity android:name="com.mic.training.activity.view.MyScrollViewActivity" />
-        <activity android:name="com.mic.training.activity.view.BehaviorActivity" />
-        <activity android:name="com.mic.training.activity.opensource.OpenSourceItemActivity" />
-        <activity android:name="com.mic.training.activity.opensource.ProxyActivity" />
-        <activity android:name="com.mic.training.activity.opensource.GlideActivity" />
-        <activity android:name="com.mic.training.activity.opensource.HandleActivity" />
-        <activity android:name="com.mic.training.activity.opensource.MainActivity" />
-        <activity android:name="com.mic.training.activity.opensource.RxBindingActivity" />
-        <activity android:name="com.mic.training.activity.opensource.RxBitmapActivity" />
-        <activity android:name="com.mic.training.activity.opensource.RxPermissionsActivity" />
-        <activity android:name="com.mic.training.activity.opensource.UpdateUIActivity" />
+        <activity android:name=".home.HomeActivity"/>
+        <activity android:name=".training.activity.view.AllViewActivity" />
+        <activity android:name=".training.activity.view.ViewItemActivity" />
+        <activity android:name=".training.activity.view.ViewPagerActivity" />
+        <activity android:name=".training.activity.view.ViewDrawFlowActivity" />
+        <activity android:name=".training.activity.view.NestedActivity" />
+        <activity android:name=".training.activity.view.SwipeActivity" />
+        <activity android:name=".training.activity.view.StatusBarActivity" />
+        <activity android:name=".training.activity.view.MyScrollViewActivity" />
+        <activity android:name=".training.activity.view.BehaviorActivity" />
+        <activity android:name=".training.activity.opensource.OpenSourceItemActivity" />
+        <activity android:name=".training.activity.opensource.ProxyActivity" />
+        <activity android:name=".training.activity.opensource.GlideActivity" />
+        <activity android:name=".training.activity.opensource.HandleActivity" />
+        <activity android:name=".training.activity.opensource.MainActivity" />
+        <activity android:name=".training.activity.opensource.RxBindingActivity" />
+        <activity android:name=".training.activity.opensource.RxBitmapActivity" />
+        <activity android:name=".training.activity.opensource.RxPermissionsActivity" />
+        <activity android:name=".training.activity.opensource.UpdateUIActivity" />
 
-        <service android:name="com.mic.training.service.MessageService">
+        <service android:name=".training.service.MessageService">
 
             <!--  -->
 
