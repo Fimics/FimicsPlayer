@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".home.HomeActivity"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".training.activity.view.AllViewActivity" />
         <activity android:name=".training.activity.view.ViewItemActivity" />
         <activity android:name=".training.activity.view.ViewPagerActivity" />

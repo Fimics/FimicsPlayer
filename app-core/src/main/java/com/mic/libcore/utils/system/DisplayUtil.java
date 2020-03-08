@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.Window;
 
@@ -306,5 +307,17 @@ public class DisplayUtil {
     public static int sp2dp(Context context, float spValue) {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) px2dip(context, (spValue * fontScale + 0.5f));
+    }
+
+    /**
+     * 根据dip值转化成px值
+     *
+     * @param context
+     * @param dip
+     * @return
+     */
+    public static int dipToPix(Context context, int dip) {
+        int size = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dip, context.getResources().getDisplayMetrics());
+        return size;
     }
 }

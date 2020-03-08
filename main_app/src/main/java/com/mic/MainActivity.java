@@ -1,12 +1,10 @@
-package com.mic.home;
+package com.mic;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
@@ -19,10 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
-import com.mic.R;
 import com.mic.frame.common.BaseFragment;
 import com.mic.home.fragment.HomeFragment;
 import com.mic.msg.fragment.MessageFragment;
@@ -37,8 +32,9 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.ArrayList;
 
 @SuppressWarnings("all")
-public class HomeActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
+    private static final int CURRENT_PAGE=1;
     private DrawerLayout mDrawerLayout;
     private BottomLayout bottomLayout;
     private ViewPager mViewPager;
@@ -46,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
     private final ArrayList<BaseFragment> fragments = new ArrayList<>();
 
     public static void start(Activity activity){
-        Intent intent = new Intent(activity,HomeActivity.class);
+        Intent intent = new Intent(activity, MainActivity.class);
         activity.startActivity(intent);
     }
 
@@ -81,27 +77,17 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT)
-                        .setAction("Undo", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Toast.makeText(HomeActivity.this, "Data restored", Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .show();
-            }
-        });
-
         initViewPager();
+        setCurrentPage();
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     private void initView(){
-        bottomLayout=this.findViewById(R.id.bottom_layoty);
+        bottomLayout=this.findViewById(R.id.bottom_nav);
         mViewPager=this.findViewById(R.id.view_pager);
     }
 
@@ -119,10 +105,22 @@ public class HomeActivity extends AppCompatActivity {
         fragments.add(new UserFragment());
     }
 
+    private void setCurrentPage(){
+        mDrawerLayout.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if(mViewPager==null)
+                    return;
+                mViewPager.setCurrentItem(CURRENT_PAGE,true);
 
+                if(bottomLayout==null)
+                    return;
+                bottomLayout.updateIndicator(CURRENT_PAGE);
+            }
+        },500);
+    }
 
     private void initViewPager() {
-
         mViewPager.setOffscreenPageLimit(0);
         mViewPager.setPageMargin(10);
 
@@ -204,4 +202,5 @@ public class HomeActivity extends AppCompatActivity {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
     }
+
 }

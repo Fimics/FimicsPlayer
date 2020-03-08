@@ -6,8 +6,6 @@ import android.os.CountDownTimer;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.home.HomeActivity;
-
 public class WelcomeActivity extends AppCompatActivity {
 
     private static final int FUTURE =200;
@@ -45,7 +43,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                HomeActivity.start(WelcomeActivity.this);
+                MainActivity.start(WelcomeActivity.this);
+                finish();
             }
         };
         countDownTimer.start();

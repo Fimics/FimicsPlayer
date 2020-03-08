@@ -40,13 +40,6 @@
                 android:layout_marginTop="40dp"
                 />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="16dp"
-                android:src="@drawable/ic_done" />
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
         <com.google.android.material.navigation.NavigationView
@@ -60,7 +53,7 @@
     </androidx.drawerlayout.widget.DrawerLayout>
 
     <com.mic.view.BottomLayout
-        android:id="@+id/bottom_layoty"
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
         android:layout_height="wrap_content">

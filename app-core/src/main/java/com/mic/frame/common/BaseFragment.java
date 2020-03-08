@@ -15,10 +15,12 @@ public abstract class BaseFragment extends Fragment{
 
     protected View rootView;
     protected Context context;
+    protected LayoutInflater layoutInflater;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        this.layoutInflater = inflater;
         this.context = getActivity();
         rootView = View.inflate(context,getLayoutId(),null);
 
