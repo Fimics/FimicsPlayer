@@ -14,14 +14,18 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.mic.R;
 import com.mic.frame.common.BaseFragment;
-import com.mic.home.fragment.HomeFragment;
-import com.mic.msg.fragment.MessageFragment;
+import com.mic.news.fragment.multitype.bilibili.BilibiliFragment;
+import com.mic.news.fragment.multitype.communicate.CommunicateFragment;
+import com.mic.news.fragment.multitype.moreapis.MoreApisPlaygroundFragment;
+import com.mic.news.fragment.multitype.multiselectable.MultiSelectableFragment;
+import com.mic.news.fragment.multitype.normal.NormalFragment;
+import com.mic.news.fragment.multitype.ontomany.OnDataToManyFragment;
+import com.mic.news.fragment.multitype.testpayload.TestPayloadFragment;
+import com.mic.news.fragment.multitype.weibo.WeiboFragment;
 import com.mic.thirdparty.indicator.view.indicator.Indicator;
 import com.mic.thirdparty.indicator.view.indicator.RecyclerIndicatorView;
 import com.mic.thirdparty.indicator.view.indicator.slidebar.ColorBar;
 import com.mic.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
-import com.mic.user.fragment.UserFragment;
-import com.mic.video.fragment.VideoFragment;
 
 import java.util.ArrayList;
 
@@ -110,7 +114,7 @@ public class NewsFragment extends BaseFragment {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.tab_top, parent, false);
+                convertView = getLayoutInflater().inflate(R.layout.tab_top_news, parent, false);
             }
             TextView textView = (TextView) convertView;
             //用了固定宽度可以避免TextView文字大小变化，tab宽度变化导致tab抖动现象

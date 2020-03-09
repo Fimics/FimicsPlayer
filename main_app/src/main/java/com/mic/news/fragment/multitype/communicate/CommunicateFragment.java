@@ -1,4 +1,4 @@
-package com.mic.news.fragment;
+package com.mic.news.fragment.multitype.communicate;
 
 
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import com.mic.frame.common.BaseFragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MultiSelectableFragment extends BaseFragment {
+public class CommunicateFragment extends BaseFragment {
 
 
-    public MultiSelectableFragment() {
+    public CommunicateFragment() {
         // Required empty public constructor
     }
 
@@ -41,7 +41,7 @@ public class MultiSelectableFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_multi_selectable;
+        return R.layout.fragment_communicate;
     }
 
 }

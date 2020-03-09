@@ -17,4 +17,12 @@
     <string name="title_activity_welcome">WelcomeActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="normal_app_name">MultiType</string>
+    <string name="bilibili_app_name">MT: Bilibili</string>
+    <string name="multi_grid_app_name">MT: MultiGrid</string>
+    <string name="close">close</string>
+    <string name="add">ADD</string>
+    <string name="remove">REMOVE</string>
+    <string name="clear">CLEAR</string>
 </resources>

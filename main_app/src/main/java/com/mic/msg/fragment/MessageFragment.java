@@ -82,7 +82,7 @@ public class MessageFragment extends BaseFragment {
         @Override
         public View getViewForTab(int position, View convertView, ViewGroup container) {
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.tab_top, container, false);
+                convertView = getLayoutInflater().inflate(R.layout.tab_top_msg, container, false);
             }
             TextView textView = (TextView) convertView;
             textView.setText(versions[position]);

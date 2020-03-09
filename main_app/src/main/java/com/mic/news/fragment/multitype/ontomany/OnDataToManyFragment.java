@@ -1,4 +1,4 @@
-package com.mic.news.fragment;
+package com.mic.news.fragment.multitype.ontomany;
 
 
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import com.mic.frame.common.BaseFragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BilibiliFragment extends BaseFragment {
+public class OnDataToManyFragment extends BaseFragment {
 
 
-    public BilibiliFragment() {
+    public OnDataToManyFragment() {
         // Required empty public constructor
     }
 
@@ -41,7 +41,7 @@ public class BilibiliFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_bilibili;
+        return R.layout.fragment_one_to_many;
     }
 
 }

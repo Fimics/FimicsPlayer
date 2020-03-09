@@ -1,4 +1,4 @@
-package com.mic.news.fragment;
+package com.mic.news.fragment.multitype.normal;
 
 
 import android.os.Bundle;

@@ -307,4 +307,5 @@
     <color name="tab_top_text_2">#000</color>
     <color name="tab_top2_text_1">#000</color>
     <color name="tab_top2_text_2">#fff</color>
+    <color name="material_text_primary">#de000000</color>
 </resources>

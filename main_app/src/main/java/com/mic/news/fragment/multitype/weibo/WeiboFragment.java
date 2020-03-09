@@ -1,4 +1,4 @@
-package com.mic.news.fragment;
+package com.mic.news.fragment.multitype.weibo;
 
 
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import com.mic.frame.common.BaseFragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CommunicateFragment extends BaseFragment {
+public class WeiboFragment extends BaseFragment {
 
 
-    public CommunicateFragment() {
+    public WeiboFragment() {
         // Required empty public constructor
     }
 
@@ -41,7 +41,7 @@ public class CommunicateFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_communicate;
+        return R.layout.fragment_weibo;
     }
 
 }

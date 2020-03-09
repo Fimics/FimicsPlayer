@@ -1,4 +1,4 @@
-package com.mic.news.fragment;
+package com.mic.news.fragment.multitype.multiselectable;
 
 
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import com.mic.frame.common.BaseFragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class WeiboFragment extends BaseFragment {
+public class MultiSelectableFragment extends BaseFragment {
 
 
-    public WeiboFragment() {
+    public MultiSelectableFragment() {
         // Required empty public constructor
     }
 
@@ -41,7 +41,7 @@ public class WeiboFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_weibo;
+        return R.layout.fragment_multi_selectable;
     }
 
 }
