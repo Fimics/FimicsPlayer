@@ -19,11 +19,11 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
 import com.mic.frame.common.BaseFragment;
-import com.mic.home.fragment.HomeFragment;
-import com.mic.msg.fragment.MessageFragment;
-import com.mic.news.fragment.NewsFragment;
+import com.mic.home.tab.HomeFragment;
+import com.mic.msg.tab.MessageFragment;
+import com.mic.news.tab.NewsFragment;
 import com.mic.user.fragment.UserFragment;
-import com.mic.video.fragment.VideoFragment;
+import com.mic.video.tab.VideoFragment;
 import com.mic.view.Bottom;
 import com.mic.view.BottomLayout;
 
