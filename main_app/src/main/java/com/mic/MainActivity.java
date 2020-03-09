@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private ArrayList<Bottom> bottomList = new ArrayList<Bottom>();
     private final ArrayList<BaseFragment> fragments = new ArrayList<>();
+    private  ActionBar actionBar;
 
     public static void start(Activity activity){
         Intent intent = new Intent(activity, MainActivity.class);
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         mDrawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navView =findViewById(R.id.nav_view);
-        ActionBar actionBar = getSupportActionBar();
+        actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
@@ -120,6 +121,14 @@ public class MainActivity extends AppCompatActivity {
         },500);
     }
 
+    private void setActionBarName(String title){
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setTitle(title);
+        }
+    }
+
     private void initViewPager() {
         mViewPager.setOffscreenPageLimit(0);
         mViewPager.setPageMargin(10);
@@ -152,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
               bottomLayout.updateIndicator(position);
+              setActionBarName(bottomList.get(position).name);
             }
 
             @Override
