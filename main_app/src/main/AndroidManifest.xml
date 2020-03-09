@@ -19,8 +19,9 @@
         android:theme="@style/XAppTheme">
         <activity
             android:name=".WelcomeActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/MyFullScreenTheme">
+            android:screenOrientation="portrait"
+            android:theme="@style/MyFullScreenTheme"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +29,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity android:name=".training.activity.view.AllViewActivity" />
         <activity android:name=".training.activity.view.ViewItemActivity" />
         <activity android:name=".training.activity.view.ViewPagerActivity" />

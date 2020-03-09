@@ -19,8 +19,8 @@ import com.mic.news.multitype.communicate.CommunicateFragment;
 import com.mic.news.multitype.moreapis.MoreApisPlaygroundFragment;
 import com.mic.news.multitype.multiselectable.MultiSelectableFragment;
 import com.mic.news.multitype.normal.NormalFragment;
-import com.mic.news.multitype.ontomany.OnDataToManyFragment;
-import com.mic.news.multitype.testpayload.TestPayloadFragment;
+import com.mic.news.multitype.one2many.OneToManyFragment;
+import com.mic.news.multitype.payload.PayloadFragment;
 import com.mic.news.multitype.weibo.WeiboFragment;
 import com.mic.thirdparty.indicator.view.indicator.Indicator;
 import com.mic.thirdparty.indicator.view.indicator.RecyclerIndicatorView;
@@ -36,7 +36,7 @@ public class NewsFragment extends BaseFragment {
 
     private RecyclerIndicatorView indicatorView;
     private ViewPager viewPager;
-    String[] names = {"Bilibili", "Normal", "MultiSelectable", "Communicate-with-binder", "Weibo", "OneDataToMany", "TestPayload", "MoreApisPlayground"};
+    String[] names = {"Bilibili", "Normal","One2Many","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
     private final ArrayList<BaseFragment> fragments = new ArrayList<>();
     public NewsFragment() {
         // Required empty public constructor
@@ -58,11 +58,11 @@ public class NewsFragment extends BaseFragment {
         });
         fragments.add(new BilibiliFragment());
         fragments.add(new NormalFragment());
-        fragments.add(new MultiSelectableFragment());
+        fragments.add(new OneToManyFragment());
         fragments.add(new CommunicateFragment());
+        fragments.add(new MultiSelectableFragment());
         fragments.add(new WeiboFragment());
-        fragments.add(new OnDataToManyFragment());
-        fragments.add(new TestPayloadFragment());
+        fragments.add(new PayloadFragment());
         fragments.add(new MoreApisPlaygroundFragment());
         initViewPager();
         return rootView;

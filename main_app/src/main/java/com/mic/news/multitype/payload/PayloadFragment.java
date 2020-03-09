@@ -1,29 +1,30 @@
-package com.mic.news.multitype.normal;
+package com.mic.news.multitype.payload;
 
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
 import com.mic.frame.common.BaseFragment;
+import com.mic.thirdparty.multitype.Items;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
 
-import java.util.ArrayList;
-import java.util.List;
+import static androidx.recyclerview.widget.DividerItemDecoration.VERTICAL;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NormalFragment extends BaseFragment {
-    private MultiTypeAdapter adapter;
-    private List<Object> items;
+public class PayloadFragment extends BaseFragment {
 
-    public NormalFragment() {
+
+    public PayloadFragment() {
         // Required empty public constructor
     }
 
@@ -43,30 +44,25 @@ public class NormalFragment extends BaseFragment {
     @Override
     protected void initData() {
         RecyclerView recyclerView = rootView.findViewById(R.id.list);
-
-        adapter = new MultiTypeAdapter();
-        adapter.register(TextItem.class, new TextItemViewBinder());
-        adapter.register(ImageItem.class, new ImageItemViewBinder());
-        adapter.register(RichItem.class, new RichItemViewBinder());
+        recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), VERTICAL));
+        MultiTypeAdapter adapter = new MultiTypeAdapter();
         recyclerView.setAdapter(adapter);
 
-        TextItem textItem = new TextItem("world");
-        ImageItem imageItem = new ImageItem(R.drawable.ic_launcher);
-        RichItem richItem = new RichItem("小艾大人赛高", R.drawable.img_11);
+        adapter.register(HeavyItem.class, new HeavyItemViewBinder());
 
-        items = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
-            items.add(textItem);
-            items.add(imageItem);
-            items.add(richItem);
+        Items items = new Items();
+        for (int i = 0; i < 30; i++) {
+            items.add(new HeavyItem("1000" + i));
         }
         adapter.setItems(items);
         adapter.notifyDataSetChanged();
+
+        Toast.makeText(getActivity(), "Try to click or long click items", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_normal;
+        return R.layout.fragment_test_pay_ground;
     }
 
 }
