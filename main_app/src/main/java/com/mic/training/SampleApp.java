@@ -3,7 +3,7 @@ package com.mic.training;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.mic.libcore.BaseApplication;
+import com.mic.bb.libcore.BaseApplication;
 
 public class SampleApp extends BaseApplication{
 

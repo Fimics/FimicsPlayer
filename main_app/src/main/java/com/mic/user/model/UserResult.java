@@ -1,6 +1,6 @@
 package com.mic.user.model;
 
-import com.mic.frame.model.Result;
+import com.mic.bb.frame.model.Result;
 
 public class UserResult extends Result {
 

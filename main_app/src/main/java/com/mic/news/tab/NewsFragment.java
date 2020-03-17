@@ -13,7 +13,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.mic.R;
-import com.mic.frame.common.BaseFragment;
+import com.mic.bb.frame.common.BaseFragment;
 import com.mic.news.multitype.bilibili.BilibiliFragment;
 import com.mic.news.multitype.communicate.CommunicateFragment;
 import com.mic.news.multitype.moreapis.MoreApisPlaygroundFragment;

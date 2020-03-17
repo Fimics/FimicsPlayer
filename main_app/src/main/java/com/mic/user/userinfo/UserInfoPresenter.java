@@ -1,9 +1,9 @@
 package com.mic.user.userinfo;
 
-import com.mic.frame.model.Result;
-import com.mic.frame.model.user.User;
-import com.mic.frame.mvp.base.BasePresenter;
-import com.mic.frame.rxretrofit.RxObserver;
+import com.mic.bb.frame.model.Result;
+import com.mic.bb.frame.model.user.User;
+import com.mic.bb.frame.mvp.base.BasePresenter;
+import com.mic.bb.frame.rxretrofit.RxObserver;
 
 public class UserInfoPresenter extends BasePresenter<UserInfoContract.UserInfoView,UserInfoModel> implements UserInfoContract.UserInfoPresenter {
 

@@ -15,7 +15,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.R;
-import com.mic.libcore.utils.system.DisplayUtil;
+import com.mic.bb.libcore.utils.system.DisplayUtil;
 
 import java.util.ArrayList;
 import java.util.List;

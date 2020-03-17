@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
-import com.mic.frame.common.BaseFragment;
+import com.mic.bb.frame.common.BaseFragment;
 import com.mic.news.multitype.normal.TextItem;
 import com.mic.thirdparty.multitype.Items;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;

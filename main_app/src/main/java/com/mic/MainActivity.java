@@ -18,7 +18,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
-import com.mic.frame.common.BaseFragment;
+import com.mic.bb.frame.common.BaseFragment;
 import com.mic.home.tab.HomeFragment;
 import com.mic.msg.tab.MessageFragment;
 import com.mic.news.tab.NewsFragment;

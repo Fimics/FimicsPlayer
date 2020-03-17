@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.mic.frame.model.user.User;
+import com.mic.bb.frame.model.user.User;
 import com.mic.R;
 
 import java.lang.reflect.Field;

@@ -13,8 +13,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.mic.R;
-import com.mic.frame.common.BaseActivity;
-import com.mic.libcore.hotfix.FixDexManager;
+import com.mic.bb.frame.common.BaseActivity;
+import com.mic.bb.libcore.hotfix.FixDexManager;
 import com.mic.training.UserAidl;
 
 import org.greenrobot.eventbus.EventBus;

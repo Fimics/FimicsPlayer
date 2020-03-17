@@ -49,6 +49,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    apply from :rootProject.file('build_depends.gradle')
+    implementation rootProject.ext.dependencies.okhttp
+    implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.logginginterceptor
     apply from: rootProject.file('build_depends.gradle')
     api project(':app-core')
     implementation rootProject.ext.dependencies.multidex

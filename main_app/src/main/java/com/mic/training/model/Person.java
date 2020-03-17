@@ -1,7 +1,7 @@
 package com.mic.training.model;
 
-import com.mic.libsqlite.annotation.DbFiled;
-import com.mic.libsqlite.annotation.DbTable;
+import com.mic.bb.libsqlite.annotation.DbFiled;
+import com.mic.bb.libsqlite.annotation.DbTable;
 
 @DbTable("person")
 public class Person {
