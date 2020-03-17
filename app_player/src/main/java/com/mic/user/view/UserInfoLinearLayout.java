@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-@SuppressWarnings("all")
+@SuppressWarnings("")
 public class UserInfoLinearLayout extends LinearLayout {
 
 

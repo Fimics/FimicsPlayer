@@ -33,6 +33,20 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/multitype',
+                            'src/main/res/layouts/main',
+                            'src/main/res/layouts/tab',
+                            'src/main/res/layouts/view',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
+
 
     externalNativeBuild {
         cmake {

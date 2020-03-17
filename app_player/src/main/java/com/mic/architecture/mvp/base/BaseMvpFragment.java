@@ -10,7 +10,7 @@ import com.mic.BaseFragment;
 import com.mic.architecture.mvp.proxy.FragmentMvpProxy;
 import com.mic.architecture.mvp.proxy.FragmentMvpProxyImpl;
 
-@SuppressWarnings("all")
+@SuppressWarnings("")
 public abstract class BaseMvpFragment<P extends BasePresenter> extends BaseFragment implements BaseView {
 
     protected FragmentMvpProxy mvpProxy;

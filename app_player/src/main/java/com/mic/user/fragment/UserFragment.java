@@ -21,7 +21,7 @@ import com.mic.user.view.UserInfoLinearLayout;
 
 
 
-@SuppressWarnings("all")
+@SuppressWarnings("")
 public class UserFragment extends BaseMvpFragment<UserInfoPresenter> implements UserInfoContract.UserInfoView {
 
     private NestedScrollView mNestedScrollView;

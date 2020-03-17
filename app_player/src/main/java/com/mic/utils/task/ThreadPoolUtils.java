@@ -21,7 +21,7 @@ import java.util.concurrent.TimeoutException;
  * </pre>
  */
 
-@SuppressWarnings("all")
+@SuppressWarnings("")
 public class ThreadPoolUtils {
 
     private ThreadPoolUtils() {

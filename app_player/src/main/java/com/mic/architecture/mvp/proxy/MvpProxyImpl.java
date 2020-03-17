@@ -12,7 +12,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("all")
+@SuppressWarnings("")
 public class MvpProxyImpl<V extends BaseView> implements IMvpProxy{
     private V mView;
     private List<BasePresenter> mPresenters;

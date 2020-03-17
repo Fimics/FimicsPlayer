@@ -30,7 +30,7 @@ import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 
-@SuppressWarnings("all")
+@SuppressWarnings("")
 public class MainActivity extends AppCompatActivity {
 
     private static final int CURRENT_PAGE=1;
