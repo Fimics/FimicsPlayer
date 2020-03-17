@@ -1,4 +1,4 @@
-package com.mic.libcore.widget.navigationbar;
+package com.mic.xx.navigationbar;
 
 /**
  * Email 240336124@qq.com

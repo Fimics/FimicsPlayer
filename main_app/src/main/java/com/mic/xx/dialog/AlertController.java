@@ -1,4 +1,4 @@
-package com.mic.libcore.widget.dialog;
+package com.mic.xx.dialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
