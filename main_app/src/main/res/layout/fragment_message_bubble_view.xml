@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".fragment.view.MessageBubbleViewFragment">
 
-    <com.mic.customview.view.MessageBubbleView
+    <com.mic.xx.singleview.MessageBubbleView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

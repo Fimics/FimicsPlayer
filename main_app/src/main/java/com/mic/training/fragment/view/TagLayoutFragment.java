@@ -13,8 +13,8 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.customview.taglayout.TagAdapter;
-import com.mic.customview.taglayout.TagLayout;
+import com.mic.xx.taglayout.TagAdapter;
+import com.mic.xx.taglayout.TagLayout;
 
 import java.util.ArrayList;
 import java.util.List;

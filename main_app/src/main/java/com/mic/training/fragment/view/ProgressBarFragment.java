@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.customview.view.ProgressBar;
+import com.mic.xx.singleview.ProgressBar;
 
 /**
  * A simple {@link Fragment} subclass.

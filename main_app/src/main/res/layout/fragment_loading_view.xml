@@ -17,7 +17,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.mic.customview.view.LoadingView
+    <com.mic.xx.singleview.LoadingView
         android:id="@+id/loading_view"
         android:onClick="click"
         android:layout_width="match_parent"

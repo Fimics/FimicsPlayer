@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".fragment.view.LockPatternViewFragment">
 
-    <com.mic.customview.lockpatternview.LockPatternView
+    <com.mic.xx.lockpatternview.LockPatternView
         android:id="@+id/lock_pattern_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

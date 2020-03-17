@@ -12,7 +12,7 @@ import android.view.animation.DecelerateInterpolator;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.customview.view.QQStepView;
+import com.mic.xx.singleview.QQStepView;
 
 /**
  * A simple {@link Fragment} subclass.
