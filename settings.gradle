@@ -8,6 +8,5 @@ def debug = true
 //}
 
 
-include ':main_app',
-        ':app-core'
+include ':app_player'
 
