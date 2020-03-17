@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".fragment.view.TouchViewFragment">
 
-   <com.mic.xx.singleview.TouchVIew
+   <com.mic.view.singleview.TouchVIew
        android:id="@+id/touch_view"
        android:layout_width="200dp"
        android:layout_height="200dp"

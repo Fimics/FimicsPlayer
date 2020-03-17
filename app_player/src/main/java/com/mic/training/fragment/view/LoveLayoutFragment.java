@@ -10,10 +10,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.bb.libretrofit.http.FRetrofit;
-import com.mic.bb.libretrofit.http.FRetrofitClient;
-import com.mic.training.service.FUserApi;
-import com.mic.training.view.LoveLayout;
+import com.mic.view.LoveLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -53,8 +50,8 @@ public class LoveLayoutFragment extends Fragment implements View.OnClickListener
 
 
     private void login(String name,String password){
-        FRetrofit fRetrofit =FRetrofitClient.getInstance().getfRetrofit();
-        fRetrofit.create(FUserApi.class).login("java","java");
+//        FRetrofit fRetrofit =FRetrofitClient.getInstance().getfRetrofit();
+//        fRetrofit.create(FUserApi.class).login("java","java");
     }
 
     public void sayHello(){

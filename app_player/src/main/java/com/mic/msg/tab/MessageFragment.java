@@ -16,8 +16,8 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.mic.R;
-import com.mic.bb.frame.common.BaseFragment;
-import com.mic.bb.libcore.utils.system.DisplayUtil;
+import com.mic.BaseFragment;
+import com.mic.utils.system.DisplayUtil;
 import com.mic.thirdparty.indicator.view.indicator.IndicatorViewPager;
 import com.mic.thirdparty.indicator.view.indicator.ScrollIndicatorView;
 import com.mic.thirdparty.indicator.view.indicator.slidebar.ColorBar;

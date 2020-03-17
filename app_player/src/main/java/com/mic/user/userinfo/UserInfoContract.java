@@ -1,8 +1,8 @@
 package com.mic.user.userinfo;
 
-import com.mic.bb.frame.model.Result;
-import com.mic.bb.frame.model.user.User;
-import com.mic.bb.frame.mvp.base.BaseView;
+import com.mic.user.model.Result;
+import com.mic.user.model.user.User;
+import com.mic.architecture.mvp.base.BaseView;
 
 import io.reactivex.Observable;
 

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
-import com.mic.bb.frame.common.BaseFragment;
+import com.mic.BaseFragment;
 import com.mic.news.multitype.common.Category;
 import com.mic.news.multitype.common.CategoryItemViewBinder;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;

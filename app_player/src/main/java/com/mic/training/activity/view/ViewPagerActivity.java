@@ -12,7 +12,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.mic.R;
-import com.mic.xx.singleview.TrackTextView;
+import com.mic.view.singleview.TrackTextView;
 import com.mic.training.fragment.view.ItemFragment;
 
 import java.util.ArrayList;

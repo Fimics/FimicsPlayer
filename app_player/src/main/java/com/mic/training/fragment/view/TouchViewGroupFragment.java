@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.xx.singleview.TouchVIew;
-import com.mic.xx.singleview.TouchViewGroup;
+import com.mic.view.singleview.TouchVIew;
+import com.mic.view.singleview.TouchViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.

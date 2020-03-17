@@ -6,12 +6,12 @@
     tools:context=".fragment.view.TagLayoutFragment">
 
 
-    <com.mic.xx.taglayout.TagLayout
+    <com.mic.view.taglayout.TagLayout
         android:id="@+id/tag_layout"
         android:layout_width="match_parent"
         android:padding="8dp"
         android:layout_height="wrap_content">
-    </com.mic.xx.taglayout.TagLayout>
+    </com.mic.view.taglayout.TagLayout>
 
 
 

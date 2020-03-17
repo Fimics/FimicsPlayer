@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.xx.singleview.TrackTextView;
+import com.mic.view.singleview.TrackTextView;
 
 /**
  * A simple {@link Fragment} subclass.

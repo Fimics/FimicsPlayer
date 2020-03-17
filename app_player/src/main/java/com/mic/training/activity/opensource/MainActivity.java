@@ -13,8 +13,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.mic.R;
-import com.mic.bb.frame.common.BaseActivity;
-import com.mic.bb.libcore.hotfix.FixDexManager;
+import com.mic.BaseActivity;
+import com.mic.utils.hotfix.FixDexManager;
 import com.mic.training.UserAidl;
 
 import org.greenrobot.eventbus.EventBus;
@@ -23,7 +23,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.io.File;
 
-import com.mic.training.service.MessageService;
+import com.mic.service.MessageService;
 
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {

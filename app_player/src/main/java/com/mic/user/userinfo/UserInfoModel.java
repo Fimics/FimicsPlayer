@@ -1,10 +1,10 @@
 package com.mic.user.userinfo;
 
-import com.mic.bb.frame.model.Result;
-import com.mic.bb.frame.model.user.User;
-import com.mic.bb.frame.mvp.base.BaseModel;
-import com.mic.bb.frame.rxretrofit.RxRetrofitClient;
-import com.mic.bb.frame.rxretrofit.RxSchedulers;
+import com.mic.user.model.Result;
+import com.mic.user.model.user.User;
+import com.mic.architecture.mvp.base.BaseModel;
+import com.mic.thirdparty.rxretrofit.RxRetrofitClient;
+import com.mic.thirdparty.rxretrofit.RxSchedulers;
 
 import io.reactivex.Observable;
 

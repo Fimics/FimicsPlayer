@@ -6,7 +6,7 @@
     tools:context=".fragment.view.LetterSideBarFragment">
 
 
-    <com.mic.xx.singleview.LetterSideBar
+    <com.mic.view.singleview.LetterSideBar
         android:id="@+id/letter_sidebar"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

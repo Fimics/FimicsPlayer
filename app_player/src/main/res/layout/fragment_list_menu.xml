@@ -22,7 +22,7 @@
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content" />
 
-    <com.mic.training.view.ListDataScreenView
+    <com.mic.view.ListDataScreenView
         android:id="@+id/list_data_screen_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

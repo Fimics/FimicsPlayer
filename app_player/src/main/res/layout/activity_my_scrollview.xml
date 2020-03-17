@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     >
 
-    <com.mic.training.view.MyScrollView
+    <com.mic.view.MyScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -36,7 +36,7 @@
                 android:text="text"
                 android:layout_height="400dp" />
         </LinearLayout>
-    </com.mic.training.view.MyScrollView>
+    </com.mic.view.MyScrollView>
 
     <LinearLayout
         android:id="@+id/title_bar"

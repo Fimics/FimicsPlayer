@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.mic.R;
 import com.mic.training.activity.view.NestedActivity;
-import com.mic.training.model.Fruit;
+import com.mic.home.model.Fruit;
 
 import java.util.List;
 

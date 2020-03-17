@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.training.view.BubbleMessageTouchListener;
-import com.mic.training.view.MessageBubbleView;
+import com.mic.view.BubbleMessageTouchListener;
+import com.mic.view.MessageBubbleView;
 
 /**
  * A simple {@link Fragment} subclass.

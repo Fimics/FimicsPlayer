@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
-import com.mic.xx.singleview.ShapeView;
+import com.mic.view.singleview.ShapeView;
 
 /**
  * A simple {@link Fragment} subclass.

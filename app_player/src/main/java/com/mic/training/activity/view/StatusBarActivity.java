@@ -6,7 +6,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.R;
-import com.mic.training.utils.StatusBarUtil;
+import com.mic.utils.StatusBarUtil;
 
 public class StatusBarActivity extends AppCompatActivity {
 

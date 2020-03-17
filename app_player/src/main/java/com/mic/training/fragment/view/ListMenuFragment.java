@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.mic.R;
 import com.mic.training.adapter.ListScreenMenuAdapter;
-import com.mic.training.view.ListDataScreenView;
+import com.mic.view.ListDataScreenView;
 
 /**
  * A simple {@link Fragment} subclass.

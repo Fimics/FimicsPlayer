@@ -52,11 +52,11 @@
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
-    <com.mic.view.BottomLayout
+    <com.mic.view.bottomnav.BottomLayout
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
         android:layout_height="wrap_content">
-    </com.mic.view.BottomLayout>
+    </com.mic.view.bottomnav.BottomLayout>
 
 </FrameLayout>

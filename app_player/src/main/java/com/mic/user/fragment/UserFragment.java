@@ -11,9 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.mic.bb.frame.model.user.User;
-import com.mic.bb.frame.mvp.base.BaseMvpFragment;
-import com.mic.bb.frame.mvp.inject.InjectPresenter;
+import com.mic.user.model.user.User;
+import com.mic.architecture.mvp.base.BaseMvpFragment;
+import com.mic.architecture.mvp.inject.InjectPresenter;
 import com.mic.R;
 import com.mic.user.userinfo.UserInfoContract;
 import com.mic.user.userinfo.UserInfoPresenter;

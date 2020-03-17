@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".fragment.view.ProgressBarFragment">
 
-    <com.mic.xx.singleview.ProgressBar
+    <com.mic.view.singleview.ProgressBar
         android:id="@+id/progress_bar"
         app:progressTextSize="20sp"
         app:progressTextColor="@color/colorAccent"

@@ -7,8 +7,8 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.R;
-import com.mic.training.utils.StatusBarUtil;
-import com.mic.training.view.MyScrollView;
+import com.mic.utils.StatusBarUtil;
+import com.mic.view.MyScrollView;
 
 public class MyScrollViewActivity extends AppCompatActivity {
     private View mTitleBar;

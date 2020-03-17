@@ -9,14 +9,20 @@ import androidx.multidex.MultiDex;
 public class PlayerApp extends Application {
 
 
-    //public static PatchManager mPatchManager;
+
+    private static Application context;
 
     @Override
     public void onCreate() {
         super.onCreate();
+        context= this;
         MultiDex.install(this);
         // 设置全局异常捕捉类
         // ExceptionCrashHandler.getInstance().init(this);
+    }
+
+    public static Application getAppContext(){
+        return context;
     }
 
     @Override

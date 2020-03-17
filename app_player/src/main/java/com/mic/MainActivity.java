@@ -18,14 +18,13 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
-import com.mic.bb.frame.common.BaseFragment;
 import com.mic.home.tab.HomeFragment;
 import com.mic.msg.tab.MessageFragment;
 import com.mic.news.tab.NewsFragment;
 import com.mic.user.fragment.UserFragment;
 import com.mic.video.tab.VideoFragment;
-import com.mic.view.Bottom;
-import com.mic.view.BottomLayout;
+import com.mic.view.bottomnav.Bottom;
+import com.mic.view.bottomnav.BottomLayout;
 
 import org.greenrobot.eventbus.EventBus;
 
