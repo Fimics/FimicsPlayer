@@ -1,5 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-apply from: this.file('common.gradle') //去当前工程下找 并把该文件内容引入进来
+apply from: this.file('depends.gradle') //去当前工程下找 并把该文件内容引入进来
 
 buildscript {
     ext.kotlin_version = '1.3.10'

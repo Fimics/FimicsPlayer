@@ -49,11 +49,33 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    apply from :rootProject.file('build_depends.gradle')
+    //support ui
+    implementation rootProject.ext.dependencies.appcompat
+    implementation rootProject.ext.dependencies.constraint
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.cardview
+    implementation rootProject.ext.dependencies.material
+
+    //网络框架
     implementation rootProject.ext.dependencies.okhttp
     implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.retrofit
+    implementation rootProject.ext.dependencies.convertergson
     implementation rootProject.ext.dependencies.logginginterceptor
-    apply from: rootProject.file('build_depends.gradle')
+
+    //rx框架
+    implementation rootProject.ext.dependencies.rxandroid
+    implementation rootProject.ext.dependencies.rxjava
+    implementation rootProject.ext.dependencies.adapterrxjava
+    implementation rootProject.ext.dependencies.rxbinding2
+    implementation rootProject.ext.dependencies.rxpermissions2
+
+    //图片
+    implementation rootProject.ext.dependencies.glide
+    //EventBus
+    implementation rootProject.ext.dependencies.eventbus
+
+    //multidex
     implementation rootProject.ext.dependencies.multidex
 
 //    if (gradle.hasProperty('exoplayerRoot')) {
