@@ -66,7 +66,7 @@ public class NormalFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_normal;
+        return R.layout.fragment_multitype_normal;
     }
 
 }

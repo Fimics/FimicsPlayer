@@ -64,7 +64,7 @@ public class CommunicateFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_communicate;
+        return R.layout.fragment_multitype_normal;
     }
 
 }

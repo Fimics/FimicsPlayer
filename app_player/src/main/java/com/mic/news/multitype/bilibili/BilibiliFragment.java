@@ -89,7 +89,7 @@ public class BilibiliFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_bilibili;
+        return R.layout.fragment_multitype_normal;
     }
 
     private static class JsonData {

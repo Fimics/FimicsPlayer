@@ -62,7 +62,7 @@ public class PayloadFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_test_pay_ground;
+        return R.layout.fragment_multitype_normal;
     }
 
 }

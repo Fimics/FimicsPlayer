@@ -123,7 +123,7 @@ public class WeiboFragment extends BaseFragment {
     }
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_weibo;
+        return R.layout.fragment_multitype_normal;
     }
 
 }

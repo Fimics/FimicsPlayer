@@ -66,7 +66,7 @@ public class OneToManyFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_one_to_many;
+        return R.layout.fragment_multitype_normal;
     }
 
     @VisibleForTesting
