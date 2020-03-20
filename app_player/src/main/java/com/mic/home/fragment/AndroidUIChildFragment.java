@@ -17,6 +17,7 @@ import com.mic.home.binder.ProgressBarBinder;
 import com.mic.home.binder.QQStepBinder;
 import com.mic.home.binder.RatingBarBinder;
 import com.mic.home.binder.ShapeViewBinder;
+import com.mic.home.binder.SlidingMenuBinder;
 import com.mic.home.binder.TextViewBinder;
 import com.mic.home.binder.TouchViewBinder;
 import com.mic.home.binder.TouchViewGroupBinder;
@@ -33,7 +34,7 @@ import java.util.ArrayList;
 
 public class AndroidUIChildFragment extends BaseFragment {
 
-    private static final int SPAN_COUNT = 2;
+    private static final int SPAN_COUNT = 1;
     private FimRecyclerView list;
     private MultiTypeAdapter adapter;
     private ArrayList<AndroidUI> uiArrayList;
@@ -63,7 +64,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 new RatingBarBinder(),
                 new LetterSideBarBinder(),
                 new TouchViewBinder(),
-                new TouchViewGroupBinder()
+                new TouchViewGroupBinder(),
+                new SlidingMenuBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -84,6 +86,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return TouchViewBinder.class;
             }else if(type==ResourceType.TYPE_TOUCH_VIEWGROUP){
                 return TouchViewGroupBinder.class;
+            }else if(type==ResourceType.TYPE_SLIDING_MENU){
+                return SlidingMenuBinder.class;
             }else {
                 return TextViewBinder.class;
             }
