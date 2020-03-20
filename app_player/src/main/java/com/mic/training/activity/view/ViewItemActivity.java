@@ -18,7 +18,6 @@ import com.mic.training.fragment.view.LoveLayoutFragment;
 import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
 import com.mic.training.fragment.view.QQSlidingMenuFragment;
-import com.mic.training.fragment.view.RatingBarFragment;
 import com.mic.training.fragment.view.SlidingMenuFragment;
 import com.mic.training.fragment.view.TagLayoutFragment;
 import com.mic.training.fragment.view.TouchViewFragment;
@@ -77,9 +76,6 @@ public class ViewItemActivity extends AppCompatActivity {
         switch (id){
             case VIEW_PAGER:
                 startActivity(ViewPagerActivity.class);
-                break;
-            case RATING_BAR:
-                replaceFragment(new RatingBarFragment());
                 break;
             case LETTER_SIDEBAR:
                 replaceFragment(new LetterSideBarFragment());

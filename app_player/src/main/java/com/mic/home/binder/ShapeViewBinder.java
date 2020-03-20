@@ -25,7 +25,7 @@ public class ShapeViewBinder extends ItemViewBinder<AndroidUI, ShapeViewBinder.V
     @NonNull
     @Override
     protected ViewHolder onCreateViewHolder(@NonNull LayoutInflater inflater, @NonNull ViewGroup parent) {
-        return new ViewHolder(inflater.inflate(R.layout.fragment_shape, parent, false),activity);
+        return new ViewHolder(inflater.inflate(R.layout.binder_shape_view, parent, false),activity);
     }
 
     @Override
