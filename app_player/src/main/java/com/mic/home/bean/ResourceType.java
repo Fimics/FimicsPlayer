@@ -18,9 +18,7 @@ public class ResourceType {
     public static final String NAME_SLIDING_MENU = "SlidingMenu";
     public static final String NAME_QQSLIDING_MENU = "QQSlidingMenu";
     public static final String NAME_VERTICAL_DRAGLISTVIEW = "VerticalDragListView";
-    public static final String NAME_SWIPE_REFRESH_LAYOUT = "SwipeRefreshLayout";
     public static final String NAME_NESTED_SCROLLVIEW = "NestedScrollView";
-    public static final String NAME_STATUS_BAR = "StatusBar";
     public static final String NAME_MYSCROLL_VIEW = "MyScrollView";
     public static final String NAME_BEHAVIOR = "Behavior";
     public static final String NAME_LOADING_VIEW = "LoadingView";
@@ -45,9 +43,7 @@ public class ResourceType {
     public static final int TYPE_SLIDING_MENU = 12;
     public static final int TYPE_QQSLIDING_MENU = 13;
     public static final int TYPE_VERTICAL_DRAGLISTVIEW = 14;
-    public static final int TYPE_SWIPE_REFRESH_LAYOUT = 16;
     public static final int TYPE_NESTED_SCROLLVIEW = 17;
-    public static final int TYPE_STATUS_BAR = 18;
     public static final int TYPE_MYSCROLL_VIEW = 19;
     public static final int TYPE_BEHAVIOR = 20;
     public static final int TYPE_LOADING_VIEW = 21;
@@ -72,9 +68,6 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_SLIDING_MENU ,TYPE_SLIDING_MENU));
         uiArrayList.add(new AndroidUI( NAME_QQSLIDING_MENU ,TYPE_QQSLIDING_MENU));
         uiArrayList.add(new AndroidUI( NAME_VERTICAL_DRAGLISTVIEW ,TYPE_VERTICAL_DRAGLISTVIEW));
-        uiArrayList.add(new AndroidUI( NAME_SWIPE_REFRESH_LAYOUT ,TYPE_SWIPE_REFRESH_LAYOUT));
-        uiArrayList.add(new AndroidUI( NAME_NESTED_SCROLLVIEW ,TYPE_NESTED_SCROLLVIEW));
-        uiArrayList.add(new AndroidUI( NAME_STATUS_BAR ,TYPE_STATUS_BAR));
         uiArrayList.add(new AndroidUI( NAME_MYSCROLL_VIEW ,TYPE_MYSCROLL_VIEW));
         uiArrayList.add(new AndroidUI( NAME_BEHAVIOR ,TYPE_BEHAVIOR));
         uiArrayList.add(new AndroidUI( NAME_LOADING_VIEW ,TYPE_LOADING_VIEW));
@@ -83,6 +76,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_MESSAGE_BUBBLEVIEW ,TYPE_MESSAGE_BUBBLEVIEW));
         uiArrayList.add(new AndroidUI( NAME_MESSAGE_BUBBLEVIEW1 ,TYPE_MESSAGE_BUBBLEVIEW1));
         uiArrayList.add(new AndroidUI( NAME_LOVE_LAYOUT ,TYPE_LOVE_LAYOUT));
+        uiArrayList.add(new AndroidUI( NAME_NESTED_SCROLLVIEW ,TYPE_NESTED_SCROLLVIEW));
         uiArrayList.add(new AndroidUI( NAME_VIEW_PAGER ,TYPE_VIEW_PAGER));
         return uiArrayList;
     }

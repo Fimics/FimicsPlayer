@@ -69,14 +69,8 @@ public class ViewItemActivity extends AppCompatActivity {
             case VIEW_PAGER:
                 startActivity(ViewPagerActivity.class);
                 break;
-            case SWIPE_REFRESH_LAYOUT:
-                startActivity(SwipeActivity.class);
-                break;
             case NESTED_SCROLLVIEW:
                 startActivity(NestedActivity.class);
-                break;
-            case STATUS_BAR:
-                startActivity(StatusBarActivity.class);
                 break;
             case MY_SCROLL_VIEW:
                 startActivity(MyScrollViewActivity.class);

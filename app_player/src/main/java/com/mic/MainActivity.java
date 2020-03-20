@@ -2,6 +2,7 @@ package com.mic;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +23,7 @@ import com.mic.home.HomeFragment;
 import com.mic.msg.tab.MessageFragment;
 import com.mic.news.tab.NewsFragment;
 import com.mic.user.fragment.UserFragment;
+import com.mic.utils.StatusBarUtil;
 import com.mic.video.tab.VideoFragment;
 import com.mic.view.bottomnav.Bottom;
 import com.mic.view.bottomnav.BottomLayout;
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        StatusBarUtil.setStatusBarColor(this, getResources().getColor(R.color.colorPrimary));
         initData();
         initView();
         bottomLayout.setBottomList(bottomList);

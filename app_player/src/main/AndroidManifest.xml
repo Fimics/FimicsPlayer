@@ -41,8 +41,6 @@
         <activity android:name=".training.activity.view.ViewItemActivity" />
         <activity android:name=".training.activity.view.ViewPagerActivity" />
         <activity android:name=".training.activity.view.NestedActivity" />
-        <activity android:name=".training.activity.view.SwipeActivity" />
-        <activity android:name=".training.activity.view.StatusBarActivity" />
         <activity android:name=".training.activity.view.MyScrollViewActivity" />
         <activity android:name=".training.activity.view.BehaviorActivity" />
         <activity android:name=".training.activity.opensource.OpenSourceItemActivity" />
