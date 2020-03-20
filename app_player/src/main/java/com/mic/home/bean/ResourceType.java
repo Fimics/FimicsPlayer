@@ -72,7 +72,6 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_PROGRESS_BAR ,TYPE_PROGRESS_BAR));
         uiArrayList.add(new AndroidUI( NAME_SHAPE_VIEW ,TYPE_SHAPE_VIEW));
         uiArrayList.add(new AndroidUI( NAME_RATING_BAR ,TYPE_RATING_BAR));
-        uiArrayList.add(new AndroidUI( NAME_VIEW_PAGER ,TYPE_VIEW_PAGER));
         uiArrayList.add(new AndroidUI( NAME_LETTER_SIDEBAR ,TYPE_LETTER_SIDEBAR));
         uiArrayList.add(new AndroidUI( NAME_VIEW_DRAWFLOW ,TYPE_VIEW_DRAWFLOW));
         uiArrayList.add(new AndroidUI( NAME_TAG_LAYOUT ,TYPE_TAG_LAYOUT));
@@ -93,6 +92,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_MESSAGE_BUBBLEVIEW ,TYPE_MESSAGE_BUBBLEVIEW));
         uiArrayList.add(new AndroidUI( NAME_MESSAGE_BUBBLEVIEW1 ,TYPE_MESSAGE_BUBBLEVIEW1));
         uiArrayList.add(new AndroidUI( NAME_LOVE_LAYOUT ,TYPE_LOVE_LAYOUT));
+        uiArrayList.add(new AndroidUI( NAME_VIEW_PAGER ,TYPE_VIEW_PAGER));
         return uiArrayList;
     }
 }

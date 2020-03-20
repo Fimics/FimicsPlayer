@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.mic.R;
 import com.mic.training.fragment.view.CircleLoadingViewFragment;
-import com.mic.training.fragment.view.LetterSideBarFragment;
 import com.mic.training.fragment.view.ListMenuFragment;
 import com.mic.training.fragment.view.LoadingViewFragment;
 import com.mic.training.fragment.view.LockPatternViewFragment;
@@ -76,9 +75,6 @@ public class ViewItemActivity extends AppCompatActivity {
         switch (id){
             case VIEW_PAGER:
                 startActivity(ViewPagerActivity.class);
-                break;
-            case LETTER_SIDEBAR:
-                replaceFragment(new LetterSideBarFragment());
                 break;
             case VIEW_DRAW_FLOW:
                 startActivity(ViewDrawFlowActivity.class);
