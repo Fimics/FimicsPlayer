@@ -9,7 +9,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.mic.R;
-import com.mic.training.fragment.view.CircleLoadingViewFragment;
 import com.mic.training.fragment.view.ListMenuFragment;
 import com.mic.training.fragment.view.LoveLayoutFragment;
 import com.mic.training.fragment.view.MessageBubbleView1Fragment;
@@ -79,9 +78,6 @@ public class ViewItemActivity extends AppCompatActivity {
                 break;
             case LIST_MENU:
                 replaceFragment(new ListMenuFragment());
-                break;
-            case CIRCLE_LOADINGVIEW:
-                replaceFragment(new CircleLoadingViewFragment());
                 break;
             case MESSAGE_BUBBLEVIEW:
                 replaceFragment(new MessageBubbleViewFragment());

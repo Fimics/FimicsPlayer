@@ -14,6 +14,7 @@ import com.mic.home.bean.AndroidUI;
 import com.mic.home.bean.ResourceType;
 import com.mic.home.binder.LetterSideBarBinder;
 import com.mic.home.binder.LoadingViewBinder;
+import com.mic.home.binder.LoadingViewCircleBinder;
 import com.mic.home.binder.ProgressBarBinder;
 import com.mic.home.binder.QQStepBinder;
 import com.mic.home.binder.RatingBarBinder;
@@ -71,7 +72,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 new SlidingMenuBinder(),
                 new SlidingMenuQQBinder(),
                 new VerticalDragListViewBinder(),
-                new LoadingViewBinder()
+                new LoadingViewBinder(),
+                new LoadingViewCircleBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -100,6 +102,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return VerticalDragListViewBinder.class;
             }else if(type==ResourceType.TYPE_LOADING_VIEW){
                 return LoadingViewBinder.class;
+            }else if(type==ResourceType.TYPE_CIRCLEL_OADINGVIEW){
+                return LoadingViewCircleBinder.class;
             }else {
                 return TextViewBinder.class;
             }
