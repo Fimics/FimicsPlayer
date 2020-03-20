@@ -18,7 +18,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
-import com.mic.home.tab.HomeFragment;
+import com.mic.home.HomeFragment;
 import com.mic.msg.tab.MessageFragment;
 import com.mic.news.tab.NewsFragment;
 import com.mic.user.fragment.UserFragment;
@@ -33,7 +33,7 @@ import java.util.ArrayList;
 @SuppressWarnings("")
 public class MainActivity extends AppCompatActivity {
 
-    private static final int CURRENT_PAGE=1;
+    private static final int CURRENT_PAGE=0;
     private DrawerLayout mDrawerLayout;
     private BottomLayout bottomLayout;
     private ViewPager mViewPager;

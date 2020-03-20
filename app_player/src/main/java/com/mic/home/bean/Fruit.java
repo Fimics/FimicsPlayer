@@ -1,4 +1,4 @@
-package com.mic.home.model;
+package com.mic.home.bean;
 
 public class Fruit {
 

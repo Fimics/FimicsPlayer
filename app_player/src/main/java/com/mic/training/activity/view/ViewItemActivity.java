@@ -19,24 +19,19 @@ import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
 import com.mic.training.fragment.view.ProgressBarFragment;
 import com.mic.training.fragment.view.QQSlidingMenuFragment;
-import com.mic.training.fragment.view.QQStepFragment;
 import com.mic.training.fragment.view.RatingBarFragment;
 import com.mic.training.fragment.view.ShapeFragment;
 import com.mic.training.fragment.view.SlidingMenuFragment;
 import com.mic.training.fragment.view.TagLayoutFragment;
 import com.mic.training.fragment.view.TouchViewFragment;
 import com.mic.training.fragment.view.TouchViewGroupFragment;
-import com.mic.training.fragment.view.TrackTextViewFragment;
 import com.mic.training.fragment.view.VerticalDragListViewFragment;
-import com.mic.training.fragment.view.XTextViewFragment;
 
 public class ViewItemActivity extends AppCompatActivity {
 
 
     private FragmentTransaction transaction;
 
-    private static final int X_TEXTVIEW=0;
-    private static final int QQ_STEP=1;
     private static final int TRACK_TEXTVIEW=2;
     private static final int PROGRESS_BAR=3;
     private static final int VIEW_PAGER=4;
@@ -82,15 +77,6 @@ public class ViewItemActivity extends AppCompatActivity {
 
     private void showItemView(int id){
         switch (id){
-            case X_TEXTVIEW:
-                replaceFragment(new XTextViewFragment());
-                break;
-            case QQ_STEP:
-                replaceFragment(new QQStepFragment());
-                break;
-            case TRACK_TEXTVIEW:
-                replaceFragment(new TrackTextViewFragment());
-                break;
             case PROGRESS_BAR:
                 replaceFragment(new ProgressBarFragment());
                 break;

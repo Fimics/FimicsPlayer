@@ -1,4 +1,4 @@
-package com.mic.home.tab;
+package com.mic.home;
 
 
 import android.graphics.Color;
@@ -14,7 +14,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.mic.BaseFragment;
 import com.mic.R;
-import com.mic.news.multitype.bilibili.BilibiliFragment;
+import com.mic.home.fragment.AndroidUIChildFragment;
+import com.mic.home.fragment.AndroidUIFragment;
+import com.mic.home.fragment.FruitFragment;
 import com.mic.news.multitype.communicate.CommunicateFragment;
 import com.mic.news.multitype.moreapis.MoreApisPlaygroundFragment;
 import com.mic.news.multitype.multiselectable.MultiSelectableFragment;
@@ -36,7 +38,7 @@ public class HomeFragment extends BaseFragment {
 
     private RecyclerIndicatorView indicatorView;
     private ViewPager viewPager;
-    String[] names = {"Bilibili", "Normal","One2Many","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
+    String[] names = {"Fruit", "AndroidUI","UIChild","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
     private final ArrayList<BaseFragment> fragments = new ArrayList<>();
     public HomeFragment() {
         // Required empty public constructor
@@ -56,9 +58,9 @@ public class HomeFragment extends BaseFragment {
                 viewPager.setCurrentItem(select);
             }
         });
-        fragments.add(new BilibiliFragment());
-        fragments.add(new NormalFragment());
-        fragments.add(new OneToManyFragment());
+        fragments.add(new FruitFragment());
+        fragments.add(new AndroidUIFragment());
+        fragments.add(new AndroidUIChildFragment());
         fragments.add(new CommunicateFragment());
         fragments.add(new MultiSelectableFragment());
         fragments.add(new WeiboFragment());
@@ -95,6 +97,12 @@ public class HomeFragment extends BaseFragment {
         indicator.setOnTransitionListener(new OnTransitionTextListener().setColor(selectColor, unSelectColor).setSize(selectSize, unSelectSize));
 
         indicator.setCurrentItem(0,true);
+    }
+
+    public void toNextPage(){
+        if(indicatorView!=null){
+            indicatorView.setCurrentItem(indicatorView.getCurrentItem()+1);
+        }
     }
 
     private class MyAdapter extends Indicator.IndicatorAdapter {

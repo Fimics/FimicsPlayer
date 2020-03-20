@@ -38,7 +38,6 @@
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".training.activity.view.AllViewActivity" />
         <activity android:name=".training.activity.view.ViewItemActivity" />
         <activity android:name=".training.activity.view.ViewPagerActivity" />
         <activity android:name=".training.activity.view.ViewDrawFlowActivity" />
@@ -48,8 +47,6 @@
         <activity android:name=".training.activity.view.MyScrollViewActivity" />
         <activity android:name=".training.activity.view.BehaviorActivity" />
         <activity android:name=".training.activity.opensource.OpenSourceItemActivity" />
-        <activity android:name=".training.activity.opensource.ProxyActivity" />
-        <activity android:name=".training.activity.opensource.GlideActivity" />
         <activity android:name=".training.activity.opensource.HandleActivity" />
         <activity android:name=".training.activity.opensource.MainActivity" />
         <activity android:name=".training.activity.opensource.RxBindingActivity" />

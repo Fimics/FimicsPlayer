@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.mic.R;
 import com.mic.training.activity.view.NestedActivity;
-import com.mic.home.model.Fruit;
+import com.mic.home.bean.Fruit;
 
 import java.util.List;
 
@@ -48,7 +48,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
         if (mContext == null) {
             mContext = parent.getContext();
         }
-        View view = LayoutInflater.from(mContext).inflate(R.layout.fruit_item, parent, false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.binder_fruit_item, parent, false);
         final ViewHolder holder = new ViewHolder(view);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override

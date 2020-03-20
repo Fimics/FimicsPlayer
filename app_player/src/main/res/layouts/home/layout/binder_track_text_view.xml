@@ -20,15 +20,15 @@
        android:text="Hello World!" />
 
    <Button
+       android:id="@+id/left2right"
        android:layout_width="wrap_content"
        android:text="左到右"
-       android:onClick="leftToRight"
        android:layout_height="wrap_content" />
 
 
    <Button
+       android:id="@+id/right2left"
        android:layout_width="wrap_content"
        android:text="右到左"
-       android:onClick="rightToLeft"
        android:layout_height="wrap_content" />
 </LinearLayout>

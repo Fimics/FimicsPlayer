@@ -20,7 +20,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.mic.R;
 import com.mic.training.adapter.FruitAdapter;
-import com.mic.home.model.Fruit;
+import com.mic.home.bean.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;

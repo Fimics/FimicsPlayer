@@ -41,6 +41,11 @@ android {
                             'src/main/res/layouts/main',
                             'src/main/res/layouts/tab',
                             'src/main/res/layouts/view',
+                            'src/main/res/layouts/home',
+                            'src/main/res/layouts/news',
+                            'src/main/res/layouts/video',
+                            'src/main/res/layouts/msg',
+                            'src/main/res/layouts/user',
                             'src/main/res/layouts',
                             'src/main/res'
                     ]

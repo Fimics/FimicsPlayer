@@ -47,9 +47,6 @@ public class OpenSourceItemActivity extends AppCompatActivity {
 
     private void showItemView(int id){
         switch (id){
-            case GLIDE:
-                startActivity(GlideActivity.class);
-                break;
             case HANDLE:
                startActivity(HandleActivity.class);
                 break;

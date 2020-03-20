@@ -1,27 +1,32 @@
-package com.mic.home.tab;
+package com.mic.home.fragment;
 
 
 import android.os.Bundle;
-
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.VisibleForTesting;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import com.mic.BaseFragment;
 import com.mic.R;
-import com.mic.home.adapter.FruitAdapter;
-import com.mic.home.model.Fruit;
+import com.mic.home.bean.Fruit;
+import com.mic.home.binder.FruitBinder;
+import com.mic.news.multitype.bilibili.PostItemDecoration;
+import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.view.FimRecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 
-public class OldHomeFragment extends BaseFragment {
+public class FruitFragment extends BaseFragment {
 
+    private static final int SPAN_COUNT = 4;
+    @VisibleForTesting
     private Fruit[] fruits = {new Fruit("Apple", R.drawable.apple), new Fruit("Banana", R.drawable.banana),
             new Fruit("Orange", R.drawable.orange), new Fruit("Watermelon", R.drawable.watermelon),
             new Fruit("Pear", R.drawable.pear), new Fruit("Grape", R.drawable.grape),
@@ -29,29 +34,23 @@ public class OldHomeFragment extends BaseFragment {
             new Fruit("Cherry", R.drawable.cherry), new Fruit("Mango", R.drawable.mango)};
 
     private List<Fruit> fruitList = new ArrayList<>();
-
-    private FruitAdapter adapter;
-
+    private MultiTypeAdapter adapter;
     private SwipeRefreshLayout swipeRefresh;
+    private FimRecyclerView recyclerView;
 
-    public OldHomeFragment() {
-        // Required empty public constructor
+    public FruitFragment() {
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreateView(inflater,container,savedInstanceState);
+        return rootView;
+    }
 
-        // GridLayout 效果和 GridView很像
-
-        initFruits();
-        RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
-        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
-        recyclerView.setLayoutManager(layoutManager);
-        adapter = new FruitAdapter(fruitList);
-        recyclerView.setAdapter(adapter);
+    @Override
+    protected void initView() {
+        recyclerView = rootView.findViewById(R.id.recycler_view);
         swipeRefresh = rootView.findViewById(R.id.swipe_refresh);
         swipeRefresh.setColorSchemeResources(R.color.colorPrimary);
         swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -60,22 +59,32 @@ public class OldHomeFragment extends BaseFragment {
                 refreshFruits();
             }
         });
-        return rootView;
-    }
-
-    @Override
-    protected void initView() {
-
     }
 
     @Override
     protected void initData() {
-
+        initFruits();
+        adapter = new MultiTypeAdapter();
+        adapter.register(Fruit.class, new FruitBinder());
+        GridLayoutManager layoutManager = new GridLayoutManager(getContext(),SPAN_COUNT);
+        GridLayoutManager.SpanSizeLookup spanSizeLookup = new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+                return 2;
+            }
+        };
+        layoutManager.setSpanSizeLookup(spanSizeLookup);
+        recyclerView.setLayoutManager(layoutManager);
+        int space = 12;
+        recyclerView.addItemDecoration(new PostItemDecoration(space,spanSizeLookup));
+        recyclerView.setAdapter(adapter);
+        adapter.setItems(fruitList);
+        adapter.notifyDataSetChanged();
     }
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_home_old;
+        return R.layout.swipe_list;
     }
 
     private void refreshFruits() {
