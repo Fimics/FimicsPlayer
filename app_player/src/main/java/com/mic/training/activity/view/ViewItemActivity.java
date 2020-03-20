@@ -9,7 +9,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.mic.R;
-import com.mic.training.fragment.view.ListMenuFragment;
 import com.mic.training.fragment.view.LoveLayoutFragment;
 import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
@@ -75,9 +74,6 @@ public class ViewItemActivity extends AppCompatActivity {
                 break;
             case BEHAVIOR:
                 startActivity(BehaviorActivity.class);
-                break;
-            case LIST_MENU:
-                replaceFragment(new ListMenuFragment());
                 break;
             case MESSAGE_BUBBLEVIEW:
                 replaceFragment(new MessageBubbleViewFragment());

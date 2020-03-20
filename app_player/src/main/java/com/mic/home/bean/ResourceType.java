@@ -38,20 +38,20 @@ public class ResourceType {
     public static final int TYPE_SHAPE_VIEW = 5;
     public static final int TYPE_RATING_BAR = 6;
     public static final int TYPE_LETTER_SIDEBAR = 7;
-    public static final int TYPE_TOUCH_VIEW = 10;
-    public static final int TYPE_TOUCH_VIEWGROUP = 11;
-    public static final int TYPE_SLIDING_MENU = 12;
-    public static final int TYPE_QQSLIDING_MENU = 13;
-    public static final int TYPE_VERTICAL_DRAGLISTVIEW = 14;
-    public static final int TYPE_NESTED_SCROLLVIEW = 17;
-    public static final int TYPE_MYSCROLL_VIEW = 19;
-    public static final int TYPE_BEHAVIOR = 20;
-    public static final int TYPE_LOADING_VIEW = 21;
-    public static final int TYPE_LIST_MENU = 22;
-    public static final int TYPE_CIRCLEL_OADINGVIEW = 22;
-    public static final int TYPE_MESSAGE_BUBBLEVIEW = 24;
-    public static final int TYPE_MESSAGE_BUBBLEVIEW1 = 25;
-    public static final int TYPE_LOVE_LAYOUT = 26;
+    public static final int TYPE_TOUCH_VIEW = 8;
+    public static final int TYPE_TOUCH_VIEWGROUP = 9;
+    public static final int TYPE_SLIDING_MENU = 10;
+    public static final int TYPE_QQSLIDING_MENU = 11;
+    public static final int TYPE_VERTICAL_DRAGLISTVIEW = 12;
+    public static final int TYPE_NESTED_SCROLLVIEW = 13;
+    public static final int TYPE_MYSCROLL_VIEW = 14;
+    public static final int TYPE_BEHAVIOR = 15;
+    public static final int TYPE_LOADING_VIEW = 16;
+    public static final int TYPE_LIST_MENU = 17;
+    public static final int TYPE_CIRCLEL_OADINGVIEW = 18;
+    public static final int TYPE_MESSAGE_BUBBLEVIEW = 19;
+    public static final int TYPE_MESSAGE_BUBBLEVIEW1 = 20;
+    public static final int TYPE_LOVE_LAYOUT = 21;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
