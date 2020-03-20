@@ -18,7 +18,6 @@ import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
 import com.mic.training.fragment.view.QQSlidingMenuFragment;
 import com.mic.training.fragment.view.SlidingMenuFragment;
-import com.mic.training.fragment.view.TouchViewGroupFragment;
 import com.mic.training.fragment.view.VerticalDragListViewFragment;
 
 public class ViewItemActivity extends AppCompatActivity {
@@ -73,12 +72,6 @@ public class ViewItemActivity extends AppCompatActivity {
         switch (id){
             case VIEW_PAGER:
                 startActivity(ViewPagerActivity.class);
-                break;
-            case TOUCH_VIEW:
-                replaceFragment(new TouchViewFragment());
-                break;
-            case TOUCH_VIEWGROUP:
-                replaceFragment(new TouchViewGroupFragment());
                 break;
             case SLIDING_MENU:
                 replaceFragment(new SlidingMenuFragment());
