@@ -18,6 +18,7 @@ import com.mic.home.binder.QQStepBinder;
 import com.mic.home.binder.RatingBarBinder;
 import com.mic.home.binder.ShapeViewBinder;
 import com.mic.home.binder.TextViewBinder;
+import com.mic.home.binder.TouchViewBinder;
 import com.mic.home.binder.TrackTextViewBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
@@ -59,7 +60,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 new ProgressBarBinder(),
                 new ShapeViewBinder(getActivity()),
                 new RatingBarBinder(),
-                new LetterSideBarBinder()
+                new LetterSideBarBinder(),
+                new TouchViewBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -76,6 +78,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return RatingBarBinder.class;
             }else if(type==ResourceType.TYPE_LETTER_SIDEBAR){
                 return LetterSideBarBinder.class;
+            }else if(type==ResourceType.TYPE_TOUCH_VIEW){
+                return TouchViewBinder.class;
             }else {
                 return TextViewBinder.class;
             }

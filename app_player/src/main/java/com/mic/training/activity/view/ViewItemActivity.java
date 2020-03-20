@@ -18,7 +18,6 @@ import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
 import com.mic.training.fragment.view.QQSlidingMenuFragment;
 import com.mic.training.fragment.view.SlidingMenuFragment;
-import com.mic.training.fragment.view.TouchViewFragment;
 import com.mic.training.fragment.view.TouchViewGroupFragment;
 import com.mic.training.fragment.view.VerticalDragListViewFragment;
 
