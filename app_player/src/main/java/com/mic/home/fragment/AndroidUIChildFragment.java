@@ -16,6 +16,7 @@ import com.mic.home.binder.LetterSideBarBinder;
 import com.mic.home.binder.ListMenuBinder;
 import com.mic.home.binder.LoadingViewBinder;
 import com.mic.home.binder.LoadingViewCircleBinder;
+import com.mic.home.binder.LoveLayoutBinder;
 import com.mic.home.binder.ProgressBarBinder;
 import com.mic.home.binder.QQStepBinder;
 import com.mic.home.binder.RatingBarBinder;
@@ -75,7 +76,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 new VerticalDragListViewBinder(),
                 new LoadingViewBinder(),
                 new LoadingViewCircleBinder(),
-                new ListMenuBinder()
+                new ListMenuBinder(),
+                new LoveLayoutBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -108,6 +110,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return LoadingViewCircleBinder.class;
             }else if(type==ResourceType.TYPE_LIST_MENU){
                 return ListMenuBinder.class;
+            }else if(type==ResourceType.TYPE_LOVE_LAYOUT){
+                return LoveLayoutBinder.class;
             }else {
                 return TextViewBinder.class;
             }

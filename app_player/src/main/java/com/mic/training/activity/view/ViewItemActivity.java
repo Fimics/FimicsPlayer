@@ -9,7 +9,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.mic.R;
-import com.mic.training.fragment.view.LoveLayoutFragment;
 import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
 
@@ -80,9 +79,6 @@ public class ViewItemActivity extends AppCompatActivity {
                 break;
             case MESSAGE_BUBBLEVIEW1:
                 replaceFragment(new MessageBubbleView1Fragment());
-                break;
-            case LOVE_LAYOUT:
-                replaceFragment(new LoveLayoutFragment());
                 break;
         }
     }
