@@ -70,9 +70,9 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_QQ_STEP ,TYPE_QQ_STEP));
         uiArrayList.add(new AndroidUI( NAME_TRACKT_EXTVIEW ,TYPE_TRACKT_EXTVIEW));
         uiArrayList.add(new AndroidUI( NAME_PROGRESS_BAR ,TYPE_PROGRESS_BAR));
-        uiArrayList.add(new AndroidUI( NAME_VIEW_PAGER ,TYPE_VIEW_PAGER));
         uiArrayList.add(new AndroidUI( NAME_SHAPE_VIEW ,TYPE_SHAPE_VIEW));
         uiArrayList.add(new AndroidUI( NAME_RATING_BAR ,TYPE_RATING_BAR));
+        uiArrayList.add(new AndroidUI( NAME_VIEW_PAGER ,TYPE_VIEW_PAGER));
         uiArrayList.add(new AndroidUI( NAME_LETTER_SIDEBAR ,TYPE_LETTER_SIDEBAR));
         uiArrayList.add(new AndroidUI( NAME_VIEW_DRAWFLOW ,TYPE_VIEW_DRAWFLOW));
         uiArrayList.add(new AndroidUI( NAME_TAG_LAYOUT ,TYPE_TAG_LAYOUT));
