@@ -13,14 +13,11 @@ public class ResourceType {
     public static final String NAME_SHAPE_VIEW = "ShapeView";
     public static final String NAME_RATING_BAR = "RatingBar";
     public static final String NAME_LETTER_SIDEBAR = "LetterSideBar";
-    public static final String NAME_VIEW_DRAWFLOW = "ViewDrawFlow";
-    public static final String NAME_TAG_LAYOUT = "TagLayout";
     public static final String NAME_TOUCH_VIEW = "TouchView";
     public static final String NAME_TOUCH_VIEWGROUP = "TouchViewGroup";
     public static final String NAME_SLIDING_MENU = "SlidingMenu";
     public static final String NAME_QQSLIDING_MENU = "QQSlidingMenu";
     public static final String NAME_VERTICAL_DRAGLISTVIEW = "VerticalDragListView";
-    public static final String NAME_LOCK_PATTERNVIEW = "LockPatternView";
     public static final String NAME_SWIPE_REFRESH_LAYOUT = "SwipeRefreshLayout";
     public static final String NAME_NESTED_SCROLLVIEW = "NestedScrollView";
     public static final String NAME_STATUS_BAR = "StatusBar";
@@ -43,14 +40,11 @@ public class ResourceType {
     public static final int TYPE_SHAPE_VIEW = 5;
     public static final int TYPE_RATING_BAR = 6;
     public static final int TYPE_LETTER_SIDEBAR = 7;
-    public static final int TYPE_VIEW_DRAWFLOW = 8;
-    public static final int TYPE_TAG_LAYOUT = 9;
     public static final int TYPE_TOUCH_VIEW = 10;
     public static final int TYPE_TOUCH_VIEWGROUP = 11;
     public static final int TYPE_SLIDING_MENU = 12;
     public static final int TYPE_QQSLIDING_MENU = 13;
     public static final int TYPE_VERTICAL_DRAGLISTVIEW = 14;
-    public static final int TYPE_LOCK_PATTERNVIEW = 15;
     public static final int TYPE_SWIPE_REFRESH_LAYOUT = 16;
     public static final int TYPE_NESTED_SCROLLVIEW = 17;
     public static final int TYPE_STATUS_BAR = 18;
@@ -78,7 +72,6 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_SLIDING_MENU ,TYPE_SLIDING_MENU));
         uiArrayList.add(new AndroidUI( NAME_QQSLIDING_MENU ,TYPE_QQSLIDING_MENU));
         uiArrayList.add(new AndroidUI( NAME_VERTICAL_DRAGLISTVIEW ,TYPE_VERTICAL_DRAGLISTVIEW));
-        uiArrayList.add(new AndroidUI( NAME_LOCK_PATTERNVIEW ,TYPE_LOCK_PATTERNVIEW));
         uiArrayList.add(new AndroidUI( NAME_SWIPE_REFRESH_LAYOUT ,TYPE_SWIPE_REFRESH_LAYOUT));
         uiArrayList.add(new AndroidUI( NAME_NESTED_SCROLLVIEW ,TYPE_NESTED_SCROLLVIEW));
         uiArrayList.add(new AndroidUI( NAME_STATUS_BAR ,TYPE_STATUS_BAR));

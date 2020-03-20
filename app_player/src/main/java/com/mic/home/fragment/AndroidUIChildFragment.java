@@ -23,6 +23,7 @@ import com.mic.home.binder.TextViewBinder;
 import com.mic.home.binder.TouchViewBinder;
 import com.mic.home.binder.TouchViewGroupBinder;
 import com.mic.home.binder.TrackTextViewBinder;
+import com.mic.home.binder.VerticalDragListViewBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.view.FimRecyclerView;
@@ -67,7 +68,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 new TouchViewBinder(),
                 new TouchViewGroupBinder(),
                 new SlidingMenuBinder(),
-                new SlidingMenuQQBinder()
+                new SlidingMenuQQBinder(),
+                new VerticalDragListViewBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -92,6 +94,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return SlidingMenuBinder.class;
             }else if(type==ResourceType.TYPE_QQSLIDING_MENU){
                 return SlidingMenuQQBinder.class;
+            }else if(type==ResourceType.TYPE_VERTICAL_DRAGLISTVIEW){
+                return VerticalDragListViewBinder.class;
             }else {
                 return TextViewBinder.class;
             }
