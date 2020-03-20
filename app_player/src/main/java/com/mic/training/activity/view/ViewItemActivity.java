@@ -76,10 +76,7 @@ public class ViewItemActivity extends AppCompatActivity {
     }
 
 
-    private void replaceFragment(Fragment fragment){
-        transaction.replace(R.id.container,fragment);
-        transaction.commit();
-    }
+
 
     private void startActivity(Class clazz){
         finish();

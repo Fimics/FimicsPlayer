@@ -1,5 +1,6 @@
 package com.mic.home.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,10 @@ import com.mic.home.bean.ResourceType;
 import com.mic.home.binder.AndroidUIBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.training.activity.view.BehaviorActivity;
+import com.mic.training.activity.view.MyScrollViewActivity;
+import com.mic.training.activity.view.NestedActivity;
+import com.mic.training.activity.view.ViewPagerActivity;
 import com.mic.view.FimRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -82,10 +87,27 @@ public class AndroidUIFragment  extends BaseFragment {
     }
 
     private void send(int position){
-        HomeFragment homeFragment = (HomeFragment) this.getParentFragment();
-        homeFragment.toNextPage();
-        EventBus eventBus = EventBus.getDefault();
-        eventBus.post(mViews.get(position));
+        AndroidUI uiEvent = mViews.get(position);
+        int type = uiEvent.type;
+        if(type==ResourceType.TYPE_VIEW_PAGER){
+            startActivity(ViewPagerActivity.class);
+        }else if(type==ResourceType.TYPE_NESTED_SCROLLVIEW){
+            startActivity(NestedActivity.class);
+        }else if(type==ResourceType.TYPE_MYSCROLL_VIEW){
+            startActivity(MyScrollViewActivity.class);
+        }else if(type==ResourceType.TYPE_BEHAVIOR){
+            startActivity(BehaviorActivity.class);
+        }else{
+            HomeFragment homeFragment = (HomeFragment) this.getParentFragment();
+            homeFragment.toNextPage();
+            EventBus eventBus = EventBus.getDefault();
+            eventBus.post(uiEvent);
+        }
+    }
+
+    private void startActivity(Class clazz){
+        Intent intent = new Intent(getContext(),clazz);
+        startActivity(intent);
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)

@@ -1,5 +1,6 @@
 package com.mic.home.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +33,8 @@ import com.mic.home.binder.TrackTextViewBinder;
 import com.mic.home.binder.VerticalDragListViewBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.training.activity.view.ViewItemActivity;
+import com.mic.training.activity.view.ViewPagerActivity;
 import com.mic.view.FimRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -90,37 +93,37 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return QQStepBinder.class;
             } else if (type == ResourceType.TYPE_TRACKT_EXTVIEW) {
                 return TrackTextViewBinder.class;
-            }else if(type==ResourceType.TYPE_PROGRESS_BAR){
+            } else if (type == ResourceType.TYPE_PROGRESS_BAR) {
                 return ProgressBarBinder.class;
-            }else if(type==ResourceType.TYPE_SHAPE_VIEW){
+            } else if (type == ResourceType.TYPE_SHAPE_VIEW) {
                 return ShapeViewBinder.class;
-            }else if(type==ResourceType.TYPE_RATING_BAR){
+            } else if (type == ResourceType.TYPE_RATING_BAR) {
                 return RatingBarBinder.class;
-            }else if(type==ResourceType.TYPE_LETTER_SIDEBAR){
+            } else if (type == ResourceType.TYPE_LETTER_SIDEBAR) {
                 return LetterSideBarBinder.class;
-            }else if(type==ResourceType.TYPE_TOUCH_VIEW){
+            } else if (type == ResourceType.TYPE_TOUCH_VIEW) {
                 return TouchViewBinder.class;
-            }else if(type==ResourceType.TYPE_TOUCH_VIEWGROUP){
+            } else if (type == ResourceType.TYPE_TOUCH_VIEWGROUP) {
                 return TouchViewGroupBinder.class;
-            }else if(type==ResourceType.TYPE_SLIDING_MENU){
+            } else if (type == ResourceType.TYPE_SLIDING_MENU) {
                 return SlidingMenuBinder.class;
-            }else if(type==ResourceType.TYPE_QQSLIDING_MENU){
+            } else if (type == ResourceType.TYPE_QQSLIDING_MENU) {
                 return SlidingMenuQQBinder.class;
-            }else if(type==ResourceType.TYPE_VERTICAL_DRAGLISTVIEW){
+            } else if (type == ResourceType.TYPE_VERTICAL_DRAGLISTVIEW) {
                 return VerticalDragListViewBinder.class;
-            }else if(type==ResourceType.TYPE_LOADING_VIEW){
+            } else if (type == ResourceType.TYPE_LOADING_VIEW) {
                 return LoadingViewBinder.class;
-            }else if(type==ResourceType.TYPE_CIRCLEL_OADINGVIEW){
+            } else if (type == ResourceType.TYPE_CIRCLEL_OADINGVIEW) {
                 return LoadingViewCircleBinder.class;
-            }else if(type==ResourceType.TYPE_LIST_MENU){
+            } else if (type == ResourceType.TYPE_LIST_MENU) {
                 return ListMenuBinder.class;
-            }else if(type==ResourceType.TYPE_LOVE_LAYOUT){
+            } else if (type == ResourceType.TYPE_LOVE_LAYOUT) {
                 return LoveLayoutBinder.class;
-            }else if(type==ResourceType.TYPE_MESSAGE_BUBBLEVIEW){
+            } else if (type == ResourceType.TYPE_MESSAGE_BUBBLEVIEW) {
                 return MessageBubbleViewBinder.class;
-            }else if(type==ResourceType.TYPE_MESSAGE_BUBBLEVIEW1){
+            } else if (type == ResourceType.TYPE_MESSAGE_BUBBLEVIEW1) {
                 return MessageBubbleViewBinder1.class;
-            }else {
+            } else {
                 return TextViewBinder.class;
             }
         });
