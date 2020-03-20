@@ -18,6 +18,7 @@ import com.mic.home.binder.QQStepBinder;
 import com.mic.home.binder.RatingBarBinder;
 import com.mic.home.binder.ShapeViewBinder;
 import com.mic.home.binder.SlidingMenuBinder;
+import com.mic.home.binder.SlidingMenuQQBinder;
 import com.mic.home.binder.TextViewBinder;
 import com.mic.home.binder.TouchViewBinder;
 import com.mic.home.binder.TouchViewGroupBinder;
@@ -65,7 +66,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 new LetterSideBarBinder(),
                 new TouchViewBinder(),
                 new TouchViewGroupBinder(),
-                new SlidingMenuBinder()
+                new SlidingMenuBinder(),
+                new SlidingMenuQQBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -88,6 +90,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return TouchViewGroupBinder.class;
             }else if(type==ResourceType.TYPE_SLIDING_MENU){
                 return SlidingMenuBinder.class;
+            }else if(type==ResourceType.TYPE_QQSLIDING_MENU){
+                return SlidingMenuQQBinder.class;
             }else {
                 return TextViewBinder.class;
             }
