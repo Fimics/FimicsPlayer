@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-import com.mic.training.adapter.BaseMenuAdapter;
+import com.mic.home.adapter.BaseMenuAdapter;
 
 /**
  * Created by hcDarren on 2017/7/23.

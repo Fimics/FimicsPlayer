@@ -1,4 +1,4 @@
-package com.mic.training.adapter;
+package com.mic.home.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
