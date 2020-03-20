@@ -12,6 +12,7 @@ import com.mic.BaseFragment;
 import com.mic.R;
 import com.mic.home.bean.AndroidUI;
 import com.mic.home.bean.ResourceType;
+import com.mic.home.binder.ProgressBarBinder;
 import com.mic.home.binder.QQStepBinder;
 import com.mic.home.binder.TextViewBinder;
 import com.mic.home.binder.TrackTextViewBinder;
@@ -51,7 +52,8 @@ public class AndroidUIChildFragment extends BaseFragment {
         adapter.register(AndroidUI.class).to(
                 new TextViewBinder(),
                 new QQStepBinder(),
-                new TrackTextViewBinder()
+                new TrackTextViewBinder(),
+                new ProgressBarBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -60,6 +62,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return QQStepBinder.class;
             } else if (type == ResourceType.TYPE_TRACKT_EXTVIEW) {
                 return TrackTextViewBinder.class;
+            }else if(type==ResourceType.TYPE_PROGRESS_BAR){
+                return ProgressBarBinder.class;
             } else {
                 return TextViewBinder.class;
             }

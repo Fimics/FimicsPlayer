@@ -17,7 +17,6 @@ import com.mic.training.fragment.view.LockPatternViewFragment;
 import com.mic.training.fragment.view.LoveLayoutFragment;
 import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
-import com.mic.training.fragment.view.ProgressBarFragment;
 import com.mic.training.fragment.view.QQSlidingMenuFragment;
 import com.mic.training.fragment.view.RatingBarFragment;
 import com.mic.training.fragment.view.ShapeFragment;
@@ -77,9 +76,6 @@ public class ViewItemActivity extends AppCompatActivity {
 
     private void showItemView(int id){
         switch (id){
-            case PROGRESS_BAR:
-                replaceFragment(new ProgressBarFragment());
-                break;
             case VIEW_PAGER:
                 startActivity(ViewPagerActivity.class);
                 break;
