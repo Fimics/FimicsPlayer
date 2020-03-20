@@ -40,7 +40,6 @@
             tools:ignore="LockedOrientationActivity" />
         <activity android:name=".training.activity.view.ViewItemActivity" />
         <activity android:name=".training.activity.view.ViewPagerActivity" />
-        <activity android:name=".training.activity.view.ViewDrawFlowActivity" />
         <activity android:name=".training.activity.view.NestedActivity" />
         <activity android:name=".training.activity.view.SwipeActivity" />
         <activity android:name=".training.activity.view.StatusBarActivity" />

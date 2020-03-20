@@ -76,9 +76,6 @@ public class ViewItemActivity extends AppCompatActivity {
             case VIEW_PAGER:
                 startActivity(ViewPagerActivity.class);
                 break;
-            case VIEW_DRAW_FLOW:
-                startActivity(ViewDrawFlowActivity.class);
-                break;
             case TAG_LAYOUT:
                 replaceFragment(new TagLayoutFragment());
                 break;

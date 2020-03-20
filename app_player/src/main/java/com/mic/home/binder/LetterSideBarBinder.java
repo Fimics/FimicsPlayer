@@ -21,7 +21,20 @@ public class LetterSideBarBinder extends ItemViewBinder<AndroidUI, LetterSideBar
 
     @Override
     protected void onBindViewHolder(@NonNull ViewHolder holder, @NonNull AndroidUI item) {
-
+//        mTextView.post(new Runnable() {
+//            // 保存到Queue中，什么都没干，会在dispatchAttachedToWindow会在测量完毕之后调用中执行，executeActions（）
+//            @Override
+//            public void run() {
+//                Log.e("TAG", "height2 -> " + mTextView.getMeasuredHeight()); // 高度
+//            }
+//        });
+//
+//        mTextView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+//            @Override
+//            public void onGlobalLayout() {
+//                Log.e("TAG", "height5 -> " + mTextView.getMeasuredHeight());
+//            }
+//        });
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder{
