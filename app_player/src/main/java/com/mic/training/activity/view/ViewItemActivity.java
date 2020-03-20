@@ -11,7 +11,6 @@ import androidx.fragment.app.FragmentTransaction;
 import com.mic.R;
 import com.mic.training.fragment.view.CircleLoadingViewFragment;
 import com.mic.training.fragment.view.ListMenuFragment;
-import com.mic.training.fragment.view.LoadingViewFragment;
 import com.mic.training.fragment.view.LoveLayoutFragment;
 import com.mic.training.fragment.view.MessageBubbleView1Fragment;
 import com.mic.training.fragment.view.MessageBubbleViewFragment;
@@ -77,9 +76,6 @@ public class ViewItemActivity extends AppCompatActivity {
                 break;
             case BEHAVIOR:
                 startActivity(BehaviorActivity.class);
-                break;
-            case LOADING_VIEW:
-                replaceFragment(new LoadingViewFragment());
                 break;
             case LIST_MENU:
                 replaceFragment(new ListMenuFragment());
