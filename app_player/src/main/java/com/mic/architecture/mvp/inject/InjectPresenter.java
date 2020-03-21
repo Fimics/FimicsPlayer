@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 通过注解注入 prewenter
+ * 通过注解注入 presenter
  */
 @Target(ElementType.FIELD)// 属性
 @Retention(RetentionPolicy.RUNTIME)// 运行时

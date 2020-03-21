@@ -6,9 +6,6 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Proxy;
 import java.lang.reflect.Type;
 
-/**
- * Created by hcDarren on 2018/1/1.
- */
 
 public class BasePresenter<V extends BaseView,M extends BaseModel> {
     // 目前两个两个公用方法 ，传递的时候 会有不同的 View ，怎么办？泛型

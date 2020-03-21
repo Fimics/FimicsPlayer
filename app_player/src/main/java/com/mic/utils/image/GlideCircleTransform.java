@@ -1,4 +1,4 @@
-package com.mic.utils.helper;
+package com.mic.utils.image;
 
 import android.content.Context;
 import android.graphics.Bitmap;

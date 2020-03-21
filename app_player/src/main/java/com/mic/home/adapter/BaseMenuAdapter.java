@@ -4,7 +4,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by hcDarren on 2017/7/23.
  * 筛选菜单的 Adapter
  */
 

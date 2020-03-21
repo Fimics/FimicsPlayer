@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
-import com.mic.utils.collection.CollectionUtils;
 import com.mic.utils.file.SafeSharedPreferences;
 
 import java.util.List;
@@ -116,7 +115,7 @@ public class SPUtils {
      * @return
      */
     public static boolean putAll(String name, String key, List<?> list) {
-        if (TextUtils.isEmpty(key) || CollectionUtils.isEmpty(list)) {
+        if (TextUtils.isEmpty(key)) {
             throw new RuntimeException("key or list cannot be null.");
         }
         SharedPreferences.Editor editor = getSharedPreferences(name).edit();
