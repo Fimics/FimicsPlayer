@@ -1,4 +1,4 @@
-package com.mic.training.activity.opensource;
+package com.mic.home.activity;
 
 import android.os.Bundle;
 import android.text.TextUtils;

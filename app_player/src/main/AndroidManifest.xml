@@ -42,13 +42,11 @@
         <activity android:name=".user.UserDetailNestedActivity" />
         <activity android:name=".video.VideoDetailMyScrollViewActivity" />
         <activity android:name=".news.NewsDetailBehaviorActivity" />
-        <activity android:name=".training.activity.opensource.OpenSourceItemActivity" />
-        <activity android:name=".training.activity.opensource.HandleActivity" />
-        <activity android:name=".training.activity.opensource.MainActivity" />
-        <activity android:name=".training.activity.opensource.RxBindingActivity" />
-        <activity android:name=".training.activity.opensource.RxBitmapActivity" />
-        <activity android:name=".training.activity.opensource.RxPermissionsActivity" />
-        <activity android:name=".training.activity.opensource.UpdateUIActivity" />
+        <activity android:name=".home.activity.MainActivity" />
+        <activity android:name=".home.activity.RxBindingActivity" />
+        <activity android:name=".home.activity.RxBitmapActivity" />
+        <activity android:name=".home.activity.RxPermissionsActivity" />
+        <activity android:name=".home.activity.UpdateUIActivity" />
 
         <service android:name=".service.MessageService">
 

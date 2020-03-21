@@ -23,7 +23,7 @@ public class UserDetailNestedActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fruit);
+        setContentView(R.layout.activity_user_detail);
         Intent intent = getIntent();
         String fruitName = intent.getStringExtra(FRUIT_NAME);
         int fruitImageId = intent.getIntExtra(FRUIT_IMAGE_ID, 0);

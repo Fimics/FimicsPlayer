@@ -1,4 +1,4 @@
-package com.mic.training.activity.opensource;
+package com.mic.home.activity;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -41,9 +41,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
         //startService(new Intent(this, MessageService.class));
 
-        btnBindService = findViewById(R.id.btn_bindService);
-        btnShowname=findViewById(R.id.btn_showname);
-        btnHookActivty=findViewById(R.id.btn_hook_activty);
+//        btnBindService = findViewById(R.idgs.btn_bindService);
+//        btnShowname=findViewById(R.id.btn_showname);
+//        btnHookActivty=findViewById(R.id.btn_hook_activty);
 
         //测试全局异常捕获
         //int a = 20 / 1;
@@ -93,18 +93,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_bindService:
-                testAidl();
-                break;
-            case R.id.btn_showname:
-                try {
-                    Toast.makeText(this, mUserAidl.getUserName(), Toast.LENGTH_SHORT).show();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                break;
-        }
+//        switch (view.getId()) {
+//            case R.id.btn_bindService:
+//                testAidl();
+//                break;
+//            case R.id.btn_showname:
+//                try {
+//                    Toast.makeText(this, mUserAidl.getUserName(), Toast.LENGTH_SHORT).show();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//                break;
+//        }
     }
 
     private class Conn implements ServiceConnection {
