@@ -18,6 +18,7 @@ import com.mic.home.binder.AndroidUIBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.news.NewsDetailBehaviorActivity;
+import com.mic.user.LoginDialogFragment;
 import com.mic.video.VideoDetailMyScrollViewActivity;
 import com.mic.user.UserDetailNestedActivity;
 import com.mic.home.ViewPagerActivity;
@@ -97,6 +98,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(VideoDetailMyScrollViewActivity.class);
         }else if(type==ResourceType.TYPE_BEHAVIOR){
             startActivity(NewsDetailBehaviorActivity.class);
+        }else if(type==ResourceType.TYPE_LOGIN){
+            LoginDialogFragment.instance().show(getActivity());
         }else{
             HomeFragment homeFragment = (HomeFragment) this.getParentFragment();
             homeFragment.toNextPage();

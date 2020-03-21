@@ -27,6 +27,7 @@ public class ResourceType {
     public static final String NAME_MESSAGE_BUBBLEVIEW = "MessageBubbleView";
     public static final String NAME_MESSAGE_BUBBLEVIEW1 = "MessageBubbleView1";
     public static final String NAME_LOVE_LAYOUT = "LoveLayout";
+    public static final String NAME_LOGIN = "login";
 
 
     //android ui type
@@ -52,6 +53,7 @@ public class ResourceType {
     public static final int TYPE_MESSAGE_BUBBLEVIEW = 19;
     public static final int TYPE_MESSAGE_BUBBLEVIEW1 = 20;
     public static final int TYPE_LOVE_LAYOUT = 21;
+    public static final int TYPE_LOGIN = 22;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -78,6 +80,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_NESTED_SCROLLVIEW ,TYPE_NESTED_SCROLLVIEW));
         uiArrayList.add(new AndroidUI( NAME_MYSCROLL_VIEW ,TYPE_MYSCROLL_VIEW));
         uiArrayList.add(new AndroidUI( NAME_BEHAVIOR ,TYPE_BEHAVIOR));
+        uiArrayList.add(new AndroidUI( NAME_LOGIN ,TYPE_LOGIN));
         return uiArrayList;
     }
 }

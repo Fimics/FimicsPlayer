@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@color/transparent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:background="@drawable/bg_login"
+        >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_to_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="20dp"
+        android:text="登录..."
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/facebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:drawablePadding="6dp"
+        android:background="@drawable/bg_login_item"
+        android:drawableLeft="@drawable/ic_login_btn_facebook"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:paddingLeft="14dp"
+        android:paddingRight="24dp"
+        android:text="Facebook登录"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="16dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/googleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_login_item"
+        android:drawableLeft="@drawable/ic_login_btn_google"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:paddingLeft="14dp"
+        android:paddingRight="24dp"
+        android:text="Google登录"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/phoneLogin"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_login_item"
+        android:drawableLeft="@drawable/ic_login_btn_phone"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:paddingLeft="14dp"
+        android:paddingRight="24dp"
+        android:text="手机号登录"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+</LinearLayout>
