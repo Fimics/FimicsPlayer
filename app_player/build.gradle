@@ -11,6 +11,8 @@ android {
         versionName rootProject.ext.android.versionName
         multiDexEnabled true
 
+        manifestPlaceholders = [hostName:"www.example.com"]
+
 //        ndk {
 //            abiFilters 'x86', 'x86_64', 'armeabi-v7a'
 //        }
@@ -21,6 +23,26 @@ android {
 //            }
 //        }
     }
+
+//    flavorDimensions "version"
+//    productFlavors {
+//        free {
+//            dimension "version"
+//            minSdkVersion 21
+//            versionNameSuffix "-free"
+//            applicationIdSuffix ".dev"
+//        }
+//
+//
+//        pro {
+//            dimension "version"
+//            minSdkVersion 21
+//            versionNameSuffix "-pro"
+//            applicationIdSuffix ".pro"
+//        }
+//
+//    }
+
     buildTypes {
         release {
             minifyEnabled true
@@ -28,8 +50,8 @@ android {
         }
 
         debug {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".debug"
+            debuggable true
         }
     }
 
