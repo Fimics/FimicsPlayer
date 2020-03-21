@@ -31,8 +31,8 @@ public class RxBindingActivity extends AppCompatActivity {
 
 
 
-        mUserNameEt = (EditText) findViewById(R.id.user_name_et);
-        mUserPwdEt = (EditText) findViewById(R.id.user_password_et);
+        mUserNameEt = findViewById(R.id.user_name_et);
+        mUserPwdEt = findViewById(R.id.user_password_et);
         mClearContent = findViewById(R.id.clear_content);
         log("main");
 

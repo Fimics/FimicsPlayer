@@ -27,10 +27,10 @@ public class UserDetailNestedActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String fruitName = intent.getStringExtra(FRUIT_NAME);
         int fruitImageId = intent.getIntExtra(FRUIT_IMAGE_ID, 0);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        CollapsingToolbarLayout collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        ImageView fruitImageView = (ImageView) findViewById(R.id.fruit_image_view);
-        TextView fruitContentText = (TextView) findViewById(R.id.fruit_content_text);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        CollapsingToolbarLayout collapsingToolbar = findViewById(R.id.collapsing_toolbar);
+        ImageView fruitImageView = findViewById(R.id.fruit_image_view);
+        TextView fruitContentText = findViewById(R.id.fruit_content_text);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

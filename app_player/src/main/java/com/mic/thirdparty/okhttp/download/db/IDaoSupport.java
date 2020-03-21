@@ -12,10 +12,10 @@ public interface IDaoSupport<T> {
 
     void init(SQLiteDatabase sqLiteDatabase, Class<T> clazz);
     // 插入数据
-    public long insert(T t);
+    long insert(T t);
 
     // 批量插入  检测性能
-    public void insert(List<T> datas);
+    void insert(List<T> datas);
 
     // 获取专门查询的支持类
     QuerySupport<T> querySupport();

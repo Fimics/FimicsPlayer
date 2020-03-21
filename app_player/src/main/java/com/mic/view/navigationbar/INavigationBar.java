@@ -9,9 +9,9 @@ package com.mic.view.navigationbar;
 public interface INavigationBar {
 
     // 头部的规范
-    public int bindLayoutId();
+    int bindLayoutId();
 
 
     // 绑定头部的参数
-    public void applyView();
+    void applyView();
 }

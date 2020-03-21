@@ -40,7 +40,7 @@ public class LogUtils {
         StackTraceElement thisMethodStack = (new Exception()).getStackTrace()[2];
         String result = thisMethodStack.getClassName();
         int lastIndex = result.lastIndexOf(".");
-        result = result.substring(lastIndex + 1, result.length());
+        result = result.substring(lastIndex + 1);
         return result;
     }
 

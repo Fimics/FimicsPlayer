@@ -80,7 +80,7 @@ public class RxBitmapActivity extends AppCompatActivity {
         // 1.开启线程下载图片
         // 2.加水印
         // 3.切换到主线程显示图片
-        mImage = (ImageView) findViewById(R.id.image);
+        mImage = findViewById(R.id.image);
         // 好处？可读性比较高，一条链子下来的（可读性高），扩展性，维护性，等等
         // 学习成本要高，思想难以转换（事件流）
         Observable.just("http://img.taopic.com/uploads/allimg/130331/240460-13033106243430.jpg")

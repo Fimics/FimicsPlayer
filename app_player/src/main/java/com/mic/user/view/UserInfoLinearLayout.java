@@ -79,11 +79,7 @@ public class UserInfoLinearLayout extends LinearLayout {
         for(int i=0;i<count;i++){
             View view = this.getChildAt(i);
             String viewTag = (String) view.getTag();
-            if(tag.trim().equalsIgnoreCase(viewTag.trim())){
-                return true;
-            }else{
-                return false;
-            }
+            return tag.trim().equalsIgnoreCase(viewTag.trim());
         }
 
         return false;

@@ -63,7 +63,7 @@ public class LoadingView extends LinearLayout{
         // this 代表把 ui_loading_view 加载到 LoadingView 中
         inflate(getContext(), R.layout.ui_loading_view,this);
 
-        mShapeView = (ShapeView) findViewById(R.id.shape_view);
+        mShapeView = findViewById(R.id.shape_view);
         mShadowView = findViewById(R.id.shadow_view);
 
         post(new Runnable() {

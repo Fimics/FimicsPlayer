@@ -224,7 +224,7 @@ public class BannerViewPager extends ViewPager {
 
     // 10.优化思想 点击回调监听
     public interface BannerItemClickListener {
-        public void click(int position);
+        void click(int position);
     }
 
     // 管理Activity的生命周期

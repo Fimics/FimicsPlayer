@@ -49,7 +49,7 @@ public abstract class BaseFragment extends Fragment {
 	}
 
 	public void setContentView(int layoutResID) {
-		setContentView((ViewGroup) inflater.inflate(layoutResID, container, false));
+		setContentView(inflater.inflate(layoutResID, container, false));
 	}
 
 	public void setContentView(View view) {

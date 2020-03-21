@@ -30,8 +30,8 @@ public class ViewPagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
         mIndicators = new ArrayList<>();
-        mIndicatorContainer = (LinearLayout) findViewById(R.id.indicator_view);
-        mViewPager = (ViewPager) findViewById(R.id.view_pager);
+        mIndicatorContainer = findViewById(R.id.indicator_view);
+        mViewPager = findViewById(R.id.view_pager);
         initIndicator();
         initViewPager();
     }

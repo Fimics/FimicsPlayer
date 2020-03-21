@@ -36,7 +36,7 @@ public class SDCardUtils {
     }
 
     public static String getCachePath(String cachePath) {
-        if (!isSDCardEnable()) return Environment.getDownloadCacheDirectory().getPath() + File.separator + cachePath + File.separator;;
+        if (!isSDCardEnable()) return Environment.getDownloadCacheDirectory().getPath() + File.separator + cachePath + File.separator;
         return Environment.getExternalStorageDirectory().getPath() + File.separator + cachePath + File.separator;
     }
     /**

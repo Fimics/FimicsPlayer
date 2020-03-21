@@ -22,6 +22,7 @@ import com.google.gson.Gson;
 import com.mic.news.multitype.Savable;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 
 /**
@@ -60,5 +61,5 @@ public class TextItem implements Savable {
   String describe() { return "Text"; }
 
 
-  private static final Charset UTF_8 = Charset.forName("UTF-8");
+  private static final Charset UTF_8 = StandardCharsets.UTF_8;
 }

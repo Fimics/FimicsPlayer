@@ -114,9 +114,9 @@ public class BannerView extends RelativeLayout {
      * 初始化View
      */
     private void initView() {
-        mBannerVp = (BannerViewPager) findViewById(R.id.banner_vp);
-        mBannerDescTv = (TextView) findViewById(R.id.banner_desc_tv);
-        mDotContainerView = (LinearLayout) findViewById(R.id.dot_container);
+        mBannerVp = findViewById(R.id.banner_vp);
+        mBannerDescTv = findViewById(R.id.banner_desc_tv);
+        mDotContainerView = findViewById(R.id.dot_container);
         mBannerBv = findViewById(R.id.banner_bottom_view);
         mBannerBv.setBackgroundColor(mBottomColor);
     }

@@ -306,7 +306,7 @@ public class DisplayUtil {
      */
     public static int sp2dp(Context context, float spValue) {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
-        return (int) px2dip(context, (spValue * fontScale + 0.5f));
+        return px2dip(context, (spValue * fontScale + 0.5f));
     }
 
     /**

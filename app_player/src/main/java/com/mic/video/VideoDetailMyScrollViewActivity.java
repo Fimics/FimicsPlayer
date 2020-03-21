@@ -27,7 +27,7 @@ public class VideoDetailMyScrollViewActivity extends AppCompatActivity {
         //  1.刚进来背景完全透明
         mTitleBar = findViewById(R.id.title_bar);
         mTitleBar.getBackground().setAlpha(0);
-        mImageView = (ImageView) findViewById(R.id.image_view);
+        mImageView = findViewById(R.id.image_view);
 
         // 这里是拿不到高度，布局绘制流程源码分析
         mImageView.post(new Runnable() {
@@ -38,7 +38,7 @@ public class VideoDetailMyScrollViewActivity extends AppCompatActivity {
         });
 
         // 不断的监听滚动 判断当前滚动的位置跟头部的ImageView比较计算背景透明度
-        mScrollView = (MyScrollView) findViewById(R.id.scroll_view);
+        mScrollView = findViewById(R.id.scroll_view);
         mScrollView.setOnScrollChangeListener(new MyScrollView.ScrollChangeListener() {
             @Override
             public void onScroll(int l, int t, int oldl, int oldt) {

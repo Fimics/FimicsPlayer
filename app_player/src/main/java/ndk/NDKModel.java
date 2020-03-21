@@ -51,7 +51,7 @@ public class NDKModel {
     public native  Point createPoint();
 
     //native 对java数组排序
-    public native void sort(int arr[]);
+    public native void sort(int[] arr);
 
     public native void localRef();
 

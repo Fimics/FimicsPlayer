@@ -33,7 +33,7 @@ public class PagerItemFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_item, null);
-        TextView tv = (TextView) view.findViewById(R.id.text);
+        TextView tv = view.findViewById(R.id.text);
         Bundle bundle = getArguments();
         tv.setText(bundle.getString("title"));
         return view;

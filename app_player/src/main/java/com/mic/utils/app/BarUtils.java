@@ -98,7 +98,7 @@ public class BarUtils {
      */
     public static void setColorForSwipeBack(Activity activity, int color, int statusBarAlpha) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            ViewGroup contentView = ((ViewGroup) activity.findViewById(android.R.id.content));
+            ViewGroup contentView = activity.findViewById(android.R.id.content);
             contentView.setPadding(0, getStatusBarHeight(activity), 0, 0);
             contentView.setBackgroundColor(calculateStatusColor(color, statusBarAlpha));
             setTransparentForWindow(activity);
@@ -484,7 +484,7 @@ public class BarUtils {
      * @param statusBarAlpha 透明值
      */
     private static void addTranslucentView(Activity activity, int statusBarAlpha) {
-        ViewGroup contentView = (ViewGroup) activity.findViewById(android.R.id.content);
+        ViewGroup contentView = activity.findViewById(android.R.id.content);
         if (contentView.getChildCount() > 1) {
             contentView.getChildAt(1).setBackgroundColor(Color.argb(statusBarAlpha, 0, 0, 0));
         } else {

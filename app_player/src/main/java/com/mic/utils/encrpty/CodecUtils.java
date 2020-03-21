@@ -515,10 +515,7 @@ public class CodecUtils {
     }
 
     public static boolean checkNull(String text) {
-        if (text == null || text.length() == 0)
-            return true;
-        else
-            return false;
+        return text == null || text.length() == 0;
     }
 
     public enum Algorithm {

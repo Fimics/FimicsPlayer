@@ -30,7 +30,7 @@ public class MyScrollView extends ScrollView{
     }
 
     public interface ScrollChangeListener{
-        public void onScroll(int l, int t, int oldl, int oldt);
+        void onScroll(int l, int t, int oldl, int oldt);
     }
 
     private ScrollChangeListener mListener;

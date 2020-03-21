@@ -21,7 +21,7 @@ public class NDKTest {
         Logger.d(Logger.TAG.HOME,"ndkmodel->add->native:"+nativeAddResult);
 
         //c 调用java 的static方法
-        String uuid = ndkModel.callStaticMethod();
+        String uuid = NDKModel.callStaticMethod();
         Logger.d(Logger.TAG.HOME,"ndkmodel->callStaticMethod--uuid:"+uuid);
 
         //怎么样在c层构建java对象，并返回给java层
@@ -31,7 +31,7 @@ public class NDKTest {
         }
 
 
-        int arr []={1,4,9,0,-5,-90,44,66,92,23,-2};
+        int[] arr ={1,4,9,0,-5,-90,44,66,92,23,-2};
         ndkModel.sort(arr);
         for (int k:arr) {
             Logger.d(Logger.TAG.HOME,"k--> "+k);

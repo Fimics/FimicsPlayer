@@ -26,7 +26,7 @@ public class BaseDao<T> implements IDao<T> {
         querySupport =QuerySupport.init(database,clazz);
 
         if(!isCreated){
-           tableManager.createTable();
+           TableManager.createTable();
         }
         isCreated=true;
     }
@@ -35,7 +35,7 @@ public class BaseDao<T> implements IDao<T> {
     @Override
     public long insert(T t) {
         ContentValues values = ValuesMnager.modelToContentValues(t,mClazz);
-        long result =database.insert(tableManager.getTableName(mClazz),null,values);
+        long result =database.insert(TableManager.getTableName(mClazz),null,values);
         return result;
     }
 

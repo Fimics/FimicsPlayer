@@ -6,5 +6,5 @@ package com.mic.view.recyclerview.adapter;
  * Description: Adapter条目的点击事件
  */
 public interface OnItemClickListener {
-    public void onItemClick(int position);
+    void onItemClick(int position);
 }

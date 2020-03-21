@@ -39,7 +39,7 @@ public class AndroidUIBinder extends ItemViewBinder<AndroidUI, AndroidUIBinder.V
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.android_ui_tv_name);
-            cardView = itemView.findViewById(R.id.cardview);
+            cardView = itemView.findViewById(R.id.card_view);
             cardView.setOnClickListener(view -> {
                 if(listener!=null){
                     int position = getAdapterPosition();
@@ -50,6 +50,6 @@ public class AndroidUIBinder extends ItemViewBinder<AndroidUI, AndroidUIBinder.V
     }
 
     public interface ItemClickListener{
-        public void onItemOnClick(int position);
+        void onItemOnClick(int position);
     }
 }

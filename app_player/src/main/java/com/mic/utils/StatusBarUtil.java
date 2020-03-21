@@ -43,7 +43,7 @@ public class StatusBarUtil {
             decorView.addView(view);
 
             // 获取activity中setContentView布局的根布局
-            ViewGroup contentView = (ViewGroup) activity.findViewById(android.R.id.content);
+            ViewGroup contentView = activity.findViewById(android.R.id.content);
             contentView.setPadding(0,getStatusBarHeight(activity),0,0);
             // View activityView = contentView.getChildAt(0);
             // activityView.setFitsSystemWindows(true);

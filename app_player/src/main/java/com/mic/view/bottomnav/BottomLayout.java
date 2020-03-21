@@ -60,7 +60,7 @@ public class BottomLayout extends RelativeLayout implements View.OnClickListener
     public BottomLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.setBackgroundColor(Color.parseColor(defBgColor));
-        this.mWidth= (int) DisplayUtil.getScreenWidth(context);
+        this.mWidth= DisplayUtil.getScreenWidth(context);
         this.mDensity =DisplayUtil.getScreenDensity(context);
     }
 

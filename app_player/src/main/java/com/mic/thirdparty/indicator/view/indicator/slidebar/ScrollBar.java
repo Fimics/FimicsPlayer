@@ -3,7 +3,7 @@ package com.mic.thirdparty.indicator.view.indicator.slidebar;
 import android.view.View;
 
 public interface ScrollBar {
-    public static enum Gravity {
+    enum Gravity {
         TOP,
         TOP_FLOAT,
         BOTTOM,
@@ -12,13 +12,13 @@ public interface ScrollBar {
         CENTENT_BACKGROUND
     }
 
-    public int getHeight(int tabHeight);
+    int getHeight(int tabHeight);
 
-    public int getWidth(int tabWidth);
+    int getWidth(int tabWidth);
 
-    public View getSlideView();
+    View getSlideView();
 
-    public Gravity getGravity();
+    Gravity getGravity();
 
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels);
+    void onPageScrolled(int position, float positionOffset, int positionOffsetPixels);
 }

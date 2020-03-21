@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 drakeet. https://github.com/drakeet
+ * Copyright 2016  https://github.com/drakeet
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

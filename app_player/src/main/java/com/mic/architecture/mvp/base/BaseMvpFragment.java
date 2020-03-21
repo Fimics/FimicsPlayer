@@ -23,7 +23,7 @@ public abstract class BaseMvpFragment<P extends BasePresenter> extends BaseFragm
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mvpProxy=createMvpProxy();
-        View view =super.onCreateView(inflater,container,savedInstanceState);;
+        View view =super.onCreateView(inflater,container,savedInstanceState);
         return view;
     }
 

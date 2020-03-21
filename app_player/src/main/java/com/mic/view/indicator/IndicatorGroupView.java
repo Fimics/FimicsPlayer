@@ -123,7 +123,7 @@ public class IndicatorGroupView extends FrameLayout {
             return;
         }
         // 最终要移动的位置
-        int finalLeftMargin = (int) ((position) * mItemWidth) + mInitLeftMargin;
+        int finalLeftMargin = ((position) * mItemWidth) + mInitLeftMargin;
         // 当前的位置
         int currentLeftMargin = mTrackParams.leftMargin;
         // 移动的距离

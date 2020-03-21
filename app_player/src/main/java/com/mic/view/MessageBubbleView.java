@@ -262,9 +262,9 @@ public class MessageBubbleView extends View {
 
     public interface MessageBubbleListener {
         // 还原
-        public void restore();
+        void restore();
 
         // 消失爆炸
-        public void dismiss(PointF pointF);
+        void dismiss(PointF pointF);
     }
 }
