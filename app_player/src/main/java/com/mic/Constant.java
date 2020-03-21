@@ -2,5 +2,5 @@ package com.mic;
 
 public class Constant {
 
-    public static final String baseurl="http://192.168.2.165:8888/";
+    public static final String baseurl=BuildConfig.host;
 }

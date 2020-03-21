@@ -195,12 +195,6 @@ public class MainActivity extends AppCompatActivity {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;
-            case R.id.backup:
-                Toast.makeText(this, "You clicked Backup", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.delete:
-                Toast.makeText(this, "You clicked Delete", Toast.LENGTH_SHORT).show();
-                break;
             case R.id.settings:
                 Toast.makeText(this, "You clicked Settings", Toast.LENGTH_SHORT).show();
                 break;
