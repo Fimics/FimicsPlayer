@@ -17,10 +17,10 @@ import com.mic.home.bean.ResourceType;
 import com.mic.home.binder.AndroidUIBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
-import com.mic.training.activity.view.BehaviorActivity;
-import com.mic.training.activity.view.MyScrollViewActivity;
-import com.mic.training.activity.view.NestedActivity;
-import com.mic.training.activity.view.ViewPagerActivity;
+import com.mic.news.NewsDetailBehaviorActivity;
+import com.mic.video.VideoDetailMyScrollViewActivity;
+import com.mic.user.UserDetailNestedActivity;
+import com.mic.home.ViewPagerActivity;
 import com.mic.view.FimRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -92,11 +92,11 @@ public class AndroidUIFragment  extends BaseFragment {
         if(type==ResourceType.TYPE_VIEW_PAGER){
             startActivity(ViewPagerActivity.class);
         }else if(type==ResourceType.TYPE_NESTED_SCROLLVIEW){
-            startActivity(NestedActivity.class);
+            startActivity(UserDetailNestedActivity.class);
         }else if(type==ResourceType.TYPE_MYSCROLL_VIEW){
-            startActivity(MyScrollViewActivity.class);
+            startActivity(VideoDetailMyScrollViewActivity.class);
         }else if(type==ResourceType.TYPE_BEHAVIOR){
-            startActivity(BehaviorActivity.class);
+            startActivity(NewsDetailBehaviorActivity.class);
         }else{
             HomeFragment homeFragment = (HomeFragment) this.getParentFragment();
             homeFragment.toNextPage();

@@ -1,4 +1,4 @@
-package com.mic.training.activity.view;
+package com.mic.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mic.R;
 
 
-public class BehaviorActivity extends AppCompatActivity {
+public class NewsDetailBehaviorActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class BehaviorActivity extends AppCompatActivity {
         recyclerView.setAdapter(new RecyclerView.Adapter() {
             @Override
             public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                View itemView = LayoutInflater.from(BehaviorActivity.this).inflate(R.layout.item_behavior,parent,false);
+                View itemView = LayoutInflater.from(NewsDetailBehaviorActivity.this).inflate(R.layout.item_behavior,parent,false);
 
                 // View itemView = View.inflate(BehaviorActivity.this,R.layout.item_behavior,null);
                 ViewHolder viewHolder = new ViewHolder(itemView);

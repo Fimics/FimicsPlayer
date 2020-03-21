@@ -18,7 +18,7 @@ public class MessageBubbleViewBinder1 extends ItemViewBinder<AndroidUI, MessageB
     @NonNull
     @Override
     protected ViewHolder onCreateViewHolder(@NonNull LayoutInflater inflater, @NonNull ViewGroup parent) {
-        return new ViewHolder(inflater.inflate(R.layout.fragment_message_bubble_view1,parent,false));
+        return new ViewHolder(inflater.inflate(R.layout.binder_message_bubble_view1,parent,false));
     }
 
     @Override

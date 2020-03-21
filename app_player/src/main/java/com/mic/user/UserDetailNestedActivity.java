@@ -1,4 +1,4 @@
-package com.mic.training.activity.view;
+package com.mic.user;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.mic.R;
 
-public class NestedActivity extends AppCompatActivity {
+public class UserDetailNestedActivity extends AppCompatActivity {
 
     public static final String FRUIT_NAME = "fruit_name";
 

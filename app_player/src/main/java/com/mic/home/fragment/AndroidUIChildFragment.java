@@ -1,6 +1,5 @@
 package com.mic.home.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,8 +32,6 @@ import com.mic.home.binder.TrackTextViewBinder;
 import com.mic.home.binder.VerticalDragListViewBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
-import com.mic.training.activity.view.ViewItemActivity;
-import com.mic.training.activity.view.ViewPagerActivity;
 import com.mic.view.FimRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;

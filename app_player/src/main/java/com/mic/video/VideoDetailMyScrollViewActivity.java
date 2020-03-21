@@ -1,4 +1,4 @@
-package com.mic.training.activity.view;
+package com.mic.video;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +10,7 @@ import com.mic.R;
 import com.mic.utils.StatusBarUtil;
 import com.mic.view.MyScrollView;
 
-public class MyScrollViewActivity extends AppCompatActivity {
+public class VideoDetailMyScrollViewActivity extends AppCompatActivity {
     private View mTitleBar;
     private MyScrollView mScrollView;
     private ImageView mImageView;

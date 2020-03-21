@@ -1,4 +1,4 @@
-package com.mic.training.fragment.view;
+package com.mic.home.fragment;
 
 
 import android.os.Bundle;
@@ -19,10 +19,10 @@ import com.mic.R;
  * Description:
  */
 
-public class ItemFragment extends Fragment {
+public class PagerItemFragment extends Fragment {
 
-    public static ItemFragment newInstance(String item) {
-        ItemFragment itemFragment = new ItemFragment();
+    public static PagerItemFragment newInstance(String item) {
+        PagerItemFragment itemFragment = new PagerItemFragment();
         Bundle bundle = new Bundle();
         bundle.putString("title", item);
         itemFragment.setArguments(bundle);

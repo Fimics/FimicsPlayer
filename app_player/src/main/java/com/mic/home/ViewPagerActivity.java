@@ -1,4 +1,4 @@
-package com.mic.training.activity.view;
+package com.mic.home;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.mic.R;
 import com.mic.view.singleview.TrackTextView;
-import com.mic.training.fragment.view.ItemFragment;
+import com.mic.home.fragment.PagerItemFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +43,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                return ItemFragment.newInstance(items[position]);
+                return PagerItemFragment.newInstance(items[position]);
             }
 
             @Override
