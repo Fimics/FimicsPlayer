@@ -1,4 +1,4 @@
-package com.mic.user;
+package com.mic.user.detail;
 
 import android.content.Intent;
 import android.os.Bundle;

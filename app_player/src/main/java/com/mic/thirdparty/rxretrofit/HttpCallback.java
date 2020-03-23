@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 
 import java.lang.reflect.ParameterizedType;
 
-import com.mic.user.model.Result;
+import com.mic.Result;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

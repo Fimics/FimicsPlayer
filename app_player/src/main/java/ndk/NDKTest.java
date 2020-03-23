@@ -1,6 +1,8 @@
 package ndk;
 
 
+import com.mic.utils.Logger;
+
 public class NDKTest {
 
     public void invoke(){

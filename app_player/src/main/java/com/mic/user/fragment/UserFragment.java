@@ -11,27 +11,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.mic.user.model.user.User;
+import com.mic.user.model.User;
 import com.mic.architecture.mvp.base.BaseMvpFragment;
 import com.mic.architecture.mvp.inject.InjectPresenter;
 import com.mic.R;
-import com.mic.user.userinfo.UserInfoContract;
-import com.mic.user.userinfo.UserInfoPresenter;
-import com.mic.user.view.UserInfoLinearLayout;
-
+import com.mic.user.login.LoginContract;
+import com.mic.user.login.LoginPresenter;
 
 
 @SuppressWarnings("")
-public class UserFragment extends BaseMvpFragment<UserInfoPresenter> implements UserInfoContract.UserInfoView {
+public class UserFragment extends BaseMvpFragment<LoginPresenter> implements LoginContract.ILoginView {
 
     private NestedScrollView mNestedScrollView;
     private ImageView mNserAvatar;
     private TextView mUserName;
     private TextView mAddress;
-    private UserInfoLinearLayout mCardViews;
 
     @InjectPresenter
-    private UserInfoPresenter mUserInfoPresenter;
+    private LoginPresenter mUserInfoPresenter;
 
     public UserFragment() {
 
@@ -54,7 +51,6 @@ public class UserFragment extends BaseMvpFragment<UserInfoPresenter> implements 
        mNserAvatar=rootView.findViewById(R.id.iv_user_avater);
        mUserName=rootView.findViewById(R.id.tv_username);
        mAddress=rootView.findViewById(R.id.tv_user_address);
-       mCardViews=rootView.findViewById(R.id.cardviews);
     }
 
     @Override
@@ -85,6 +81,6 @@ public class UserFragment extends BaseMvpFragment<UserInfoPresenter> implements 
 
     @Override
     public void onSucceed(User user) {
-        mCardViews.updateCardViews(user);
+//        mCardViews.updateCardViews(user);
     }
 }

@@ -1,6 +1,6 @@
 package com.mic.thirdparty.rxretrofit;
 
-import com.mic.user.model.Result;
+import com.mic.Result;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableTransformer;

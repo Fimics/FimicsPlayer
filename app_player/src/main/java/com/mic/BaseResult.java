@@ -1,4 +1,4 @@
-package com.mic.user.model;
+package com.mic;
 
 
 /**

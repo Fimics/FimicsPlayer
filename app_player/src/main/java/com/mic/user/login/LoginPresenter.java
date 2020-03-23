@@ -1,11 +1,11 @@
-package com.mic.user.userinfo;
+package com.mic.user.login;
 
-import com.mic.user.model.Result;
-import com.mic.user.model.user.User;
+import com.mic.Result;
 import com.mic.architecture.mvp.base.BasePresenter;
 import com.mic.thirdparty.rxretrofit.RxObserver;
+import com.mic.user.model.User;
 
-public class UserInfoPresenter extends BasePresenter<UserInfoContract.UserInfoView,UserInfoModel> implements UserInfoContract.UserInfoPresenter {
+public class LoginPresenter extends BasePresenter<LoginContract.ILoginView, LoginModel> implements LoginContract.ILoginPresenter {
 
     // 是直接 new 还是？一个 Presneter 对应多个 Model 怎么解决？ new 很正常 ，尽量分离（六大基本原则）
     // 一般情况下是 1 个 Presneter 对应一个 Model

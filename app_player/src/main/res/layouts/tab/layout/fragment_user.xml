@@ -56,14 +56,14 @@
                     />
             </RelativeLayout>
 
-            <com.mic.user.view.UserInfoLinearLayout
+            <com.mic.user.login.LoginLinearLayout
                 android:id="@+id/cardviews"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
 
                 >
-            </com.mic.user.view.UserInfoLinearLayout>
+            </com.mic.user.login.LoginLinearLayout>
 
         </LinearLayout>
 

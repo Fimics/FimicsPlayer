@@ -1,4 +1,6 @@
-package com.mic.user.model;
+package com.mic.user.login;
+
+import com.mic.Result;
 
 public class UserResult extends Result {
 

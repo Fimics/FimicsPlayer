@@ -18,9 +18,9 @@ import com.mic.home.binder.AndroidUIBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
 import com.mic.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.news.NewsDetailBehaviorActivity;
-import com.mic.user.LoginDialogFragment;
+import com.mic.user.login.LoginDialogFragment;
 import com.mic.video.VideoDetailMyScrollViewActivity;
-import com.mic.user.UserDetailNestedActivity;
+import com.mic.user.detail.UserDetailNestedActivity;
 import com.mic.home.ViewPagerActivity;
 import com.mic.view.FimRecyclerView;
 

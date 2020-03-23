@@ -1,15 +1,15 @@
-package com.mic.user.userinfo;
+package com.mic.user.login;
 
-import com.mic.user.model.Result;
-import com.mic.user.model.user.User;
+import com.mic.Result;
+import com.mic.user.model.User;
 
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface RxUserApi {
+public interface LoginApi {
 
-    @GET("login")
+    @GET("/v1/login")
     Observable<Result<User>> login(@Query("name") String name, @Query("password") String password);
 }

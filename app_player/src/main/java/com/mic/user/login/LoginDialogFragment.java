@@ -1,4 +1,4 @@
-package com.mic.user;
+package com.mic.user.login;
 
 
 import android.app.Activity;
@@ -22,17 +22,17 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.mic.R;
+import com.mic.user.model.User;
+import com.mic.view.AutoRotateView;
 
 import java.util.Objects;
 
-
-
-
-public class LoginDialogFragment extends DialogFragment implements View.OnClickListener {
+public class LoginDialogFragment extends DialogFragment implements View.OnClickListener ,LoginContract.ILoginView {
 
     private static final String TAG = "login";
     private Dialog dialog;
-
+    private AutoRotateView buffering;
+    private LoginPresenter presenter;
 
     public static LoginDialogFragment instance() {
         LoginDialogFragment fragment = new LoginDialogFragment();
@@ -51,10 +51,14 @@ public class LoginDialogFragment extends DialogFragment implements View.OnClickL
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         initViews(view);
+        presenter = new LoginPresenter();
+        presenter.attach(this);
         return view;
     }
 
     private void initViews(View view) {
+        buffering = view.findViewById(R.id.buffering);
+        buffering.setVisibility(View.INVISIBLE);
         AppCompatButton facebookLogin = view.findViewById(R.id.facebookLogin);
         AppCompatButton googleLogin = view.findViewById(R.id.googleLogin);
         AppCompatButton phoneLogin = view.findViewById(R.id.phoneLogin);
@@ -109,7 +113,6 @@ public class LoginDialogFragment extends DialogFragment implements View.OnClickL
         public LoginDialog(@NonNull Context context) {
             super(context,R.style.Theme_AppCompat_Dialog);
         }
-
         @Override
         public void onBackPressed() {
             LoginDialogFragment.this.dismiss();
@@ -122,7 +125,43 @@ public class LoginDialogFragment extends DialogFragment implements View.OnClickL
             case R.id.facebookLogin:
             case R.id.googleLogin:
             case R.id.phoneLogin:
+                login();
                 break;
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        if(presenter!=null){
+            presenter.detach();
+        }
+    }
+
+    private void login(){
+        if(presenter!=null){
+            presenter.getUser("java","java");
+        }
+    }
+
+    @Override
+    public void onLoading() {
+        if(buffering!=null){
+            buffering.setVisibility(View.VISIBLE);
+        }
+    }
+
+    @Override
+    public void onError() {
+        if(buffering!=null){
+            buffering.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    @Override
+    public void onSucceed(User user) {
+        if(buffering!=null){
+            buffering.setVisibility(View.INVISIBLE);
         }
     }
 }

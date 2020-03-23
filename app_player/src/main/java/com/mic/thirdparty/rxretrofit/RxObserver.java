@@ -2,14 +2,18 @@ package com.mic.thirdparty.rxretrofit;
 
 
 
+import com.mic.utils.Logger;
+
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
 public  abstract class RxObserver<T> implements Observer<T> {
 
+    private static final String TAG ="RxObserver";
+
     @Override
     public void onSubscribe(Disposable d) {
-
+        Logger.d(TAG,"onSubscribe");
     }
 
     @Override
@@ -27,7 +31,7 @@ public  abstract class RxObserver<T> implements Observer<T> {
 
     @Override
     public void onComplete() {
-
+        Logger.d(TAG,"onComplete");
     }
 
     protected abstract void onError(String errorCode, String errorMessage);

@@ -1,27 +1,25 @@
-package com.mic.user.userinfo;
+package com.mic.user.login;
 
-import com.mic.user.model.Result;
-import com.mic.user.model.user.User;
+import com.mic.Result;
+import com.mic.user.model.User;
 import com.mic.architecture.mvp.base.BaseView;
 
 import io.reactivex.Observable;
 
 @SuppressWarnings("unused")
-public interface UserInfoContract {
+public interface LoginContract {
 
-    interface  UserInfoView extends BaseView{
-
+    interface ILoginView extends BaseView{
         void onLoading();
         void onError();
         void onSucceed(User user);
     }
 
-    interface UserInfoPresenter{
+    interface ILoginPresenter{
         void getUser(String name, String password);
     }
 
-    interface UserInfoModel{
+    interface LoginModel{
         Observable<Result<User>> getUser(String name, String password);
     }
-
 }

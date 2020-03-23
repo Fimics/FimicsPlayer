@@ -51,7 +51,8 @@ android {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "host", "\"http://192.168.2.165:8888/\""
+//            buildConfigField "String", "host", "\"http://192.168.2.165:8888/\""
+            buildConfigField "String", "host", "\"http://172.10.0.190:8888/\""
         }
     }
 
