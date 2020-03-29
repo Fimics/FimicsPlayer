@@ -16,7 +16,7 @@ import com.mic.R;
 import com.mic.annotation.FragmentDestination;
 
 
-@FragmentDestination(pageUrl ="com/mic/home" ,asStarter = true)
+@FragmentDestination(pageUrl ="main/tabs/home" ,asStarter = true)
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;

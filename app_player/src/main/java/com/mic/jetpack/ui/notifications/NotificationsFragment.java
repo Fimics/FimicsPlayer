@@ -13,7 +13,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.mic.R;
+import com.mic.annotation.FragmentDestination;
 
+@FragmentDestination(pageUrl = "main/tabs/notifation",asStarter = false)
 public class NotificationsFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;

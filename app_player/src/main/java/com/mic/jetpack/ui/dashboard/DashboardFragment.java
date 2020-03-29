@@ -15,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.mic.R;
 import com.mic.annotation.FragmentDestination;
 
-@FragmentDestination(pageUrl = "www/tabs/dash",asStarter = false)
+@FragmentDestination(pageUrl = "main/tabs/dash",asStarter = false)
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;

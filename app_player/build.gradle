@@ -128,7 +128,7 @@ dependencies {
 //        implementation project(':exoplayer-library-hls')
 //        implementation project(':exoplayer-extension-ima')
 //    }
-
+    implementation project(':app_core')
     implementation project(':annotation')
     //如果你使用kotlin,这里需要使用 kapt project
     annotationProcessor project(":annotation_processor")
