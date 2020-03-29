@@ -2,18 +2,18 @@ package com.mic.thirdparty.rxretrofit;
 
 
 import android.util.Log;
-import com.mic.Constant;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 @SuppressWarnings("")
-public class RetrofitClient {
+public class RxRetrofitClient {
 
     private static final String TAG ="RetrofitClient";
 
-    private  static final  RetrofitClient instance = new RetrofitClient();
+    private  static final RxRetrofitClient instance = new RxRetrofitClient();
 
     private Retrofit mRetrofit;
 
@@ -26,7 +26,8 @@ public class RetrofitClient {
     //        3.1 不同的 baseUrl 构建不同的 Retrofit 对象 （直不应该首选）
     //        3.2 自己想办法，取巧也行走漏洞
 
-    private RetrofitClient(){
+
+    private RxRetrofitClient(){
         mOkHttpClient = new OkHttpClient.Builder()
                             .addInterceptor(new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
                                 @Override
@@ -37,15 +38,17 @@ public class RetrofitClient {
                             .build();
 
         mRetrofit = new Retrofit.Builder()
-                .baseUrl(Constant.baseurl)
+                .baseUrl("---")
                 // 添加解析转换工厂,Gson 解析，Xml解析，等等
                 .addConverterFactory(GsonConverterFactory.create())
                 // 添加 OkHttpClient,不添加默认就是 光杆 OkHttpClient
                 .client(mOkHttpClient)
+                //rxJavacall-->Observable  adapter模式
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
     }
 
-    public static RetrofitClient getInstance(){
+    public static RxRetrofitClient getInstance(){
         return instance;
     }
 
@@ -53,4 +56,5 @@ public class RetrofitClient {
     public Retrofit  getRetrofit(){
         return mRetrofit;
     }
+
 }

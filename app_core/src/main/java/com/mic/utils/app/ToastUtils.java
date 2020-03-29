@@ -5,7 +5,6 @@ import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.mic.BuildConfig;
-import com.mic.PlayerApp;
 
 
 /**
@@ -14,7 +13,7 @@ import com.mic.PlayerApp;
 
 public class ToastUtils {
 
-    private static Context context = PlayerApp.getAppContext();
+    private static Context context = AppGlobals.getApplication();
     private static Toast toast;
 
     public static void show(int resId) {

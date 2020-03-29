@@ -21,6 +21,11 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
 dependencies {
@@ -30,4 +35,26 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.material
+
+    //网络框架
+    implementation rootProject.ext.dependencies.okhttp
+    implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.retrofit
+    implementation rootProject.ext.dependencies.convertergson
+    implementation rootProject.ext.dependencies.logginginterceptor
+
+    //rx框架
+    implementation rootProject.ext.dependencies.rxandroid
+    implementation rootProject.ext.dependencies.rxjava
+    implementation rootProject.ext.dependencies.adapterrxjava
+    implementation rootProject.ext.dependencies.rxbinding2
+    implementation rootProject.ext.dependencies.rxpermissions2
+
+    //图片
+    implementation rootProject.ext.dependencies.glide
+    //EventBus
+    implementation rootProject.ext.dependencies.eventbus
+
 }
