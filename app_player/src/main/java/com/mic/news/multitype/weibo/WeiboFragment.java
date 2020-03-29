@@ -10,17 +10,17 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
-import com.mic.BaseFragment;
+import com.mic.core.BaseFragment;
 import com.mic.news.multitype.weibo.content.SimpleImage;
 import com.mic.news.multitype.weibo.content.SimpleImageViewBinder;
 import com.mic.news.multitype.weibo.content.SimpleText;
 import com.mic.news.multitype.weibo.content.SimpleTextViewBinder;
-import com.mic.thirdparty.multitype.Items;
-import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.core.thirdparty.multitype.Items;
+import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 
 import java.util.List;
 
-import static com.mic.thirdparty.multitype.MultiTypeAsserts.assertAllRegistered;
+import static com.mic.core.thirdparty.multitype.MultiTypeAsserts.assertAllRegistered;
 
 /**
  * A simple {@link Fragment} subclass.

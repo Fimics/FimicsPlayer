@@ -29,7 +29,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.mic.R;
-import com.mic.thirdparty.multitype.ItemViewBinder;
+import com.mic.core.thirdparty.multitype.ItemViewBinder;
 
 import static android.widget.Toast.LENGTH_SHORT;
 

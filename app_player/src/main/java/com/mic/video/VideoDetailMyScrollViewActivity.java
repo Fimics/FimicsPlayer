@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.R;
-import com.mic.utils.StatusBarUtil;
+import com.mic.core.utils.StatusBarUtil;
 import com.mic.view.MyScrollView;
 
 public class VideoDetailMyScrollViewActivity extends AppCompatActivity {

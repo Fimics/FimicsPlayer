@@ -1,7 +1,7 @@
 package ndk;
 
 
-import com.mic.utils.Logger;
+import com.mic.core.utils.Logger;
 
 public class NDKTest {
 

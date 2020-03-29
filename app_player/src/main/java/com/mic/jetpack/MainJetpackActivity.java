@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mic.R;
-import com.mic.utils.StatusBarUtil;
+import com.mic.core.utils.StatusBarUtil;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;

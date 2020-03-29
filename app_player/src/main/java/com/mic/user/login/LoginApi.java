@@ -1,6 +1,6 @@
 package com.mic.user.login;
 
-import com.mic.Result;
+import com.mic.core.Result;
 import com.mic.user.model.User;
 
 

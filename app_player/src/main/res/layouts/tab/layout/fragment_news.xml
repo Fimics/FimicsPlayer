@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.mic.thirdparty.indicator.view.indicator.RecyclerIndicatorView
+    <com.mic.core.thirdparty.indicator.view.indicator.RecyclerIndicatorView
         android:id="@+id/moretab_indicator"
         android:layout_width="match_parent"
         android:layout_height="45dp" />

@@ -10,12 +10,12 @@ import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.mic.BaseFragment;
+import com.mic.core.BaseFragment;
 import com.mic.R;
 import com.mic.home.bean.Fruit;
 import com.mic.home.binder.FruitBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
-import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.view.FimRecyclerView;
 
 import java.util.ArrayList;

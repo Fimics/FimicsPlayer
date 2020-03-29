@@ -25,7 +25,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
-import com.mic.thirdparty.multitype.ItemViewBinder;
+import com.mic.core.thirdparty.multitype.ItemViewBinder;
 
 
 /**

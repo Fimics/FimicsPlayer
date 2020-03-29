@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
 import com.mic.home.bean.AndroidUI;
-import com.mic.thirdparty.multitype.ItemViewBinder;
+import com.mic.core.thirdparty.multitype.ItemViewBinder;
 
 public class MessageBubbleViewBinder extends ItemViewBinder<AndroidUI, MessageBubbleViewBinder.ViewHolder> {
 

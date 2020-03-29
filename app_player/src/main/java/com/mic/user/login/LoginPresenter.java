@@ -1,8 +1,8 @@
 package com.mic.user.login;
 
-import com.mic.Result;
-import com.mic.architecture.mvp.base.BasePresenter;
-import com.mic.thirdparty.rxretrofit.RxObserver;
+import com.mic.core.Result;
+import com.mic.core.architecture.mvp.base.BasePresenter;
+import com.mic.core.thirdparty.rxretrofit.RxObserver;
 import com.mic.user.model.User;
 
 public class LoginPresenter extends BasePresenter<LoginContract.ILoginView, LoginModel> implements LoginContract.ILoginPresenter {

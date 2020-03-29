@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.mic.R;
 import com.mic.home.bean.Fruit;
-import com.mic.thirdparty.multitype.ItemViewBinder;
+import com.mic.core.thirdparty.multitype.ItemViewBinder;
 
 public class FruitBinder extends ItemViewBinder<Fruit, FruitBinder.ViewHolder> {
 

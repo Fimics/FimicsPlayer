@@ -16,12 +16,12 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.mic.R;
-import com.mic.BaseFragment;
-import com.mic.utils.system.DisplayUtil;
-import com.mic.thirdparty.indicator.view.indicator.IndicatorViewPager;
-import com.mic.thirdparty.indicator.view.indicator.ScrollIndicatorView;
-import com.mic.thirdparty.indicator.view.indicator.slidebar.ColorBar;
-import com.mic.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
+import com.mic.core.BaseFragment;
+import com.mic.core.utils.system.DisplayUtil;
+import com.mic.core.thirdparty.indicator.view.indicator.IndicatorViewPager;
+import com.mic.core.thirdparty.indicator.view.indicator.ScrollIndicatorView;
+import com.mic.core.thirdparty.indicator.view.indicator.slidebar.ColorBar;
+import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
 
 /**
  * A simple {@link Fragment} subclass.

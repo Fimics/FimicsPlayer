@@ -10,11 +10,10 @@ import android.os.IBinder;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.mic.R;
-import com.mic.BaseActivity;
-import com.mic.utils.hotfix.FixDexManager;
+import com.mic.core.BaseActivity;
+import com.mic.core.utils.hotfix.FixDexManager;
 import com.mic.training.UserAidl;
 
 import org.greenrobot.eventbus.EventBus;

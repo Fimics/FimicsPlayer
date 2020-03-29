@@ -13,7 +13,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.mic.R;
-import com.mic.BaseFragment;
+import com.mic.core.BaseFragment;
 import com.mic.news.multitype.bilibili.BilibiliFragment;
 import com.mic.news.multitype.communicate.CommunicateFragment;
 import com.mic.news.multitype.moreapis.MoreApisPlaygroundFragment;
@@ -22,10 +22,10 @@ import com.mic.news.multitype.normal.NormalFragment;
 import com.mic.news.multitype.one2many.OneToManyFragment;
 import com.mic.news.multitype.payload.PayloadFragment;
 import com.mic.news.multitype.weibo.WeiboFragment;
-import com.mic.thirdparty.indicator.view.indicator.Indicator;
-import com.mic.thirdparty.indicator.view.indicator.RecyclerIndicatorView;
-import com.mic.thirdparty.indicator.view.indicator.slidebar.ColorBar;
-import com.mic.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
+import com.mic.core.thirdparty.indicator.view.indicator.Indicator;
+import com.mic.core.thirdparty.indicator.view.indicator.RecyclerIndicatorView;
+import com.mic.core.thirdparty.indicator.view.indicator.slidebar.ColorBar;
+import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
 
 import java.util.ArrayList;
 

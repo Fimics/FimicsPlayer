@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
 import com.mic.home.bean.AndroidUI;
-import com.mic.thirdparty.multitype.ItemViewBinder;
+import com.mic.core.thirdparty.multitype.ItemViewBinder;
 import com.mic.view.singleview.TouchVIew;
 import com.mic.view.singleview.TouchViewGroup;
 

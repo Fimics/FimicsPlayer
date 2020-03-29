@@ -10,13 +10,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
-import com.mic.BaseFragment;
+import com.mic.core.BaseFragment;
 import com.mic.news.multitype.normal.TextItem;
-import com.mic.thirdparty.multitype.Items;
-import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.core.thirdparty.multitype.Items;
+import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 
-import static com.mic.thirdparty.multitype.MultiTypeAsserts.assertAllRegistered;
-import static com.mic.thirdparty.multitype.MultiTypeAsserts.assertHasTheSameAdapter;
+import static com.mic.core.thirdparty.multitype.MultiTypeAsserts.assertAllRegistered;
+import static com.mic.core.thirdparty.multitype.MultiTypeAsserts.assertHasTheSameAdapter;
 import static java.lang.String.valueOf;
 
 /**

@@ -1,9 +1,9 @@
 package com.mic.user.login;
 
-import com.mic.Result;
-import com.mic.architecture.mvp.base.BaseModel;
-import com.mic.thirdparty.rxretrofit.RxRetrofitClient;
-import com.mic.thirdparty.rxretrofit.RxSchedulers;
+import com.mic.core.Result;
+import com.mic.core.architecture.mvp.base.BaseModel;
+import com.mic.core.thirdparty.rxretrofit.RxRetrofitClient;
+import com.mic.core.thirdparty.rxretrofit.RxSchedulers;
 import com.mic.user.model.User;
 
 import io.reactivex.Observable;

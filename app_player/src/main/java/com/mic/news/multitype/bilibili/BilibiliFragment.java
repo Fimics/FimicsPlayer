@@ -12,10 +12,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
-import com.mic.BaseFragment;
+import com.mic.core.BaseFragment;
 import com.mic.news.multitype.common.Category;
 import com.mic.news.multitype.common.CategoryItemViewBinder;
-import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

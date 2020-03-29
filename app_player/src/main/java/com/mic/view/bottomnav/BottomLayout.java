@@ -15,7 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
-import com.mic.utils.system.DisplayUtil;
+import com.mic.core.utils.system.DisplayUtil;
 
 import java.util.ArrayList;
 

@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 
-import com.mic.BaseFragment;
+import com.mic.core.BaseFragment;
 import com.mic.R;
 import com.mic.home.HomeFragment;
 import com.mic.home.bean.AndroidUI;
 import com.mic.home.bean.ResourceType;
 import com.mic.home.binder.AndroidUIBinder;
 import com.mic.news.multitype.bilibili.PostItemDecoration;
-import com.mic.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.news.NewsDetailBehaviorActivity;
 import com.mic.user.login.LoginDialogFragment;
 import com.mic.video.VideoDetailMyScrollViewActivity;

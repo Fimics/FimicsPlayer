@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 
 import com.mic.user.model.User;
-import com.mic.architecture.mvp.base.BaseMvpFragment;
-import com.mic.architecture.mvp.inject.InjectPresenter;
+import com.mic.core.architecture.mvp.base.BaseMvpFragment;
+import com.mic.core.architecture.mvp.inject.InjectPresenter;
 import com.mic.R;
 import com.mic.user.login.LoginContract;
 import com.mic.user.login.LoginPresenter;

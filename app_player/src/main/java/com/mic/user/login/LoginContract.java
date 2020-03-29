@@ -1,8 +1,8 @@
 package com.mic.user.login;
 
-import com.mic.Result;
+import com.mic.core.Result;
 import com.mic.user.model.User;
-import com.mic.architecture.mvp.base.BaseView;
+import com.mic.core.architecture.mvp.base.BaseView;
 
 import io.reactivex.Observable;
 
