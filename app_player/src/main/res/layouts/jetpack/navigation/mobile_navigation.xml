@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+    <!-- startDestination 默认启动的界面-->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.mic.jetpack.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="arg1"
+            android:defaultValue="111"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.hao123.com/" />
+
+        <!--
+        创建Fragment时需要传递的参数
+        argument
+        跳转到目标页的动作
+        action
+        通过uri的方式拉起当前页面
+        deepLink
+        -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.mic.jetpack.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_jet_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.mic.jetpack.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_jet_notifications" />
+</navigation>

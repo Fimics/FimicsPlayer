@@ -6,6 +6,8 @@ import android.os.CountDownTimer;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mic.jetpack.MainJetpackActivity;
+
 public class WelcomeActivity extends AppCompatActivity {
 
     private static final int FUTURE =200;
@@ -43,7 +45,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                MainActivity.start(WelcomeActivity.this);
+//                MainActivity.start(WelcomeActivity.this);
+                MainJetpackActivity.start(WelcomeActivity.this);
                 finish();
             }
         };

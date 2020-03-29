@@ -23,6 +23,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/XAppTheme">
+
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait"
@@ -34,11 +35,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity android:name=".home.ViewPagerActivity" />
+        <activity android:name=".jetpack.MainJetpackActivity"/>
         <activity android:name=".user.detail.UserDetailNestedActivity" />
         <activity android:name=".video.VideoDetailMyScrollViewActivity" />
         <activity android:name=".news.NewsDetailBehaviorActivity" />

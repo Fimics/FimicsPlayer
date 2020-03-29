@@ -1,0 +1,1 @@
+{"com/mic/home":{"isFragment":true,"asStarter":true,"needLogin":false,"pageUrl":"com/mic/home","className":"com.mic.jetpack.ui.home.HomeFragment","id":1305792916},"www/tabs/dash":{"isFragment":true,"asStarter":false,"needLogin":false,"pageUrl":"www/tabs/dash","className":"com.mic.jetpack.ui.dashboard.DashboardFragment","id":362034944}}

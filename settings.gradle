@@ -9,4 +9,6 @@ def debug = true
 
 
 include ':app_player'
-
+include ':app_core'
+include ':annotation'
+include ':annotation_processor'
