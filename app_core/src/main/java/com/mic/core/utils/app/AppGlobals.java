@@ -2,6 +2,9 @@ package com.mic.core.utils.app;
 
 import android.app.Application;
 
+import com.mic.BuildConfig;
+
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -30,4 +33,24 @@ public class AppGlobals {
         }
         return sApplication;
     }
+
+
+    public static String baseurl(){
+        String baseUrl="";
+        try {
+            Class clazz = Class.forName("com.mic.Constant");
+            Field field =clazz.getDeclaredField("baseurl");
+            Object object = new Object();
+            baseUrl =field.get(object).toString();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        }
+        return baseUrl;
+    }
+
+
 }

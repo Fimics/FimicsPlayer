@@ -19,12 +19,12 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
 import com.mic.core.BaseFragment;
-import com.mic.home.HomeFragment;
-import com.mic.msg.tab.MessageFragment;
-import com.mic.news.tab.NewsFragment;
-import com.mic.user.fragment.UserFragment;
+import com.mic.tabs.HomeFragment;
+import com.mic.tabs.PublishFragment;
+import com.mic.tabs.FindFragment;
+import com.mic.tabs.UserFragment;
 import com.mic.core.utils.StatusBarUtil;
-import com.mic.video.tab.VideoFragment;
+import com.mic.tabs.SofaFragment;
 import com.mic.view.bottomnav.Bottom;
 import com.mic.view.bottomnav.BottomLayout;
 
@@ -102,9 +102,9 @@ public class MainActivity extends AppCompatActivity {
         bottomList.add(new Bottom("用户",R.drawable.tab_user));
 
         fragments.add(new HomeFragment());
-        fragments.add(new NewsFragment());
-        fragments.add(new VideoFragment());
-        fragments.add(new MessageFragment());
+        fragments.add(new FindFragment());
+        fragments.add(new SofaFragment());
+        fragments.add(new PublishFragment());
         fragments.add(new UserFragment());
     }
 

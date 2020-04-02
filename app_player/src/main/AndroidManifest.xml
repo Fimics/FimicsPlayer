@@ -40,10 +40,10 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity android:name=".home.ViewPagerActivity" />
-        <activity android:name=".jetpack.MainJetpackActivity"/>
+        <activity android:name=".MainJetpackActivity"/>
         <activity android:name=".user.detail.UserDetailNestedActivity" />
-        <activity android:name=".video.VideoDetailMyScrollViewActivity" />
-        <activity android:name=".news.NewsDetailBehaviorActivity" />
+        <activity android:name=".sofa.VideoDetailMyScrollViewActivity" />
+        <activity android:name=".find.FindDetailBehaviorActivity" />
         <activity android:name=".home.activity.MainActivity" />
         <activity android:name=".home.activity.RxBindingActivity" />
         <activity android:name=".home.activity.RxBitmapActivity" />

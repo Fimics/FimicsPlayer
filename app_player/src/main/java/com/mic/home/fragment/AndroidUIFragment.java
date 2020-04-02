@@ -11,15 +11,15 @@ import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.mic.core.BaseFragment;
 import com.mic.R;
-import com.mic.home.HomeFragment;
+import com.mic.tabs.HomeFragment;
 import com.mic.home.bean.AndroidUI;
 import com.mic.home.bean.ResourceType;
 import com.mic.home.binder.AndroidUIBinder;
-import com.mic.news.multitype.bilibili.PostItemDecoration;
+import com.mic.find.multitype.bilibili.PostItemDecoration;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
-import com.mic.news.NewsDetailBehaviorActivity;
+import com.mic.find.FindDetailBehaviorActivity;
 import com.mic.user.login.LoginDialogFragment;
-import com.mic.video.VideoDetailMyScrollViewActivity;
+import com.mic.sofa.VideoDetailMyScrollViewActivity;
 import com.mic.user.detail.UserDetailNestedActivity;
 import com.mic.home.ViewPagerActivity;
 import com.mic.view.FimRecyclerView;
@@ -97,7 +97,7 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_MYSCROLL_VIEW){
             startActivity(VideoDetailMyScrollViewActivity.class);
         }else if(type==ResourceType.TYPE_BEHAVIOR){
-            startActivity(NewsDetailBehaviorActivity.class);
+            startActivity(FindDetailBehaviorActivity.class);
         }else if(type==ResourceType.TYPE_LOGIN){
             LoginDialogFragment.instance().show(getActivity());
         }else{

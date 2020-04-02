@@ -2,6 +2,11 @@ package com.mic.core.thirdparty.rxretrofit;
 
 
 import android.util.Log;
+
+
+import com.mic.BuildConfig;
+import com.mic.core.utils.app.AppGlobals;
+
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -37,8 +42,9 @@ public class RxRetrofitClient {
                             }).setLevel(HttpLoggingInterceptor.Level.BODY))
                             .build();
 
+        String url = AppGlobals.baseurl();
         mRetrofit = new Retrofit.Builder()
-                .baseUrl("---")
+                .baseUrl(url)
                 // 添加解析转换工厂,Gson 解析，Xml解析，等等
                 .addConverterFactory(GsonConverterFactory.create())
                 // 添加 OkHttpClient,不添加默认就是 光杆 OkHttpClient

@@ -6,8 +6,6 @@ import android.os.CountDownTimer;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.jetpack.MainJetpackActivity;
-
 public class WelcomeActivity extends AppCompatActivity {
 
     private static final int FUTURE =200;

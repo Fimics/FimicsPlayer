@@ -42,6 +42,7 @@ public class NavProcessor extends AbstractProcessor {
     private Messager messager;
     private Filer filer;
     private static final String OUTPUT_FILE_NAME = "destination.json";
+    private  String  projectName = "app_player";
     @Override
     public synchronized void init(ProcessingEnvironment processingEnv) {
         super.init(processingEnv);
@@ -80,7 +81,7 @@ public class NavProcessor extends AbstractProcessor {
 
                 //由于我们想要把json文件生成在app/src/main/assets/目录下,所以这里可以对字符串做一个截取，
                 //以此便能准确获取项目在每个电脑上的 /app/src/main/assets/的路径
-                String appPath = resourcePath.substring(0, resourcePath.indexOf("app_player") + 10);
+                String appPath = resourcePath.substring(0, resourcePath.indexOf(projectName) + projectName.length());
                 String assetsPath = appPath + "/src/main/assets/";
 
                 File file = new File(assetsPath);
