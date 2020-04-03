@@ -67,6 +67,7 @@ public class FixFragmentNavigator extends FragmentNavigator {
             ft.setCustomAnimations(enterAnim, exitAnim, popEnterAnim, popExitAnim);
         }
 
+        //当前显示的Fragment
         Fragment fragment = mManager.getPrimaryNavigationFragment();
         if (fragment != null) {
             ft.hide(fragment);

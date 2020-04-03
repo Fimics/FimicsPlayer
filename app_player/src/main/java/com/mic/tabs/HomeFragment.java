@@ -85,12 +85,12 @@ public class HomeFragment extends BaseFragment {
     private void set(Indicator indicator, int count) {
         indicator.setAdapter(new MyAdapter(count));
 
-        indicator.setScrollBar(new ColorBar(getContext(), Color.RED, 5));
+        indicator.setScrollBar(new ColorBar(getContext(), R.color.colorPrimary, 5));
 
         float unSelectSize = 16;
         float selectSize = unSelectSize * 1.2f;
-        int selectColor = getResources().getColor(R.color.tab_top_text_2);
-        int unSelectColor = getResources().getColor(R.color.tab_top_text_1);
+        int selectColor = getResources().getColor(R.color.black);
+        int unSelectColor = getResources().getColor(R.color.colorPrimary);
         indicator.setOnTransitionListener(new OnTransitionTextListener().setColor(selectColor, unSelectColor).setSize(selectSize, unSelectSize));
 
         indicator.setCurrentItem(0,true);

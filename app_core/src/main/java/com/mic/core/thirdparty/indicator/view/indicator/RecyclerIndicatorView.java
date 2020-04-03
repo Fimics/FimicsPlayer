@@ -81,6 +81,7 @@ public class RecyclerIndicatorView extends RecyclerView implements Indicator {
     @Override
     public void setScrollBar(ScrollBar scrollBar) {
         this.scrollBar = scrollBar;
+        invalidate();
     }
 
     private ScrollBar scrollBar;

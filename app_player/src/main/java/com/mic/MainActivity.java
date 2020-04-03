@@ -129,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         navController.navigate(item.getItemId());
-        return TextUtils.isEmpty(item.getTitle());
+        //根据返回值给按钮着色
+        return !TextUtils.isEmpty(item.getTitle());
     }
 }

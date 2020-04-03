@@ -9,6 +9,8 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.MenuItem;
 
+import androidx.annotation.Nullable;
+
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

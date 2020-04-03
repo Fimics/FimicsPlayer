@@ -7,7 +7,8 @@
     <com.mic.core.thirdparty.indicator.view.indicator.RecyclerIndicatorView
         android:id="@+id/moretab_indicator"
         android:layout_width="match_parent"
-        android:layout_height="45dp" />
+        android:layout_height="45dp"
+        />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/moretab_viewPager"
