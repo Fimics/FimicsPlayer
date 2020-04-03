@@ -48,6 +48,7 @@ dependencies {
     //网络框架
     implementation rootProject.ext.dependencies.okhttp
     implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.fastjson
     implementation rootProject.ext.dependencies.retrofit
     implementation rootProject.ext.dependencies.convertergson
     implementation rootProject.ext.dependencies.logginginterceptor

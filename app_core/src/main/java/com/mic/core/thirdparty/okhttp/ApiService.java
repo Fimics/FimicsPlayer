@@ -1,12 +1,9 @@
 package com.mic.core.thirdparty.okhttp;
 
-
-
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
-import java.security.cert.X509CertSelector;
 import java.security.cert.X509Certificate;
 import java.util.concurrent.TimeUnit;
 
@@ -21,23 +18,23 @@ import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 
 public class ApiService {
-
-    private static final int TIME_OUT = 5;
-    protected static final  OkHttpClient okHttpClient;
+    protected static final OkHttpClient okHttpClient;
+    protected static String sBaseUrl;
+    protected static Convert sConvert;
 
     static {
-        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
-        httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 
-        okHttpClient=new OkHttpClient.Builder()
-                .readTimeout(TIME_OUT, TimeUnit.SECONDS)
-                .writeTimeout(TIME_OUT,TimeUnit.SECONDS)
-                .connectTimeout(TIME_OUT,TimeUnit.SECONDS)
-                .addInterceptor(httpLoggingInterceptor)
+        okHttpClient = new OkHttpClient.Builder()
+                .readTimeout(5, TimeUnit.SECONDS)
+                .writeTimeout(5, TimeUnit.SECONDS)
+                .connectTimeout(5, TimeUnit.SECONDS)
+                .addInterceptor(interceptor)
                 .build();
 
-        //ssl
-        TrustManager [] trustManagers = new TrustManager[]{new X509TrustManager() {
+        //http 证书问题
+        TrustManager[] trustManagers = new TrustManager[]{new X509TrustManager() {
             @Override
             public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
 
@@ -53,23 +50,37 @@ public class ApiService {
                 return new X509Certificate[0];
             }
         }};
-
         try {
             SSLContext ssl = SSLContext.getInstance("SSL");
-            ssl.init(null,trustManagers,new SecureRandom());
+            ssl.init(null, trustManagers, new SecureRandom());
 
             HttpsURLConnection.setDefaultSSLSocketFactory(ssl.getSocketFactory());
-            //信任所有域名
             HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() {
                 @Override
                 public boolean verify(String hostname, SSLSession session) {
                     return true;
                 }
             });
-        }catch (NoSuchAlgorithmException e){
+        } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (KeyManagementException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void init(String baseUrl, Convert convert) {
+        sBaseUrl = baseUrl;
+        if (convert == null) {
+            convert = new JsonConvert();
+        }
+        sConvert = convert;
+    }
+
+    public static <T> GetRequest<T> get(String url) {
+        return new GetRequest<>(sBaseUrl + url);
+    }
+
+    public static <T> PostRequest<T> post(String url) {
+        return new PostRequest<>(sBaseUrl + url);
     }
 }
