@@ -6,7 +6,7 @@ import android.app.Application;
 import androidx.multidex.MultiDex;
 
 
-public class PlayerApp extends Application {
+public class FimicsApp extends Application {
 
 
 

@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-
+   >
 
     <androidx.drawerlayout.widget.DrawerLayout
-        android:layout_marginBottom="51dp"
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_view_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -29,16 +33,18 @@
                     app:title="@string/app_name"
                     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                     />
+                    />
                 <!--app:layout_scrollFlags="scroll|enterAlways|snap"-->
             </com.google.android.material.appbar.AppBarLayout>
 
-            <androidx.viewpager.widget.ViewPager
+            <fragment
+                android:id="@+id/nav_host_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/view_pager"
                 android:layout_marginTop="40dp"
-                />
+                android:layout_marginBottom="56dp"
+                app:defaultNavHost="true" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -52,11 +58,13 @@
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
-    <com.mic.view.bottomnav.BottomLayout
-        android:id="@+id/bottom_nav"
+    <com.mic.tabs.view.AppBottomBar
+        android:id="@+id/nav_view_bottom"
         android:layout_width="match_parent"
-        android:layout_gravity="bottom"
-        android:layout_height="wrap_content">
-    </com.mic.view.bottomnav.BottomLayout>
-
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
