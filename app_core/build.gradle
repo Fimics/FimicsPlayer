@@ -38,12 +38,15 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation rootProject.ext.dependencies.appcompat
     testImplementation rootProject.ext.dependencies.junit
     androidTestImplementation rootProject.ext.dependencies.junitext
     androidTestImplementation rootProject.ext.dependencies.espresso
-    implementation rootProject.ext.dependencies.recyclerview
-    implementation rootProject.ext.dependencies.material
+    api rootProject.ext.dependencies.recyclerview
+    api rootProject.ext.dependencies.material
+    api rootProject.ext.dependencies.appcompat
+    api rootProject.ext.dependencies.constraint
+    api rootProject.ext.dependencies.navigationfragment
+    api rootProject.ext.dependencies.navigation
 
     //网络框架
     implementation rootProject.ext.dependencies.okhttp
@@ -61,16 +64,37 @@ dependencies {
     implementation rootProject.ext.dependencies.rxpermissions2
 
     //图片
-    implementation rootProject.ext.dependencies.glide
+    api rootProject.ext.dependencies.glide
+    api rootProject.ext.dependencies.glidetransformations
+    annotationProcessor rootProject.ext.dependencies.glidecompiler
+    api rootProject.ext.dependencies.photoView
     //EventBus
-    implementation rootProject.ext.dependencies.eventbus
+    api rootProject.ext.dependencies.eventbus
 
     //lifecycle
-    implementation rootProject.ext.dependencies.lifecycle
+    api rootProject.ext.dependencies.lifecycle
     annotationProcessor rootProject.ext.dependencies.lifecyclecompiler
 
     //room database
-    implementation rootProject.ext.dependencies.roomruntime
+    api rootProject.ext.dependencies.roomruntime
     annotationProcessor rootProject.ext.dependencies.roomcompiler
+
+    //paging分页组件
+    api rootProject.ext.dependencies.pagingruntime
+    api rootProject.ext.dependencies.pageSmartRefreshLayout
+    api rootProject.ext.dependencies.SmartRefreshHeader
+    //viewpager2 可以禁止预加载
+    api rootProject.ext.dependencies.viewpager2
+
+    //camera
+    api rootProject.ext.dependencies.cameracore
+    api rootProject.ext.dependencies.cameracamera2
+    api rootProject.ext.dependencies.cameraview
+    api rootProject.ext.dependencies.cameraextensions
+
+    //workmanager
+    api rootProject.ext.dependencies.workmanager
+    //aliyun oss
+    api rootProject.ext.dependencies.aliyunoos
 
 }

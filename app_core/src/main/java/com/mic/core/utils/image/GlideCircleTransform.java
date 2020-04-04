@@ -17,7 +17,7 @@ import java.security.MessageDigest;
  */
 public class GlideCircleTransform extends BitmapTransformation {
     public GlideCircleTransform(Context context) {
-        super(context);
+        super();
     }
 
     @Override

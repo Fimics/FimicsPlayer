@@ -112,8 +112,6 @@ dependencies {
     implementation rootProject.ext.dependencies.material
 
     implementation rootProject.ext.dependencies.vectordrawable
-    implementation rootProject.ext.dependencies.navigationfragment
-    implementation rootProject.ext.dependencies.navigation
     implementation rootProject.ext.dependencies.lifecycle
     implementation rootProject.ext.dependencies.legacy
 
