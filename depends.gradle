@@ -79,5 +79,11 @@ ext {
             'roomruntime'              :'android.arch.persistence.room:runtime:2.0.0',
             'roomcompiler'             :'android.arch.persistence.room:compiler:2.0.0',
 
+            //错误收集
+            'buglycrashreport'         : 'com.tencent.bugly:crashreport:latest.release',
+            'buglynativecrashreport'   : 'com.tencent.bugly:nativecrashreport:latest.release',
+
+
+
     ]
 }

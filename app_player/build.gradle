@@ -140,6 +140,10 @@ dependencies {
     //multidex
     implementation rootProject.ext.dependencies.multidex
 
+    //rx框架
+    implementation rootProject.ext.dependencies.buglycrashreport
+    implementation rootProject.ext.dependencies.buglynativecrashreport
+
 //    if (gradle.hasProperty('exoplayerRoot')) {
 //        implementation project(':exoplayer-library-core')
 //        implementation project(':exoplayer-library-dash')
@@ -150,5 +154,8 @@ dependencies {
     implementation project(':annotation')
     //如果你使用kotlin,这里需要使用 kapt project
     annotationProcessor project(":annotation_processor")
+    //QQ快捷登录
+    implementation files('libs/open_sdk_r6140_lite.jar')
+
     
 }
