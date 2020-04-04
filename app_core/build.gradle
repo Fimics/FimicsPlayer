@@ -67,10 +67,10 @@ dependencies {
 
     //lifecycle
     implementation rootProject.ext.dependencies.lifecycle
-    implementation rootProject.ext.dependencies.lifecyclecompiler
+    annotationProcessor rootProject.ext.dependencies.lifecyclecompiler
 
     //room database
     implementation rootProject.ext.dependencies.roomruntime
-    implementation rootProject.ext.dependencies.roomcompiler
+    annotationProcessor rootProject.ext.dependencies.roomcompiler
 
 }
