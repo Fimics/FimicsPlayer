@@ -1,7 +1,6 @@
 package com.mic.tabs;
 
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,9 +14,9 @@ import androidx.viewpager.widget.ViewPager;
 import com.mic.annotation.FragmentDestination;
 import com.mic.core.BaseFragment;
 import com.mic.R;
-import com.mic.home.fragment.AndroidUIChildFragment;
-import com.mic.home.fragment.AndroidUIFragment;
-import com.mic.home.fragment.FruitFragment;
+import com.mic.demoui.fragment.AndroidUIChildFragment;
+import com.mic.demoui.fragment.AndroidUIFragment;
+import com.mic.demoui.fragment.FruitFragment;
 import com.mic.find.multitype.communicate.CommunicateFragment;
 import com.mic.find.multitype.moreapis.MoreApisPlaygroundFragment;
 import com.mic.find.multitype.multiselectable.MultiSelectableFragment;
