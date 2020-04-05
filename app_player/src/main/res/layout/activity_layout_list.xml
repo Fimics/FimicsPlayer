@@ -17,7 +17,7 @@
             android:layout_gravity="center_vertical"
             android:paddingLeft="@dimen/dp_16"
             android:paddingRight="@dimen/dp_16"
-            android:src="@drawable/icon_back_black"></ImageView>
+            android:src="@drawable/icon_back_black"/>
 
         <TextView
             android:id="@+id/title"
@@ -26,17 +26,17 @@
             android:layout_gravity="center"
             android:text="收藏列表"
             android:textColor="@color/color_000"
-            android:textSize="@dimen/sp_16"></TextView>
+            android:textSize="@dimen/sp_16"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_gravity="bottom"
-            android:background="@color/color_divider"></View>
+            android:background="@color/color_divider"/>
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/contanier"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent"/>
 </LinearLayout>

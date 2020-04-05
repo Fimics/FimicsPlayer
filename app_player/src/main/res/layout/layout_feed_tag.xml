@@ -9,9 +9,9 @@
             name="tagText"
             type="java.lang.String" />
 
-        <import type="android.text.TextUtils"></import>
+        <import type="android.text.TextUtils"/>
 
-        <import type="android.view.View"></import>
+        <import type="android.view.View"/>
     </data>
 
     <com.google.android.material.button.MaterialButton

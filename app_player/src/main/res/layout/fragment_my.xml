@@ -7,9 +7,10 @@
 
         <variable
             name="user"
-            type="com.mooc.ppjoke.model.User" />
+            type="User" />
 
-        <import type="com.mooc.ppjoke.utils.StringConvert"></import>
+        <import type="com.mic.tabs.model.User"/>
+        <import type="com.mic.utils.StringConvert"/>
 
     </data>
 
@@ -17,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.mooc.ppjoke.view.PPImageView
+        <com.mic.view.PPImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             app:blur_url="@{user.avatar}"
@@ -25,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:radius="@{50}"
             android:scaleType="fitXY"
-            tools:background="#ff0000"></com.mooc.ppjoke.view.PPImageView>
+            tools:background="#ff0000"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/action_logout"
@@ -36,9 +37,9 @@
             android:fitsSystemWindows="true"
             android:src="@drawable/icon_logout"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+            app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.mooc.ppjoke.view.PPImageView
+        <com.mic.view.PPImageView
             android:id="@+id/avatar"
             android:layout_width="@dimen/dp_45"
             android:layout_height="@dimen/dp_45"
@@ -49,7 +50,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:radius="@{0}"
-            tools:src="@mipmap/ic_launcher_round"></com.mooc.ppjoke.view.PPImageView>
+            tools:src="@drawable/ic_launcher"/>
 
         <TextView
             android:id="@+id/name"
@@ -62,7 +63,7 @@
             android:textSize="@dimen/sp_16"
             app:layout_constraintLeft_toRightOf="@+id/avatar"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="神秘的jetpack"></TextView>
+            tools:text="神秘的jetpack"/>
 
         <TextView
             android:id="@+id/description"
@@ -75,7 +76,7 @@
             android:textSize="@dimen/sp_12"
             app:layout_constraintLeft_toRightOf="@+id/avatar"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            tools:text="神秘的jetpack"></TextView>
+            tools:text="神秘的jetpack"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/go_detail"
@@ -86,7 +87,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_right_arrow"
-            app:tint="@color/color_white"></androidx.appcompat.widget.AppCompatImageView>
+            app:tint="@color/color_white"/>
 
 
         <androidx.cardview.widget.CardView
@@ -119,7 +120,7 @@
                     android:lineSpacingMultiplier="1.3"
                     android:text="@{StringConvert.convertSpannable(user.likeCount,@string/like_count)}"
                     android:textColor="@color/color_666"
-                    tools:text="100\n获赞"></TextView>
+                    tools:text="100\n获赞"/>
 
                 <TextView
                     android:id="@+id/fans_count"
@@ -130,7 +131,7 @@
                     android:lineSpacingMultiplier="1.3"
                     android:text="@{StringConvert.convertSpannable(user.followerCount,@string/fans_count)}"
                     android:textColor="@color/color_666"
-                    tools:text="100\n粉丝"></TextView>
+                    tools:text="100\n粉丝"/>
 
 
                 <TextView
@@ -142,7 +143,7 @@
                     android:lineSpacingMultiplier="1.3"
                     android:text="@{StringConvert.convertSpannable(user.followCount,@string/follow_count)}"
                     android:textColor="@color/color_666"
-                    tools:text="100\n关注"></TextView>
+                    tools:text="100\n关注"/>
 
 
                 <TextView
@@ -154,7 +155,7 @@
                     android:lineSpacingMultiplier="1.3"
                     android:text="@{StringConvert.convertSpannable(user.score,@string/score_count)}"
                     android:textColor="@color/color_666"
-                    tools:text="1000\n粉丝"></TextView>
+                    tools:text="1000\n粉丝"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -186,7 +187,7 @@
                     android:gravity="center"
                     android:text="@string/fragment_my_feed"
                     android:textColor="@color/color_333"
-                    android:textSize="@dimen/sp_12"></TextView>
+                    android:textSize="@dimen/sp_12"/>
 
 
                 <TextView
@@ -199,7 +200,7 @@
                     android:gravity="center"
                     android:text="@string/fragment_my_comment"
                     android:textColor="@color/color_333"
-                    android:textSize="@dimen/sp_12"></TextView>
+                    android:textSize="@dimen/sp_12"/>
 
 
                 <TextView
@@ -212,7 +213,7 @@
                     android:gravity="center"
                     android:text="@string/fragment_my_favorite"
                     android:textColor="@color/color_333"
-                    android:textSize="@dimen/sp_12"></TextView>
+                    android:textSize="@dimen/sp_12"/>
 
 
                 <TextView
@@ -225,7 +226,7 @@
                     android:gravity="center"
                     android:text="@string/fragment_my_history"
                     android:textColor="@color/color_333"
-                    android:textSize="@dimen/sp_12"></TextView>
+                    android:textSize="@dimen/sp_12"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

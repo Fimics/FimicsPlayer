@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/nav_host_fragment"
-        android:name="com.mooc.libcommon.view.WindowInsetsNavHostFragment"
+        android:name="com.mic.core.view.WindowInsetsNavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="56dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.mooc.ppjoke.view.AppBottomBar
+    <com.mic.view.AppBottomBar
         android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

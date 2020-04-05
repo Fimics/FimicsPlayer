@@ -9,7 +9,7 @@
             name="user"
             type="User" />
 
-        <import type="com.mooc.ppjoke.model.User"></import>
+        <import type="com.mic.tabs.model.User"></import>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,7 +20,7 @@
         android:paddingLeft="@dimen/dp_16"
         android:paddingRight="@dimen/dp_16">
 
-        <com.mooc.ppjoke.view.PPImageView
+        <com.mic.view.PPImageView
             android:id="@+id/avatar"
             android:layout_width="@dimen/dp_40"
             android:layout_height="@dimen/dp_40"
@@ -29,7 +29,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@mipmap/ic_launcher_round"></com.mooc.ppjoke.view.PPImageView>
+            tools:src="@drawable/ic_launcher"/>
 
         <TextView
             android:id="@+id/author_name"
@@ -44,7 +44,7 @@
             app:layout_constraintBottom_toTopOf="@+id/create_time"
             app:layout_constraintLeft_toRightOf="@+id/avatar"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="use_name"></TextView>
+            tools:text="use_name"/>
 
         <TextView
             android:id="@+id/create_time"
@@ -57,7 +57,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/avatar"
             app:layout_constraintTop_toBottomOf="@+id/author_name"
-            tools:text="1小时前"></TextView>
+            tools:text="1小时前"/>
 
         <ImageView
             android:id="@+id/feed_delete"
@@ -68,6 +68,6 @@
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
+            app:layout_constraintTop_toTopOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

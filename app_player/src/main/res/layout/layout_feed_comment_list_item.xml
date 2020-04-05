@@ -7,17 +7,17 @@
 
         <variable
             name="comment"
-            type="com.mooc.ppjoke.model.Comment" />
+            type="com.mic.tabs.model.Comment" />
 
         <import type="android.text.TextUtils"></import>
 
         <import type="android.view.View"></import>
 
-        <import type="com.mooc.ppjoke.ui.login.UserManager"></import>
+        <import type="com.mic.ui.login.UserManager"></import>
 
-        <import type="com.mooc.ppjoke.utils.TimeUtils"></import>
+        <import type="com.mic.utils.TimeUtils"></import>
 
-        <import type="com.mooc.ppjoke.ui.InteractionPresenter"></import>
+        <import type="com.mic.ui.InteractionPresenter"></import>
 
         <variable
             name="owner"
@@ -32,7 +32,7 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/dp_10">
 
-        <com.mooc.ppjoke.view.PPImageView
+        <com.mic.view.PPImageView
             android:id="@+id/author_avatar"
             android:layout_width="@dimen/dp_40"
             android:layout_height="@dimen/dp_40"
@@ -42,7 +42,7 @@
             app:isCircle="@{true}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/splash"></com.mooc.ppjoke.view.PPImageView>
+            tools:src="@drawable/splash"/>
 
         <TextView
             android:id="@+id/author_name"
@@ -55,7 +55,7 @@
             android:textSize="@dimen/sp_12"
             app:layout_constraintLeft_toRightOf="@+id/author_avatar"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="神秘的jetpack"></TextView>
+            tools:text="神秘的jetpack"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/label_author"
@@ -77,7 +77,7 @@
             app:cornerRadius="@dimen/dp_3"
             app:layout_constraintBaseline_toBaselineOf="@+id/author_name"
             app:layout_constraintLeft_toRightOf="@+id/author_name"
-            app:layout_constraintTop_toTopOf="parent"></com.google.android.material.button.MaterialButton>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/create_time"
@@ -91,7 +91,7 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/author_name"
             app:layout_constraintLeft_toRightOf="@+id/label_author"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="12天前"></TextView>
+            tools:text="12天前"/>
 
         <TextView
             android:id="@+id/comment_like"
@@ -110,7 +110,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:drawableRight="@drawable/icon_cell_liked_large"
-            tools:text="1000"></TextView>
+            tools:text="1000"/>
 
         <ImageView
             android:id="@+id/comment_delete"
@@ -120,7 +120,7 @@
             android:src="@drawable/icon_item_cell_delete"
             app:layout_constraintBottom_toBottomOf="@id/comment_like"
             app:layout_constraintRight_toLeftOf="@+id/comment_like"
-            app:layout_constraintTop_toTopOf="@id/comment_like"></ImageView>
+            app:layout_constraintTop_toTopOf="@id/comment_like"/>
 
         <TextView
             android:id="@+id/comment_text"
@@ -137,7 +137,7 @@
             app:layout_constraintLeft_toRightOf="@+id/author_avatar"
             app:layout_constraintRight_toLeftOf="@+id/comment_like"
             app:layout_constraintTop_toBottomOf="@+id/author_name"
-            tools:text="comment.commentText"></TextView>
+            tools:text="comment.commentText"/>
 
         <FrameLayout
             android:id="@+id/comment_ext"
@@ -148,7 +148,7 @@
             app:layout_constraintLeft_toRightOf="@+id/author_avatar"
             app:layout_constraintTop_toBottomOf="@id/comment_text">
 
-            <com.mooc.ppjoke.view.PPImageView
+            <com.mic.view.PPImageView
                 android:id="@+id/comment_cover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -158,14 +158,14 @@
                 tools:layout_height="100dp"
                 tools:layout_width="100dp">
 
-            </com.mooc.ppjoke.view.PPImageView>
+            </com.mic.view.PPImageView>
 
             <ImageView
                 android:id="@+id/video_icon"
                 android:layout_width="@dimen/dp_25"
                 android:layout_height="@dimen/dp_25"
                 android:layout_gravity="center"
-                android:src="@drawable/icon_video_play"></ImageView>
+                android:src="@drawable/icon_video_play"/>
         </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

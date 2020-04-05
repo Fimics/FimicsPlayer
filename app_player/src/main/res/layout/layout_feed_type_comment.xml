@@ -12,9 +12,9 @@
             name="lifeCycleOwner"
             type="androidx.lifecycle.LifecycleOwner" />
 
-        <import type="com.mooc.ppjoke.model.Feed"></import>
+        <import type="com.mic.tabs.model.Feed"/>
 
-        <import type="android.view.View"></import>
+        <import type="android.view.View"/>
 
     </data>
 
@@ -28,14 +28,14 @@
 
         <include
             layout="@layout/layout_feed_author"
-            app:user="@{feed.topComment.author}"></include>
+            app:user="@{feed.topComment.author}"/>
 
         <include
             layout="@layout/layout_feed_text"
             app:feedText="@{feed.topComment.commentText}"
-            app:lines="@{3}"></include>
+            app:lines="@{3}"/>
 
-        <com.mooc.libcommon.view.CornerLinearLayout
+        <com.mic.core.view.CornerLinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_40"
             android:layout_marginLeft="@dimen/dimen_16"
@@ -57,20 +57,20 @@
                 android:text="@{feed.feeds_text}"
                 android:textColor="@color/color_000"
                 android:textSize="@dimen/sp_14"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"/>
 
             <FrameLayout
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40">
 
-                <com.mooc.ppjoke.view.PPImageView
+                <com.mic.view.PPImageView
                     android:id="@+id/icon_cover"
                     image_url="@{feed.cover}"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     app:clip_radius="6dp"
-                    app:clip_side="right"></com.mooc.ppjoke.view.PPImageView>
+                    app:clip_side="right"/>
 
                 <ImageView
                     android:id="@+id/icon_video"
@@ -78,21 +78,21 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/exo_icon_play"
-                    android:visibility="@{feed.itemType==Feed.TYPE_VIDEO?View.VISIBLE:View.GONE}"></ImageView>
+                    android:visibility="@{feed.itemType==Feed.TYPE_VIDEO?View.VISIBLE:View.GONE}"/>
             </FrameLayout>
 
-        </com.mooc.libcommon.view.CornerLinearLayout>
+        </com.mic.core.view.CornerLinearLayout>
 
 
         <include
             layout="@layout/layout_feed_tag"
-            app:tagText="@{feed.activityText}"></include>
+            app:tagText="@{feed.activityText}"/>
 
 
         <include
             android:id="@+id/interaction_binding"
             layout="@layout/layout_profile_tab_comment_interaction"
             app:feed="@{feed}"
-            app:lifeCycleOwner="@{lifeCycleOwner}"></include>
+            app:lifeCycleOwner="@{lifeCycleOwner}"/>
     </LinearLayout>
 </layout>

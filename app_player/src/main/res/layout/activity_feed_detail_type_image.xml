@@ -6,9 +6,10 @@
 
         <variable
             name="feed"
-            type="com.mooc.ppjoke.model.Feed" />
+            type="Feed" />
 
-        <import type="com.mooc.libcommon.utils.PixUtils"></import>
+        <import type="com.mic.tabs.model.Feed"/>
+        <import type="com.mic.core.utils.PixUtils"></import>
     </data>
 
     <LinearLayout
@@ -28,7 +29,7 @@
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="@dimen/dp_16"
                 android:paddingRight="@dimen/dp_16"
-                android:src="@drawable/icon_back_black"></ImageView>
+                android:src="@drawable/icon_back_black"/>
 
             <TextView
                 android:id="@+id/title"
@@ -37,7 +38,7 @@
                 android:layout_gravity="center"
                 android:text="@string/feed_detail_type_image_title"
                 android:textColor="@color/color_000"
-                android:textSize="@dimen/sp_16"></TextView>
+                android:textSize="@dimen/sp_16"/>
 
             <include
                 android:id="@+id/author_info_layout"
@@ -45,25 +46,25 @@
                 android:visibility="gone"
                 app:feed="@{feed}"
                 app:fullscreen="@{false}"
-                app:leftMargin="@{PixUtils.dp2px(60)}"></include>
+                app:leftMargin="@{PixUtils.dp2px(60)}"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_gravity="bottom"
-                android:background="@color/color_divider"></View>
+                android:background="@color/color_divider"/>
         </FrameLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_weight="1"/>
 
         <include
             android:id="@+id/interaction_layout"
             layout="@layout/layout_feed_detail_bottom_inateraction"
             app:feed="@{feed}"
-            app:fullscreen="@{false}"></include>
+            app:fullscreen="@{false}"/>
     </LinearLayout>
 </layout>

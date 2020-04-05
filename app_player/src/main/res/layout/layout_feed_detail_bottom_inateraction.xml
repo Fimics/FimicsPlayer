@@ -7,7 +7,7 @@
 
         <variable
             name="feed"
-            type="com.mooc.ppjoke.model.Feed" />
+            type="com.mic.tabs.model.Feed" />
 
         <variable
             name="fullscreen"
@@ -15,9 +15,9 @@
 
         <import type="android.view.View" />
 
-        <import type="com.mooc.ppjoke.ui.InteractionPresenter"></import>
+        <import type="com.mic.ui.InteractionPresenter"/>
 
-        <import type="android.content.Context"></import>
+        <import type="android.content.Context"/>
 
         <variable
             name="owner"
@@ -61,9 +61,7 @@
                 android:paddingLeft="@dimen/dp_10"
                 android:textColor="@{fullscreen?@color/color_white:@color/color_333}"
                 android:textColorHint="@{fullscreen?@color/color_white:@color/color_333}"
-                android:textSize="12sp">
-
-            </TextView>
+                android:textSize="12sp"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -91,7 +89,7 @@
                     android:text="@{feed.ugc.likeCount>0?String.valueOf(feed.ugc.likeCount):@string/like}"
                     android:textColor="@{feed.ugc.hasLiked?@color/color_theme:fullscreen?@color/color_white:@color/color_666}"
                     android:textSize="@dimen/sp_12"
-                    tools:text="赞"></TextView>
+                    tools:text="赞"/>
             </LinearLayout>
 
 
@@ -109,9 +107,8 @@
                     android:layout_marginTop="@dimen/dp_2"
                     android:background="@{feed.ugc.hasFavorite?@drawable/ic_collected:@drawable/ic_collect}"
                     android:backgroundTint="@{feed.ugc.hasFavorite?@color/color_theme:fullscreen?@color/color_white:@color/color_666}"
-                    tools:src="@drawable/ic_collected">
+                    tools:src="@drawable/ic_collected"/>
 
-                </androidx.appcompat.widget.AppCompatImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -121,7 +118,7 @@
                     android:text="@{feed.ugc.hasFavorite?@string/has_collect:@string/collect}"
                     android:textColor="@{feed.ugc.hasFavorite?@color/color_theme:fullscreen?@color/color_white:@color/color_666}"
                     android:textSize="@dimen/sp_12"
-                    tools:text="收藏"></TextView>
+                    tools:text="收藏"/>
             </LinearLayout>
 
 
@@ -139,9 +136,8 @@
                     android:layout_marginTop="@dimen/dp_2"
                     android:background="@drawable/icon_cell_share"
                     android:backgroundTint="@{fullscreen?@color/color_white:@color/color_666}"
-                    tools:src="@drawable/icon_cell_share">
+                    tools:src="@drawable/icon_cell_share"/>
 
-                </androidx.appcompat.widget.AppCompatImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -151,7 +147,7 @@
                     android:text="@string/share"
                     android:textColor="@{fullscreen?@color/color_white:@color/color_666}"
                     android:textSize="@dimen/sp_12"
-                    tools:text="分享"></TextView>
+                    tools:text="分享"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

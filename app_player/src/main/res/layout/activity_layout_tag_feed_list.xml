@@ -7,24 +7,25 @@
 
         <variable
             name="tagList"
-            type="com.mooc.ppjoke.model.TagList" />
+            type="TagList" />
 
         <variable
             name="owner"
             type="androidx.lifecycle.LifecycleOwner" />
 
-        <import type="com.mooc.ppjoke.ui.InteractionPresenter"></import>
+        <import type="com.mic.tabs.model.TagList"/>
+        <import type="com.mic.ui.InteractionPresenter"/>
 
     </data>
 
-    <com.mooc.libcommon.view.WindowInsetsFrameLayout
+    <com.mic.core.view.WindowInsetsFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <include
             android:id="@+id/refresh_layout"
-            layout="@layout/layout_refresh_view"></include>
+            layout="@layout/layout_refresh_view"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/top_bar"
@@ -41,10 +42,10 @@
                 android:src="@drawable/icon_back_black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></ImageView>
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-            <com.mooc.ppjoke.view.PPImageView
+            <com.mic.view.PPImageView
                 android:id="@+id/tag_logo"
                 android:layout_width="@dimen/dp_30"
                 android:layout_height="@dimen/dp_30"
@@ -54,7 +55,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@id/action_back"
                 app:layout_constraintTop_toTopOf="parent"
-                app:radius="@{8}"></com.mooc.ppjoke.view.PPImageView>
+                app:radius="@{8}"/>
 
             <TextView
                 android:id="@+id/tag_title"
@@ -67,7 +68,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/tag_logo"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="title"></TextView>
+                tools:text="title"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/top_bar_follow"
@@ -87,7 +88,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/tag_title"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="关注"></com.google.android.material.button.MaterialButton>
+                tools:text="关注"/>
 
             <View
                 android:id="@+id/top_line"
@@ -96,7 +97,7 @@
                 android:background="@color/color_gray2"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"></View>
+                app:layout_constraintLeft_toLeftOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.mooc.libcommon.view.WindowInsetsFrameLayout>
+    </com.mic.core.view.WindowInsetsFrameLayout>
 </layout>
