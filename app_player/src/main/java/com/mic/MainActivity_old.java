@@ -40,7 +40,7 @@ public class MainActivity_old extends AppCompatActivity implements BottomNavigat
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_old);
         StatusBarUtil.setStatusBarColor(this, getResources().getColor(R.color.colorPrimary));
         initData();
         initView();
