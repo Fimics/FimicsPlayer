@@ -1,6 +1,9 @@
 package com.mic.core.utils;
 
+<<<<<<< HEAD
 import android.annotation.SuppressLint;
+=======
+>>>>>>> dev
 import android.graphics.Bitmap;
 import android.media.MediaMetadataRetriever;
 import android.os.Environment;
@@ -21,7 +24,10 @@ public class FileUtils {
      * @param filePath
      * @return
      */
+<<<<<<< HEAD
     @SuppressLint("RestrictedApi")
+=======
+>>>>>>> dev
     public static LiveData<String> generateVideoCover(final String filePath) {
         final MutableLiveData<String> liveData = new MutableLiveData<>();
         ArchTaskExecutor.getIOThreadExecutor().execute(new Runnable() {

@@ -17,11 +17,11 @@ import androidx.viewpager.widget.ViewPager;
 import com.mic.R;
 import com.mic.annotation.FragmentDestination;
 import com.mic.core.BaseFragment;
-import com.mic.core.utils.system.DisplayUtil;
 import com.mic.core.thirdparty.indicator.view.indicator.IndicatorViewPager;
 import com.mic.core.thirdparty.indicator.view.indicator.ScrollIndicatorView;
 import com.mic.core.thirdparty.indicator.view.indicator.slidebar.ColorBar;
 import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
+import com.mic.core.utils.system.DisplayUtil;
 
 @FragmentDestination(pageUrl ="main/tabs/publish" ,asStarter = false)
 public class PublishFragment extends BaseFragment {

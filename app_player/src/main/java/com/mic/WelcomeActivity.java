@@ -43,7 +43,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                MainActivity.start(WelcomeActivity.this);
+                MainActivity_old.start(WelcomeActivity.this);
 //                MainJetpackActivity.start(WelcomeActivity.this);
                 finish();
             }

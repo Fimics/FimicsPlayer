@@ -79,7 +79,11 @@ public class FindFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
+<<<<<<< HEAD
         return R.layout.fragment_find;
+=======
+        return R.layout.fragment_find_old;
+>>>>>>> dev
     }
 
     private void set(Indicator indicator, int count) {

@@ -7,8 +7,13 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 
+<<<<<<< HEAD
 import com.mic.R;
 
+=======
+
+import com.mic.R;
+>>>>>>> dev
 
 public class ViewHelper {
 

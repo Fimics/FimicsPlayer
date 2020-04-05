@@ -72,12 +72,10 @@ dependencies {
     api rootProject.ext.dependencies.eventbus
 
     //lifecycle
-    api rootProject.ext.dependencies.lifecycle
-    annotationProcessor rootProject.ext.dependencies.lifecyclecompiler
-
-    //room database
     api rootProject.ext.dependencies.roomruntime
+    api rootProject.ext.dependencies.lifecycleextensions
     annotationProcessor rootProject.ext.dependencies.roomcompiler
+    annotationProcessor rootProject.ext.dependencies.lifecyclecompiler
 
     //paging分页组件
     api rootProject.ext.dependencies.pagingruntime

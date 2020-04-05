@@ -12,11 +12,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
 import com.mic.R;
+<<<<<<< HEAD
 
 import com.mic.core.utils.PixUtils;
 import com.mic.core.view.ViewHelper;
 
 
+=======
+import com.mic.core.utils.PixUtils;
+import com.mic.core.view.ViewHelper;
+
+>>>>>>> dev
 public class LoadingDialog extends AlertDialog {
     private TextView loadingText;
 

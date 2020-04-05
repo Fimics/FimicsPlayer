@@ -39,7 +39,11 @@ public class SofaFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
+<<<<<<< HEAD
         return R.layout.fragment_sofa;
+=======
+        return R.layout.fragment_sofa_old;
+>>>>>>> dev
     }
 
 }

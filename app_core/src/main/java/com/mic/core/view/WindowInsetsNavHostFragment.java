@@ -9,6 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.navigation.fragment.NavHostFragment;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 public class WindowInsetsNavHostFragment extends NavHostFragment {
     @Nullable
     @Override

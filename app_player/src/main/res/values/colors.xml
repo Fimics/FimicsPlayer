@@ -300,4 +300,18 @@
     <color name="black_overlay">#66000000</color>
     <!--灰色8f -->
 
+    <color name="color_000">#000000</color>
+    <color name="color_333">#333333</color>
+    <color name="color_666">#666666</color>
+    <color name="color_999">#999999</color>
+    <color name="color_2f2">#2f2f2f</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_theme">#ff678f</color>
+    <color name="color_theme_10">#1Dff678f</color>
+    <color name="color_f4f">#f4f4f4</color>
+    <color name="color_gray">#F8F9F9</color>
+    <color name="color_gray2">#F4F3F4</color>
+    <color name="color_3d3">#3d3d3d</color>
+    <color name="color_divider">#f2f2f2</color>
+
 </resources>
