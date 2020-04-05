@@ -26,14 +26,14 @@ import com.mic.tabs.utils.NavGraphBuilder;
 import org.greenrobot.eventbus.EventBus;
 
 @SuppressWarnings("")
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
+public class MainActivity_old extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     private DrawerLayout mDrawerLayout;
     private  ActionBar actionBar;
     private NavController navController;
 
     public static void start(Activity activity){
-        Intent intent = new Intent(activity, MainActivity.class);
+        Intent intent = new Intent(activity, MainActivity_old.class);
         activity.startActivity(intent);
     }
 
