@@ -24,6 +24,10 @@
         android:paddingTop="@dimen/dp_10">
 
 
+        <!--
+        layout_feed_author 布局需要一个User
+        app:user可以把 User传递过去
+        -->
         <include
             layout="@layout/layout_feed_author"
             app:user="@{feed.author}"/>

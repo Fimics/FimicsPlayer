@@ -80,6 +80,8 @@ ext {
             'roomcompiler'             :'android.arch.persistence.room:compiler:1.1.1',
             'lifecyclecompiler'        :"android.arch.lifecycle:compiler:1.1.1",
 
+            //包含了 viewmodel 和 livedata
+            'lifecycleextensions'      :'androidx.lifecycle:lifecycle-extensions:2.1.0',
             //paging分页组件
             'pagingruntime'            :'androidx.paging:paging-runtime:2.1.0',
             'pageSmartRefreshLayout'   :'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0',

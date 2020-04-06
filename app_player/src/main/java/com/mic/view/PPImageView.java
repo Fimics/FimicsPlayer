@@ -44,6 +44,13 @@ public class PPImageView extends AppCompatImageView {
         setImageUrl(this, imageUrl, false);
     }
 
+    /**
+     * BindingAdapter 标记这个注解后，才可以在xml中使用
+     * image_url ，isCircle 不需要在自己属性中定义
+     * @param view
+     * @param imageUrl
+     * @param isCircle
+     */
     @BindingAdapter(value = {"image_url", "isCircle"})
     public static void setImageUrl(PPImageView view, String imageUrl, boolean isCircle) {
         view.setImageUrl(view, imageUrl, isCircle, 0);
@@ -58,7 +65,7 @@ public class PPImageView extends AppCompatImageView {
         } else if (radius > 0) {
             builder.transform(new RoundedCornersTransformation(PixUtils.dp2px(radius), 0));
         }
-        //图片的真正尺寸很大，但我们实际需要的很小， 为防止资源浪费， 覆写layoutParams
+        //图片的真正尺寸很大，但我们实际需要的很小， 为防止资源浪费， 需要覆写layoutParams
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         if (layoutParams != null && layoutParams.width > 0 && layoutParams.height > 0) {
             builder.override(layoutParams.width, layoutParams.height);
@@ -67,6 +74,17 @@ public class PPImageView extends AppCompatImageView {
     }
 
 
+    /**
+     * 原生方法绑定数据
+     *
+     如果图片的大小是变化的，就不建议在xml中使用dataBing 绑定数据，而是是原生的方法绑定
+     原因如下:
+
+     在绑定数据时不是立刻执行的，而是延迟了一贞,如果数据有变化，可以调用ViewDataBinding-->
+     executePendingBindings()重新绑定数据
+     >requestRebind()>mChoreographer.postFrameCallback(mFrameCallback) ->doFrame() 在doFrame()执行真正绑定任务
+     mChoreographer ,屏幕垂直同步和UI绘制的关键类
+     */
     public void bindData(int widthPx, int heightPx, int marginLeft, String imageUrl) {
         bindData(widthPx, heightPx, marginLeft, PixUtils.getScreenWidth(), PixUtils.getScreenWidth(), imageUrl);
     }
