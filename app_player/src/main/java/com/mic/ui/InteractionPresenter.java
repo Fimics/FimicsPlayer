@@ -22,7 +22,7 @@ import com.mic.tabs.model.Comment;
 import com.mic.tabs.model.Feed;
 import com.mic.tabs.model.TagList;
 import com.mic.tabs.model.User;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 import com.mic.ui.share.ShareDialog;
 
 import org.jetbrains.annotations.NotNull;

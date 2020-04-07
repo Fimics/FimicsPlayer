@@ -9,19 +9,19 @@ import android.view.ViewGroup;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 
-import com.mic.core.BaseFragment;
 import com.mic.R;
-import com.mic.tabs.TabHomeFragment;
+import com.mic.core.BaseFragment;
+import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.find.FindDetailBehaviorActivity;
+import com.mic.find.multitype.bilibili.PostItemDecoration;
+import com.mic.home.ViewPagerActivity;
 import com.mic.home.bean.AndroidUI;
 import com.mic.home.bean.ResourceType;
 import com.mic.home.binder.AndroidUIBinder;
-import com.mic.find.multitype.bilibili.PostItemDecoration;
-import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
-import com.mic.find.FindDetailBehaviorActivity;
-import com.mic.user.login.LoginDialogFragment;
 import com.mic.sofa.VideoDetailMyScrollViewActivity;
+import com.mic.tabs.TabHomeFragment;
 import com.mic.user.detail.UserDetailNestedActivity;
-import com.mic.home.ViewPagerActivity;
+import com.mic.user.login.LoginActivity;
 import com.mic.view.FimRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -99,7 +99,8 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_BEHAVIOR){
             startActivity(FindDetailBehaviorActivity.class);
         }else if(type==ResourceType.TYPE_LOGIN){
-            LoginDialogFragment.instance().show(getActivity());
+//            LoginDialogFragment.instance().show(getActivity());
+            startActivity(LoginActivity.class);
         }else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
             homeFragment.toNextPage();

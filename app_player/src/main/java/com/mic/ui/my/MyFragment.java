@@ -14,7 +14,7 @@ import com.mic.R;
 import com.mic.databinding.FragmentMyBinding;
 import com.mic.core.utils.StatusBar;
 import com.mic.tabs.model.User;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 
 public class MyFragment extends Fragment {
     private FragmentMyBinding mBinding;

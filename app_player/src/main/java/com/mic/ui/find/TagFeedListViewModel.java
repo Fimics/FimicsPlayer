@@ -9,7 +9,7 @@ import com.mic.core.thirdparty.okhttp.ApiResponse;
 import com.mic.core.thirdparty.okhttp.ApiService;
 import com.mic.tabs.model.Feed;
 import com.mic.ui.AbsViewModel;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 
 import java.util.ArrayList;
 import java.util.Collections;

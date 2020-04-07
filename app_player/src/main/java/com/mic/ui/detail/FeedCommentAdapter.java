@@ -20,7 +20,7 @@ import com.mic.core.utils.PixUtils;
 import com.mic.tabs.model.Comment;
 import com.mic.ui.InteractionPresenter;
 import com.mic.ui.MutableItemKeyedDataSource;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 import com.mic.ui.publish.PreviewActivity;
 
 public class FeedCommentAdapter extends AbsPagedListAdapter<Comment, FeedCommentAdapter.ViewHolder> {

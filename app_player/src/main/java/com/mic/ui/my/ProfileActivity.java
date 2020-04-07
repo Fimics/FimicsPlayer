@@ -19,7 +19,7 @@ import com.mic.databinding.ActivityLayoutProfileBinding;
 import com.mic.core.utils.StatusBar;
 import com.mic.R;
 import com.mic.tabs.model.User;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 
 public class ProfileActivity extends AppCompatActivity {
     private ActivityLayoutProfileBinding mBinding;

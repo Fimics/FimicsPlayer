@@ -15,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mic.core.utils.StatusBar;
 import com.mic.tabs.model.Destination;
 import com.mic.tabs.model.User;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 import com.mic.utils.AppConfig;
 import com.mic.utils.NavGraphBuilder;
 import com.mic.view.AppBottomBar;
@@ -49,7 +49,7 @@ public class MainActivityTemp extends AppCompatActivity implements BottomNavigat
         StatusBar.fitSystemBar(this);
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_temp);
         navView = findViewById(R.id.nav_view);
 
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);

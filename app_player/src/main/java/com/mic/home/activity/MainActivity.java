@@ -37,7 +37,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_temp);
         //startService(new Intent(this, MessageService.class));
 
 //        btnBindService = findViewById(R.idgs.btn_bindService);

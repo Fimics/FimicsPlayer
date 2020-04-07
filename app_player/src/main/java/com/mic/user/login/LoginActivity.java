@@ -1,5 +1,6 @@
-package com.mic.ui.login;
+package com.mic.user.login;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

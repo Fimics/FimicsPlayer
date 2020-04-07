@@ -31,7 +31,7 @@ import com.mic.core.thirdparty.okhttp.JsonCallback;
 import com.mic.R;
 import com.mic.tabs.model.Feed;
 import com.mic.tabs.model.TagList;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 
 import org.jetbrains.annotations.NotNull;
 

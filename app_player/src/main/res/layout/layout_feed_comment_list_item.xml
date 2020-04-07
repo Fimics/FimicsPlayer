@@ -13,7 +13,7 @@
 
         <import type="android.view.View"></import>
 
-        <import type="com.mic.ui.login.UserManager"></import>
+        <import type="com.mic.user.login.UserManager"></import>
 
         <import type="com.mic.utils.TimeUtils"></import>
 

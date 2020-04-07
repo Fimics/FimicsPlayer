@@ -1,4 +1,4 @@
-package com.mic.ui.login;
+package com.mic.user.login;
 
 import android.content.Context;
 import android.content.Intent;

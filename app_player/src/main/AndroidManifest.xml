@@ -27,6 +27,11 @@
 
         <!-- android:usesCleartextTraffic="true"  允许明文请求-->
 
+        <!--        这是是QQ快捷登录SDK 里面包含但没用的 apache的类，需要在这里通过uses-library去除掉 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait"
@@ -44,6 +49,7 @@
             tools:ignore="LockedOrientationActivity" />
         <activity android:name=".home.ViewPagerActivity" />
         <activity android:name=".user.detail.UserDetailNestedActivity" />
+        <activity android:name=".user.login.LoginActivity" />
         <activity android:name=".sofa.VideoDetailMyScrollViewActivity" />
         <activity android:name=".find.FindDetailBehaviorActivity" />
         <activity android:name=".home.activity.MainActivity" />
@@ -51,6 +57,25 @@
         <activity android:name=".home.activity.RxBitmapActivity" />
         <activity android:name=".home.activity.RxPermissionsActivity" />
         <activity android:name=".home.activity.UpdateUIActivity" />
+
+        <!-- 注册SDKActivity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101794421" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <service android:name=".service.MessageService">
 

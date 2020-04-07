@@ -15,7 +15,7 @@ import com.mic.tabs.model.Feed;
 import com.mic.ui.InteractionPresenter;
 import com.mic.ui.MutableItemKeyedDataSource;
 import com.mic.home.FeedAdapter;
-import com.mic.ui.login.UserManager;
+import com.mic.user.login.UserManager;
 import com.mic.utils.TimeUtils;
 
 public class ProfileListAdapter extends FeedAdapter {
