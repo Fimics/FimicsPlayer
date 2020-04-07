@@ -73,8 +73,6 @@ android {
                             'src/main/res/layouts/user',
                             'src/main/res/layouts',
                             'src/main/res',
-                            'src/main/res/layouts/jetpack',
-                            'src/main/res/layouts/demo_ui',
                     ]
         }
     }

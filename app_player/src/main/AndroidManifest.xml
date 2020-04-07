@@ -42,15 +42,15 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".demoui.ViewPagerActivity" />
+        <activity android:name=".home.ViewPagerActivity" />
         <activity android:name=".user.detail.UserDetailNestedActivity" />
         <activity android:name=".sofa.VideoDetailMyScrollViewActivity" />
         <activity android:name=".find.FindDetailBehaviorActivity" />
-        <activity android:name=".demoui.activity.MainActivity" />
-        <activity android:name=".demoui.activity.RxBindingActivity" />
-        <activity android:name=".demoui.activity.RxBitmapActivity" />
-        <activity android:name=".demoui.activity.RxPermissionsActivity" />
-        <activity android:name=".demoui.activity.UpdateUIActivity" />
+        <activity android:name=".home.activity.MainActivity" />
+        <activity android:name=".home.activity.RxBindingActivity" />
+        <activity android:name=".home.activity.RxBitmapActivity" />
+        <activity android:name=".home.activity.RxPermissionsActivity" />
+        <activity android:name=".home.activity.UpdateUIActivity" />
 
         <service android:name=".service.MessageService">
 
