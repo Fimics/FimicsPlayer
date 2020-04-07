@@ -12,10 +12,10 @@ import com.mic.core.BaseFragment;
 import com.mic.R;
 
 @FragmentDestination(pageUrl ="main/tabs/sofa" ,asStarter = false)
-public class SofaFragment extends BaseFragment {
+public class TabSofaFragment extends BaseFragment {
 
 
-    public SofaFragment() {
+    public TabSofaFragment() {
         // Required empty public constructor
     }
 
@@ -39,7 +39,7 @@ public class SofaFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_sofa_old;
+        return R.layout.fragment_sofa_tab;
     }
 
 }

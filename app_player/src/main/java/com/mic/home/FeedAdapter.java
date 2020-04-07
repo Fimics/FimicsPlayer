@@ -1,4 +1,4 @@
-package com.mic.ui.home;
+package com.mic.home;
 
 import android.content.Context;
 import android.view.LayoutInflater;

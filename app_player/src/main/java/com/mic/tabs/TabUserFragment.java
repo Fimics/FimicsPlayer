@@ -21,7 +21,7 @@ import com.mic.user.login.LoginPresenter;
 
 
 @FragmentDestination(pageUrl ="main/tabs/user" ,asStarter = false)
-public class UserFragment extends BaseMvpFragment<LoginPresenter> implements LoginContract.ILoginView {
+public class TabUserFragment extends BaseMvpFragment<LoginPresenter> implements LoginContract.ILoginView {
 
     private NestedScrollView mNestedScrollView;
     private ImageView mNserAvatar;
@@ -31,7 +31,7 @@ public class UserFragment extends BaseMvpFragment<LoginPresenter> implements Log
     @InjectPresenter
     private LoginPresenter mUserInfoPresenter;
 
-    public UserFragment() {
+    public TabUserFragment() {
 
     }
 
@@ -61,7 +61,7 @@ public class UserFragment extends BaseMvpFragment<LoginPresenter> implements Log
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_user;
+        return R.layout.fragment_user_tab;
     }
 
     @Override

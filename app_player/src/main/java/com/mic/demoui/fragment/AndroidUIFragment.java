@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.mic.core.BaseFragment;
 import com.mic.R;
-import com.mic.tabs.HomeFragment;
+import com.mic.tabs.TabHomeFragment;
 import com.mic.demoui.bean.AndroidUI;
 import com.mic.demoui.bean.ResourceType;
 import com.mic.demoui.binder.AndroidUIBinder;
@@ -101,7 +101,7 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_LOGIN){
             LoginDialogFragment.instance().show(getActivity());
         }else{
-            HomeFragment homeFragment = (HomeFragment) this.getParentFragment();
+            TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
             homeFragment.toNextPage();
             EventBus eventBus = EventBus.getDefault();
             eventBus.post(uiEvent);

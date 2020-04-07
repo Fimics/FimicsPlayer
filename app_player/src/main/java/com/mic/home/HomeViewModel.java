@@ -1,5 +1,6 @@
-package com.mic.ui.home;
+package com.mic.home;
 
+import android.annotation.SuppressLint;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -129,6 +130,7 @@ public class HomeViewModel extends AbsViewModel<Feed> {
 
     }
 
+    @SuppressLint("RestrictedApi")
     public void loadAfter(int id, ItemKeyedDataSource.LoadCallback<Feed> callback) {
         if (loadAfter.get()) {
             callback.onResult(Collections.emptyList());

@@ -24,11 +24,11 @@ import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionT
 import com.mic.core.utils.system.DisplayUtil;
 
 @FragmentDestination(pageUrl ="main/tabs/publish" ,asStarter = false)
-public class PublishFragment extends BaseFragment {
+public class TabPublishFragment extends BaseFragment {
 
     private IndicatorViewPager indicatorViewPager;
 
-    public PublishFragment() {
+    public TabPublishFragment() {
         // Required empty public constructor
     }
 
@@ -65,7 +65,7 @@ public class PublishFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_message;
+        return R.layout.fragment_publish_tab;
     }
 
     private class MyAdapter extends IndicatorViewPager.IndicatorViewPagerAdapter {

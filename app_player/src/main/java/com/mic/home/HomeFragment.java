@@ -1,4 +1,4 @@
-package com.mic.ui.home;
+package com.mic.home;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -30,6 +30,11 @@ public class HomeFragment extends AbsListFragment<Feed, HomeViewModel> {
         args.putString("feedType", feedType);
         HomeFragment fragment = new HomeFragment();
         fragment.setArguments(args);
+        return fragment;
+    }
+
+    public static HomeFragment newInstance() {
+        HomeFragment fragment = new HomeFragment();
         return fragment;
     }
 

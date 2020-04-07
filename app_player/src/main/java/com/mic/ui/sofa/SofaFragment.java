@@ -19,7 +19,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.mic.databinding.FragmentSofaBinding;
 import com.mic.tabs.model.SofaTab;
-import com.mic.ui.home.HomeFragment;
+import com.mic.home.HomeFragment;
 import com.mic.utils.AppConfig;
 
 import java.util.ArrayList;

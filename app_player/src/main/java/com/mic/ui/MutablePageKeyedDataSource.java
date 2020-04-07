@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import static androidx.arch.core.executor.ArchTaskExecutor.*;
+
 /**
  * 具体原理见 {@link MutableItemKeyedDataSource}
  *
@@ -19,8 +21,8 @@ public class MutablePageKeyedDataSource<Value> extends PageKeyedDataSource<Integ
 
     public PagedList<Value> buildNewPagedList(PagedList.Config config) {
         PagedList<Value> pagedList = new PagedList.Builder<Integer, Value>(this, config)
-                .setFetchExecutor(ArchTaskExecutor.getIOThreadExecutor())
-                .setNotifyExecutor(ArchTaskExecutor.getMainThreadExecutor())
+                .setFetchExecutor(getIOThreadExecutor())
+                .setNotifyExecutor(getMainThreadExecutor())
                 .build();
 
         return pagedList;

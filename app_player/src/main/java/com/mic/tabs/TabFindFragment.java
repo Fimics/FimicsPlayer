@@ -1,6 +1,7 @@
 package com.mic.tabs;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,15 +12,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.mic.R;
 import com.mic.annotation.FragmentDestination;
 import com.mic.core.BaseFragment;
-import com.mic.R;
-import com.mic.demoui.fragment.AndroidUIChildFragment;
-import com.mic.demoui.fragment.AndroidUIFragment;
-import com.mic.demoui.fragment.FruitFragment;
+import com.mic.find.multitype.bilibili.BilibiliFragment;
 import com.mic.find.multitype.communicate.CommunicateFragment;
 import com.mic.find.multitype.moreapis.MoreApisPlaygroundFragment;
 import com.mic.find.multitype.multiselectable.MultiSelectableFragment;
+import com.mic.find.multitype.normal.NormalFragment;
+import com.mic.find.multitype.one2many.OneToManyFragment;
 import com.mic.find.multitype.payload.PayloadFragment;
 import com.mic.find.multitype.weibo.WeiboFragment;
 import com.mic.core.thirdparty.indicator.view.indicator.Indicator;
@@ -29,14 +30,14 @@ import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionT
 
 import java.util.ArrayList;
 
-@FragmentDestination(pageUrl ="main/tabs/home" ,asStarter = true)
-public class HomeFragment extends BaseFragment {
+@FragmentDestination(pageUrl ="main/tabs/find" ,asStarter = false)
+public class TabFindFragment extends BaseFragment {
 
     private RecyclerIndicatorView indicatorView;
     private ViewPager viewPager;
-    String[] names = {"Fruit", "AndroidUI","UIChild","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
+    String[] names = {"Bilibili", "Normal","One2Many","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
     private final ArrayList<BaseFragment> fragments = new ArrayList<>();
-    public HomeFragment() {
+    public TabFindFragment() {
         // Required empty public constructor
     }
 
@@ -54,9 +55,9 @@ public class HomeFragment extends BaseFragment {
                 viewPager.setCurrentItem(select);
             }
         });
-        fragments.add(new FruitFragment());
-        fragments.add(new AndroidUIFragment());
-        fragments.add(new AndroidUIChildFragment());
+        fragments.add(new BilibiliFragment());
+        fragments.add(new NormalFragment());
+        fragments.add(new OneToManyFragment());
         fragments.add(new CommunicateFragment());
         fragments.add(new MultiSelectableFragment());
         fragments.add(new WeiboFragment());
@@ -78,13 +79,13 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_home_old;
+        return R.layout.fragment_find_tab;
     }
 
     private void set(Indicator indicator, int count) {
         indicator.setAdapter(new MyAdapter(count));
 
-        indicator.setScrollBar(new ColorBar(getContext(), R.color.colorPrimary, 5));
+        indicator.setScrollBar(new ColorBar(getContext(), Color.RED, 5));
 
         float unSelectSize = 16;
         float selectSize = unSelectSize * 1.2f;
@@ -93,12 +94,6 @@ public class HomeFragment extends BaseFragment {
         indicator.setOnTransitionListener(new OnTransitionTextListener().setColor(selectColor, unSelectColor).setSize(selectSize, unSelectSize));
 
         indicator.setCurrentItem(0,true);
-    }
-
-    public void toNextPage(){
-        if(indicatorView!=null){
-            indicatorView.setCurrentItem(indicatorView.getCurrentItem()+1);
-        }
     }
 
     private class MyAdapter extends Indicator.IndicatorAdapter {
