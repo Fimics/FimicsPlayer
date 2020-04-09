@@ -11,7 +11,7 @@ import com.mic.R;
 import com.mic.home.bean.AndroidUI;
 import com.mic.core.thirdparty.multitype.ItemViewBinder;
 import com.mic.home.adapter.ListScreenMenuAdapter;
-import com.mic.view.ListDataScreenView;
+import com.mic.exoplayer.ListDataScreenView;
 
 public class ListMenuBinder extends ItemViewBinder<AndroidUI, ListMenuBinder.ViewHolder> {
 

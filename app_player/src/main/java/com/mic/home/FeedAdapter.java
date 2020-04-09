@@ -23,7 +23,7 @@ import com.mic.core.extention.LiveDataBus;
 import com.mic.tabs.model.Feed;
 import com.mic.ui.InteractionPresenter;
 import com.mic.ui.detail.FeedDetailActivity;
-import com.mic.view.ListPlayerView;
+import com.mic.exoplayer.ListPlayerView;
 
 public class FeedAdapter extends AbsPagedListAdapter<Feed, FeedAdapter.ViewHolder> {
     private final LayoutInflater inflater;

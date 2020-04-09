@@ -1,4 +1,4 @@
-package com.mic.view;
+package com.mic.exoplayer;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

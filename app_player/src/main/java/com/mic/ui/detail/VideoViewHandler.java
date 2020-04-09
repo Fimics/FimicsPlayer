@@ -11,7 +11,7 @@ import com.mic.R;
 import com.mic.databinding.LayoutFeedDetailTypeVideoBinding;
 import com.mic.databinding.LayoutFeedDetailTypeVideoHeaderBinding;
 import com.mic.tabs.model.Feed;
-import com.mic.view.FullScreenPlayerView;
+import com.mic.exoplayer.FullScreenPlayerView;
 
 public class VideoViewHandler extends ViewHandler {
     private final CoordinatorLayout coordinator;

@@ -1,4 +1,4 @@
-package com.mic.view;
+package com.mic.exoplayer;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -18,8 +18,6 @@ import com.google.android.exoplayer2.ui.PlayerControlView;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.mic.core.utils.PixUtils;
 import com.mic.R;
-import com.mic.exoplayer.PageListPlay;
-import com.mic.exoplayer.PageListPlayManager;
 
 /**
  * 视频详情页全屏播放专用
