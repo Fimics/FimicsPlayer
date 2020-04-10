@@ -1,4 +1,4 @@
-package com.mic.ui.sofa;
+package com.mic.sofa;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -38,7 +38,6 @@ public class SofaFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
         binding = FragmentSofaBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }

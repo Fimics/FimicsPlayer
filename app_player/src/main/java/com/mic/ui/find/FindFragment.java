@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.mic.tabs.model.SofaTab;
-import com.mic.ui.sofa.SofaFragment;
+import com.mic.sofa.SofaFragment;
 import com.mic.utils.AppConfig;
 
 

@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-//import androidx.databinding.library.baseAdapters.BR;
+import androidx.databinding.library.baseAdapters.BR;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.DiffUtil;
@@ -129,20 +129,20 @@ public class FeedAdapter extends AbsPagedListAdapter<Feed, FeedAdapter.ViewHolde
             //而dataBinding的执行默认是延迟一帧的。
             //当列表上下滑动的时候 ，会明显的看到宽高尺寸不对称的问题
 
-//            mBinding.setVariable(BR.feed, item);
-//            mBinding.setVariable(BR.lifeCycleOwner, mContext);
+            mBinding.setVariable(BR.feed, item);
+            mBinding.setVariable(BR.lifeCycleOwner, mContext);
             if (mBinding instanceof LayoutFeedTypeImageBinding) {
                 LayoutFeedTypeImageBinding imageBinding = (LayoutFeedTypeImageBinding) mBinding;
                 feedImage = imageBinding.feedImage;
                 imageBinding.feedImage.bindData(item.width, item.height, 16, item.cover);
-                //imageBinding.setFeed(item);
-                //imageBinding.interactionBinding.setLifeCycleOwner((LifecycleOwner) mContext);
+                imageBinding.setFeed(item);
+                imageBinding.interactionBinding.setLifeCycleOwner((LifecycleOwner) mContext);
             } else if (mBinding instanceof LayoutFeedTypeVideoBinding) {
                 LayoutFeedTypeVideoBinding videoBinding = (LayoutFeedTypeVideoBinding) mBinding;
                 videoBinding.listPlayerView.bindData(mCategory, item.width, item.height, item.cover, item.url);
                 listPlayerView = videoBinding.listPlayerView;
-                //videoBinding.setFeed(item);
-                //videoBinding.interactionBinding.setLifeCycleOwner((LifecycleOwner) mContext);
+                videoBinding.setFeed(item);
+                videoBinding.interactionBinding.setLifeCycleOwner((LifecycleOwner) mContext);
             }
         }
 
