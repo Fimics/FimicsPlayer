@@ -21,10 +21,10 @@ import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
 
 import com.alibaba.fastjson.JSONObject;
+import com.mic.core.utils.StatusBarUtil;
 import com.mic.databinding.ActivityLayoutPublishBinding;
 import com.mic.core.dialog.LoadingDialog;
 import com.mic.core.utils.FileUtils;
-import com.mic.core.utils.StatusBar;
 import com.mic.core.thirdparty.okhttp.ApiResponse;
 import com.mic.core.thirdparty.okhttp.ApiService;
 import com.mic.core.thirdparty.okhttp.JsonCallback;
@@ -51,7 +51,7 @@ public class PublishActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        StatusBar.fitSystemBar(this);
+        StatusBarUtil.fitSystemBar(this);
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_layout_publish);
 

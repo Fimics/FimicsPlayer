@@ -7,8 +7,8 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.core.utils.StatusBar;
 import com.mic.R;
+import com.mic.core.utils.StatusBarUtil;
 
 public class UserBehaviorListActivity extends AppCompatActivity {
     public static final int BEHAVIOR_FAVORITE = 0;
@@ -24,7 +24,7 @@ public class UserBehaviorListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        StatusBar.fitSystemBar(this);
+        StatusBarUtil.fitSystemBar(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_list);
 

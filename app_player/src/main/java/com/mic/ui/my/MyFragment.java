@@ -11,8 +11,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import com.mic.R;
+import com.mic.core.utils.StatusBarUtil;
 import com.mic.databinding.FragmentMyBinding;
-import com.mic.core.utils.StatusBar;
 import com.mic.tabs.model.User;
 import com.mic.user.login.UserManager;
 
@@ -57,13 +57,13 @@ public class MyFragment extends Fragment {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
-        StatusBar.lightStatusBar(getActivity(), false);
+        StatusBarUtil.lightStatusBar(getActivity(), false);
         super.onCreate(savedInstanceState);
     }
 
     @Override
     public void onHiddenChanged(boolean hidden) {
         super.onHiddenChanged(hidden);
-        StatusBar.lightStatusBar(getActivity(), hidden);
+        StatusBarUtil.lightStatusBar(getActivity(), hidden);
     }
 }

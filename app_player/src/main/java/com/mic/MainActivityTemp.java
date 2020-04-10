@@ -12,7 +12,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.mic.core.utils.StatusBar;
+import com.mic.core.utils.StatusBarUtil;
 import com.mic.tabs.model.Destination;
 import com.mic.tabs.model.User;
 import com.mic.user.login.UserManager;
@@ -46,7 +46,7 @@ public class MainActivityTemp extends AppCompatActivity implements BottomNavigat
         setTheme(R.style.AppTheme);
 
         //启用沉浸式布局，白底黑字
-        StatusBar.fitSystemBar(this);
+        StatusBarUtil.fitSystemBar(this);
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main_temp);

@@ -19,11 +19,11 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mic.core.utils.StatusBarUtil;
 import com.mic.databinding.ActivityLayoutTagFeedListBinding;
 import com.mic.databinding.LayoutTagFeedListHeaderBinding;
 import com.mic.core.extention.AbsPagedListAdapter;
 import com.mic.core.utils.PixUtils;
-import com.mic.core.utils.StatusBar;
 import com.mic.core.view.EmptyView;
 import com.mic.R;
 import com.mic.exoplayer.PageListPlayDetector;
@@ -59,7 +59,7 @@ public class TagFeedListActivity extends AppCompatActivity implements View.OnCli
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        StatusBar.fitSystemBar(this);
+        StatusBarUtil.fitSystemBar(this);
         super.onCreate(savedInstanceState);
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_layout_tag_feed_list);

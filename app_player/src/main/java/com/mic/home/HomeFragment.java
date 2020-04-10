@@ -121,6 +121,10 @@ public class HomeFragment extends AbsListFragment<Feed, HomeViewModel> {
         mViewModel.getDataSource().invalidate();
     }
 
+    /**
+     * 底部导航栏切换时，回调方法
+     * @param hidden
+     */
     @Override
     public void onHiddenChanged(boolean hidden) {
         super.onHiddenChanged(hidden);

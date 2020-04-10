@@ -15,8 +15,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.mic.core.utils.StatusBarUtil;
 import com.mic.databinding.ActivityLayoutProfileBinding;
-import com.mic.core.utils.StatusBar;
 import com.mic.R;
 import com.mic.tabs.model.User;
 import com.mic.user.login.UserManager;
@@ -38,7 +38,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        StatusBar.fitSystemBar(this);
+        StatusBarUtil.fitSystemBar(this);
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_layout_profile);
 
