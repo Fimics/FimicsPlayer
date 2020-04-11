@@ -1,4 +1,4 @@
-package com.mic.ui;
+package com.mic.core.architecture.mmvm;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

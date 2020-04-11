@@ -1,4 +1,4 @@
-package com.mic.ui;
+package com.mic.core.architecture.mmvm;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;

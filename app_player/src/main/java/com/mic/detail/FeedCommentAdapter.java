@@ -19,7 +19,7 @@ import com.mic.core.extention.AbsPagedListAdapter;
 import com.mic.core.utils.PixUtils;
 import com.mic.tabs.model.Comment;
 import com.mic.ui.InteractionPresenter;
-import com.mic.ui.MutableItemKeyedDataSource;
+import com.mic.core.architecture.mmvm.MutableItemKeyedDataSource;
 import com.mic.user.login.UserManager;
 import com.mic.ui.publish.PreviewActivity;
 

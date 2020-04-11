@@ -12,7 +12,7 @@ import androidx.paging.PagedListAdapter;
 import com.mic.exoplayer.PageListPlayDetector;
 import com.mic.exoplayer.PageListPlayManager;
 import com.mic.tabs.model.Feed;
-import com.mic.ui.AbsListFragment;
+import com.mic.core.architecture.mmvm.AbsListFragment;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 
 public class ProfileListFragment extends AbsListFragment<Feed, ProfileViewModel> {
