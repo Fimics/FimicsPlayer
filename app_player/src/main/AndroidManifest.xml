@@ -47,6 +47,7 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".detail.FeedDetailActivity"/>
         <activity android:name=".home.ViewPagerActivity" />
         <activity android:name=".user.detail.UserDetailNestedActivity" />
         <activity android:name=".user.login.LoginActivity" />

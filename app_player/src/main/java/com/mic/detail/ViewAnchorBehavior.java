@@ -1,4 +1,4 @@
-package com.mic.ui.detail;
+package com.mic.detail;
 
 import android.content.Context;
 import android.content.res.TypedArray;

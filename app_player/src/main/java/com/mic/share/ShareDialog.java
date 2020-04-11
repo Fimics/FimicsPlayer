@@ -1,4 +1,4 @@
-package com.mic.ui.share;
+package com.mic.share;
 
 import android.content.ComponentName;
 import android.content.Context;

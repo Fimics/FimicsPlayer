@@ -28,7 +28,7 @@
             android:id="@+id/player_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_behavior=".ui.detail.ViewZoomBehavior"
+            app:layout_behavior=".detail.ViewZoomBehavior"
             app:min_height="200dp"
             app:scrolling_id="@+id/recycler_view"/>
 
@@ -39,7 +39,7 @@
             app:anchorId="@+id/player_view"
             app:feed="@{feed}"
             app:fullscreen="@{false}"
-            app:layout_behavior=".ui.detail.ViewAnchorBehavior"
+            app:layout_behavior=".detail.ViewAnchorBehavior"
             app:leftMargin="@{PixUtils.dp2px(16)}"/>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -49,7 +49,7 @@
             android:layout_marginTop="@dimen/dimen_10"
             android:overScrollMode="never"
             app:anchorId="@+id/author_info"
-            app:layout_behavior=".ui.detail.ViewAnchorBehavior"/>
+            app:layout_behavior=".detail.ViewAnchorBehavior"/>
 
         <include
             android:id="@+id/bottom_interaction"

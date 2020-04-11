@@ -1,4 +1,4 @@
-package com.mic.ui.detail;
+package com.mic.detail;
 
 import androidx.annotation.NonNull;
 import androidx.paging.ItemKeyedDataSource;

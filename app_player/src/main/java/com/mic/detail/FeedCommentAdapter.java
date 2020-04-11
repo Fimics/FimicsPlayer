@@ -1,4 +1,4 @@
-package com.mic.ui.detail;
+package com.mic.detail;
 
 import android.app.Activity;
 import android.content.Context;
