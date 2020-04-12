@@ -1,4 +1,4 @@
-package com.mic.core.architecture.mmvm;
+package com.mic;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mic.core.architecture.mmvm.AbsViewModel;
 import com.mic.databinding.LayoutRefreshViewBinding;
 import com.mic.core.view.EmptyView;
 import com.mic.R;

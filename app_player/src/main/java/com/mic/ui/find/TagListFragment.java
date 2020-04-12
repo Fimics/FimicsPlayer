@@ -12,7 +12,7 @@ import androidx.paging.PagedListAdapter;
 
 import com.mic.R;
 import com.mic.tabs.model.TagList;
-import com.mic.core.architecture.mmvm.AbsListFragment;
+import com.mic.AbsListFragment;
 import com.mic.core.architecture.mmvm.MutableItemKeyedDataSource;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 
