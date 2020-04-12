@@ -1,4 +1,4 @@
-package com.mic.ui.my;
+package com.mic.user;
 
 import android.os.Bundle;
 import android.view.View;

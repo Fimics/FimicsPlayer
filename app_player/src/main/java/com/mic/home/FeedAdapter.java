@@ -21,7 +21,7 @@ import com.mic.databinding.LayoutFeedTypeVideoBinding;
 import com.mic.core.extention.AbsPagedListAdapter;
 import com.mic.core.extention.LiveDataBus;
 import com.mic.tabs.model.Feed;
-import com.mic.ui.InteractionPresenter;
+import com.mic.detail.InteractionPresenter;
 import com.mic.detail.FeedDetailActivity;
 import com.mic.exoplayer.ListPlayerView;
 

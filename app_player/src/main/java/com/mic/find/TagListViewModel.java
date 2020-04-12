@@ -1,4 +1,4 @@
-package com.mic.ui.find;
+package com.mic.find;
 
 import androidx.annotation.NonNull;
 import androidx.arch.core.executor.ArchTaskExecutor;

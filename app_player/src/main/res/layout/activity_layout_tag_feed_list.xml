@@ -14,7 +14,7 @@
             type="androidx.lifecycle.LifecycleOwner" />
 
         <import type="com.mic.tabs.model.TagList"/>
-        <import type="com.mic.ui.InteractionPresenter"/>
+        <import type="com.mic.detail.InteractionPresenter"/>
 
     </data>
 

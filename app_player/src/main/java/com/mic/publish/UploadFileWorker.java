@@ -1,4 +1,4 @@
-package com.mic.ui.publish;
+package com.mic.publish;
 
 import android.content.Context;
 import android.text.TextUtils;

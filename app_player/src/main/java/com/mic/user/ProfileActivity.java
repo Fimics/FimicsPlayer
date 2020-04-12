@@ -1,4 +1,4 @@
-package com.mic.ui.my;
+package com.mic.user;
 
 import android.content.Context;
 import android.content.Intent;

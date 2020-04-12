@@ -1,4 +1,4 @@
-package com.mic.ui.my;
+package com.mic.user;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -12,7 +12,7 @@ import androidx.paging.PagedList;
 
 import com.mic.R;
 import com.mic.tabs.model.Feed;
-import com.mic.ui.InteractionPresenter;
+import com.mic.detail.InteractionPresenter;
 import com.mic.core.architecture.mmvm.MutableItemKeyedDataSource;
 import com.mic.home.FeedAdapter;
 import com.mic.user.login.UserManager;

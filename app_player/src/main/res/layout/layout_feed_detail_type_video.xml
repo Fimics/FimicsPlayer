@@ -12,7 +12,7 @@
             name="fullscreen"
             type="java.lang.Boolean" />
 
-        <import type="com.mic.ui.InteractionPresenter"/>
+        <import type="com.mic.detail.InteractionPresenter"/>
 
         <import type="com.mic.core.utils.PixUtils"/>
 

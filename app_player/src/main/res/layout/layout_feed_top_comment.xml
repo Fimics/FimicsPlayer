@@ -13,7 +13,7 @@
             name="lifeCycleOwner"
             type="androidx.lifecycle.LifecycleOwner" />
 
-        <import type="com.mic.ui.InteractionPresenter" />
+        <import type="com.mic.detail.InteractionPresenter" />
 
         <import type="android.text.TextUtils"/>
 

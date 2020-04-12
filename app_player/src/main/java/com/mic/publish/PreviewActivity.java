@@ -1,4 +1,4 @@
-package com.mic.ui.publish;
+package com.mic.publish;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -35,7 +35,7 @@ import com.mic.core.thirdparty.okhttp.JsonCallback;
 import com.mic.R;
 import com.mic.tabs.model.Comment;
 import com.mic.user.login.UserManager;
-import com.mic.ui.publish.CaptureActivity;
+import com.mic.publish.CaptureActivity;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

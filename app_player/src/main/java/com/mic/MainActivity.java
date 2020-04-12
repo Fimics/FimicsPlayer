@@ -21,7 +21,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.mic.core.utils.StatusBarUtil;
-import com.mic.tabs.utils.NavGraphBuilder;
+import com.mic.utils.NavGraphBuilder;
 
 import org.greenrobot.eventbus.EventBus;
 

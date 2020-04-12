@@ -18,10 +18,9 @@ import com.mic.databinding.LayoutFeedCommentListItemBinding;
 import com.mic.core.extention.AbsPagedListAdapter;
 import com.mic.core.utils.PixUtils;
 import com.mic.tabs.model.Comment;
-import com.mic.ui.InteractionPresenter;
 import com.mic.core.architecture.mmvm.MutableItemKeyedDataSource;
 import com.mic.user.login.UserManager;
-import com.mic.ui.publish.PreviewActivity;
+import com.mic.publish.PreviewActivity;
 
 public class FeedCommentAdapter extends AbsPagedListAdapter<Comment, FeedCommentAdapter.ViewHolder> {
     private LayoutInflater mInflater;

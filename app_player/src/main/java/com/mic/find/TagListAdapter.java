@@ -1,4 +1,4 @@
-package com.mic.ui.find;
+package com.mic.find;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mic.databinding.LayoutTagListItemBinding;
 import com.mic.core.extention.AbsPagedListAdapter;
 import com.mic.tabs.model.TagList;
-import com.mic.ui.InteractionPresenter;
+import com.mic.detail.InteractionPresenter;
 
 public class TagListAdapter extends AbsPagedListAdapter<TagList, TagListAdapter.ViewHolder> {
     private LayoutInflater mInflater;

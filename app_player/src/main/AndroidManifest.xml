@@ -47,12 +47,22 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
+
+
         <activity android:name=".detail.FeedDetailActivity"/>
+        <activity android:name=".find.FindDetailBehaviorActivity"/>
+        <activity android:name=".find.TagFeedListActivity"/>
+        <activity android:name=".publish.CaptureActivity"/>
+        <activity android:name=".publish.PreviewActivity"/>
+        <activity android:name=".publish.PublishActivity"/>
+        <activity android:name=".user.login.LoginActivity"/>
+        <activity android:name=".user.ProfileActivity"/>
+        <activity android:name=".user.UserBehaviorListActivity"/>
+
+
         <activity android:name=".home.ViewPagerActivity" />
         <activity android:name=".user.detail.UserDetailNestedActivity" />
-        <activity android:name=".user.login.LoginActivity" />
         <activity android:name=".sofa.VideoDetailMyScrollViewActivity" />
-        <activity android:name=".find.FindDetailBehaviorActivity" />
         <activity android:name=".home.activity.MainActivity" />
         <activity android:name=".home.activity.RxBindingActivity" />
         <activity android:name=".home.activity.RxBitmapActivity" />
