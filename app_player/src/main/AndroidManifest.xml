@@ -59,7 +59,7 @@
         <activity android:name=".find.TagFeedListActivity"/>
         <activity android:name=".publish.CaptureActivity"/>
         <activity android:name=".publish.PreviewActivity"/>
-        <activity android:name=".publish.PublishActivity"/>
+        <activity android:name=".tabs.TabPublishActivity"/>
         <activity android:name=".user.login.LoginActivity"/>
         <activity android:name=".user.ProfileActivity"/>
         <activity android:name=".user.UserBehaviorListActivity"/>

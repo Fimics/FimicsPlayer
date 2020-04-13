@@ -1,4 +1,4 @@
-package com.mic.publish;
+package com.mic.tabs;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
@@ -21,6 +21,7 @@ import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
 
 import com.alibaba.fastjson.JSONObject;
+import com.mic.annotation.ActivityDestination;
 import com.mic.core.utils.StatusBarUtil;
 import com.mic.databinding.ActivityLayoutPublishBinding;
 import com.mic.core.dialog.LoadingDialog;
@@ -29,6 +30,10 @@ import com.mic.core.thirdparty.okhttp.ApiResponse;
 import com.mic.core.thirdparty.okhttp.ApiService;
 import com.mic.core.thirdparty.okhttp.JsonCallback;
 import com.mic.R;
+import com.mic.publish.CaptureActivity;
+import com.mic.publish.PreviewActivity;
+import com.mic.publish.TagBottomSheetDialogFragment;
+import com.mic.publish.UploadFileWorker;
 import com.mic.tabs.model.Feed;
 import com.mic.tabs.model.TagList;
 import com.mic.user.login.UserManager;
@@ -39,8 +44,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-//@ActivityDestination(pageUrl = "main/tabs/publish", needLogin = true)
-public class PublishActivity extends AppCompatActivity implements View.OnClickListener {
+@ActivityDestination(pageUrl = "main/tabs/publish", needLogin = false)
+public class TabPublishActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityLayoutPublishBinding mBinding;
     private int width, height;
     private String filePath, coverFilePath;
@@ -133,10 +138,10 @@ public class PublishActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void enqueue(List<OneTimeWorkRequest> workRequests) {
-        WorkContinuation workContinuation = WorkManager.getInstance(PublishActivity.this).beginWith(workRequests);
+        WorkContinuation workContinuation = WorkManager.getInstance(TabPublishActivity.this).beginWith(workRequests);
         workContinuation.enqueue();
 
-        workContinuation.getWorkInfosLiveData().observe(PublishActivity.this, new Observer<List<WorkInfo>>() {
+        workContinuation.getWorkInfosLiveData().observe(TabPublishActivity.this, new Observer<List<WorkInfo>>() {
             @Override
             public void onChanged(List<WorkInfo> workInfos) {
                 //block runing enuqued failed susscess finish
@@ -189,7 +194,7 @@ public class PublishActivity extends AppCompatActivity implements View.OnClickLi
                     @Override
                     public void onSuccess(ApiResponse<JSONObject> response) {
                         showToast(getString(R.string.feed_publisj_success));
-                        PublishActivity.this.finish();
+                        TabPublishActivity.this.finish();
                         dismissLoading();
                     }
 
@@ -232,7 +237,7 @@ public class PublishActivity extends AppCompatActivity implements View.OnClickLi
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(PublishActivity.this, message, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TabPublishActivity.this, message, Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -318,7 +323,7 @@ public class PublishActivity extends AppCompatActivity implements View.OnClickLi
         mBinding.cover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PreviewActivity.startActivityForResult(PublishActivity.this, filePath, isVideo, null);
+                PreviewActivity.startActivityForResult(TabPublishActivity.this, filePath, isVideo, null);
             }
         });
     }
@@ -332,7 +337,7 @@ public class PublishActivity extends AppCompatActivity implements View.OnClickLi
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        PublishActivity.this.finish();
+                        TabPublishActivity.this.finish();
                     }
                 }).create().show();
     }

@@ -23,7 +23,7 @@ import com.mic.core.thirdparty.indicator.view.indicator.slidebar.ColorBar;
 import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
 import com.mic.core.utils.system.DisplayUtil;
 
-@FragmentDestination(pageUrl ="main/tabs/publish" ,asStarter = false)
+//@FragmentDestination(pageUrl ="main/tabs/publish" ,asStarter = false)
 public class TabPublishFragment extends BaseFragment {
 
     private IndicatorViewPager indicatorViewPager;
