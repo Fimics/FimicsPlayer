@@ -15,6 +15,11 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:name=".FimicsApp"
@@ -26,6 +31,11 @@
         android:theme="@style/XAppTheme">
 
         <!-- android:usesCleartextTraffic="true"  允许明文请求-->
+
+        <!--        这是是QQ快捷登录SDK 里面包含但没用的 apache的类，需要在这里通过uses-library去除掉 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <activity
             android:name=".WelcomeActivity"
@@ -39,18 +49,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity_old"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".demoui.ViewPagerActivity" />
+
+
+        <activity android:name=".detail.FeedDetailActivity"/>
+        <activity android:name=".find.FindDetailBehaviorActivity"/>
+        <activity android:name=".find.TagFeedListActivity"/>
+        <activity android:name=".publish.CaptureActivity"/>
+        <activity android:name=".publish.PreviewActivity"/>
+        <activity android:name=".tabs.TabPublishActivity"/>
+        <activity android:name=".user.login.LoginActivity"/>
+        <activity android:name=".user.ProfileActivity"/>
+        <activity android:name=".user.UserBehaviorListActivity"/>
+
+
+        <activity android:name=".home.ViewPagerActivity" />
         <activity android:name=".user.detail.UserDetailNestedActivity" />
         <activity android:name=".sofa.VideoDetailMyScrollViewActivity" />
-        <activity android:name=".find.FindDetailBehaviorActivity" />
-        <activity android:name=".demoui.activity.MainActivity" />
-        <activity android:name=".demoui.activity.RxBindingActivity" />
-        <activity android:name=".demoui.activity.RxBitmapActivity" />
-        <activity android:name=".demoui.activity.RxPermissionsActivity" />
-        <activity android:name=".demoui.activity.UpdateUIActivity" />
+        <activity android:name=".home.activity.MainActivity" />
+        <activity android:name=".home.activity.RxBindingActivity" />
+        <activity android:name=".home.activity.RxBitmapActivity" />
+        <activity android:name=".home.activity.RxPermissionsActivity" />
+        <activity android:name=".home.activity.UpdateUIActivity" />
+
+        <!-- 注册SDKActivity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101794421" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <service android:name=".service.MessageService">
 

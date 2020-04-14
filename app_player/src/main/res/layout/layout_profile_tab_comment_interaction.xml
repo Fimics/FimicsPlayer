@@ -13,11 +13,11 @@
             name="lifeCycleOwner"
             type="androidx.lifecycle.LifecycleOwner" />
 
-        <import type="com.mic.tabs.model.Feed"></import>
+        <import type="com.mic.tabs.model.Feed"/>
 
-        <import type="com.mic.utils.StringConvert"></import>
+        <import type="com.mic.utils.StringConvert"/>
 
-        <import type="com.mic.ui.InteractionPresenter" />
+        <import type="com.mic.detail.InteractionPresenter" />
 
         <import type="android.content.Context" />
 
@@ -49,7 +49,7 @@
             tools:icon="@drawable/icon_cell_like"
             tools:iconTint="@color/color_3d3"
             tools:text="1000"
-            tools:textColor="@color/color_3d3"></com.google.android.material.button.MaterialButton>
+            tools:textColor="@color/color_3d3"/>
 
 
 <!--        <com.google.android.material.button.MaterialButton-->
@@ -90,7 +90,7 @@
             tools:icon="@drawable/icon_cell_comment"
             tools:iconTint="@color/color_3d3"
             tools:text="1000"
-            tools:textColor="@color/color_3d3"></com.google.android.material.button.MaterialButton>
+            tools:textColor="@color/color_3d3"/>
 
 
         <com.google.android.material.button.MaterialButton
@@ -111,7 +111,7 @@
             tools:icon="@drawable/icon_cell_share"
             tools:iconTint="@color/color_3d3"
             tools:text="1000"
-            tools:textColor="@color/color_3d3"></com.google.android.material.button.MaterialButton>
+            tools:textColor="@color/color_3d3"/>
 
     </LinearLayout>
 </layout>

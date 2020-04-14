@@ -19,7 +19,7 @@
             name="owner"
             type="androidx.lifecycle.LifecycleOwner" />
 
-        <import type="com.mic.ui.InteractionPresenter"></import>
+        <import type="com.mic.detail.InteractionPresenter"></import>
 
     </data>
 

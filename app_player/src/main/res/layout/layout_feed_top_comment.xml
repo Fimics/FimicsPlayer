@@ -13,7 +13,7 @@
             name="lifeCycleOwner"
             type="androidx.lifecycle.LifecycleOwner" />
 
-        <import type="com.mic.ui.InteractionPresenter" />
+        <import type="com.mic.detail.InteractionPresenter" />
 
         <import type="android.text.TextUtils"/>
 
@@ -63,7 +63,7 @@
                     android:layout_height="@dimen/dp_20"
                     app:image_url="@{comment.author.avatar}"
                     app:isCircle="@{true}"
-                    tools:src="@mipmap/ic_launcher_round">
+                    tools:src="@drawable/ic_launcher">
 
                 </com.mic.view.PPImageView>
 

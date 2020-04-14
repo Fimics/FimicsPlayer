@@ -53,7 +53,8 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 //            buildConfigField "String", "host", "\"http://192.168.2.165:8888/\""
-            buildConfigField "String", "host", "\"http://172.10.0.190:8888/\""
+//            buildConfigField "String", "host", "\"http://172.10.0.190:8888/\""
+            buildConfigField "String", "host", "\"http://123.56.232.18:8080/serverdemo/\""
         }
     }
 
@@ -72,8 +73,6 @@ android {
                             'src/main/res/layouts/user',
                             'src/main/res/layouts',
                             'src/main/res',
-                            'src/main/res/layouts/jetpack',
-                            'src/main/res/layouts/demo_ui',
                     ]
         }
     }
@@ -136,7 +135,10 @@ dependencies {
     //multidex
     implementation rootProject.ext.dependencies.multidex
 
-    //rx框架
+    //包含了 viewmodel 和 livedata
+    implementation rootProject.ext.dependencies.lifecycleextensions
+
+    //bugly
     implementation rootProject.ext.dependencies.buglycrashreport
     implementation rootProject.ext.dependencies.buglynativecrashreport
 

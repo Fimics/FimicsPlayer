@@ -1,130 +1,135 @@
 package com.mic;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.mic.core.utils.StatusBar;
-import com.mic.tabs.model.Destination;
-import com.mic.tabs.model.User;
-import com.mic.ui.login.UserManager;
-import com.mic.utils.AppConfig;
+import com.google.android.material.navigation.NavigationView;
+import com.mic.core.utils.StatusBarUtil;
 import com.mic.utils.NavGraphBuilder;
-import com.mic.view.AppBottomBar;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import org.greenrobot.eventbus.EventBus;
 
-/**
- * App 主页 入口
- * <p>
- * 1.底部导航栏 使用AppBottomBar 承载
- * 2.内容区域 使用WindowInsetsNavHostFragment 承载
- * <p>
- * 3.底部导航栏 和 内容区域的 切换联动 使用NavController驱动
- * 4.底部导航栏 按钮个数和 内容区域destination个数。由注解处理器NavProcessor来收集,生成assetsdestination.json。而后我们解析它。
- */
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+@SuppressWarnings("")
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
+    private DrawerLayout mDrawerLayout;
+    private  ActionBar actionBar;
     private NavController navController;
-    private AppBottomBar navView;
 
+    public static void start(Activity activity){
+        Intent intent = new Intent(activity, MainActivity.class);
+        activity.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //由于 启动时设置了 R.style.launcher 的windowBackground属性
-        //势必要在进入主页后,把窗口背景清理掉
-        setTheme(R.style.AppTheme);
-
-        //启用沉浸式布局，白底黑字
-        StatusBar.fitSystemBar(this);
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-        navView = findViewById(R.id.nav_view);
+        StatusBarUtil.setStatusBarColor(this, getResources().getColor(R.color.colorPrimary));
+        initData();
+        initView();
+        Toolbar toolbar =findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        NavigationView navView =findViewById(R.id.nav_view);
+        actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        }
+        navView.setCheckedItem(R.id.nav_call);
+        navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                mDrawerLayout.closeDrawers();
+                return true;
+            }
+        });
 
+        BottomNavigationView navViewBottom = findViewById(R.id.nav_view_bottom);
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         navController = NavHostFragment.findNavController(fragment);
-        NavGraphBuilder.build(this, navController, fragment.getId());
-
-        navView.setOnNavigationItemSelectedListener(this);
+        NavGraphBuilder.build(this,navController,fragment.getId());
+        navViewBottom.setOnNavigationItemSelectedListener(this);
+        //处理DeepLink
+        // navController.handleDeepLink(getIntent());
 
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        HashMap<String, Destination> destConfig = AppConfig.getDestConfig();
-        Iterator<Map.Entry<String, Destination>> iterator = destConfig.entrySet().iterator();
-        //遍历 target destination 是否需要登录拦截
-        while (iterator.hasNext()) {
-            Map.Entry<String, Destination> entry = iterator.next();
-            Destination value = entry.getValue();
-            if (value != null && !UserManager.get().isLogin() && value.needLogin && value.id == menuItem.getItemId()) {
-                UserManager.get().login(this).observe(this, new Observer<User>() {
-                    @Override
-                    public void onChanged(User user) {
-                        navView.setSelectedItemId(menuItem.getItemId());
-                    }
-                });
-                return false;
-            }
-        }
+    protected void onResume() {
+        super.onResume();
+    }
 
-        navController.navigate(menuItem.getItemId());
-        return !TextUtils.isEmpty(menuItem.getTitle());
+    private void initView(){
+    }
+
+    private void initData() {
+    }
+
+    private void setActionBarName(String title){
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setTitle(title);
+        }
+    }
+
+    /**
+     * 加载创建 menu 布局
+     * @param menu
+     * @return
+     */
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar, menu);
+        return true;
+    }
+
+    /**
+     * 点击menu的一些回掉
+     * @param item
+     * @return
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mDrawerLayout.openDrawer(GravityCompat.START);
+                break;
+            case R.id.settings:
+                Toast.makeText(this, "You clicked Settings", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+        }
+        return true;
     }
 
     @Override
-    public void onBackPressed() {
-//        boolean shouldIntercept = false;
-//        int homeDestinationId = 0;
-//
-//        Fragment fragment = getSupportFragmentManager().getPrimaryNavigationFragment();
-//        String tag = fragment.getTag();
-//        int currentPageDestId = Integer.parseInt(tag);
-//
-//        HashMap<String, Destination> config = AppConfig.getDestConfig();
-//        Iterator<Map.Entry<String, Destination>> iterator = config.entrySet().iterator();
-//        while (iterator.hasNext()) {
-//            Map.Entry<String, Destination> next = iterator.next();
-//            Destination destination = next.getValue();
-//            if (!destination.asStarter && destination.id == currentPageDestId) {
-//                shouldIntercept = true;
-//            }
-//
-//            if (destination.asStarter) {
-//                homeDestinationId = destination.id;
-//            }
-//        }
-//
-//        if (shouldIntercept && homeDestinationId > 0) {
-//            navView.setSelectedItemId(homeDestinationId);
-//            return;
-//        }
-//        super.onBackPressed();
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
 
-        //当前正在显示的页面destinationId
-        int currentPageId = navController.getCurrentDestination().getId();
-
-        //APP页面路导航结构图  首页的destinationId
-        int homeDestId = navController.getGraph().getStartDestination();
-
-        //如果当前正在显示的页面不是首页，而我们点击了返回键，则拦截。
-        if (currentPageId != homeDestId) {
-            navView.setSelectedItemId(homeDestId);
-            return;
-        }
-
-        //否则 finish，此处不宜调用onBackPressed。因为navigation会操作回退栈,切换到之前显示的页面。
-        finish();
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        navController.navigate(item.getItemId());
+        //根据返回值给按钮着色
+        return !TextUtils.isEmpty(item.getTitle());
     }
 }

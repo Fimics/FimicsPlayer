@@ -14,6 +14,12 @@
         <import type="android.view.View"/>
     </data>
 
+    <!--
+    app:backgroundTint="@color/color_gray" 背景填充色
+     app:iconGravity="textStart" icon的位置
+     如果使用 MaterialButton，Theme需要更改 为Theme.MaterialComponents.Light.NoActionBar
+
+    -->
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="20dp"
@@ -40,4 +46,5 @@
         tools:text="神秘的jetpack">
 
     </com.google.android.material.button.MaterialButton>
+
 </layout>

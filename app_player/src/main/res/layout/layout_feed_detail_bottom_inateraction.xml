@@ -15,7 +15,7 @@
 
         <import type="android.view.View" />
 
-        <import type="com.mic.ui.InteractionPresenter"/>
+        <import type="com.mic.detail.InteractionPresenter"/>
 
         <import type="android.content.Context"/>
 

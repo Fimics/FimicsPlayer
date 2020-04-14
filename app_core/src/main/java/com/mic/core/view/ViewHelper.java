@@ -31,6 +31,12 @@ public class ViewHelper {
         setViewOutline(view, radius, hideSide);
     }
 
+    /**
+     * 圆角View
+     * @param owner
+     * @param radius
+     * @param radiusSide
+     */
     public static void setViewOutline(View owner, final int radius, final int radiusSide) {
         owner.setOutlineProvider(new ViewOutlineProvider() {
             @Override

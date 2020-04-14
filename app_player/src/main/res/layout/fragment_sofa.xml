@@ -26,6 +26,10 @@
             app:tabTextColor="@color/color_333"
             app:tabUnboundedRipple="true"/>
 
+        <!--ViewPager2 的特性
+        1. 使用RceycleView实现
+        2. 开发者可以自己实现预加载
+        3.原来的ViewPager运行时会自动把高度转成match_parent-->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="match_parent"

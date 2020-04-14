@@ -11,8 +11,8 @@ import androidx.navigation.NavigatorProvider;
 import androidx.navigation.fragment.FragmentNavigator;
 
 import com.mic.core.utils.app.AppGlobals;
-import com.mic.navigator.FixFragmentNavigator;
 import com.mic.tabs.model.Destination;
+import com.mic.tabs.navigator.FixFragmentNavigator;
 
 import java.util.HashMap;
 import java.util.Iterator;

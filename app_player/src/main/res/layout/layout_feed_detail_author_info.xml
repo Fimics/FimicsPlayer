@@ -19,7 +19,7 @@
 
         <import type="com.mic.utils.TimeUtils" />
 
-        <import type="com.mic.ui.InteractionPresenter"/>
+        <import type="com.mic.detail.InteractionPresenter"/>
 
         <variable
             name="owner"

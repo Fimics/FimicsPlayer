@@ -18,7 +18,7 @@ import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 import com.mic.R;
 import com.mic.tabs.model.BottomBar;
 import com.mic.tabs.model.Destination;
-import com.mic.tabs.utils.AppConfig;
+import com.mic.utils.AppConfig;
 
 
 import java.util.List;
