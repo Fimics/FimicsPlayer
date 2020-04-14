@@ -16,6 +16,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.Observer;
 import androidx.work.Data;
 import androidx.work.OneTimeWorkRequest;
+import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkContinuation;
 import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
@@ -124,6 +125,9 @@ public class TabPublishActivity extends AppCompatActivity implements View.OnClic
                     }
                 });
             }
+
+            //周期性的执行任务
+            //PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder();
             OneTimeWorkRequest request = getOneTimeWorkRequest(filePath);
             fileUploadUUID = request.getId();
             workRequests.add(request);
@@ -251,7 +255,8 @@ public class TabPublishActivity extends AppCompatActivity implements View.OnClic
                 .putString("file", filePath)
                 .build();
 
-//        @SuppressLint("RestrictedApi") Constraints constraints = new Constraints();
+//        @SuppressLint("RestrictedApi")
+//        Constraints constraints = new Constraints();
 //        //设备存储空间充足的时候 才能执行 ,>15%
 //        constraints.setRequiresStorageNotLow(true);
 //        //必须在执行的网络条件下才能好执行,不计流量 ,wifi

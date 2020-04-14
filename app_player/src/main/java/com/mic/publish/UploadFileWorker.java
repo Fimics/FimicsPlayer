@@ -15,6 +15,11 @@ public class UploadFileWorker extends Worker {
         super(context, workerParams);
     }
 
+
+    /**
+     * 运行于子线程
+     * @return
+     */
     @NonNull
     @Override
     public Result doWork() {

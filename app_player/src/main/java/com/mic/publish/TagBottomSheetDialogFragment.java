@@ -48,10 +48,12 @@ public class TagBottomSheetDialogFragment extends BottomSheetDialogFragment {
         dialog.setContentView(view);
         ViewGroup parent = (ViewGroup) view.getParent();
         BottomSheetBehavior<ViewGroup> behavior = BottomSheetBehavior.from(parent);
+        //手指在对话框向下滑动，时最到收缩到屏幕的1/3
         behavior.setPeekHeight(PixUtils.getScreenHeight() / 3);
         behavior.setHideable(false);
 
 
+        //伸大折最大高度为2/3
         ViewGroup.LayoutParams layoutParams = parent.getLayoutParams();
         layoutParams.height = PixUtils.getScreenHeight() / 3 * 2;
         parent.setLayoutParams(layoutParams);
