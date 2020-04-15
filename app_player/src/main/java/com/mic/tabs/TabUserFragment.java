@@ -1,62 +1,69 @@
 package com.mic.tabs;
 
 
-import android.content.Context;
 import android.os.Bundle;
-import androidx.core.widget.NestedScrollView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
-import com.mic.annotation.FragmentDestination;
-import com.mic.user.model.User;
-import com.mic.core.architecture.mvp.base.BaseMvpFragment;
-import com.mic.core.architecture.mvp.inject.InjectPresenter;
 import com.mic.R;
-import com.mic.user.login.LoginContract;
-import com.mic.user.login.LoginPresenter;
+import com.mic.annotation.FragmentDestination;
+import com.mic.core.BaseFragment;
+import com.mic.core.thirdparty.indicator.view.indicator.Indicator;
+import com.mic.core.thirdparty.indicator.view.indicator.RecyclerIndicatorView;
+import com.mic.core.thirdparty.indicator.view.indicator.slidebar.ColorBar;
+import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
+import com.mic.sofa.SofaFragment;
+import com.mic.user.MyFragment;
+
+import java.util.ArrayList;
 
 
 @FragmentDestination(pageUrl ="main/tabs/user" ,asStarter = false)
-public class TabUserFragment extends BaseMvpFragment<LoginPresenter> implements LoginContract.ILoginView {
+public class TabUserFragment extends BaseFragment {
 
-    private NestedScrollView mNestedScrollView;
-    private ImageView mNserAvatar;
-    private TextView mUserName;
-    private TextView mAddress;
-
-    @InjectPresenter
-    private LoginPresenter mUserInfoPresenter;
+    private RecyclerIndicatorView indicatorView;
+    private ViewPager viewPager;
+    String[] names = {"User"};
+    private final ArrayList<Fragment> fragments = new ArrayList<>();
 
     public TabUserFragment() {
-
+        // Required empty public constructor
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return super.onCreateView(inflater,container,savedInstanceState);
+        super.onCreateView(inflater,container,savedInstanceState);
+        viewPager = rootView.findViewById(R.id.moretab_viewPager);
+        indicatorView = rootView.findViewById(R.id.moretab_indicator);
+        set(indicatorView, names.length);
+        indicatorView.setOnItemSelectListener(new Indicator.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(View selectItemView, int select, int preSelect) {
+                viewPager.setCurrentItem(select);
+            }
+        });
+        fragments.add(new MyFragment());
+
+        initViewPager();
+        return rootView;
     }
 
     @Override
     protected void initView() {
-       mNestedScrollView=rootView.findViewById(R.id.nestedscrview);
-       mNserAvatar=rootView.findViewById(R.id.iv_user_avater);
-       mUserName=rootView.findViewById(R.id.tv_username);
-       mAddress=rootView.findViewById(R.id.tv_user_address);
+
     }
 
     @Override
     protected void initData() {
-        mUserInfoPresenter.getUser("admin","admin");
+
     }
 
     @Override
@@ -64,24 +71,92 @@ public class TabUserFragment extends BaseMvpFragment<LoginPresenter> implements 
         return R.layout.fragment_user_tab;
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
+    private void set(Indicator indicator, int count) {
+        indicator.setAdapter(new MyAdapter(count));
+
+        indicator.setScrollBar(new ColorBar(getContext(), R.color.colorPrimary, 5));
+
+        float unSelectSize = 16;
+        float selectSize = unSelectSize * 1.2f;
+        int selectColor = getResources().getColor(R.color.black);
+        int unSelectColor = getResources().getColor(R.color.colorPrimary);
+        indicator.setOnTransitionListener(new OnTransitionTextListener().setColor(selectColor, unSelectColor).setSize(selectSize, unSelectSize));
+
+        indicator.setCurrentItem(0,true);
     }
 
-
-    @Override
-    public void onLoading() {
-
+    public void toNextPage(){
+        if(indicatorView!=null){
+            indicatorView.setCurrentItem(indicatorView.getCurrentItem()+1);
+        }
     }
 
-    @Override
-    public void onError() {
+    private class MyAdapter extends Indicator.IndicatorAdapter {
 
+        private final int count;
+
+        public MyAdapter(int count) {
+            super();
+            this.count = count;
+        }
+
+        @Override
+        public int getCount() {
+            return count;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null) {
+                convertView = getLayoutInflater().inflate(R.layout.tab_top_news, parent, false);
+            }
+            TextView textView = (TextView) convertView;
+            //用了固定宽度可以避免TextView文字大小变化，tab宽度变化导致tab抖动现象
+//            textView.setWidth(DisplayUtil.dipToPix(getContext(),50));
+            textView.setText(names[position]);
+            return convertView;
+        }
     }
 
-    @Override
-    public void onSucceed(User user) {
-//        mCardViews.updateCardViews(user);
+    private void initViewPager() {
+
+        viewPager.setOffscreenPageLimit(0);
+        viewPager.setPageMargin(10);
+
+        viewPager.setAdapter(new FragmentStatePagerAdapter(getChildFragmentManager()) {
+
+
+            @Override
+            public Fragment getItem(int position) {
+                return fragments.get(position);
+            }
+
+            @Override
+            public int getCount() {
+                return fragments.size();
+            }
+
+            @Override
+            public void destroyItem(ViewGroup container, int position, Object object) {
+
+            }
+        });
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                indicatorView.setCurrentItem(position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 }
