@@ -62,11 +62,11 @@ android {
         main {
             res.srcDirs =
                     [
+                            'src/main/res/layouts/home',
                             'src/main/res/layouts/tabs',
                             'src/main/res/layouts/multitype',
                             'src/main/res/layouts/main',
                             'src/main/res/layouts/view',
-                            'src/main/res/layouts/home',
                             'src/main/res/layouts/find',
                             'src/main/res/layouts/publish',
                             'src/main/res/layouts/sofa',

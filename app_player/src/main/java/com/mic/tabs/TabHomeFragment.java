@@ -35,7 +35,7 @@ public class TabHomeFragment extends BaseFragment {
 
     private RecyclerIndicatorView indicatorView;
     private ViewPager viewPager;
-    String[] names = {"Home","Fruit", "AndroidUI","UIChild","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
+    String[] names = {"Home", "AndroidUI","UIChild","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis","Fruit"};
     private final ArrayList<Fragment> fragments = new ArrayList<>();
     public TabHomeFragment() {
         // Required empty public constructor
@@ -56,7 +56,6 @@ public class TabHomeFragment extends BaseFragment {
             }
         });
         fragments.add(HomeFragment.newInstance());
-        fragments.add(new FruitFragment());
         fragments.add(new AndroidUIFragment());
         fragments.add(new AndroidUIChildFragment());
         fragments.add(new CommunicateFragment());
@@ -64,6 +63,7 @@ public class TabHomeFragment extends BaseFragment {
         fragments.add(new WeiboFragment());
         fragments.add(new PayloadFragment());
         fragments.add(new MoreApisPlaygroundFragment());
+        fragments.add(new FruitFragment());
         initViewPager();
         return rootView;
     }
