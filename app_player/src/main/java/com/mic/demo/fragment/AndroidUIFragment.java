@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.mic.R;
 import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.demo.activity.XfermodeActivity;
+import com.mic.demo.activity.XfermodesActivity;
 import com.mic.find.FindDetailBehaviorActivity;
 import com.mic.find.multitype.bilibili.PostItemDecoration;
 import com.mic.home.ViewPagerActivity;
@@ -101,7 +103,13 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_LOGIN){
 //            LoginDialogFragment.instance().show(getActivity());
             startActivity(LoginActivity.class);
-        }else{
+        }else if(type==ResourceType.TYPE_XFERMODE){
+            startActivity(XfermodeActivity.class);
+        }else if(type==ResourceType.TYPE_XFERMODES){
+            startActivity(XfermodesActivity.class);
+        }
+
+        else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
             homeFragment.toNextPage();
             EventBus eventBus = EventBus.getDefault();

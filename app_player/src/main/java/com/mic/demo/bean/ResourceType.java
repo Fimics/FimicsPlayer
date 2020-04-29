@@ -29,7 +29,8 @@ public class ResourceType {
     public static final String NAME_LOVE_LAYOUT = "LoveLayout";
     public static final String NAME_LOGIN = "login";
     public static final String NAME_PAINT = "paint";
-
+    public static final String NAME_XFERMODE = "xfermode";
+    public static final String NAME_XFERMODES = "xfermodes";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -56,6 +57,8 @@ public class ResourceType {
     public static final int TYPE_LOVE_LAYOUT = 21;
     public static final int TYPE_LOGIN = 22;
     public static final int TYPE_PAINT = 23;
+    public static final int TYPE_XFERMODE = 24;
+    public static final int TYPE_XFERMODES= 25;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -84,6 +87,8 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_BEHAVIOR ,TYPE_BEHAVIOR));
         uiArrayList.add(new AndroidUI( NAME_LOGIN ,TYPE_LOGIN));
         uiArrayList.add(new AndroidUI( NAME_PAINT ,TYPE_PAINT));
+        uiArrayList.add(new AndroidUI(NAME_XFERMODE,TYPE_XFERMODE));
+        uiArrayList.add(new AndroidUI(NAME_XFERMODES,TYPE_XFERMODES));
         return uiArrayList;
     }
 }

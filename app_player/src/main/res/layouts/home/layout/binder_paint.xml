@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.mic.demo.view.GradientLayout
+    <com.mic.demo.viewwy.GradientLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

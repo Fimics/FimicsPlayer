@@ -1,4 +1,4 @@
-package com.mic.demo.view;
+package com.mic.demo.viewwy;
 
 import android.content.Context;
 import android.graphics.Bitmap;

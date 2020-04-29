@@ -74,6 +74,10 @@
         <activity android:name=".home.activity.RxPermissionsActivity" />
         <activity android:name=".home.activity.UpdateUIActivity" />
 
+        <!--demo-->
+        <activity android:name=".demo.activity.XfermodesActivity"/>
+        <activity android:name=".demo.activity.XfermodeActivity"/>
+
         <!-- 注册SDKActivity -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
