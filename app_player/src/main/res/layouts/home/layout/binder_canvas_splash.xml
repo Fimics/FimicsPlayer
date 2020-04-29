@@ -16,7 +16,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.mic.demo.viewwy.CanvasSplashView
+    <com.mic.demo.viewwy.canvas.CanvasSplashView
         android:id="@+id/splash"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

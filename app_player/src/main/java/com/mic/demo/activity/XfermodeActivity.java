@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.demo.viewwy.XfermodeEraserView;
+import com.mic.demo.viewwy.paint.XfermodeEraserView;
 
 public class XfermodeActivity extends AppCompatActivity {
 

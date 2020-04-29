@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy;
+package com.mic.demo.viewwy.paint;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

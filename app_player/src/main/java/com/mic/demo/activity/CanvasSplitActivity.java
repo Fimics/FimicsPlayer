@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.demo.viewwy.CanvasSplitView;
+import com.mic.demo.viewwy.canvas.CanvasSplitView;
 
 public class CanvasSplitActivity extends AppCompatActivity {
 

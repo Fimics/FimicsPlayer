@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy;
+package com.mic.demo.viewwy.canvas;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.demo.viewwy.ColorFilterView;
+import com.mic.demo.viewwy.paint.ColorFilterView;
 
 public class ColorFilterViewActivity extends AppCompatActivity {
 

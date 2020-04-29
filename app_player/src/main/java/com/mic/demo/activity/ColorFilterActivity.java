@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.R;
 import com.mic.demo.adapter.ColorFilterAdapter;
-import com.mic.demo.viewwy.ColorFilter;
+import com.mic.demo.viewwy.paint.ColorFilter;
 
 import java.util.ArrayList;
 import java.util.List;
