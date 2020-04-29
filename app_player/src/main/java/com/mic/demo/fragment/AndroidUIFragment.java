@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.mic.R;
 import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.demo.activity.CanvasSplitActivity;
+import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.XfermodeActivity;
@@ -113,8 +115,11 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(ColorFilterActivity.class);
         }else if(type==ResourceType.TYPE_COLOR_FILTER_VIEW){
             startActivity(ColorFilterViewActivity.class);
+        }else if(type==ResourceType.TYPE_CANVAS_TRANSFORM){
+            startActivity(CanvasTransformActivity.class);
+        }else if(type==ResourceType.TYPE_CANVAS_SPLIT){
+            startActivity(CanvasSplitActivity.class);
         }
-
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
             homeFragment.toNextPage();

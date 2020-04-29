@@ -77,9 +77,10 @@
         <!--demo-->
         <activity android:name=".demo.activity.XfermodesActivity"/>
         <activity android:name=".demo.activity.XfermodeActivity"/>
-
         <activity android:name=".demo.activity.ColorFilterActivity"/>
         <activity android:name=".demo.activity.ColorFilterViewActivity"/>
+        <activity android:name=".demo.activity.CanvasTransformActivity"/>
+        <activity android:name=".demo.activity.CanvasSplitActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity
