@@ -78,7 +78,7 @@ public class PathView extends View {
 //        mPath.rQuadTo(200, -400, 500, 0);
 ////
 ////
-        //画三阶贝塞尔曲线
+        //画三阶贝塞尔曲线(两个基点，两个控制点)
         mPath.moveTo(300, 500);
 //        mPath.cubicTo(500, 100, 600, 1200, 800, 500);
         //参数表示相对位置，等同于上面一行代码

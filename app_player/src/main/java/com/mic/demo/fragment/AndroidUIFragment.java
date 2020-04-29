@@ -17,6 +17,7 @@ import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.PathBezierActivity;
+import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
@@ -125,6 +126,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(PathBezierActivity.class);
         }else if(type==ResourceType.TYPE_PATH_MULTI_BEZIER){
             startActivity(PathMultiBezierActivity.class);
+        }else if(type==ResourceType.TYPE_PATH_MEASURE){
+            startActivity(PathMeasureActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
