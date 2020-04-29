@@ -16,6 +16,7 @@ import com.mic.demo.activity.CanvasSplitActivity;
 import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
+import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
 import com.mic.find.FindDetailBehaviorActivity;
@@ -119,6 +120,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(CanvasTransformActivity.class);
         }else if(type==ResourceType.TYPE_CANVAS_SPLIT){
             startActivity(CanvasSplitActivity.class);
+        }else if(type==ResourceType.TYPE_PATH_BEZIER){
+            startActivity(PathBezierActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

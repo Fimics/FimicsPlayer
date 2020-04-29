@@ -81,6 +81,7 @@
         <activity android:name=".demo.activity.ColorFilterViewActivity"/>
         <activity android:name=".demo.activity.CanvasTransformActivity"/>
         <activity android:name=".demo.activity.CanvasSplitActivity"/>
+        <activity android:name=".demo.activity.PathBezierActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity
