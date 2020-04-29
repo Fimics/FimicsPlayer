@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.R;
 import com.mic.core.utils.StatusBarUtil;
-import com.mic.view.MyScrollView;
+import com.mic.demo.view.MyScrollView;
 
 public class VideoDetailMyScrollViewActivity extends AppCompatActivity {
     private View mTitleBar;

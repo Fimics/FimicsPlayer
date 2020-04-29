@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-   <com.mic.view.singleview.TouchVIew
+   <com.mic.demo.view.singleview.TouchVIew
        android:id="@+id/touch_view"
        android:layout_width="200dp"
        android:layout_height="200dp"

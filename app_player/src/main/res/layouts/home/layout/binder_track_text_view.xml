@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     >
 
-   <com.mic.view.singleview.TrackTextView
+   <com.mic.demo.view.singleview.TrackTextView
        android:id="@+id/color_track_tv"
        android:textSize="20sp"
        android:layout_width="wrap_content"

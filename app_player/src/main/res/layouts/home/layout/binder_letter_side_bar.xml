@@ -5,7 +5,7 @@
     >
 
 
-    <com.mic.view.singleview.LetterSideBar
+    <com.mic.demo.view.singleview.LetterSideBar
         android:id="@+id/letter_sidebar"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
