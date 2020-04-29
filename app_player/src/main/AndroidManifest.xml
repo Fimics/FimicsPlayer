@@ -78,6 +78,9 @@
         <activity android:name=".demo.activity.XfermodesActivity"/>
         <activity android:name=".demo.activity.XfermodeActivity"/>
 
+        <activity android:name=".demo.activity.ColorFilterActivity"/>
+        <activity android:name=".demo.activity.ColorFilterViewActivity"/>
+
         <!-- 注册SDKActivity -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"

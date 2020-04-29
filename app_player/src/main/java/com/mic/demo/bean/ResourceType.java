@@ -31,6 +31,8 @@ public class ResourceType {
     public static final String NAME_PAINT = "paint";
     public static final String NAME_XFERMODE = "xfermode";
     public static final String NAME_XFERMODES = "xfermodes";
+    public static final String NAME_COLOR_FILTER = "colorFilter";
+    public static final String NAME_COLOR_FILTER_VIEW = "colorFilterView";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -59,6 +61,8 @@ public class ResourceType {
     public static final int TYPE_PAINT = 23;
     public static final int TYPE_XFERMODE = 24;
     public static final int TYPE_XFERMODES= 25;
+    public static final int TYPE_COLOR_FILTER = 26;
+    public static final int TYPE_COLOR_FILTER_VIEW= 27;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -89,6 +93,8 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI( NAME_PAINT ,TYPE_PAINT));
         uiArrayList.add(new AndroidUI(NAME_XFERMODE,TYPE_XFERMODE));
         uiArrayList.add(new AndroidUI(NAME_XFERMODES,TYPE_XFERMODES));
+        uiArrayList.add(new AndroidUI(NAME_COLOR_FILTER,TYPE_COLOR_FILTER));
+        uiArrayList.add(new AndroidUI(NAME_COLOR_FILTER_VIEW,TYPE_COLOR_FILTER_VIEW));
         return uiArrayList;
     }
 }

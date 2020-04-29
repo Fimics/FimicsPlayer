@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.mic.R;
 import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.demo.activity.ColorFilterActivity;
+import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
 import com.mic.find.FindDetailBehaviorActivity;
@@ -107,6 +109,10 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(XfermodeActivity.class);
         }else if(type==ResourceType.TYPE_XFERMODES){
             startActivity(XfermodesActivity.class);
+        }else if(type==ResourceType.TYPE_COLOR_FILTER){
+            startActivity(ColorFilterActivity.class);
+        }else if(type==ResourceType.TYPE_COLOR_FILTER_VIEW){
+            startActivity(ColorFilterViewActivity.class);
         }
 
         else{
