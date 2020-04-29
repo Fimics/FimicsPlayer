@@ -12,6 +12,7 @@ import com.mic.core.BaseFragment;
 import com.mic.R;
 import com.mic.demo.bean.AndroidUI;
 import com.mic.demo.bean.ResourceType;
+import com.mic.demo.binder.CanvasSplashBinder;
 import com.mic.demo.binder.LetterSideBarBinder;
 import com.mic.demo.binder.ListMenuBinder;
 import com.mic.demo.binder.LoadingViewBinder;
@@ -83,7 +84,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 new LoveLayoutBinder(),
                 new MessageBubbleViewBinder(),
                 new MessageBubbleViewBinder1(),
-                new PaintBinder()
+                new PaintBinder(),
+                new CanvasSplashBinder()
         ).withClassLinker((position, androidUI) -> {
             int type = androidUI.type;
             if (type == ResourceType.TYPE_TEXTVIEW) {
@@ -124,6 +126,8 @@ public class AndroidUIChildFragment extends BaseFragment {
                 return MessageBubbleViewBinder1.class;
             }else if(type==ResourceType.TYPE_PAINT){
                 return PaintBinder.class;
+            }else if(type==ResourceType.TYPE_CANVAS_SPLASH){
+                return CanvasSplashBinder.class;
             }
              else {
                 return TextViewBinder.class;

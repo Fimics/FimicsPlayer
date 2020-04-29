@@ -314,4 +314,15 @@
     <color name="color_3d3">#3d3d3d</color>
     <color name="color_divider">#f2f2f2</color>
 
+    <color name="splash_bg">#F8F6EC</color>
+
+    <array name="splash_circle_colors">
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/pink</item>
+        <item>@color/orange</item>
+        <item>@color/aqua</item>
+        <item>@color/yellow</item>
+    </array>
+
 </resources>

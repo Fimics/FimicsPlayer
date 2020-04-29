@@ -35,6 +35,7 @@ public class ResourceType {
     public static final String NAME_COLOR_FILTER_VIEW = "colorFilterView";
     public static final String NAME_CANVAS_TRANSFORM = "canvasTransform";
     public static final String NAME_CANVAS_SPLIT = "canvasSplit";
+    public static final String NAME_CANVAS_SPLASH = "canvasSplash";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -67,6 +68,7 @@ public class ResourceType {
     public static final int TYPE_COLOR_FILTER_VIEW= 27;
     public static final int TYPE_CANVAS_TRANSFORM = 28;
     public static final int TYPE_CANVAS_SPLIT= 29;
+    public static final int TYPE_CANVAS_SPLASH= 30;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -101,6 +103,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_COLOR_FILTER_VIEW,TYPE_COLOR_FILTER_VIEW));
         uiArrayList.add(new AndroidUI(NAME_CANVAS_TRANSFORM,TYPE_CANVAS_TRANSFORM));
         uiArrayList.add(new AndroidUI(NAME_CANVAS_SPLIT,TYPE_CANVAS_SPLIT));
+        uiArrayList.add(new AndroidUI(NAME_CANVAS_SPLASH,TYPE_CANVAS_SPLASH));
         return uiArrayList;
     }
 }
