@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.canvas;
+package com.mic.demo.viewwy;
 
 import android.content.Context;
 import android.graphics.Canvas;

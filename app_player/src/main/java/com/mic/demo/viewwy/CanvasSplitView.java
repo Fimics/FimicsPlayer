@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.canvas;
+package com.mic.demo.viewwy;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
