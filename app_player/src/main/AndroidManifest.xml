@@ -82,6 +82,7 @@
         <activity android:name=".demo.activity.CanvasTransformActivity"/>
         <activity android:name=".demo.activity.CanvasSplitActivity"/>
         <activity android:name=".demo.activity.PathBezierActivity"/>
+        <activity android:name=".demo.activity.PathMultiBezierActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity

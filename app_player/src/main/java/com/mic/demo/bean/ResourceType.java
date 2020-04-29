@@ -37,6 +37,7 @@ public class ResourceType {
     public static final String NAME_CANVAS_SPLIT = "canvasSplit";
     public static final String NAME_CANVAS_SPLASH = "canvasSplash";
     public static final String NAME_PATH_BEZIER = "pathBezier";
+    public static final String NAME_PATH_MULTI_BEZIER = "pathMultiBezier(多阶贝赛尔曲线)";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -71,6 +72,7 @@ public class ResourceType {
     public static final int TYPE_CANVAS_SPLIT= 29;
     public static final int TYPE_CANVAS_SPLASH= 30;
     public static final int TYPE_PATH_BEZIER= 31;
+    public static final int TYPE_PATH_MULTI_BEZIER= 32;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -107,6 +109,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_CANVAS_SPLIT,TYPE_CANVAS_SPLIT));
         uiArrayList.add(new AndroidUI(NAME_CANVAS_SPLASH,TYPE_CANVAS_SPLASH));
         uiArrayList.add(new AndroidUI(NAME_PATH_BEZIER,TYPE_PATH_BEZIER));
+        uiArrayList.add(new AndroidUI(NAME_PATH_MULTI_BEZIER,TYPE_PATH_MULTI_BEZIER));
         return uiArrayList;
     }
 }
