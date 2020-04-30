@@ -92,6 +92,8 @@ public class PathMeasureView extends View {
 //        canvas.drawPath(path, mPaint);
 //        PathMeasure pathMeasure = new PathMeasure(path, false);
 //        Log.e("TAG", "onDraw:forceClosed=false "+ pathMeasure.getLength());
+
+
 //        //跳转到下一条曲线
 //        pathMeasure.nextContour();
 //        Log.e("TAG", "onDraw:forceClosed=false "+ pathMeasure.getLength());
