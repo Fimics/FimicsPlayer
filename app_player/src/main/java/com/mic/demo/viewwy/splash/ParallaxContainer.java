@@ -60,14 +60,6 @@ public class ParallaxContainer extends FrameLayout implements ViewPager.OnPageCh
         addView(vp,0);
     }
 
-
-
-
-
-
-
-
-
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 //        动画
@@ -116,10 +108,6 @@ public class ParallaxContainer extends FrameLayout implements ViewPager.OnPageCh
             }
         }
     }
-
-
-
-
 
     @Override
     public void onPageSelected(int position) {
