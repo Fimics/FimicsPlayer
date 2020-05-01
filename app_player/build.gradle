@@ -71,6 +71,7 @@ android {
                             'src/main/res/layouts/publish',
                             'src/main/res/layouts/sofa',
                             'src/main/res/layouts/user',
+                            'src/main/res/layouts/splash',
                             'src/main/res/layouts',
                             'src/main/res',
                     ]
@@ -141,6 +142,8 @@ dependencies {
     //bugly
     implementation rootProject.ext.dependencies.buglycrashreport
     implementation rootProject.ext.dependencies.buglynativecrashreport
+
+    implementation 'com.nineoldandroids:library:2.4.0'
 
     if (gradle.hasProperty('exoplayerRoot')) {
         implementation project(':exoplayer-library-core')

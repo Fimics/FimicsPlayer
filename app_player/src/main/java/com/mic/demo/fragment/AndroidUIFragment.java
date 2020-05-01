@@ -20,6 +20,7 @@ import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
+import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
 import com.mic.find.FindDetailBehaviorActivity;
@@ -131,6 +132,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(PathMeasureActivity.class);
         }else if(type==ResourceType.TYPE_ANIMATOR){
             startActivity(AnimatorActivity.class);
+        }else if(type==ResourceType.TYPE_SPLASH){
+            startActivity(SplashActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

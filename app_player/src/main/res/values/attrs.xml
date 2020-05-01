@@ -107,4 +107,10 @@
         <attr name="duration" format="integer"></attr>
     </declare-styleable>
 
+    <attr name="a_in" format="float" />
+    <attr name="a_out" format="float" />
+    <attr name="x_in" format="float" />
+    <attr name="x_out" format="float" />
+    <attr name="y_in" format="float" />
+    <attr name="y_out" format="float" />
 </resources>

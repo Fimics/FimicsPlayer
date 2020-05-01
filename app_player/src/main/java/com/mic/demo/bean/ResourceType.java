@@ -40,6 +40,7 @@ public class ResourceType {
     public static final String NAME_PATH_MULTI_BEZIER = "pathMultiBezier(多阶贝赛尔曲线)";
     public static final String NAME_PATH_MEASURE = "pathMeasure";
     public static final String NAME_ANIMATOR = "animator";
+    public static final String NAME_SPLASH = "splash";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -77,6 +78,7 @@ public class ResourceType {
     public static final int TYPE_PATH_MULTI_BEZIER= 32;
     public static final int TYPE_PATH_MEASURE= 33;
     public static final int TYPE_ANIMATOR= 34;
+    public static final int TYPE_SPLASH= 35;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -116,6 +118,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_PATH_MULTI_BEZIER,TYPE_PATH_MULTI_BEZIER));
         uiArrayList.add(new AndroidUI(NAME_PATH_MEASURE,TYPE_PATH_MEASURE));
         uiArrayList.add(new AndroidUI(NAME_ANIMATOR,TYPE_ANIMATOR));
+        uiArrayList.add(new AndroidUI(NAME_SPLASH,TYPE_SPLASH));
         return uiArrayList;
     }
 }
