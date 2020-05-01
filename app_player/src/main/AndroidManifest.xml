@@ -84,6 +84,7 @@
         <activity android:name=".demo.activity.PathBezierActivity"/>
         <activity android:name=".demo.activity.PathMultiBezierActivity"/>
         <activity android:name=".demo.activity.PathMeasureActivity"/>
+        <activity android:name=".demo.activity.AnimatorActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity

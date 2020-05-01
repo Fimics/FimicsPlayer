@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.mic.R;
 import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.demo.activity.AnimatorActivity;
 import com.mic.demo.activity.CanvasSplitActivity;
 import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.ColorFilterActivity;
@@ -128,6 +129,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(PathMultiBezierActivity.class);
         }else if(type==ResourceType.TYPE_PATH_MEASURE){
             startActivity(PathMeasureActivity.class);
+        }else if(type==ResourceType.TYPE_ANIMATOR){
+            startActivity(AnimatorActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
