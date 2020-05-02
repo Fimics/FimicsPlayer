@@ -45,6 +45,7 @@ public class ResourceType {
     public static final String NAME_MATCH_PERCENT = "百分比适配";
     public static final String NAME_MATCH_DENSITY = "density适配";
     public static final String NAME_MATCH_CUTOUT = "刘海屏适配";
+    public static final String NAME_MATERIAL = "material";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -87,6 +88,7 @@ public class ResourceType {
     public static final int TYPE_MATCH_PERCENT= 37;
     public static final int TYPE_MATCH_DENSITY= 38;
     public static final int TYPE_MATCH_CUTOUT= 39;
+    public static final int TYPE_MATERIAL= 40;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -131,6 +133,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_MATCH_PERCENT,TYPE_MATCH_PERCENT));
         uiArrayList.add(new AndroidUI(NAME_MATCH_DENSITY,TYPE_MATCH_DENSITY));
         uiArrayList.add(new AndroidUI(NAME_MATCH_CUTOUT,TYPE_MATCH_CUTOUT));
+        uiArrayList.add(new AndroidUI(NAME_MATERIAL,TYPE_MATERIAL));
         return uiArrayList;
     }
 }

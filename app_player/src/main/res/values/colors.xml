@@ -326,5 +326,11 @@
     </array>
 
     <color name="base_shallow_black">#818181</color>
+    <color name="font_dark">#595757</color>
+    <color name="form_bg">#f0f0f0</color>
+    <color name="fuck">#46a8ba</color>
+
+    <color name="vip_button_bg_color">#FEB1B3</color>
+    <color name="vip_button_text_color">#FE6F70</color>
 
 </resources>

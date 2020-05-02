@@ -3,4 +3,6 @@
     <item name="view_container" type="id" />
     <item name="parallax_pager" type="id"/>
     <item name="parallax_view_tag" type="id"/>
+    <item name="statusbar_view" type="id"/>
+    <item name="translucent_view" type="id"/>
 </resources>

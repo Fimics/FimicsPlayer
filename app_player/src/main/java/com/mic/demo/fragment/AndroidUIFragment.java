@@ -27,6 +27,7 @@ import com.mic.demo.activity.PathMultiBezierActivity;
 import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
+import com.mic.demo.viewwy.material.MaterialMainActivity;
 import com.mic.find.FindDetailBehaviorActivity;
 import com.mic.find.multitype.bilibili.PostItemDecoration;
 import com.mic.home.ViewPagerActivity;
@@ -140,12 +141,14 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(SplashActivity.class);
         }else if(type==ResourceType.TYPE_MATCH_PIXEL){
             startActivity(MatchPixelActivity.class);
-        } else if(type==ResourceType.TYPE_MATCH_PERCENT){
+        }else if(type==ResourceType.TYPE_MATCH_PERCENT){
             startActivity(MatchPercentActivity.class);
-        } else if(type==ResourceType.TYPE_MATCH_DENSITY){
+        }else if(type==ResourceType.TYPE_MATCH_DENSITY){
             startActivity(MatchDensityActivity.class);
-        } else if(type==ResourceType.TYPE_MATCH_CUTOUT){
+        }else if(type==ResourceType.TYPE_MATCH_CUTOUT){
             startActivity(MatchDisplayCutoutActivity.class);
+        }else if(type==ResourceType.TYPE_MATERIAL){
+            startActivity(MaterialMainActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

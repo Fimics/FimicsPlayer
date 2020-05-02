@@ -91,6 +91,13 @@
         <activity android:name=".demo.activity.MatchDisplayCutoutActivity"/>
         <activity android:name=".demo.activity.MatchPixelActivity"/>
         <activity android:name=".demo.activity.MatchPercentActivity"/>
+        <!--material-->
+        <activity android:name=".demo.viewwy.material.BottomNavigationViewActivity"/>
+        <activity android:name=".demo.viewwy.material.MaterialMainActivity"/>
+        <activity android:name=".demo.viewwy.material.MovieDetailActivity"/>
+        <activity android:name=".demo.viewwy.material.FloatTabActivity"/>
+        <activity android:name=".demo.viewwy.material.ToolbarActivity"/>
+        <activity android:name=".demo.viewwy.material.VipActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity
