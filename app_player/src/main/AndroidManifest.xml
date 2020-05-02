@@ -85,7 +85,12 @@
         <activity android:name=".demo.activity.PathMultiBezierActivity"/>
         <activity android:name=".demo.activity.PathMeasureActivity"/>
         <activity android:name=".demo.activity.AnimatorActivity"/>
-        <activity android:name=".demo.activity.SplashActivity"  android:theme="@style/MyFullScreenTheme"/>
+        <activity android:name=".demo.activity.SplashActivity"
+            android:theme="@style/MyFullScreenTheme"/>
+        <activity android:name=".demo.activity.MatchDensityActivity"/>
+        <activity android:name=".demo.activity.MatchDisplayCutoutActivity"/>
+        <activity android:name=".demo.activity.MatchPixelActivity"/>
+        <activity android:name=".demo.activity.MatchPercentActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity

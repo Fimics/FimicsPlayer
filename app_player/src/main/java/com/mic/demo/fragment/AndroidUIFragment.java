@@ -17,6 +17,10 @@ import com.mic.demo.activity.CanvasSplitActivity;
 import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
+import com.mic.demo.activity.MatchDensityActivity;
+import com.mic.demo.activity.MatchDisplayCutoutActivity;
+import com.mic.demo.activity.MatchPercentActivity;
+import com.mic.demo.activity.MatchPixelActivity;
 import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
@@ -134,6 +138,14 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(AnimatorActivity.class);
         }else if(type==ResourceType.TYPE_SPLASH){
             startActivity(SplashActivity.class);
+        }else if(type==ResourceType.TYPE_MATCH_PIXEL){
+            startActivity(MatchPixelActivity.class);
+        } else if(type==ResourceType.TYPE_MATCH_PERCENT){
+            startActivity(MatchPercentActivity.class);
+        } else if(type==ResourceType.TYPE_MATCH_DENSITY){
+            startActivity(MatchDensityActivity.class);
+        } else if(type==ResourceType.TYPE_MATCH_CUTOUT){
+            startActivity(MatchDisplayCutoutActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
