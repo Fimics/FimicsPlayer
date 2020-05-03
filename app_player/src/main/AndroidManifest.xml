@@ -98,6 +98,7 @@
         <activity android:name=".demo.viewwy.material.FloatTabActivity"/>
         <activity android:name=".demo.viewwy.material.ToolbarActivity"/>
         <activity android:name=".demo.viewwy.material.VipActivity"/>
+        <activity android:name=".demo.activity.RecyclerViewMainActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity

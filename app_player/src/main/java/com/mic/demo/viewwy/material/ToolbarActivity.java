@@ -56,7 +56,7 @@ public class ToolbarActivity extends AppCompatActivity {
         //如果不设置，则不会出现标题
         Toolbar tbAtToolbar = findViewById(R.id.tb_at_toolbar);
         //不设置会显示label的属性,也可以在清单文件中进行配置
-//      tbAtToolbar.setTitle(" I am toolbar ");
+      tbAtToolbar.setTitle(" I am toolbar ");
         setSupportActionBar(tbAtToolbar);
 
         ActionBar actionBar = getSupportActionBar();
@@ -178,7 +178,7 @@ public class ToolbarActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.toobalr, menu);
+        getMenuInflater().inflate(R.menu.toolbar, menu);
         return true;
     }
 
@@ -188,15 +188,15 @@ public class ToolbarActivity extends AppCompatActivity {
             case android.R.id.home:
                 dlAtDrawLayout.openDrawer(Gravity.START);
                 break;
-//            case R.id.add:
-//                Toast.makeText(this, "add", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.delete:
-//                Toast.makeText(this, "delete", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.tb_setting:
-//                Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
-//                break;
+            case R.id.add:
+                Toast.makeText(this, "add", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.delete:
+                Toast.makeText(this, "delete", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.tb_setting:
+                Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
+                break;
         }
         return true;
     }

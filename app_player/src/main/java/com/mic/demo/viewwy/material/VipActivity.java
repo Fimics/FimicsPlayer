@@ -4,6 +4,8 @@ package com.mic.demo.viewwy.material;
 
 import android.os.Bundle;
 import android.transition.Explode;
+import android.transition.Fade;
+import android.transition.Slide;
 import android.view.MenuItem;
 import android.view.Window;
 import android.webkit.WebView;
@@ -41,9 +43,9 @@ public class VipActivity extends BaseActivity {
 //        //淡入动画
 //        getWindow().setEnterTransition(new Fade());
 //        滑动动画
-//        getWindow().setEnterTransition(new Slide());
+        getWindow().setEnterTransition(new Slide());
         // 分解动画
-        getWindow().setEnterTransition(new Explode());
+//        getWindow().setEnterTransition(new Explode());
         super.onCreate(savedInstanceState);
     }
 

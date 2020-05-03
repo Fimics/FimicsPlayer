@@ -28,6 +28,7 @@
                 app:title="标题"
                 app:titleTextColor="#fff">
 
+                <!--使用自己定义的标题-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"

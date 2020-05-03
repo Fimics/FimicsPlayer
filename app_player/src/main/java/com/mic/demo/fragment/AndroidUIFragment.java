@@ -24,6 +24,7 @@ import com.mic.demo.activity.MatchPixelActivity;
 import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
+import com.mic.demo.activity.RecyclerViewMainActivity;
 import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
@@ -149,6 +150,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(MatchDisplayCutoutActivity.class);
         }else if(type==ResourceType.TYPE_MATERIAL){
             startActivity(MaterialMainActivity.class);
+        }else if(type==ResourceType.TYPE_RECYCLER_VIEW){
+            startActivity(RecyclerViewMainActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

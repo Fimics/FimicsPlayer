@@ -46,6 +46,7 @@ public class ResourceType {
     public static final String NAME_MATCH_DENSITY = "density适配";
     public static final String NAME_MATCH_CUTOUT = "刘海屏适配";
     public static final String NAME_MATERIAL = "material";
+    public static final String NAME_RECYCLER_VIEW = "recyclerView";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -89,6 +90,7 @@ public class ResourceType {
     public static final int TYPE_MATCH_DENSITY= 38;
     public static final int TYPE_MATCH_CUTOUT= 39;
     public static final int TYPE_MATERIAL= 40;
+    public static final int TYPE_RECYCLER_VIEW= 41;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -134,6 +136,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_MATCH_DENSITY,TYPE_MATCH_DENSITY));
         uiArrayList.add(new AndroidUI(NAME_MATCH_CUTOUT,TYPE_MATCH_CUTOUT));
         uiArrayList.add(new AndroidUI(NAME_MATERIAL,TYPE_MATERIAL));
+        uiArrayList.add(new AndroidUI(NAME_RECYCLER_VIEW,TYPE_RECYCLER_VIEW));
         return uiArrayList;
     }
 }
