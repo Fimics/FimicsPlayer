@@ -98,7 +98,9 @@
         <activity android:name=".demo.viewwy.material.FloatTabActivity"/>
         <activity android:name=".demo.viewwy.material.ToolbarActivity"/>
         <activity android:name=".demo.viewwy.material.VipActivity"/>
-        <activity android:name=".demo.activity.RecyclerViewMainActivity"/>
+        <activity android:name=".demo.activity.RecyclerViewActivity"/>
+        <activity android:name=".demo.activity.CardViewActivity"/>
+        <activity android:name=".demo.activity.CoordinatorLayoutActivity"/>
 
         <!-- 注册SDKActivity -->
         <activity

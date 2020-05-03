@@ -15,8 +15,10 @@ import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.demo.activity.AnimatorActivity;
 import com.mic.demo.activity.CanvasSplitActivity;
 import com.mic.demo.activity.CanvasTransformActivity;
+import com.mic.demo.activity.CardViewActivity;
 import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
+import com.mic.demo.activity.CoordinatorLayoutActivity;
 import com.mic.demo.activity.MatchDensityActivity;
 import com.mic.demo.activity.MatchDisplayCutoutActivity;
 import com.mic.demo.activity.MatchPercentActivity;
@@ -24,7 +26,7 @@ import com.mic.demo.activity.MatchPixelActivity;
 import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
-import com.mic.demo.activity.RecyclerViewMainActivity;
+import com.mic.demo.activity.RecyclerViewActivity;
 import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
@@ -151,7 +153,11 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_MATERIAL){
             startActivity(MaterialMainActivity.class);
         }else if(type==ResourceType.TYPE_RECYCLER_VIEW){
-            startActivity(RecyclerViewMainActivity.class);
+            startActivity(RecyclerViewActivity.class);
+        }else if(type==ResourceType.TYPE_COORDINATOR_LAYOUT){
+            startActivity(CoordinatorLayoutActivity.class);
+        }else if(type==ResourceType.TYPE_CARDVIEW){
+            startActivity(CardViewActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

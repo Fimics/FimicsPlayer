@@ -15,8 +15,7 @@ import com.bumptech.glide.Glide;
 import com.mic.R;
 import com.mic.demo.viewwy.recyclerview.FeedAdapter;
 
-
-public class RecyclerViewMainActivity extends AppCompatActivity {
+public class CoordinatorLayoutActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private FeedAdapter mFeedAdapter;
@@ -30,7 +29,7 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recyclerview);
+        setContentView(R.layout.activity_coordinatorlayout);
 
         mSuspensionBar = findViewById(R.id.suspension_bar);
         mSuspensionTv = findViewById(R.id.tv_nickname);
