@@ -27,6 +27,7 @@ import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
 import com.mic.demo.activity.RecyclerViewActivity;
+import com.mic.demo.activity.SkinBuiltInActivity;
 import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
@@ -158,6 +159,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(CoordinatorLayoutActivity.class);
         }else if(type==ResourceType.TYPE_CARDVIEW){
             startActivity(CardViewActivity.class);
+        }else if(type==ResourceType.TYPE_SKIN_BUILT_IN){
+            startActivity(SkinBuiltInActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

@@ -49,6 +49,8 @@ public class ResourceType {
     public static final String NAME_RECYCLER_VIEW = "recyclerView";
     public static final String NAME_COORDINATOR_LAYOUT = "coordinatorlayout";
     public static final String NAME_CARDVIEW = "cardview";
+    public static final String NAME_SKIN_BUILT_IN = "内置换肤";
+    public static final String NAME_SKIN_CUSTOM = "个性换肤";
 
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
@@ -95,6 +97,8 @@ public class ResourceType {
     public static final int TYPE_RECYCLER_VIEW= 41;
     public static final int TYPE_COORDINATOR_LAYOUT= 42;
     public static final int TYPE_CARDVIEW= 43;
+    public static final int TYPE_SKIN_BUILT_IN= 44;
+    public static final int TYPE_SKIN_CUSTOM= 45;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -143,6 +147,8 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_RECYCLER_VIEW,TYPE_RECYCLER_VIEW));
         uiArrayList.add(new AndroidUI(NAME_COORDINATOR_LAYOUT,TYPE_COORDINATOR_LAYOUT));
         uiArrayList.add(new AndroidUI(NAME_CARDVIEW,TYPE_CARDVIEW));
+        uiArrayList.add(new AndroidUI(NAME_SKIN_BUILT_IN,TYPE_SKIN_BUILT_IN));
+        uiArrayList.add(new AndroidUI(NAME_SKIN_CUSTOM,TYPE_SKIN_CUSTOM));
         return uiArrayList;
     }
 }

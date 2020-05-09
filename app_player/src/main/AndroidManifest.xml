@@ -101,6 +101,9 @@
         <activity android:name=".demo.activity.RecyclerViewActivity"/>
         <activity android:name=".demo.activity.CardViewActivity"/>
         <activity android:name=".demo.activity.CoordinatorLayoutActivity"/>
+        <activity android:name=".demo.activity.SkinBuiltInActivity"
+            android:configChanges="uiMode"/>
+        <!-- 需要配置此属性=uiMode，才能更换navigation  -->/>
 
         <!-- 注册SDKActivity -->
         <activity

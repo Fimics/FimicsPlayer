@@ -73,6 +73,7 @@ android {
                             'src/main/res/layouts/user',
                             'src/main/res/layouts/splash',
                             'src/main/res/layouts/material',
+                            'src/main/res/layouts/skin',
                             'src/main/res/layouts',
                             'src/main/res',
                     ]
@@ -176,6 +177,8 @@ dependencies {
     annotationProcessor project(":annotation_processor")
     //QQ快捷登录
     implementation files('libs/open_sdk_r6140_lite.jar')
+
+    implementation project(':library:skin_built_in')
 
     
 }

@@ -333,4 +333,8 @@
     <color name="vip_button_bg_color">#FEB1B3</color>
     <color name="vip_button_text_color">#FE6F70</color>
 
+    <!-- 本地/内置换肤颜色（日间） -->
+    <color name="commonTextColor">#008577</color>
+    <color name="commonTextColor1">#ffffff</color>
+
 </resources>
