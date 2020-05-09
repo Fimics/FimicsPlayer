@@ -120,4 +120,11 @@
         <attr name="civ_border_overlay" format="boolean" />
         <attr name="civ_fill_color" format="color" />
     </declare-styleable>
+
+    <!-- 自定义控件属性 -->
+    <declare-styleable name="CustomCircleView">
+        <attr name="circleColor" format="color" />
+    </declare-styleable>
+
+    <attr name="custom_typeface" format="string" />
 </resources>

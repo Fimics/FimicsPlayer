@@ -9,6 +9,7 @@ import androidx.multidex.MultiDex;
 
 import com.mic.core.thirdparty.okhttp.ApiService;
 import com.mic.demo.viewwy.screenmatch.density.Density;
+import com.mic.skin.library.SkinManager;
 import com.tencent.bugly.crashreport.CrashReport;
 
 /**s
@@ -28,6 +29,7 @@ public class FimicsApp extends Application {
         // 设置全局异常捕捉类
         // ExceptionCrashHandler.getInstance().init(this);
        // matchWithDenisty(this);
+        SkinManager.init(this);
     }
 
     private void matchWithDenisty(Application application){

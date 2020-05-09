@@ -179,6 +179,6 @@ dependencies {
     implementation files('libs/open_sdk_r6140_lite.jar')
 
     implementation project(':library:skin_built_in')
-
+    implementation project(':library:skin_library')
     
 }

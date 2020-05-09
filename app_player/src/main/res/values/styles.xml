@@ -5,7 +5,13 @@
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         -->
+        <!-- Customize your theme here. -->
+
+
+        <!-- 字体相关 -->
+
     </style>
 
     <style name="dialog_from_bottom_anim">
@@ -65,6 +71,8 @@
         <item name="android:windowActivityTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">false</item>
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
+        <item name="custom_typeface">@string/custom_typeface_string</item>
     </style>
 
     <style name="materialButton" parent="Widget.MaterialComponents.Button">
@@ -203,6 +211,7 @@
         <item name="android:windowActivityTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">false</item>
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="custom_typeface">@string/custom_typeface_string</item>
     </style>
 
     <style name="launcher" parent="AppTheme">

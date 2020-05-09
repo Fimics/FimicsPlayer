@@ -28,6 +28,7 @@ import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
 import com.mic.demo.activity.RecyclerViewActivity;
 import com.mic.demo.activity.SkinBuiltInActivity;
+import com.mic.demo.activity.SkinCustomActivity;
 import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.activity.XfermodeActivity;
 import com.mic.demo.activity.XfermodesActivity;
@@ -161,6 +162,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(CardViewActivity.class);
         }else if(type==ResourceType.TYPE_SKIN_BUILT_IN){
             startActivity(SkinBuiltInActivity.class);
+        }else if(type==ResourceType.TYPE_SKIN_CUSTOM){
+            startActivity(SkinCustomActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

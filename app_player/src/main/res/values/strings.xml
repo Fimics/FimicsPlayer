@@ -1,6 +1,6 @@
-<resources>
-    <string name="app_name">Fimics</string>
-
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name" >Fimics</string>
     <string name="ss_share_hint">期待你的神评论</string>
 
     <string name="comment_dialog_send">发送</string>
@@ -105,4 +105,7 @@
                 "　　“夏夏姐？”她吐气如兰。我尖叫一声跳起来，“你，你别过来，虽然老娘我爱看腐文，也支持les和同志，但不代表我的行动也跟着上。”我颤抖着手，气急败坏的指着她。“夏夏！”苏晚晴也朝我笑，那笑，怎么看怎么淫荡。我紧紧抓着门框，决定，她们两个如果敢同时扑上来，我就，我就，要不要从呢？\n" +
                 "　　“切？你的脑袋里正进行什么龌蹉的联想呢？像我们两个貌美如花的美女肯定是要留着资本傍大款的。今天嘛，我和青青主要是想跟你商量点事，那个，你也知道，我们公司发工资一向准时，本来昨天就该发的，但财务说老板的爷爷过世了回家奔丧要月底回来才发。我上个月的工资都打给我妹了。所以，这个月的房租延迟到月底给你。”关键时刻，苏晚晴以绝对向现实低头的姿态和陈青青站到了同一战线。\n" +
                 "　　我拍着胸口，松了一口气。“什么？月底才给我房租，那我在海雅看上的那条连衣裙被别人买走了怎么办？”我失声尖叫。苏晚晴嘿嘿的笑，“夏夏，</string>
+
+    <!-- 字体包路径（皮肤包内） -->
+    <string name="custom_typeface_string"/>
 </resources>

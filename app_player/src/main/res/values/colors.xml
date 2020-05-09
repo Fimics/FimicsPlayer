@@ -337,4 +337,9 @@
     <color name="commonTextColor">#008577</color>
     <color name="commonTextColor1">#ffffff</color>
 
+    <!-- 换肤对应皮肤包颜色 -->
+    <color name="skin_background">#008577</color>
+    <color name="skin_textColor">#000000</color>
+    <color name="skin_item_color">#FFFFFF</color>
+
 </resources>
