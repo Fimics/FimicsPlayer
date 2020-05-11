@@ -102,10 +102,9 @@
         <activity android:name=".demo.activity.CardViewActivity"/>
         <activity android:name=".demo.activity.CoordinatorLayoutActivity"/>
         <activity android:name=".demo.activity.SkinBuiltInActivity"
-                  android:configChanges="uiMode"/>
+                  android:configChanges="uiMode"></activity>
         <!-- 需要配置此属性=uiMode，才能更换navigation  -->/>
-        <activity android:name=".demo.activity.SkinCustomActivity"
-            android:theme="@style/AppTheme"/>
+        <activity android:name=".demo.activity.SkinCustomActivity"/>
 
 
         <!-- 注册SDKActivity -->

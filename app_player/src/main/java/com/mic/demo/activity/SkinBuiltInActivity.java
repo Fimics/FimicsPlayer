@@ -7,8 +7,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.mic.R;
-import com.mic.skin.library.SkinActivity;
-import com.mic.skin.library.utils.PreferencesUtils;
+import com.mic.skin.built.SkinActivity;
+import com.mic.skin.built.utils.PreferencesUtils;
 
 public class SkinBuiltInActivity extends SkinActivity {
 

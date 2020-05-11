@@ -9,7 +9,7 @@ import androidx.multidex.MultiDex;
 
 import com.mic.core.thirdparty.okhttp.ApiService;
 import com.mic.demo.viewwy.screenmatch.density.Density;
-import com.mic.skin.library.SkinManager;
+import com.mic.skin.custom.SkinManager;
 import com.tencent.bugly.crashreport.CrashReport;
 
 /**s

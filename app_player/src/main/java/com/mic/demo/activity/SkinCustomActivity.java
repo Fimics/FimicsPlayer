@@ -13,8 +13,8 @@ import android.view.View;
 import androidx.annotation.RequiresApi;
 
 import com.mic.R;
-import com.mic.skin.library.base.SkinActivity;
-import com.mic.skin.library.utils.PreferencesUtils;
+import com.mic.skin.custom.base.SkinActivity;
+import com.mic.skin.custom.utils.PreferencesUtils;
 
 import java.io.File;
 
@@ -34,7 +34,7 @@ public class SkinCustomActivity extends SkinActivity {
 
         // File.separator含义：拼接 /
         skinPath = Environment.getExternalStorageDirectory().getAbsolutePath()
-                + File.separator + "fimics.skin";
+                + File.separator + "net163.skin";
 
         // 运行时权限申请（6.0+）
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -44,7 +44,7 @@ public class SkinCustomActivity extends SkinActivity {
             }
         }
 
-        if (("fimics").equals(PreferencesUtils.getString(this, "currentSkin"))) {
+        if (("net163").equals(PreferencesUtils.getString(this, "currentSkin"))) {
             skinDynamic(skinPath, R.color.skin_item_color);
         } else {
             defaultSkin(R.color.colorPrimary);
@@ -55,12 +55,12 @@ public class SkinCustomActivity extends SkinActivity {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void skinDynamic(View view) {
         // 真实项目中：需要先判断当前皮肤，避免重复操作！
-        if (!("fimics").equals(PreferencesUtils.getString(this, "currentSkin"))) {
+        if (!("net163").equals(PreferencesUtils.getString(this, "currentSkin"))) {
             Log.e("netease >>> ", "-------------start-------------");
             long start = System.currentTimeMillis();
 
             skinDynamic(skinPath, R.color.skin_item_color);
-            PreferencesUtils.putString(this, "currentSkin", "fimics");
+            PreferencesUtils.putString(this, "currentSkin", "net163");
 
             long end = System.currentTimeMillis() - start;
             Log.e("netease >>> ", "换肤耗时（毫秒）：" + end);

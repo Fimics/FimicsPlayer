@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
 import com.mic.R;
-import com.mic.skin.library.SkinManager;
-import com.mic.skin.library.core.ViewsMatch;
-import com.mic.skin.library.model.AttrsBean;
+import com.mic.skin.custom.SkinManager;
+import com.mic.skin.custom.core.ViewsMatch;
+import com.mic.skin.custom.model.AttrsBean;
 
 
 public class CustomCircleView extends View implements ViewsMatch {
