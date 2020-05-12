@@ -9,6 +9,7 @@ import androidx.multidex.MultiDex;
 
 import com.mic.core.thirdparty.okhttp.ApiService;
 import com.mic.demo.viewwy.screenmatch.density.Density;
+import com.mic.hotfix.library.FixDexUtils;
 import com.mic.skin.custom.SkinManager;
 import com.tencent.bugly.crashreport.CrashReport;
 
@@ -30,6 +31,8 @@ public class FimicsApp extends Application {
         // ExceptionCrashHandler.getInstance().init(this);
        // matchWithDenisty(this);
         SkinManager.init(this);
+        // 加载热修复Dex文件
+        FixDexUtils.loadFixedDex(this);
     }
 
     private void matchWithDenisty(Application application){

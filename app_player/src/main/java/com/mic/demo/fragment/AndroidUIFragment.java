@@ -19,6 +19,7 @@ import com.mic.demo.activity.CardViewActivity;
 import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.CoordinatorLayoutActivity;
+import com.mic.demo.activity.HotfixActivity;
 import com.mic.demo.activity.MatchDensityActivity;
 import com.mic.demo.activity.MatchDisplayCutoutActivity;
 import com.mic.demo.activity.MatchPercentActivity;
@@ -164,6 +165,8 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(SkinBuiltInActivity.class);
         }else if(type==ResourceType.TYPE_SKIN_CUSTOM){
             startActivity(SkinCustomActivity.class);
+        }else if(type==ResourceType.TYPE_HOT_FIX){
+            startActivity(HotfixActivity.class);
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

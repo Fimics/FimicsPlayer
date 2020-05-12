@@ -28,7 +28,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/XAppTheme">
+        android:theme="@style/XAppTheme"
+        tools:targetApi="m"
+        tools:ignore="AllowBackup">
 
         <!-- android:usesCleartextTraffic="true"  允许明文请求-->
 
@@ -101,10 +103,12 @@
         <activity android:name=".demo.activity.RecyclerViewActivity"/>
         <activity android:name=".demo.activity.CardViewActivity"/>
         <activity android:name=".demo.activity.CoordinatorLayoutActivity"/>
+
         <activity android:name=".demo.activity.SkinBuiltInActivity"
-                  android:configChanges="uiMode"></activity>
-        <!-- 需要配置此属性=uiMode，才能更换navigation  -->/>
+                  android:configChanges="uiMode"/>
+        <!-- 需要配置此属性=uiMode，才能更换navigation  -->
         <activity android:name=".demo.activity.SkinCustomActivity"/>
+        <activity android:name=".demo.activity.HotfixActivity"/>
 
 
         <!-- 注册SDKActivity -->

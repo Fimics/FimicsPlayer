@@ -2,6 +2,10 @@
 
 ext {
 
+    mainAppName = "app_player"
+    // 生产/开发环境（正式/测试）
+    isRelease = true
+
     android = [compileSdkVersion   : 29,
                buildToolsVersion   : "29.0.3",
                applicationId       : 'com.mic',
@@ -19,6 +23,12 @@ ext {
                    'keyPassword'  : 'rzq123456']
 
     java = ['javaVersion': JavaVersion.VERSION_1_8]
+
+    // 生产/开发环境URL
+    url = [
+            "debug"  :"http://123.56.232.18:8080/serverdemo/",
+            "release": "http://123.56.232.18:8080/serverdemo/"
+    ]
 
 
     dependencies = [
