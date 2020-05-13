@@ -8,7 +8,6 @@ ext {
 
     android = [compileSdkVersion   : 29,
                buildToolsVersion   : "29.0.3",
-               applicationId       : 'com.mic',
                minSdkVersion       : 21,
                targetSdkVersion    : 26,
                versionCode         : 1,
@@ -29,6 +28,16 @@ ext {
             "debug"  :"http://123.56.232.18:8080/serverdemo/",
             "release": "http://123.56.232.18:8080/serverdemo/"
     ]
+
+    appId = [
+            "app"         : "com.mic",
+            "home"        : "com.mic.home",
+            "sofa"        : "com.mic.sofa",
+            "publish"     : "com.mic.publish",
+            "find"        : "com.mic.find",
+            "user"        : "com.mic.user",
+            "demo"        : "com.mic.demo"
+            ]
 
 
     dependencies = [
@@ -81,7 +90,7 @@ ext {
             //test
             'testrunner'               :'androidx.test.runner.AndroidJUnitRunner',
             'junit'                    :'junit:junit:4.12',
-            'junitext'                 :'androidx.test.ext:junit:1.1.1',
+            'junitandroidx'            :'androidx.test.ext:junit:1.1.1',
             'espresso'                 :'androidx.test.espresso:espresso-core:3.2.0',
 
             //room数据库

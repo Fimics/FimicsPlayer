@@ -6,12 +6,13 @@ println "mainAppName->"+"${mainAppName}"
 // 赋值与引用
 def androidId = rootProject.ext.android;
 def depends   = rootProject.ext.dependencies;
+def appId = rootProject.ext.appId;
 
 android {
     compileSdkVersion androidId.compileSdkVersion
     buildToolsVersion androidId.buildToolsVersion
     defaultConfig {
-        applicationId androidId.applicationId
+        applicationId appId.app
         minSdkVersion androidId.minSdkVersion
         targetSdkVersion androidId.targetSdkVersion
         versionCode androidId.versionCode
@@ -211,7 +212,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     testImplementation depends.junit
-    androidTestImplementation depends.junitext
+    androidTestImplementation depends.junitandroidx
     androidTestImplementation depends.espresso
     //support ui
     implementation depends.appcompat

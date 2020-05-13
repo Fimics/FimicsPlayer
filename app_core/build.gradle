@@ -43,7 +43,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     testImplementation depends.junit
-    androidTestImplementation depends.junitext
+    androidTestImplementation depends.junitandroidx
     androidTestImplementation depends.espresso
     api depends.recyclerview
     api depends.material
