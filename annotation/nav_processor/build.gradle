@@ -4,7 +4,7 @@ def depends   = rootProject.ext.dependencies;
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':annotation')
+    implementation project(':annotation:nav_annotation')
     implementation depends.fastjson
     api depends.autoservice
     annotationProcessor depends.autoservice
