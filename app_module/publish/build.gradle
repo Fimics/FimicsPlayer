@@ -57,4 +57,5 @@ dependencies {
     androidTestImplementation depends.junitandroidx
     androidTestImplementation depends.espresso
     implementation depends.appcompat
+    implementation depends.constraint
 }
