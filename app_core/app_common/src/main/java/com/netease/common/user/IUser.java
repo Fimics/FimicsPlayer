@@ -1,6 +1,6 @@
 package com.netease.common.user;
 
-import com.netease.arouter.api.core.Call;
+import com.mic.router.api.core.Call;
 
 public interface IUser extends Call {
 

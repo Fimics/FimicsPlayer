@@ -55,8 +55,8 @@ dependencies {
     //网络框架
     implementation depends.okhttp
     implementation depends.gson
-    implementation depends.fastjson
-    implementation depends.retrofit
+    api depends.fastjson
+    api depends.retrofit
     implementation depends.convertergson
     implementation depends.logginginterceptor
 
@@ -101,6 +101,5 @@ dependencies {
 
     // 每个功能子模块既然都要生成APT源文件，而且又是所有模块依赖的公共库
     // 那么公共基础库依赖路由arouter_api就能向每个子模块提供开放api了
-    api project(':app_core:app_common') // 路由对外开放api模块
 
 }
