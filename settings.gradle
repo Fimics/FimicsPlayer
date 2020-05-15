@@ -20,6 +20,9 @@ include ':app_module:user'
 
 include ':annotation:nav_annotation'
 include ':annotation:nav_processor'
+include ':annotation:arouter_annotation'
+include ':annotation:arouter_api'
+include ':annotation:arouter_compiler'
 
 include ':library:skin_built_in'
 include ':library:skin_library'
