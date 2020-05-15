@@ -8,10 +8,10 @@ import com.mic.router.annotation.ARouter;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
 import com.mic.router.api.RouterManager;
-import com.netease.common.base.BaseActivity;
-import com.netease.common.user.BaseUser;
-import com.netease.common.user.IUser;
-import com.netease.common.utils.Cons;
+import com.mic.common.base.BaseActivity;
+import com.mic.common.user.BaseUser;
+import com.mic.common.user.IUser;
+import com.mic.common.utils.Cons;
 
 @ARouter(path = "/order/Order_MainActivity")
 public class Order_MainActivity extends BaseActivity {

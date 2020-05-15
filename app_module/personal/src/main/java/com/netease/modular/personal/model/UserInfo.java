@@ -1,6 +1,6 @@
 package com.netease.modular.personal.model;
 
-import com.netease.common.user.BaseUser;
+import com.mic.common.user.BaseUser;
 
 public class UserInfo extends BaseUser {
 

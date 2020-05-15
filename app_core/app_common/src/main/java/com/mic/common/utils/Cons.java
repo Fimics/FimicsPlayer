@@ -1,4 +1,4 @@
-package com.netease.common.utils;
+package com.mic.common.utils;
 
 public final class Cons {
 

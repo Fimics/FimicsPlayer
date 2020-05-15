@@ -1,7 +1,7 @@
 package com.netease.modular.order.impl;
 
 import com.mic.router.annotation.ARouter;
-import com.netease.common.order.drawable.OrderDrawable;
+import com.mic.common.order.drawable.OrderDrawable;
 import com.netease.modular.order.R;
 
 /**

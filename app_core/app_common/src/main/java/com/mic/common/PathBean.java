@@ -1,4 +1,4 @@
-package com.netease.common;
+package com.mic.common;
 
 /**
  * 路径对象（公共基础库中，所有子模块都可以调用）

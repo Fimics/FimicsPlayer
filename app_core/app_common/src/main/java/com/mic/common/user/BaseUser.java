@@ -1,4 +1,4 @@
-package com.netease.common.user;
+package com.mic.common.user;
 
 import java.io.Serializable;
 

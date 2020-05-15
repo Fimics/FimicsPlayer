@@ -1,4 +1,4 @@
-package com.netease.common.user;
+package com.mic.common.user;
 
 import com.mic.router.api.core.Call;
 

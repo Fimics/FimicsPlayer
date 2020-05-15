@@ -11,10 +11,10 @@ import com.mic.router.annotation.ARouter;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
 import com.mic.router.api.RouterManager;
-import com.netease.common.base.BaseActivity;
-import com.netease.common.order.OrderAddress;
-import com.netease.common.order.drawable.OrderDrawable;
-import com.netease.common.utils.Cons;
+import com.mic.common.base.BaseActivity;
+import com.mic.common.order.OrderAddress;
+import com.mic.common.order.drawable.OrderDrawable;
+import com.mic.common.utils.Cons;
 
 // 小项目或者子模块类重复率不高，可以直接写：path = "/MainActivity"
 @ARouter(path = "/app/DemoMainActivity")

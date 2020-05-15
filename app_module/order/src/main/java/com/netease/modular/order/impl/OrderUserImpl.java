@@ -1,8 +1,8 @@
 package com.netease.modular.order.impl;
 
 import com.mic.router.annotation.ARouter;
-import com.netease.common.user.BaseUser;
-import com.netease.common.user.IUser;
+import com.mic.common.user.BaseUser;
+import com.mic.common.user.IUser;
 import com.netease.modular.order.model.UserInfo;
 
 /**

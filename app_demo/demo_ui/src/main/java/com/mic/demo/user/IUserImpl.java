@@ -2,8 +2,8 @@ package com.mic.demo.user;
 
 import com.mic.demo.model.UserInfo;
 import com.mic.router.annotation.ARouter;
-import com.netease.common.user.BaseUser;
-import com.netease.common.user.IUser;
+import com.mic.common.user.BaseUser;
+import com.mic.common.user.IUser;
 
 /**
  * personal模块实现的内容

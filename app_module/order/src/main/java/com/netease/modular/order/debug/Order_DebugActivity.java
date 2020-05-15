@@ -3,7 +3,7 @@ package com.netease.modular.order.debug;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.netease.common.utils.Cons;
+import com.mic.common.utils.Cons;
 import com.netease.modular.order.R;
 
 public class Order_DebugActivity extends Order_DebugBaseActivity {

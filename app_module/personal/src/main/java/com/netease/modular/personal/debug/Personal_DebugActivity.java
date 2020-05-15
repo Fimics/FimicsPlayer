@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.netease.common.utils.Cons;
+import com.mic.common.utils.Cons;
 import com.netease.modular.personal.Personal_MainActivity;
 import com.netease.modular.personal.R;
 

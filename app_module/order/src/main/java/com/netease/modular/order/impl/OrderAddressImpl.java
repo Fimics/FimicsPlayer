@@ -3,8 +3,8 @@ package com.netease.modular.order.impl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.mic.router.annotation.ARouter;
-import com.netease.common.order.OrderAddress;
-import com.netease.common.order.OrderBean;
+import com.mic.common.order.OrderAddress;
+import com.mic.common.order.OrderBean;
 import com.netease.modular.order.services.OrderServices;
 
 import java.io.IOException;

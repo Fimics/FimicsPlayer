@@ -1,4 +1,4 @@
-package com.netease.common.base;
+package com.mic.common.base;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.netease.common.utils.Cons;
+import com.mic.common.utils.Cons;
 
 /**
  * 项目父Activity

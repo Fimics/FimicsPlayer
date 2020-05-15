@@ -6,8 +6,8 @@ import android.util.Log;
 import com.mic.router.annotation.ARouter;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
-import com.netease.common.base.BaseActivity;
-import com.netease.common.utils.Cons;
+import com.mic.common.base.BaseActivity;
+import com.mic.common.utils.Cons;
 
 @ARouter(path = "/order/Order_DetailActivity")
 public class Order_DetailActivity extends BaseActivity {

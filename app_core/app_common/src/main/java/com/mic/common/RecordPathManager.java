@@ -1,4 +1,4 @@
-package com.netease.common;
+package com.mic.common;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.netease.common.order;
+package com.mic.common.order;
 
 /**
  * {"resultcode":"200","reason":"查询成功",

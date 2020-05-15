@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.netease.common.utils.Cons;
+import com.mic.common.utils.Cons;
 
 public class Personal_DebugBaseActivity extends AppCompatActivity {
 

@@ -1,9 +1,9 @@
-package com.netease.common.base;
+package com.mic.common.base;
 
 import android.app.Application;
 import android.util.Log;
 
-import com.netease.common.utils.Cons;
+import com.mic.common.utils.Cons;
 
 /**
  * 项目父Application
