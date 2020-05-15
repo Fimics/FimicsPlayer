@@ -10,7 +10,7 @@ if(debug){
 
 include ':app_player'
 include ':app_core:app_core'
-include ':demo:demo'
+include ':demo:demo_ui'
 
 include ':app_module:home'
 include ':app_module:sofa'
