@@ -1,4 +1,4 @@
-package com.netease.modular.order.debug;
+package com.mic.order.debug;
 
 import android.app.Application;
 import android.util.Log;

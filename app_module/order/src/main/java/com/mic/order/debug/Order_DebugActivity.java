@@ -1,10 +1,10 @@
-package com.netease.modular.order.debug;
+package com.mic.order.debug;
 
 import android.os.Bundle;
 import android.util.Log;
 
 import com.mic.common.utils.Cons;
-import com.netease.modular.order.R;
+import com.mic.order.R;
 
 public class Order_DebugActivity extends Order_DebugBaseActivity {
 

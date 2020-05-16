@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Personal_MainActivity">
+    tools:context="com.mic.personal.Personal_MainActivity">
 
     <TextView
         android:id="@+id/tv"

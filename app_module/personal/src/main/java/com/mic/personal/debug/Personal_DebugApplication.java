@@ -1,18 +1,15 @@
-package com.mic.common.base;
+package com.mic.personal.debug;
 
 import android.app.Application;
 import android.util.Log;
 
 import com.mic.common.utils.Cons;
 
-/**
- * 项目父Application
- */
-public class BaseApplication extends Application {
+public class Personal_DebugApplication extends Application {
 
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.e(Cons.TAG, "common/BaseApplication");
+        Log.e(Cons.TAG, "personal/debug/Personal_DebugApplication");
     }
 }

@@ -1,4 +1,5 @@
-package com.netease.modular.order.model;
+package com.mic.order.model;
+
 
 import com.mic.common.user.BaseUser;
 

@@ -1,8 +1,8 @@
-package com.netease.modular.order.impl;
+package com.mic.order.impl;
 
+import com.mic.order.R;
 import com.mic.router.annotation.ARouter;
 import com.mic.common.order.drawable.OrderDrawable;
-import com.netease.modular.order.R;
 
 /**
  * 订单模块对外暴露接口实现类，其他模块可以获取返回res资源

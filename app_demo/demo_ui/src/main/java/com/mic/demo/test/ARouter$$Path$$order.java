@@ -2,7 +2,7 @@ package com.mic.demo.test;
 
 import com.mic.router.annotation.model.RouterBean;
 import com.mic.router.api.core.ARouterLoadPath;
-import com.netease.modular.order.Order_MainActivity;
+import com.mic.order.Order_MainActivity;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,5 @@
-package com.netease.modular.personal.model;
+package com.mic.personal.model;
+
 
 import com.mic.common.user.BaseUser;
 

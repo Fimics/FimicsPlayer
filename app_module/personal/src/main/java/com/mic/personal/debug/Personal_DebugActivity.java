@@ -1,4 +1,4 @@
-package com.netease.modular.personal.debug;
+package com.mic.personal.debug;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.util.Log;
 import android.view.View;
 
 import com.mic.common.utils.Cons;
-import com.netease.modular.personal.Personal_MainActivity;
-import com.netease.modular.personal.R;
+import com.mic.personal.Personal_MainActivity;
+import com.mic.personal.R;
 
 public class Personal_DebugActivity extends Personal_DebugBaseActivity {
 

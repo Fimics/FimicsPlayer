@@ -1,16 +1,17 @@
-package com.netease.modular.order;
+package com.mic.order;
 
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.mic.router.annotation.ARouter;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
-import com.mic.common.base.BaseActivity;
 import com.mic.common.utils.Cons;
 
 @ARouter(path = "/order/Order_DetailActivity")
-public class Order_DetailActivity extends BaseActivity {
+public class Order_DetailActivity extends AppCompatActivity {
 
     @Parameter
     String username;

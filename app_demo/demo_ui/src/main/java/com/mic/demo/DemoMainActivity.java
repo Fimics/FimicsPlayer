@@ -6,19 +6,19 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
+import com.mic.common.order.OrderAddress;
+import com.mic.common.utils.Cons;
 import com.mic.router.annotation.ARouter;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
 import com.mic.router.api.RouterManager;
-import com.mic.common.base.BaseActivity;
-import com.mic.common.order.OrderAddress;
 import com.mic.common.order.drawable.OrderDrawable;
-import com.mic.common.utils.Cons;
 
 // 小项目或者子模块类重复率不高，可以直接写：path = "/MainActivity"
 @ARouter(path = "/app/DemoMainActivity")
-public class DemoMainActivity extends BaseActivity {
+public class DemoMainActivity extends AppCompatActivity {
 
     @Parameter
     String name;

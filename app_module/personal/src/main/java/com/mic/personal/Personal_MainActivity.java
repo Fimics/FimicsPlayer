@@ -1,20 +1,21 @@
-package com.netease.modular.personal;
+package com.mic.personal;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.mic.common.user.BaseUser;
+import com.mic.common.user.IUser;
 import com.mic.router.annotation.ARouter;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
 import com.mic.router.api.RouterManager;
-import com.mic.common.base.BaseActivity;
-import com.mic.common.user.BaseUser;
-import com.mic.common.user.IUser;
 import com.mic.common.utils.Cons;
 
 @ARouter(path = "/personal/Personal_MainActivity")
-public class Personal_MainActivity extends BaseActivity {
+public class Personal_MainActivity extends AppCompatActivity {
 
     @Parameter(name = "/app/getUserInfo")
     IUser iUser;
