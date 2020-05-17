@@ -1,6 +1,6 @@
 package com.mic.personal.user;
 
-import com.mic.router.annotation.ARouter;
+import com.mic.router.annotation.Router;
 import com.mic.common.user.BaseUser;
 import com.mic.common.user.IUser;
 import com.mic.personal.model.UserInfo;
@@ -8,7 +8,7 @@ import com.mic.personal.model.UserInfo;
 /**
  * personal模块实现的内容
  */
-@ARouter(path = "/personal/getUserInfo")
+@Router(path = "/personal/getUserInfo")
 public class PersonalUserImpl implements IUser {
 
     @Override

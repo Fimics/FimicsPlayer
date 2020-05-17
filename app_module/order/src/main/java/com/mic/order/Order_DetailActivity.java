@@ -5,12 +5,12 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.router.annotation.ARouter;
+import com.mic.router.annotation.Router;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
 import com.mic.common.utils.Cons;
 
-@ARouter(path = "/order/Order_DetailActivity")
+@Router(path = "/order/Order_DetailActivity")
 public class Order_DetailActivity extends AppCompatActivity {
 
     @Parameter

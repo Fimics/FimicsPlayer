@@ -7,7 +7,7 @@ ext {
     isRelease = true
 
     // 包名，用于存放APT生成的类文件
-    packageNameForAPT = "com.mic.module.apt"
+    packageNameForAPT = "com.mic.apt"
 
     android = [compileSdkVersion   : 29,
                buildToolsVersion   : "29.0.3",
@@ -39,7 +39,7 @@ ext {
             "publish"     : "com.mic.publish",
             "find"        : "com.mic.find",
             "user"        : "com.mic.user",
-            "demo"        : "com.mic.demo",
+            "demo"        : "com.mic",
             "order"       : "com.mic.order",
             "personal"    : "com.mic.personal"
             ]

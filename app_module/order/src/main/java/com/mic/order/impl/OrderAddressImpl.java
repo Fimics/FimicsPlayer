@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.mic.common.order.OrderAddress;
 import com.mic.common.order.OrderBean;
-import com.mic.router.annotation.ARouter;
+import com.mic.router.annotation.Router;
 import com.mic.order.services.OrderServices;
 
 import java.io.IOException;
@@ -16,7 +16,7 @@ import retrofit2.Retrofit;
 /**
  * 订单模块对外暴露接口实现类，其他模块可以获取返回数据
  */
-@ARouter(path = "/order/getOrderBean")
+@Router(path = "/order/getOrderBean")
 public class OrderAddressImpl implements OrderAddress {
 
     private final static String BASE_URL = "http://apis.juhe.cn/";

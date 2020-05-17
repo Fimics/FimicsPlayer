@@ -8,16 +8,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.common.user.BaseUser;
 import com.mic.common.user.IUser;
-import com.mic.router.annotation.ARouter;
+import com.mic.router.annotation.Router;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;
 import com.mic.router.api.RouterManager;
 import com.mic.common.utils.Cons;
 
-@ARouter(path = "/personal/Personal_MainActivity")
+@Router(path = "/personal/Personal_MainActivity")
 public class Personal_MainActivity extends AppCompatActivity {
 
-    @Parameter(name = "/app/getUserInfo")
+    @Parameter(name = "/demo/getUserInfo")
     IUser iUser;
 
     @Parameter
@@ -45,7 +45,7 @@ public class Personal_MainActivity extends AppCompatActivity {
 
     public void jumpApp(View view) {
         RouterManager.getInstance()
-                .build("/app/MainActivity")
+                .build("/demo/DemoMainActivity")
                 .withResultString("call", "I'am comeback!")
                 .navigation(this);
     }

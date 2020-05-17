@@ -70,6 +70,6 @@ dependencies {
     implementation depends.constraint
 
     implementation project(':app_core:app_common') // 公共基础库
-    implementation project(':annotation:arouter_annotation') // 注解
-    annotationProcessor project(':annotation:arouter_compiler') // 注解处理器
+    implementation project(':annotation:router_annotation') // 注解
+    annotationProcessor project(':annotation:router_compiler') // 注解处理器
 }

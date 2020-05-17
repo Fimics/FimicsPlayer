@@ -1,4 +1,3 @@
-// 公共基础库无须作为组件化模块
 apply plugin: 'com.android.library'
 
 def rootAndroidId = rootProject.ext.android
@@ -33,8 +32,6 @@ dependencies {
 
     implementation support.appcompat
 
-    // 每个功能子模块既然都要生成APT源文件，而且又是所有模块依赖的公共库
-    // 那么公共基础库依赖路由arouter_api就能向每个子模块提供开放api了
-    api project(':annotation:router_api') // 路由对外开放api模块
-    api project(':app_core:app_core')
+    // 引入注解中RouterBean对象（java项目才有javax.lang包）
+    implementation project(':annotation:router_annotation')
 }
