@@ -10,7 +10,8 @@ public class RouterBean {
 
     public enum Type {
         ACTIVITY,
-        CALL
+        CALL,
+        FRAGMENT
     }
 
     // 枚举类型：Activity

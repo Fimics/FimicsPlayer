@@ -8,6 +8,7 @@ import android.util.Log;
 import android.util.LruCache;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
 import com.mic.router.annotation.model.RouterBean;
 import com.mic.router.api.core.RouterLoadGroup;
@@ -152,6 +153,11 @@ public final class RouterManager {
                             Call call = (Call) clazz.newInstance();
                             bundleManager.setCall(call);
                             return bundleManager.getCall();
+
+                        case FRAGMENT:
+                            Class<?> fragmentClazz = routerBean.getClazz();
+                            Fragment fragment = (Fragment) fragmentClazz.newInstance();
+                            return fragment;
                     }
                 }
             }

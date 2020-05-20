@@ -8,6 +8,8 @@ import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.mic.common.order.OrderAddress;
 import com.mic.common.utils.Cons;
@@ -95,6 +97,17 @@ public class DemoMainActivity extends AppCompatActivity {
                 .withString("username", "baby")
                 .withBundle(bundle)
                 .navigation(this, 163);
+    }
+
+    public void  loadFragment(View view){
+        Fragment fragment =(Fragment) RouterManager.getInstance()
+                .build("/order/OrderFragment")
+                .withString("username", "simon")
+                .navigation(this, 163);
+
+        FragmentTransaction transaction =getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.load_fragment,fragment);
+        transaction.commit();
     }
 
     @Override

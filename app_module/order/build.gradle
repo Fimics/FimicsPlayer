@@ -63,6 +63,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     // 循环引入第三方库
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation depends.junit
     androidTestImplementation depends.junitandroidx
     androidTestImplementation depends.espresso

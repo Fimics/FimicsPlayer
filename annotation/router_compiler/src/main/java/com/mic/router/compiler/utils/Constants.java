@@ -19,6 +19,8 @@ public class Constants {
     public static final String STRING = "java.lang.String";
     // Activity全类名
     public static final String ACTIVITY = "androidx.appcompat.app.AppCompatActivity";
+    // Fragment全类名
+    public static final String FRAGMENT = "androidx.fragment.app.Fragment";
     // RouterManager类名
     public static final String ROUTER_MANAGER = "RouterManager";
     // 包名前缀封装

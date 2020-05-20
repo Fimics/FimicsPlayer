@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     >
 
+    <FrameLayout
+        android:id="@+id/load_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/holo_blue_bright"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
@@ -19,12 +26,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+    android:id="@+id/order"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="jumpOrder"
+    android:text="订单"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="jumpOrder"
-        android:text="订单"
+        android:onClick="loadFragment"
+        android:text="加载fragment"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv" />
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+      />
 
     <Button
         android:layout_width="wrap_content"

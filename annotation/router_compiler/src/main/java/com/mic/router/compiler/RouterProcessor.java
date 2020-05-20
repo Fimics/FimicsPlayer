@@ -139,10 +139,12 @@ public class RouterProcessor extends AbstractProcessor {
         // 通过Element工具类，获取Activity、Callback类型
         TypeElement activityType = elementUtils.getTypeElement(Constants.ACTIVITY);
         TypeElement callType = elementUtils.getTypeElement(Constants.CALL);
+        TypeElement fragmentType = elementUtils.getTypeElement(Constants.FRAGMENT);
 
         // 显示类信息（获取被注解节点，类节点）这里也叫自描述 Mirror
         TypeMirror activityMirror = activityType.asType();
         TypeMirror callMirror = callType.asType();
+        TypeMirror fragmentMirror = fragmentType.asType();
 
         // 遍历节点
         for (Element element : elements) {
@@ -166,7 +168,10 @@ public class RouterProcessor extends AbstractProcessor {
                 bean.setType(RouterBean.Type.ACTIVITY);
             } else if (typeUtils.isSubtype(elementMirror, callMirror)) {
                 bean.setType(RouterBean.Type.CALL);
-            } else {
+            }else if (typeUtils.isSubtype(elementMirror, fragmentMirror)) {
+                bean.setType(RouterBean.Type.FRAGMENT);
+            }
+            else {
                 // 不匹配抛出异常，这里谨慎使用！考虑维护问题
                 throw new RuntimeException("@ARouter注解目前仅限用于Activity类之上");
             }
