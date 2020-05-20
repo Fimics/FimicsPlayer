@@ -284,9 +284,12 @@ dependencies {
         implementation project(':exoplayer-extension-ima')
     }
     implementation project(':app_core:app_core')
+    api project(':app_demo:demo')
     implementation project(':annotation:nav_annotation')
     //如果你使用kotlin,这里需要使用 kapt project
     annotationProcessor project(":annotation:nav_processor")
+//    implementation project(':annotation:router_annotation') // 注解
+//    annotationProcessor project(':annotation:router_compiler') // 注解处理器
     //QQ快捷登录
     implementation files('libs/open_sdk_r6140_lite.jar')
 

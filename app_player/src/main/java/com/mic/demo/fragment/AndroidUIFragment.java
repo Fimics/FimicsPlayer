@@ -1,6 +1,7 @@
 package com.mic.demo.fragment;
 
 import android.content.Intent;
+import android.media.MediaRouter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +41,7 @@ import com.mic.home.ViewPagerActivity;
 import com.mic.demo.bean.AndroidUI;
 import com.mic.demo.bean.ResourceType;
 import com.mic.demo.binder.AndroidUIBinder;
+import com.mic.router.api.RouterManager;
 import com.mic.sofa.VideoDetailMyScrollViewActivity;
 import com.mic.tabs.TabHomeFragment;
 import com.mic.user.detail.UserDetailNestedActivity;
@@ -167,6 +169,11 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(SkinCustomActivity.class);
         }else if(type==ResourceType.TYPE_HOT_FIX){
             startActivity(HotfixActivity.class);
+        }else if(type==ResourceType.TYPE_ROUTER){
+            RouterManager.getInstance()
+                    .build("/demo/DemoMainActivity")
+                    .withResultString("call", "I'am comeback!")
+                    .navigation(getActivity());
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
