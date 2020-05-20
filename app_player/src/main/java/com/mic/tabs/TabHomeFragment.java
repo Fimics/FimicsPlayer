@@ -14,9 +14,9 @@ import androidx.viewpager.widget.ViewPager;
 import com.mic.annotation.FragmentDestination;
 import com.mic.core.BaseFragment;
 import com.mic.R;
-import com.mic.home.fragment.AndroidUIChildFragment;
-import com.mic.home.fragment.AndroidUIFragment;
-import com.mic.home.fragment.FruitFragment;
+import com.mic.demo.fragment.AndroidUIChildFragment;
+import com.mic.demo.fragment.AndroidUIFragment;
+import com.mic.demo.fragment.FruitFragment;
 import com.mic.find.multitype.communicate.CommunicateFragment;
 import com.mic.find.multitype.moreapis.MoreApisPlaygroundFragment;
 import com.mic.find.multitype.multiselectable.MultiSelectableFragment;
@@ -35,7 +35,7 @@ public class TabHomeFragment extends BaseFragment {
 
     private RecyclerIndicatorView indicatorView;
     private ViewPager viewPager;
-    String[] names = {"Home","Fruit", "AndroidUI","UIChild","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
+    String[] names = {"Home", "AndroidUI","UIChild","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis","Fruit"};
     private final ArrayList<Fragment> fragments = new ArrayList<>();
     public TabHomeFragment() {
         // Required empty public constructor
@@ -56,7 +56,6 @@ public class TabHomeFragment extends BaseFragment {
             }
         });
         fragments.add(HomeFragment.newInstance());
-        fragments.add(new FruitFragment());
         fragments.add(new AndroidUIFragment());
         fragments.add(new AndroidUIChildFragment());
         fragments.add(new CommunicateFragment());
@@ -64,6 +63,7 @@ public class TabHomeFragment extends BaseFragment {
         fragments.add(new WeiboFragment());
         fragments.add(new PayloadFragment());
         fragments.add(new MoreApisPlaygroundFragment());
+        fragments.add(new FruitFragment());
         initViewPager();
         return rootView;
     }

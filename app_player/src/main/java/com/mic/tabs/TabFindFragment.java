@@ -15,6 +15,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.mic.R;
 import com.mic.annotation.FragmentDestination;
 import com.mic.core.BaseFragment;
+import com.mic.find.FindFragment;
 import com.mic.find.multitype.bilibili.BilibiliFragment;
 import com.mic.find.multitype.communicate.CommunicateFragment;
 import com.mic.find.multitype.moreapis.MoreApisPlaygroundFragment;
@@ -35,8 +36,8 @@ public class TabFindFragment extends BaseFragment {
 
     private RecyclerIndicatorView indicatorView;
     private ViewPager viewPager;
-    String[] names = {"Bilibili", "Normal","One2Many","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
-    private final ArrayList<BaseFragment> fragments = new ArrayList<>();
+    String[] names = {"Find","Bilibili", "Normal","One2Many","Communicate-with-binder","MultiSelectable" , "Weibo", "Payload", "MoreApis"};
+    private final ArrayList<Fragment> fragments = new ArrayList<>();
     public TabFindFragment() {
         // Required empty public constructor
     }
@@ -55,6 +56,7 @@ public class TabFindFragment extends BaseFragment {
                 viewPager.setCurrentItem(select);
             }
         });
+        fragments.add(new FindFragment());
         fragments.add(new BilibiliFragment());
         fragments.add(new NormalFragment());
         fragments.add(new OneToManyFragment());

@@ -1,11 +1,16 @@
 package com.mic;
 
 
+import android.app.Activity;
 import android.app.Application;
+import android.os.Bundle;
 
 import androidx.multidex.MultiDex;
 
 import com.mic.core.thirdparty.okhttp.ApiService;
+import com.mic.demo.viewwy.screenmatch.density.Density;
+import com.mic.hotfix.library.FixDexUtils;
+import com.mic.skin.custom.SkinManager;
 import com.tencent.bugly.crashreport.CrashReport;
 
 /**s
@@ -24,6 +29,49 @@ public class FimicsApp extends Application {
         CrashReport.initCrashReport(getApplicationContext(), "eb455a94a3", true);
         // 设置全局异常捕捉类
         // ExceptionCrashHandler.getInstance().init(this);
+       // matchWithDenisty(this);
+        SkinManager.init(this);
+        // 加载热修复Dex文件
+        FixDexUtils.loadFixedDex(this);
+    }
+
+    private void matchWithDenisty(Application application){
+        registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
+            @Override
+            public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
+                Density.setDensity(application, activity);
+            }
+
+            @Override
+            public void onActivityStarted(Activity activity) {
+
+            }
+
+            @Override
+            public void onActivityResumed(Activity activity) {
+
+            }
+
+            @Override
+            public void onActivityPaused(Activity activity) {
+
+            }
+
+            @Override
+            public void onActivityStopped(Activity activity) {
+
+            }
+
+            @Override
+            public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
+
+            }
+
+            @Override
+            public void onActivityDestroyed(Activity activity) {
+
+            }
+        });
     }
 
     @Override

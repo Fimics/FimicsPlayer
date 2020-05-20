@@ -28,7 +28,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/XAppTheme">
+        android:theme="@style/XAppTheme"
+        tools:targetApi="m"
+        tools:ignore="AllowBackup">
 
         <!-- android:usesCleartextTraffic="true"  允许明文请求-->
 
@@ -74,19 +76,54 @@
         <activity android:name=".home.activity.RxPermissionsActivity" />
         <activity android:name=".home.activity.UpdateUIActivity" />
 
+        <!--demo-->
+        <activity android:name=".demo.activity.XfermodesActivity"/>
+        <activity android:name=".demo.activity.XfermodeActivity"/>
+        <activity android:name=".demo.activity.ColorFilterActivity"/>
+        <activity android:name=".demo.activity.ColorFilterViewActivity"/>
+        <activity android:name=".demo.activity.CanvasTransformActivity"/>
+        <activity android:name=".demo.activity.CanvasSplitActivity"/>
+        <activity android:name=".demo.activity.PathBezierActivity"/>
+        <activity android:name=".demo.activity.PathMultiBezierActivity"/>
+        <activity android:name=".demo.activity.PathMeasureActivity"/>
+        <activity android:name=".demo.activity.AnimatorActivity"/>
+        <activity android:name=".demo.activity.SplashActivity"
+            android:theme="@style/MyFullScreenTheme"/>
+        <activity android:name=".demo.activity.MatchDensityActivity"/>
+        <activity android:name=".demo.activity.MatchDisplayCutoutActivity"/>
+        <activity android:name=".demo.activity.MatchPixelActivity"/>
+        <activity android:name=".demo.activity.MatchPercentActivity"/>
+        <!--material-->
+        <activity android:name=".demo.viewwy.material.BottomNavigationViewActivity"/>
+        <activity android:name=".demo.viewwy.material.MaterialMainActivity"/>
+        <activity android:name=".demo.viewwy.material.MovieDetailActivity"/>
+        <activity android:name=".demo.viewwy.material.FloatTabActivity"/>
+        <activity android:name=".demo.viewwy.material.ToolbarActivity"/>
+        <activity android:name=".demo.viewwy.material.VipActivity"/>
+        <activity android:name=".demo.activity.RecyclerViewActivity"/>
+        <activity android:name=".demo.activity.CardViewActivity"/>
+        <activity android:name=".demo.activity.CoordinatorLayoutActivity"/>
+
+        <activity android:name=".demo.activity.SkinBuiltInActivity"
+                  android:configChanges="uiMode"/>
+        <!-- 需要配置此属性=uiMode，才能更换navigation  -->
+        <activity android:name=".demo.activity.SkinCustomActivity"/>
+        <activity android:name=".demo.activity.HotfixActivity"/>
+
+
         <!-- 注册SDKActivity -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
             android:noHistory="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="tencent101794421" />
+                <data android:scheme="tencent1110426500" />
             </intent-filter>
         </activity>
         <activity

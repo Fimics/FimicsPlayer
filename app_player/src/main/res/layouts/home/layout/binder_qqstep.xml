@@ -6,7 +6,7 @@
     android:orientation="vertical"
     >
 
-    <com.mic.view.singleview.QQStepView
+    <com.mic.demo.view.singleview.QQStepView
         android:id="@+id/step_view"
         app:outerColor="@color/colorPrimary"
         app:innerColor="@color/colorAccent"

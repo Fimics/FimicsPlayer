@@ -314,4 +314,32 @@
     <color name="color_3d3">#3d3d3d</color>
     <color name="color_divider">#f2f2f2</color>
 
+    <color name="splash_bg">#F8F6EC</color>
+
+    <array name="splash_circle_colors">
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/pink</item>
+        <item>@color/orange</item>
+        <item>@color/aqua</item>
+        <item>@color/yellow</item>
+    </array>
+
+    <color name="base_shallow_black">#818181</color>
+    <color name="font_dark">#595757</color>
+    <color name="form_bg">#f0f0f0</color>
+    <color name="fuck">#46a8ba</color>
+
+    <color name="vip_button_bg_color">#FEB1B3</color>
+    <color name="vip_button_text_color">#FE6F70</color>
+
+    <!-- 本地/内置换肤颜色（日间） -->
+    <color name="commonTextColor">#008577</color>
+    <color name="commonTextColor1">#ffffff</color>
+
+    <!-- 换肤对应皮肤包颜色 -->
+    <color name="skin_background">#008577</color>
+    <color name="skin_textColor">#000000</color>
+    <color name="skin_item_color">#FFFFFF</color>
+
 </resources>

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-    <com.mic.view.singleview.RatingBar
+    <com.mic.demo.view.singleview.RatingBar
         app:gradeNumber="5"
         app:starNormal="@drawable/star_normal"
         app:starFocus="@drawable/star_selected"

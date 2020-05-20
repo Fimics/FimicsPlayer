@@ -2,10 +2,16 @@
 
 ext {
 
+    mainAppName = "app_player"
+    // 生产/开发环境（正式/测试）
+    isRelease = true
+
+    // 包名，用于存放APT生成的类文件
+    packageNameForAPT = "com.mic.apt"
+
     android = [compileSdkVersion   : 29,
                buildToolsVersion   : "29.0.3",
-               applicationId       : 'com.mic',
-               minSdkVersion       : 21,
+               minSdkVersion       : 26,
                targetSdkVersion    : 26,
                versionCode         : 1,
                versionName         : '1.0.0',
@@ -19,6 +25,24 @@ ext {
                    'keyPassword'  : 'rzq123456']
 
     java = ['javaVersion': JavaVersion.VERSION_1_8]
+
+    // 生产/开发环境URL
+    url = [
+            "debug"  :"http://123.56.232.18:8080/serverdemo/",
+            "release": "http://123.56.232.18:8080/serverdemo/"
+    ]
+
+    appId = [
+            "app"         : "com.mic",
+            "home"        : "com.mic.home",
+            "sofa"        : "com.mic.sofa",
+            "publish"     : "com.mic.publish",
+            "find"        : "com.mic.find",
+            "user"        : "com.mic.user",
+            "demo"        : "com.mic",
+            "order"       : "com.mic.order",
+            "personal"    : "com.mic.personal"
+            ]
 
 
     dependencies = [
@@ -71,7 +95,7 @@ ext {
             //test
             'testrunner'               :'androidx.test.runner.AndroidJUnitRunner',
             'junit'                    :'junit:junit:4.12',
-            'junitext'                 :'androidx.test.ext:junit:1.1.1',
+            'junitandroidx'            :'androidx.test.ext:junit:1.1.1',
             'espresso'                 :'androidx.test.espresso:espresso-core:3.2.0',
 
             //room数据库

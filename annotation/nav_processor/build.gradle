@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+def depends   = rootProject.ext.dependencies;
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':annotation:nav_annotation')
+    implementation depends.fastjson
+    api depends.autoservice
+    annotationProcessor depends.autoservice
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"

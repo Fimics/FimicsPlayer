@@ -1,64 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical">
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedscrview"
+    <com.mic.core.thirdparty.indicator.view.indicator.RecyclerIndicatorView
+        android:id="@+id/moretab_indicator"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="45dp"
+        />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/moretab_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-            <RelativeLayout
-                android:id="@+id/line_userview"
-                android:layout_width="match_parent"
-                android:background="@color/yellow"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                >
-
-                <ImageView
-                    android:id="@+id/iv_user_avater"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:background="@color/blue"
-                    android:layout_centerInParent="true"
-                    />
-
-                <TextView
-                    android:id="@+id/tv_username"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="朝阳区"
-                    android:textSize="15dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="10dp"
-                    />
-
-                <TextView
-                    android:id="@+id/tv_user_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="北京市,朝阳区,浦项中心32层,208工位"
-                    android:textSize="15dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="3dp"
-                    android:layout_alignLeft="@+id/tv_username"
-                    />
-            </RelativeLayout>
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
-
-
-</FrameLayout>
+</LinearLayout>

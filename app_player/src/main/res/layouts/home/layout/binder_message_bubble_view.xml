@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     >
 
-    <com.mic.view.singleview.MessageBubbleView
+    <com.mic.demo.view.singleview.MessageBubbleView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

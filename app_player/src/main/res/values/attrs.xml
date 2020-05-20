@@ -107,4 +107,24 @@
         <attr name="duration" format="integer"></attr>
     </declare-styleable>
 
+    <attr name="a_in" format="float" />
+    <attr name="a_out" format="float" />
+    <attr name="x_in" format="float" />
+    <attr name="x_out" format="float" />
+    <attr name="y_in" format="float" />
+    <attr name="y_out" format="float" />
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!-- 自定义控件属性 -->
+    <declare-styleable name="CustomCircleView">
+        <attr name="circleColor" format="color" />
+    </declare-styleable>
+
+    <attr name="custom_typeface" format="string" />
 </resources>

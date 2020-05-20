@@ -10,9 +10,6 @@ import androidx.core.view.ViewCompat;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-/**
- * Created by hcDarren on 2017/7/10.
- */
 
 public class TanslationBehavior extends FloatingActionButton.Behavior{
     public TanslationBehavior(Context context,AttributeSet attrs){

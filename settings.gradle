@@ -9,6 +9,26 @@ if(debug){
 
 
 include ':app_player'
-include ':annotation'
-include ':annotation_processor'
-include ':app_core'
+include ':app_core:app_core'
+include ':app_core:app_common'
+include ':app_demo:demo'
+
+include ':app_module:home'
+include ':app_module:sofa'
+include ':app_module:publish'
+include ':app_module:find'
+include ':app_module:user'
+include ':app_module:order'
+include ':app_module:personal'
+
+include ':annotation:nav_annotation'
+include ':annotation:nav_processor'
+include ':annotation:router_annotation'
+include ':annotation:router_api'
+include ':annotation:router_compiler'
+
+include ':library:skin_built_in'
+include ':library:skin_library'
+include ':library:skin_packages'
+include ':library:hotfix'
+

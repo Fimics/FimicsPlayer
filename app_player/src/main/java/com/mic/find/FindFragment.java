@@ -13,6 +13,7 @@ import com.mic.utils.AppConfig;
 
 public class FindFragment extends SofaFragment {
 
+
     @Override
     public Fragment getTabFragment(int position) {
         SofaTab.Tabs tab = getTabConfig().tabs.get(position);

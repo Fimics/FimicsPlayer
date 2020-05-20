@@ -1,0 +1,105 @@
+apply plugin: 'com.android.library'
+
+// 赋值与引用
+def androidId = rootProject.ext.android;
+def depends   = rootProject.ext.dependencies;
+
+android {
+    compileSdkVersion androidId.compileSdkVersion
+    buildToolsVersion androidId.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion androidId.minSdkVersion
+        targetSdkVersion androidId.targetSdkVersion
+        versionCode androidId.versionCode
+        versionName androidId.versionName
+
+        testInstrumentationRunner  depends.testrunner
+        consumerProguardFiles 'consumer-rules.pro'
+
+        //数据库生成的json文件保存的位置
+        javaCompileOptions{
+            annotationProcessorOptions{
+                arguments=["room.schemaLocation":"$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation depends.junit
+    androidTestImplementation depends.junitandroidx
+    androidTestImplementation depends.espresso
+    api depends.recyclerview
+    api depends.material
+    api depends.appcompat
+    api depends.constraint
+    api depends.navigationfragment
+    api depends.navigation
+
+    //网络框架
+    implementation depends.okhttp
+    implementation depends.gson
+    api depends.fastjson
+    api depends.retrofit
+    implementation depends.convertergson
+    implementation depends.logginginterceptor
+
+    //rx框架
+    implementation depends.rxandroid
+    implementation depends.rxjava
+    implementation depends.adapterrxjava
+    implementation depends.rxbinding2
+    implementation depends.rxpermissions2
+
+    //图片
+    api depends.glide
+    api depends.glidetransformations
+    annotationProcessor depends.glidecompiler
+    api depends.photoView
+    //EventBus
+    api depends.eventbus
+
+    //lifecycle
+    api depends.roomruntime
+    api depends.lifecycleextensions
+    annotationProcessor depends.roomcompiler
+    annotationProcessor depends.lifecyclecompiler
+
+    //paging分页组件
+    api depends.pagingruntime
+    api depends.pageSmartRefreshLayout
+    api depends.SmartRefreshHeader
+    //viewpager2 可以禁止预加载
+    api depends.viewpager2
+
+    //camera
+    api depends.cameracore
+    api depends.cameracamera2
+    api depends.cameraview
+    api depends.cameraextensions
+
+    //workmanager
+    api depends.workmanager
+    //aliyun oss
+    api depends.aliyunoos
+
+    // 每个功能子模块既然都要生成APT源文件，而且又是所有模块依赖的公共库
+    // 那么公共基础库依赖路由arouter_api就能向每个子模块提供开放api了
+
+}
