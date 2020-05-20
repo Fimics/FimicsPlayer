@@ -11,8 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.common.order.OrderAddress;
 import com.mic.common.utils.Cons;
-import com.mic.BuildConfig;
-import com.mic.R;
+import com.mic.demo.R;
+import com.mic.demo.BuildConfig;
 import com.mic.router.annotation.Router;
 import com.mic.router.annotation.Parameter;
 import com.mic.router.api.ParameterManager;

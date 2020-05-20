@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.mic.R;
+import com.mic.demo.R;
 
 public class DemoDebugMainActivity extends AppCompatActivity {
 
