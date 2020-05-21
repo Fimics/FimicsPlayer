@@ -173,6 +173,8 @@ public class AndroidUIFragment  extends BaseFragment {
             navigation("/demo/DemoMainActivity");
         }else if(type==ResourceType.TYPE_PLUGIN){
             navigation("/plugin_app/MainActivity");
+        }else if(type==ResourceType.TYPE_HOOK_BUTTON){
+            navigation("/demo/HookButtonActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

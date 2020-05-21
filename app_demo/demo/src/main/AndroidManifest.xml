@@ -3,8 +3,8 @@
     package="com.mic">
 
     <application>
-        <activity android:name=".DemoMainActivity">
-        </activity>
+        <activity android:name=".DemoMainActivity"/>
+        <activity android:name=".activity.HookButtonActivity"/>
     </application>
 
 </manifest>
