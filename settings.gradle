@@ -32,3 +32,6 @@ include ':library:skin_library'
 include ':library:skin_packages'
 include ':library:hotfix'
 
+include ':library:plugin_package'
+include ':library:plugin_stander'
+
