@@ -170,10 +170,9 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_HOT_FIX){
             startActivity(HotfixActivity.class);
         }else if(type==ResourceType.TYPE_ROUTER){
-            RouterManager.getInstance()
-                    .build("/demo/DemoMainActivity")
-                    .withResultString("call", "I'am comeback!")
-                    .navigation(getActivity());
+            navigation("/demo/DemoMainActivity");
+        }else if(type==ResourceType.TYPE_PLUGIN){
+            navigation("/plugin_app/MainActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
@@ -181,6 +180,12 @@ public class AndroidUIFragment  extends BaseFragment {
             EventBus eventBus = EventBus.getDefault();
             eventBus.post(uiEvent);
         }
+    }
+
+    private void navigation(String path){
+        RouterManager.getInstance()
+                .build(path)
+                .navigation(getActivity());
     }
 
     private void startActivity(Class clazz){

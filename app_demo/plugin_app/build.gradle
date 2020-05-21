@@ -1,4 +1,4 @@
-if (!isRelease) { // 如果是发布版本时，各个模块都不能独立运行
+if (isRelease) { // 如果是发布版本时，各个模块都不能独立运行
     apply plugin: 'com.android.library'
 } else {
     apply plugin: 'com.android.application'
@@ -69,8 +69,9 @@ dependencies {
     implementation depends.appcompat
     implementation depends.constraint
 
-    implementation project(':app_core:app_common') // 公共基础库
+    api project(':annotation:router_api') // 路由对外开放api模块// 公共基础库
     implementation project(':annotation:router_annotation') // 注解
-    implementation project(':library:plugin_stander');
     annotationProcessor project(':annotation:router_compiler') // 注解处理器
+    implementation project(':library:plugin_stander');
+
 }

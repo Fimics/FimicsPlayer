@@ -5,13 +5,17 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.mic.router.annotation.Router;
 
 import java.io.File;
 import java.lang.reflect.Proxy;
 
+@Router(path="/plugin_app/MainActivity")
 public class MainActivity extends AppCompatActivity {
 
     @Override

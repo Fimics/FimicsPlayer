@@ -34,4 +34,5 @@ include ':library:hotfix'
 
 include ':library:plugin_package'
 include ':library:plugin_stander'
+include ':app_demo:plugin_app'
 
