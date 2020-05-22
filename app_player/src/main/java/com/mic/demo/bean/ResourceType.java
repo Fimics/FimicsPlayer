@@ -54,9 +54,10 @@ public class ResourceType {
     public static final String NAME_HOT_FIX = "hotfix";
     public static final String NAME_GRADLE_CONFIG = "gradleConfig";
     public static final String NAME_ROUTER = "router";
-    public static final String NAME_PLUGIN = "plugin";
+    public static final String NAME_PLUGIN_PROXY = "plugin_proxy";
     public static final String NAME_HOOK_BUTTON = "hook_button";
-
+    public static final String NAME_PLUGIN_HOOK = "plugin_hook";
+    public static final String NAME_PLUGIN_LOAD_APK = "plugin_load_apk";
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
     public static final int TYPE_QQ_STEP = 1;
@@ -107,8 +108,10 @@ public class ResourceType {
     public static final int TYPE_HOT_FIX= 46;
     public static final int TYPE_GRADLE_CONFIG= 47;
     public static final int TYPE_ROUTER= 48;
-    public static final int TYPE_PLUGIN= 49;
+    public static final int TYPE_PLUGIN_PROXY= 49;
     public static final int TYPE_HOOK_BUTTON=50;
+    public static final int TYPE_PLUGIN_HOOK= 51;
+    public static final int TYPE_PLUGIN_LOOD_APK= 52;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -162,8 +165,10 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_HOT_FIX,TYPE_HOT_FIX));
         uiArrayList.add(new AndroidUI(NAME_GRADLE_CONFIG,TYPE_GRADLE_CONFIG));
         uiArrayList.add(new AndroidUI(NAME_ROUTER,TYPE_ROUTER));
-        uiArrayList.add(new AndroidUI(NAME_PLUGIN,TYPE_PLUGIN));
+        uiArrayList.add(new AndroidUI(NAME_PLUGIN_PROXY,TYPE_PLUGIN_PROXY));
         uiArrayList.add(new AndroidUI(NAME_HOOK_BUTTON,TYPE_HOOK_BUTTON));
+        uiArrayList.add(new AndroidUI(NAME_PLUGIN_HOOK,TYPE_PLUGIN_HOOK));
+        uiArrayList.add(new AndroidUI(NAME_PLUGIN_LOAD_APK,TYPE_PLUGIN_LOOD_APK));
         return uiArrayList;
     }
 }

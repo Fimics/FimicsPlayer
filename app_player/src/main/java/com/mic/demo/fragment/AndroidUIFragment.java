@@ -171,10 +171,14 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(HotfixActivity.class);
         }else if(type==ResourceType.TYPE_ROUTER){
             navigation("/demo/DemoMainActivity");
-        }else if(type==ResourceType.TYPE_PLUGIN){
-            navigation("/plugin_app/MainActivity");
+        }else if(type==ResourceType.TYPE_PLUGIN_PROXY){
+            navigation("/plugin_proxy/MainActivity");
         }else if(type==ResourceType.TYPE_HOOK_BUTTON){
             navigation("/demo/HookButtonActivity");
+        }else if(type==ResourceType.TYPE_PLUGIN_HOOK){
+            navigation("/plugin_hook/MainActivity");
+        }else if(type==ResourceType.TYPE_PLUGIN_LOOD_APK){
+            navigation("/plugin_loadapk/MainActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

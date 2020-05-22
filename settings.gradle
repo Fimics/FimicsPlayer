@@ -8,11 +8,19 @@ if(debug){
 }
 
 
+//main app
 include ':app_player'
+
+//core
 include ':app_core:app_core'
 include ':app_core:app_common'
-include ':app_demo:demo'
 
+//demo
+include ':app_demo:demo'
+include ':app_demo:plugin_proxy'
+include ':app_demo:plugin_hook'
+
+//module
 //include ':app_module:home'
 //include ':app_module:sofa'
 //include ':app_module:publish'
@@ -21,18 +29,22 @@ include ':app_demo:demo'
 include ':app_module:order'
 include ':app_module:personal'
 
+//annotation
 include ':annotation:nav_annotation'
 include ':annotation:nav_processor'
 include ':annotation:router_annotation'
 include ':annotation:router_api'
 include ':annotation:router_compiler'
 
+//skin
 include ':library:skin_built_in'
 include ':library:skin_library'
 include ':library:skin_packages'
 include ':library:hotfix'
 
-include ':library:plugin_package'
-include ':library:plugin_stander'
-include ':app_demo:plugin_app'
+//plugin
+include ':library:plugin_proxy_package'
+include ':library:plugin_proxy_stander'
+include ':library:plugin_hook_package'
+
 
