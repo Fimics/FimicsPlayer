@@ -19,6 +19,7 @@ include ':app_core:app_common'
 include ':app_demo:demo'
 include ':app_demo:plugin_proxy'
 include ':app_demo:plugin_hook'
+include ':app_demo:plugin_loadapk'
 
 //module
 //include ':app_module:home'
@@ -46,5 +47,6 @@ include ':library:hotfix'
 include ':library:plugin_proxy_package'
 include ':library:plugin_proxy_stander'
 include ':library:plugin_hook_package'
+include ':library:plugin_loadapk_package'
 
 
