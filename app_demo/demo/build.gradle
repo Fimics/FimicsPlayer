@@ -1,4 +1,8 @@
-apply plugin: 'com.android.application'
+if (isRelease) { // 如果是发布版本时，各个模块都不能独立运行
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
 
 
 def androidId = rootProject.ext.android;
@@ -10,7 +14,9 @@ android {
 
 
     defaultConfig {
-        applicationId appId.demo // 组件化模式能独立运行才能有applicationId
+        if (!isRelease) { // 如果是集成化模式，不能有applicationId
+            applicationId appId.demo // 组件化模式能独立运行才能有applicationId
+        }
         minSdkVersion androidId.minSdkVersion
         targetSdkVersion androidId.targetSdkVersion
         versionCode androidId.versionCode
@@ -41,17 +47,17 @@ android {
     // 配置资源路径，方便测试环境，打包不集成到正式环境
     sourceSets {
         main {
-//            if (!isRelease) {
+            if (!isRelease) {
                 // 如果是组件化模式，需要单独运行时
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                // 集成化模式，整个项目打包apk
                 manifest.srcFile 'src/main/AndroidManifest.xml'
-//            } else {
-//                // 集成化模式，整个项目打包apk
-//                manifest.srcFile 'src/main/AndroidManifest.xml'
-//                java {
-//                    // release 时 debug 目录下文件不需要合并到主工程
-//                    exclude '**/debug/**'
-//                }
-//            }
+                java {
+                    // release 时 debug 目录下文件不需要合并到主工程
+                    exclude '**/debug/**'
+                }
+            }
         }
     }
 
@@ -65,16 +71,16 @@ dependencies {
     implementation depends.appcompat
     implementation depends.constraint
 
-    implementation project(':app_core:app_common') // 公共基础库
+    api project(':app_core:app_common') // 公共基础库
     implementation project(':annotation:router_annotation') // 注解
     annotationProcessor project(':annotation:router_compiler') // 注解处理器
     // 如果是集成化模式，做发布版本时。各个模块都不能独立运行了
     if (isRelease) {
-        implementation project(':app_module:find')
-        implementation project(':app_module:home')
-        implementation project(':app_module:publish')
-        implementation project(':app_module:sofa')
-        implementation project(':app_module:user')
+//        implementation project(':app_module:find')
+//        implementation project(':app_module:home')
+//        implementation project(':app_module:publish')
+//        implementation project(':app_module:sofa')
+//        implementation project(':app_module:user')
         implementation project(':app_module:order')
         implementation project(':app_module:personal')
     }

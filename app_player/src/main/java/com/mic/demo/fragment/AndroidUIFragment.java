@@ -1,6 +1,7 @@
 package com.mic.demo.fragment;
 
 import android.content.Intent;
+import android.media.MediaRouter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +41,7 @@ import com.mic.home.ViewPagerActivity;
 import com.mic.demo.bean.AndroidUI;
 import com.mic.demo.bean.ResourceType;
 import com.mic.demo.binder.AndroidUIBinder;
+import com.mic.router.api.RouterManager;
 import com.mic.sofa.VideoDetailMyScrollViewActivity;
 import com.mic.tabs.TabHomeFragment;
 import com.mic.user.detail.UserDetailNestedActivity;
@@ -167,6 +169,24 @@ public class AndroidUIFragment  extends BaseFragment {
             startActivity(SkinCustomActivity.class);
         }else if(type==ResourceType.TYPE_HOT_FIX){
             startActivity(HotfixActivity.class);
+        }else if(type==ResourceType.TYPE_ROUTER){
+            navigation("/demo/DemoMainActivity");
+        }else if(type==ResourceType.TYPE_PLUGIN_PROXY){
+            navigation("/plugin_proxy/MainActivity");
+        }else if(type==ResourceType.TYPE_HOOK_BUTTON){
+            navigation("/demo/HookButtonActivity");
+        }else if(type==ResourceType.TYPE_PLUGIN_HOOK){
+            navigation("/plugin_hook/MainActivity");
+        }else if(type==ResourceType.TYPE_PLUGIN_LOOD_APK){
+            navigation("/plugin_loadapk/MainActivity");
+        }else if(type==ResourceType.TYPE_EVENT_USE){
+            navigation("/eventbus_use/MainActivity");
+        }else if(type==ResourceType.TYPE_EVENT_REFLECT){
+            navigation("/eventbus_reflect/MainActivity");
+        }else if(type==ResourceType.TYPE_EVENT_BUS){
+            navigation("/eventbus_demo/MainActivity");
+        }else if(type==ResourceType.TYPE_FAST_JSON){
+            navigation("/fastjson_demo/MainActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
@@ -174,6 +194,12 @@ public class AndroidUIFragment  extends BaseFragment {
             EventBus eventBus = EventBus.getDefault();
             eventBus.post(uiEvent);
         }
+    }
+
+    private void navigation(String path){
+        RouterManager.getInstance()
+                .build(path)
+                .navigation(getActivity());
     }
 
     private void startActivity(Class clazz){

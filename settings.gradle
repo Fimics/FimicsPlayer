@@ -8,27 +8,56 @@ if(debug){
 }
 
 
+//main app
 include ':app_player'
+
+//core
 include ':app_core:app_core'
 include ':app_core:app_common'
-include ':app_demo:demo'
 
-include ':app_module:home'
-include ':app_module:sofa'
-include ':app_module:publish'
-include ':app_module:find'
-include ':app_module:user'
+//demo
+include ':app_demo:demo'
+include ':app_demo:plugin_proxy'
+include ':app_demo:plugin_hook'
+include ':app_demo:plugin_hook9'
+include ':app_demo:plugin_loadapk'
+include ':app_demo:eventbus_use'
+include ':app_demo:eventbus_reflect'
+include ':app_demo:eventbus_demo'
+include ':app_demo:fastjson_demo'
+
+//module
+//include ':app_module:home'
+//include ':app_module:sofa'
+//include ':app_module:publish'
+//include ':app_module:find'
+//include ':app_module:user'
 include ':app_module:order'
 include ':app_module:personal'
 
+//annotation
 include ':annotation:nav_annotation'
 include ':annotation:nav_processor'
 include ':annotation:router_annotation'
 include ':annotation:router_api'
 include ':annotation:router_compiler'
+include ':annotation:eventbus_annotation'
+include ':annotation:eventbus_compiler'
 
+//skin
 include ':library:skin_built_in'
 include ':library:skin_library'
 include ':library:skin_packages'
 include ':library:hotfix'
+
+//plugin
+include ':library:plugin_proxy_package'
+include ':library:plugin_proxy_stander'
+include ':library:plugin_hook_package'
+include ':library:plugin_hook_package9'
+include ':library:plugin_loadapk_package'
+include ':library:eventbus_reflect_library'
+include ':library:eventbus'
+include ':library:fastjson_lib'
+
 

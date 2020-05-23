@@ -87,7 +87,10 @@ ext {
 
 
             //EventBus
-            'eventbus'                 : 'org.greenrobot:eventbus:3.0.0',
+            'eventbus'                 : 'org.greenrobot:eventbus:3.1.1',
+            'eventbusprocessor'        : 'org.greenrobot:eventbus-annotation-processor:3.1.1',
+            'javapoet'                 : 'com.squareup:javapoet:1.9.0',
+
 
             //multidex
             'multidex'                 :'com.android.support:multidex:1.1.0',
