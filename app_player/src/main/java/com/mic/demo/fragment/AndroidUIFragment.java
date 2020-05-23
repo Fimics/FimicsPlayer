@@ -179,6 +179,8 @@ public class AndroidUIFragment  extends BaseFragment {
             navigation("/plugin_hook/MainActivity");
         }else if(type==ResourceType.TYPE_PLUGIN_LOOD_APK){
             navigation("/plugin_loadapk/MainActivity");
+        }else if(type==ResourceType.TYPE_EVENT_USE){
+            navigation("/eventbus_use/MainActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

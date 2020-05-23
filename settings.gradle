@@ -21,6 +21,7 @@ include ':app_demo:plugin_proxy'
 include ':app_demo:plugin_hook'
 include ':app_demo:plugin_hook9'
 include ':app_demo:plugin_loadapk'
+include ':app_demo:eventbus_use'
 
 //module
 //include ':app_module:home'
