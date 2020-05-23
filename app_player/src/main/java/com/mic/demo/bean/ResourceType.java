@@ -59,6 +59,7 @@ public class ResourceType {
     public static final String NAME_PLUGIN_HOOK = "plugin_hook";
     public static final String NAME_PLUGIN_LOAD_APK = "plugin_load_apk";
     public static final String NAME_EVENT_USE = "event_use";
+    public static final String NAME_EVENT_REFLECT = "event_reflect";
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
     public static final int TYPE_QQ_STEP = 1;
@@ -114,6 +115,7 @@ public class ResourceType {
     public static final int TYPE_PLUGIN_HOOK= 51;
     public static final int TYPE_PLUGIN_LOOD_APK= 52;
     public static final int TYPE_EVENT_USE= 53;
+    public static final int TYPE_EVENT_REFLECT= 54;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -172,6 +174,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_PLUGIN_HOOK,TYPE_PLUGIN_HOOK));
         uiArrayList.add(new AndroidUI(NAME_PLUGIN_LOAD_APK,TYPE_PLUGIN_LOOD_APK));
         uiArrayList.add(new AndroidUI(NAME_EVENT_USE,TYPE_EVENT_USE));
+        uiArrayList.add(new AndroidUI(NAME_EVENT_REFLECT,TYPE_EVENT_REFLECT));
         return uiArrayList;
     }
 }

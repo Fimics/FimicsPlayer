@@ -22,6 +22,7 @@ include ':app_demo:plugin_hook'
 include ':app_demo:plugin_hook9'
 include ':app_demo:plugin_loadapk'
 include ':app_demo:eventbus_use'
+include ':app_demo:eventbus_reflect'
 
 //module
 //include ':app_module:home'
@@ -51,5 +52,6 @@ include ':library:plugin_proxy_stander'
 include ':library:plugin_hook_package'
 include ':library:plugin_hook_package9'
 include ':library:plugin_loadapk_package'
+include ':library:eventbus_reflect_library'
 
 
