@@ -183,6 +183,8 @@ public class AndroidUIFragment  extends BaseFragment {
             navigation("/eventbus_use/MainActivity");
         }else if(type==ResourceType.TYPE_EVENT_REFLECT){
             navigation("/eventbus_reflect/MainActivity");
+        }else if(type==ResourceType.TYPE_EVENT_BUS){
+            navigation("/eventbus_demo/MainActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

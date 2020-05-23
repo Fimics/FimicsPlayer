@@ -290,6 +290,7 @@ dependencies {
     api project(':app_demo:plugin_loadapk')
     api project(':app_demo:eventbus_use')
     api project(':app_demo:eventbus_reflect')
+    implementation project(':app_demo:eventbus_demo')
     implementation project(':annotation:nav_annotation')
     //如果你使用kotlin,这里需要使用 kapt project
     annotationProcessor project(":annotation:nav_processor")
