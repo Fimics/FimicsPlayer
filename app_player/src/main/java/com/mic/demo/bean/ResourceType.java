@@ -61,6 +61,7 @@ public class ResourceType {
     public static final String NAME_EVENT_USE = "event_use";
     public static final String NAME_EVENT_REFLECT = "event_reflect";
     public static final String NAME_EVENT_BUS = "eventbus_lib";
+    public static final String NAME_FAST_JSON = "fastjson";
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
     public static final int TYPE_QQ_STEP = 1;
@@ -118,6 +119,7 @@ public class ResourceType {
     public static final int TYPE_EVENT_USE= 53;
     public static final int TYPE_EVENT_REFLECT= 54;
     public static final int TYPE_EVENT_BUS= 55;
+    public static final int TYPE_FAST_JSON= 56;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -178,6 +180,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_EVENT_USE,TYPE_EVENT_USE));
         uiArrayList.add(new AndroidUI(NAME_EVENT_REFLECT,TYPE_EVENT_REFLECT));
         uiArrayList.add(new AndroidUI(NAME_EVENT_BUS,TYPE_EVENT_BUS));
+        uiArrayList.add(new AndroidUI(NAME_FAST_JSON,TYPE_FAST_JSON));
         return uiArrayList;
     }
 }

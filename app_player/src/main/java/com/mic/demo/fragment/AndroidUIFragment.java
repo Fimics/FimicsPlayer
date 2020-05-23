@@ -185,6 +185,8 @@ public class AndroidUIFragment  extends BaseFragment {
             navigation("/eventbus_reflect/MainActivity");
         }else if(type==ResourceType.TYPE_EVENT_BUS){
             navigation("/eventbus_demo/MainActivity");
+        }else if(type==ResourceType.TYPE_FAST_JSON){
+            navigation("/fastjson_demo/MainActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();
