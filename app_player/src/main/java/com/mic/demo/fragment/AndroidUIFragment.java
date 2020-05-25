@@ -187,6 +187,8 @@ public class AndroidUIFragment  extends BaseFragment {
             navigation("/eventbus_demo/MainActivity");
         }else if(type==ResourceType.TYPE_FAST_JSON){
             navigation("/fastjson_demo/MainActivity");
+        }else if(type==ResourceType.TYPE_SQLITE){
+            navigation("/sqlite_demo/MainActivity");
         }
         else{
             TabHomeFragment homeFragment = (TabHomeFragment) this.getParentFragment();

@@ -25,6 +25,9 @@ include ':app_demo:eventbus_use'
 include ':app_demo:eventbus_reflect'
 include ':app_demo:eventbus_demo'
 include ':app_demo:fastjson_demo'
+include ':app_demo:sqlite_demo'
+include ':app_demo:bitmap_pool_demo'
+include ':app_demo:glide_custom_demo'
 
 //module
 //include ':app_module:home'
