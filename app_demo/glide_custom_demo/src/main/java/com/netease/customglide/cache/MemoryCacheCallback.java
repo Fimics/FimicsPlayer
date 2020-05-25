@@ -1,6 +1,5 @@
 package com.netease.customglide.cache;
 
-import android.support.annotation.NonNull;
 
 import com.netease.customglide.resource.Value;
 

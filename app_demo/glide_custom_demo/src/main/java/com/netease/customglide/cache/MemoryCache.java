@@ -2,9 +2,10 @@ package com.netease.customglide.cache;
 
 import android.graphics.Bitmap;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.util.LruCache;
+import android.util.LruCache;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.netease.customglide.resource.Value;
 

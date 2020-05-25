@@ -2,7 +2,8 @@ package com.netease.customglide;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
+
+import androidx.fragment.app.FragmentActivity;
 
 public class Glide {
 
