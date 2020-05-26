@@ -28,6 +28,7 @@ include ':app_demo:fastjson_demo'
 include ':app_demo:sqlite_demo'
 include ':app_demo:bitmap_pool_demo'
 include ':app_demo:glide_custom_demo'
+include ':app_demo:butterknife_demo'
 
 //module
 //include ':app_module:home'
@@ -46,6 +47,8 @@ include ':annotation:router_api'
 include ':annotation:router_compiler'
 include ':annotation:eventbus_annotation'
 include ':annotation:eventbus_compiler'
+include ':annotation:butterknife_annotation'
+include ':annotation:butterknife_compiler'
 
 //skin
 include ':library:skin_built_in'
@@ -62,5 +65,6 @@ include ':library:plugin_loadapk_package'
 include ':library:eventbus_reflect_library'
 include ':library:eventbus'
 include ':library:fastjson_lib'
+include ':library:butterknife'
 
 
