@@ -1,7 +1,6 @@
 package com.mic.demo.fragment;
 
 import android.content.Intent;
-import android.media.MediaRouter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,10 +20,6 @@ import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.CoordinatorLayoutActivity;
 import com.mic.demo.activity.HotfixActivity;
-import com.mic.demo.activity.MatchDensityActivity;
-import com.mic.demo.activity.MatchDisplayCutoutActivity;
-import com.mic.demo.activity.MatchPercentActivity;
-import com.mic.demo.activity.MatchPixelActivity;
 import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
@@ -148,13 +143,13 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_SPLASH){
             startActivity(SplashActivity.class);
         }else if(type==ResourceType.TYPE_MATCH_PIXEL){
-            startActivity(MatchPixelActivity.class);
+            navigation("/match_demo/MatchPixelActivity");
         }else if(type==ResourceType.TYPE_MATCH_PERCENT){
-            startActivity(MatchPercentActivity.class);
+            navigation("/match_demo/MatchPercentActivity");
         }else if(type==ResourceType.TYPE_MATCH_DENSITY){
-            startActivity(MatchDensityActivity.class);
+            navigation("/match_demo/MatchDensityActivity");
         }else if(type==ResourceType.TYPE_MATCH_CUTOUT){
-            startActivity(MatchDisplayCutoutActivity.class);
+            navigation("/match_demo/MatchDisplayCutoutActivity");
         }else if(type==ResourceType.TYPE_MATERIAL){
             startActivity(MaterialMainActivity.class);
         }else if(type==ResourceType.TYPE_RECYCLER_VIEW){

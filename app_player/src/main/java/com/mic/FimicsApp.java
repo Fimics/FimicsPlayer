@@ -8,8 +8,8 @@ import android.os.Bundle;
 import androidx.multidex.MultiDex;
 
 import com.mic.core.thirdparty.okhttp.ApiService;
-import com.mic.demo.viewwy.screenmatch.density.Density;
 import com.mic.hotfix.library.FixDexUtils;
+import com.mic.match.density.Density;
 import com.mic.skin.custom.SkinManager;
 import com.tencent.bugly.crashreport.CrashReport;
 
