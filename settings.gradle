@@ -29,7 +29,6 @@ include ':app_demo:sqlite_demo'
 include ':app_demo:bitmap_pool_demo'
 include ':app_demo:glide_custom_demo'
 include ':app_demo:butterknife_demo'
-include ':app_demo:match_demo'
 
 //module
 //include ':app_module:home'

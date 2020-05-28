@@ -13,7 +13,6 @@
         android:gravity="center"
         android:onClick="scale"
         android:layout_width="100dp"
-        android:layout_height="100dp"
-        tools:ignore="MissingConstraints,OnClick" />
+        android:layout_height="100dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

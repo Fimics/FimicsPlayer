@@ -294,7 +294,6 @@ dependencies {
     api project(':app_demo:eventbus_reflect')
     api project(':app_demo:eventbus_demo')
     api project(':app_demo:fastjson_demo')
-    api project(':app_demo:match_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')

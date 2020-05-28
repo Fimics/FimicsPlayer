@@ -1,6 +1,7 @@
 package com.mic.demo.fragment;
 
 import android.content.Intent;
+import android.media.MediaRouter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,10 @@ import com.mic.demo.activity.ColorFilterActivity;
 import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.CoordinatorLayoutActivity;
 import com.mic.demo.activity.HotfixActivity;
+import com.mic.demo.activity.MatchDensityActivity;
+import com.mic.demo.activity.MatchDisplayCutoutActivity;
+import com.mic.demo.activity.MatchPercentActivity;
+import com.mic.demo.activity.MatchPixelActivity;
 import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
