@@ -1,11 +1,12 @@
-package com.mic.demo.activity;
+package com.mic.color;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.demo.viewwy.ColorFilterView;
+import com.mic.router.annotation.Router;
 
+@Router(path = "/color_demo/ColorFilterViewActivity")
 public class ColorFilterViewActivity extends AppCompatActivity {
 
     @Override

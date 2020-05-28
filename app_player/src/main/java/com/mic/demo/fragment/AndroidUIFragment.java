@@ -16,8 +16,6 @@ import com.mic.demo.activity.AnimatorActivity;
 import com.mic.demo.activity.CanvasSplitActivity;
 import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.CardViewActivity;
-import com.mic.demo.activity.ColorFilterActivity;
-import com.mic.demo.activity.ColorFilterViewActivity;
 import com.mic.demo.activity.CoordinatorLayoutActivity;
 import com.mic.demo.activity.HotfixActivity;
 import com.mic.demo.activity.PathBezierActivity;
@@ -123,9 +121,9 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_XFERMODES){
             navigation("/xfermode_demo/XfermodesActivity");
         }else if(type==ResourceType.TYPE_COLOR_FILTER){
-            startActivity(ColorFilterActivity.class);
+            navigation("/color_demo/ColorFilterActivity");
         }else if(type==ResourceType.TYPE_COLOR_FILTER_VIEW){
-            startActivity(ColorFilterViewActivity.class);
+            navigation("/color_demo/ColorFilterViewActivity");
         }else if(type==ResourceType.TYPE_CANVAS_TRANSFORM){
             startActivity(CanvasTransformActivity.class);
         }else if(type==ResourceType.TYPE_CANVAS_SPLIT){

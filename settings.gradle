@@ -31,6 +31,8 @@ include ':app_demo:glide_custom_demo'
 include ':app_demo:butterknife_demo'
 include ':app_demo:match_demo'
 include ':app_demo:xfermode_demo'
+include ':app_demo:color_demo'
+include ':app_demo:zempty_demo'
 
 //module
 //include ':app_module:home'

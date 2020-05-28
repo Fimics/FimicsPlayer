@@ -1,18 +1,18 @@
-package com.mic.demo.activity;
+package com.mic.color;
 
 import android.os.Bundle;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mic.R;
-import com.mic.demo.adapter.ColorFilterAdapter;
-import com.mic.demo.viewwy.ColorFilter;
+import com.mic.router.annotation.Router;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Router(path = "/color_demo/ColorFilterActivity")
 public class ColorFilterActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
