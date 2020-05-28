@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy;
+package com.mic.xfermode;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.mic.R;
+
 
 /**
  * 刮刮卡效果

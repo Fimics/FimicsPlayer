@@ -27,8 +27,6 @@ import com.mic.demo.activity.RecyclerViewActivity;
 import com.mic.demo.activity.SkinBuiltInActivity;
 import com.mic.demo.activity.SkinCustomActivity;
 import com.mic.demo.activity.SplashActivity;
-import com.mic.demo.activity.XfermodeActivity;
-import com.mic.demo.activity.XfermodesActivity;
 import com.mic.demo.viewwy.material.MaterialMainActivity;
 import com.mic.find.FindDetailBehaviorActivity;
 import com.mic.find.multitype.bilibili.PostItemDecoration;
@@ -121,9 +119,9 @@ public class AndroidUIFragment  extends BaseFragment {
 //            LoginDialogFragment.instance().show(getActivity());
             startActivity(LoginActivity.class);
         }else if(type==ResourceType.TYPE_XFERMODE){
-            startActivity(XfermodeActivity.class);
+            navigation("/xfermode_demo/XfermodeActivity");
         }else if(type==ResourceType.TYPE_XFERMODES){
-            startActivity(XfermodesActivity.class);
+            navigation("/xfermode_demo/XfermodesActivity");
         }else if(type==ResourceType.TYPE_COLOR_FILTER){
             startActivity(ColorFilterActivity.class);
         }else if(type==ResourceType.TYPE_COLOR_FILTER_VIEW){

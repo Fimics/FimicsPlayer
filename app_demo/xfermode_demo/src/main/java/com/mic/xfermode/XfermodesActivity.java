@@ -1,4 +1,4 @@
-package com.mic.demo.activity;
+package com.mic.xfermode;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -17,9 +17,13 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mic.router.annotation.Router;
+
 /**
  * google APIDemo
  */
+
+@Router(path = "/xfermode_demo/XfermodesActivity")
 public class XfermodesActivity extends AppCompatActivity {
 
     // create a bitmap with a circle, used for the "dst" image
