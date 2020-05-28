@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.animator;
+package com.mic.animator.animator;
 
 public class LineInterpolator implements  TimeInterpolator {
     @Override

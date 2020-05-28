@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.mic.R;
 import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
-import com.mic.demo.activity.AnimatorActivity;
 import com.mic.demo.activity.CanvasSplitActivity;
 import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.CardViewActivity;
@@ -135,7 +134,7 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_PATH_MEASURE){
             startActivity(PathMeasureActivity.class);
         }else if(type==ResourceType.TYPE_ANIMATOR){
-            startActivity(AnimatorActivity.class);
+            navigation("/animator_demo/AnimatorActivity");
         }else if(type==ResourceType.TYPE_SPLASH){
             startActivity(SplashActivity.class);
         }else if(type==ResourceType.TYPE_MATCH_PIXEL){

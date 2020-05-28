@@ -1,6 +1,5 @@
-package com.mic.demo.viewwy.animator;
+package com.mic.animator.animator;
 
-import android.animation.ObjectAnimator;
 import android.view.View;
 
 import java.lang.ref.WeakReference;

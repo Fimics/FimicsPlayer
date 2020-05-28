@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.animator;
+package com.mic.animator.animator;
 
 import java.util.ArrayList;
 import java.util.List;

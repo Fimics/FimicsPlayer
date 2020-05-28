@@ -82,7 +82,6 @@
         <activity android:name=".demo.activity.PathBezierActivity"/>
         <activity android:name=".demo.activity.PathMultiBezierActivity"/>
         <activity android:name=".demo.activity.PathMeasureActivity"/>
-        <activity android:name=".demo.activity.AnimatorActivity"/>
         <activity android:name=".demo.activity.SplashActivity"
             android:theme="@style/MyFullScreenTheme"/>
         <!--material-->

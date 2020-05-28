@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.animator;
+package com.mic.animator.animator;
 
 import android.animation.FloatEvaluator;
 import android.animation.TypeEvaluator;

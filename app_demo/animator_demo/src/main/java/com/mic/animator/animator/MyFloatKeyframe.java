@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.animator;
+package com.mic.animator.animator;
 //关键帧 保存着 某一时刻的具体状态    初始化的时候
 public class MyFloatKeyframe {
     float mFraction;

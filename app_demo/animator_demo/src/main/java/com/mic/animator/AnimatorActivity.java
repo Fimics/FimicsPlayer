@@ -1,4 +1,4 @@
-package com.mic.demo.activity;
+package com.mic.animator;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
@@ -7,9 +7,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
-import com.mic.R;
+import com.mic.router.annotation.Router;
 
 
+@Router(path = "/animator_demo/AnimatorActivity")
 public class AnimatorActivity extends AppCompatActivity {
     AppCompatButton button;
     @Override

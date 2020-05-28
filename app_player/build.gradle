@@ -297,6 +297,7 @@ dependencies {
     api project(':app_demo:match_demo')
     api project(':app_demo:xfermode_demo')
     api project(':app_demo:color_demo')
+    api project(':app_demo:animator_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')
