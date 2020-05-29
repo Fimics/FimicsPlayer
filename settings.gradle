@@ -12,8 +12,8 @@ if(debug){
 include ':app_player'
 
 //core
-include ':app_core:app_core'
-include ':app_core:app_common'
+include ':app_base:app_core'
+include ':app_base:app_common'
 
 //demo
 include ':app_demo:demo'
