@@ -12,11 +12,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.mic.R;
 import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
-import com.mic.demo.activity.CanvasSplitActivity;
-import com.mic.demo.activity.CanvasTransformActivity;
 import com.mic.demo.activity.CardViewActivity;
 import com.mic.demo.activity.CoordinatorLayoutActivity;
-import com.mic.demo.activity.HotfixActivity;
 import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
@@ -124,9 +121,9 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_COLOR_FILTER_VIEW){
             navigation("/color_demo/ColorFilterViewActivity");
         }else if(type==ResourceType.TYPE_CANVAS_TRANSFORM){
-            startActivity(CanvasTransformActivity.class);
+            navigation("/canvas_demo/CanvasTransformActivity");
         }else if(type==ResourceType.TYPE_CANVAS_SPLIT){
-            startActivity(CanvasSplitActivity.class);
+            navigation("/canvas_demo/CanvasSplitActivity");
         }else if(type==ResourceType.TYPE_PATH_BEZIER){
             startActivity(PathBezierActivity.class);
         }else if(type==ResourceType.TYPE_PATH_MULTI_BEZIER){
@@ -158,7 +155,7 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_SKIN_CUSTOM){
             startActivity(SkinCustomActivity.class);
         }else if(type==ResourceType.TYPE_HOT_FIX){
-            startActivity(HotfixActivity.class);
+            navigation("/hotfix_demo/HotfixActivity");
         }else if(type==ResourceType.TYPE_ROUTER){
             navigation("/demo/DemoMainActivity");
         }else if(type==ResourceType.TYPE_PLUGIN_PROXY){

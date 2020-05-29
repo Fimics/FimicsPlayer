@@ -77,8 +77,6 @@
         <activity android:name=".home.activity.UpdateUIActivity" />
 
         <!--demo-->
-        <activity android:name=".demo.activity.CanvasTransformActivity"/>
-        <activity android:name=".demo.activity.CanvasSplitActivity"/>
         <activity android:name=".demo.activity.PathBezierActivity"/>
         <activity android:name=".demo.activity.PathMultiBezierActivity"/>
         <activity android:name=".demo.activity.PathMeasureActivity"/>
@@ -99,7 +97,6 @@
                   android:configChanges="uiMode"/>
         <!-- 需要配置此属性=uiMode，才能更换navigation  -->
         <activity android:name=".demo.activity.SkinCustomActivity"/>
-        <activity android:name=".demo.activity.HotfixActivity"/>
 
 
         <!-- 注册SDKActivity -->

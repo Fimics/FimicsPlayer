@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy;
+package com.mic.canvas;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -11,8 +11,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
-
-import com.mic.R;
 
 public class CanvasSplashView extends View {
 

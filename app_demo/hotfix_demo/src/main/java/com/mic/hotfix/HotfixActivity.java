@@ -1,4 +1,4 @@
-package com.mic.demo.activity;
+package com.mic.hotfix;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,17 +6,17 @@ import android.os.Environment;
 import android.view.View;
 import android.widget.Toast;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.R;
 import com.mic.hotfix.library.FixDexUtils;
 import com.mic.hotfix.library.utils.Constants;
 import com.mic.hotfix.library.utils.FileUitls;
+import com.mic.router.annotation.Router;
 
 import java.io.File;
 import java.io.IOException;
 
+@Router(path = "/hotfix_demo/HotfixActivity")
 public class HotfixActivity extends AppCompatActivity {
 
     @Override

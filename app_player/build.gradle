@@ -101,7 +101,6 @@ android {
                             'src/main/res/layouts/splash',
                             'src/main/res/layouts/material',
                             'src/main/res/layouts/skin',
-                            'src/main/res/layouts/hotfix',
                             'src/main/res/layouts',
                             'src/main/res',
                     ]
@@ -298,6 +297,8 @@ dependencies {
     api project(':app_demo:xfermode_demo')
     api project(':app_demo:color_demo')
     api project(':app_demo:animator_demo')
+    api project(':app_demo:canvas_demo')
+    api project(':app_demo:hotfix_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')
@@ -310,6 +311,4 @@ dependencies {
 
     implementation project(':library:skin_built_in')
     implementation project(':library:skin_library')
-    implementation project(':library:hotfix')
-    
 }

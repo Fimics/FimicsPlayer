@@ -1,11 +1,13 @@
-package com.mic.demo.activity;
+package com.mic.canvas;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.demo.viewwy.CanvasSplitView;
+import com.mic.router.annotation.Router;
 
+
+@Router(path = "/canvas_demo/CanvasSplitActivity")
 public class CanvasSplitActivity extends AppCompatActivity {
 
     @Override

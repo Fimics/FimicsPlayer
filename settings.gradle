@@ -33,6 +33,8 @@ include ':app_demo:match_demo'
 include ':app_demo:xfermode_demo'
 include ':app_demo:color_demo'
 include ':app_demo:animator_demo'
+include ':app_demo:canvas_demo'
+include ':app_demo:hotfix_demo'
 include ':app_demo:zempty_demo'
 
 //module

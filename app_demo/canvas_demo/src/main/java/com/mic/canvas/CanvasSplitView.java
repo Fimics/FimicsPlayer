@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy;
+package com.mic.canvas;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -10,8 +10,6 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-
-import com.mic.R;
 
 import java.util.ArrayList;
 import java.util.List;

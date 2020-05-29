@@ -1,11 +1,13 @@
-package com.mic.demo.activity;
+package com.mic.canvas;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.demo.viewwy.CanvasSaveRestoreView;
+import com.mic.router.annotation.Router;
 
+
+@Router(path = "/canvas_demo/CanvasTransformActivity")
 public class CanvasTransformActivity extends AppCompatActivity {
 
     @Override

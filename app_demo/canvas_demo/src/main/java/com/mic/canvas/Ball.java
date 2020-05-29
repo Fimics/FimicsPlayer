@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy;
+package com.mic.canvas;
 
 /**
  * 粒子封装对象
