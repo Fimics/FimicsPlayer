@@ -266,15 +266,6 @@
         <item name="android:textColor">@color/color_999</item>
     </style>
 
-
-    <declare-styleable name="DragBubbleView">
-        <attr name="bubble_radius" format="dimension"/>
-        <attr name="bubble_color" format="color"/>
-        <attr name="bubble_text" format="string"/>
-        <attr name="bubble_textSize" format="dimension"/>
-        <attr name="bubble_textColor" format="color"/>
-    </declare-styleable>
-
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

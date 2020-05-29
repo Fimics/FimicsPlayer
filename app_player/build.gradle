@@ -298,6 +298,7 @@ dependencies {
     api project(':app_demo:hotfix_demo')
     api project(':app_demo:skin_demo')
     api project(':app_demo:splash_demo')
+    api project(':app_demo:path_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')

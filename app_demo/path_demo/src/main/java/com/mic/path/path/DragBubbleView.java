@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.path;
+package com.mic.path.path;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -20,7 +20,7 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 
-import com.mic.R;
+import com.mic.path.R;
 
 public class DragBubbleView extends View {
 

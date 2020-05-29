@@ -14,9 +14,6 @@ import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.demo.activity.CardViewActivity;
 import com.mic.demo.activity.CoordinatorLayoutActivity;
-import com.mic.demo.activity.PathBezierActivity;
-import com.mic.demo.activity.PathMeasureActivity;
-import com.mic.demo.activity.PathMultiBezierActivity;
 import com.mic.demo.activity.RecyclerViewActivity;
 import com.mic.demo.viewwy.material.MaterialMainActivity;
 import com.mic.find.FindDetailBehaviorActivity;
@@ -122,11 +119,11 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_CANVAS_SPLIT){
             navigation("/canvas_demo/CanvasSplitActivity");
         }else if(type==ResourceType.TYPE_PATH_BEZIER){
-            startActivity(PathBezierActivity.class);
+            navigation("/path_demo/PathBezierActivity");
         }else if(type==ResourceType.TYPE_PATH_MULTI_BEZIER){
-            startActivity(PathMultiBezierActivity.class);
+            navigation("/path_demo/PathMultiBezierActivity");
         }else if(type==ResourceType.TYPE_PATH_MEASURE){
-            startActivity(PathMeasureActivity.class);
+            navigation("/path_demo/PathMeasureActivity");
         }else if(type==ResourceType.TYPE_ANIMATOR){
             navigation("/animator_demo/AnimatorActivity");
         }else if(type==ResourceType.TYPE_SPLASH){

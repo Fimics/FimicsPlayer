@@ -77,9 +77,6 @@
         <activity android:name=".home.activity.UpdateUIActivity" />
 
         <!--demo-->
-        <activity android:name=".demo.activity.PathBezierActivity"/>
-        <activity android:name=".demo.activity.PathMultiBezierActivity"/>
-        <activity android:name=".demo.activity.PathMeasureActivity"/>
         <!--material-->
         <activity android:name=".demo.viewwy.material.BottomNavigationViewActivity"/>
         <activity android:name=".demo.viewwy.material.MaterialMainActivity"/>

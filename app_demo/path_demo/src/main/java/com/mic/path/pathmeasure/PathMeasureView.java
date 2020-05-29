@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.pathmeasure;
+package com.mic.path.pathmeasure;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,7 +11,7 @@ import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.view.View;
 
-import com.mic.R;
+import com.mic.path.R;
 
 public class PathMeasureView extends View {
 

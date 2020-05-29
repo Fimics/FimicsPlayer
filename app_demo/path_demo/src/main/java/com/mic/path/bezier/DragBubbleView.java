@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.bezier;
+package com.mic.path.bezier;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -22,7 +22,8 @@ import android.view.animation.OvershootInterpolator;
 
 import androidx.annotation.Nullable;
 
-import com.mic.R;
+import com.mic.path.R;
+
 
 /**
  * QQ气泡效果

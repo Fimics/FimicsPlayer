@@ -1,11 +1,12 @@
-package com.mic.demo.activity;
+package com.mic.path;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.R;
+import com.mic.router.annotation.Router;
 
+@Router(path="/path_demo/PathMultiBezierActivity")
 public class PathMultiBezierActivity extends AppCompatActivity {
 
     @Override
