@@ -1,4 +1,4 @@
-package com.mic.demo.activity;
+package com.mic.skin;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -6,10 +6,12 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
-import com.mic.R;
+import com.mic.router.annotation.Router;
 import com.mic.skin.built.SkinActivity;
 import com.mic.skin.built.utils.PreferencesUtils;
 
+
+@Router(path = "/skin_demo/SkinBuiltInActivity")
 public class SkinBuiltInActivity extends SkinActivity {
 
     @Override

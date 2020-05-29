@@ -18,8 +18,6 @@ import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
 import com.mic.demo.activity.RecyclerViewActivity;
-import com.mic.demo.activity.SkinBuiltInActivity;
-import com.mic.demo.activity.SkinCustomActivity;
 import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.viewwy.material.MaterialMainActivity;
 import com.mic.find.FindDetailBehaviorActivity;
@@ -151,9 +149,9 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_CARDVIEW){
             startActivity(CardViewActivity.class);
         }else if(type==ResourceType.TYPE_SKIN_BUILT_IN){
-            startActivity(SkinBuiltInActivity.class);
+            navigation("/skin_demo/SkinBuiltInActivity");
         }else if(type==ResourceType.TYPE_SKIN_CUSTOM){
-            startActivity(SkinCustomActivity.class);
+            navigation("/skin_demo/SkinCustomActivity");
         }else if(type==ResourceType.TYPE_HOT_FIX){
             navigation("/hotfix_demo/HotfixActivity");
         }else if(type==ResourceType.TYPE_ROUTER){

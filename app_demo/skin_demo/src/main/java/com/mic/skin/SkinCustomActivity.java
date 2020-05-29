@@ -1,4 +1,4 @@
-package com.mic.demo.activity;
+package com.mic.skin;
 
 import android.Manifest;
 import android.content.Intent;
@@ -9,10 +9,9 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 
-
 import androidx.annotation.RequiresApi;
 
-import com.mic.R;
+import com.mic.router.annotation.Router;
 import com.mic.skin.custom.base.SkinActivity;
 import com.mic.skin.custom.utils.PreferencesUtils;
 
@@ -22,6 +21,8 @@ import java.io.File;
  * 如果图标有固定的尺寸，不需要更改，那么drawable更加适合
  * 如果需要变大变小变大变小的，有动画的，放在mipmap中能有更高的质量
  */
+
+@Router(path = "/skin_demo/SkinCustomActivity")
 public class SkinCustomActivity extends SkinActivity {
 
     private String skinPath;

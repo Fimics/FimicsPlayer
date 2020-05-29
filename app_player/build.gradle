@@ -100,7 +100,6 @@ android {
                             'src/main/res/layouts/user',
                             'src/main/res/layouts/splash',
                             'src/main/res/layouts/material',
-                            'src/main/res/layouts/skin',
                             'src/main/res/layouts',
                             'src/main/res',
                     ]
@@ -299,6 +298,7 @@ dependencies {
     api project(':app_demo:animator_demo')
     api project(':app_demo:canvas_demo')
     api project(':app_demo:hotfix_demo')
+    api project(':app_demo:skin_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')
@@ -308,7 +308,4 @@ dependencies {
 //    annotationProcessor project(':annotation:router_compiler') // 注解处理器
     //QQ快捷登录
     implementation files('libs/open_sdk_r6140_lite.jar')
-
-    implementation project(':library:skin_built_in')
-    implementation project(':library:skin_library')
 }

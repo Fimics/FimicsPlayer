@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy;
+package com.mic.skin;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,6 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import com.mic.R;
 import com.mic.skin.custom.SkinManager;
 import com.mic.skin.custom.core.ViewsMatch;
 import com.mic.skin.custom.model.AttrsBean;
