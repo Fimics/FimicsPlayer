@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.splash;
+package com.mic.splash.splash;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

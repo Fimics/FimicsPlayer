@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.splash;
+package com.mic.splash.splash;
 
 /**
  * 视差动画播放时参数的控制

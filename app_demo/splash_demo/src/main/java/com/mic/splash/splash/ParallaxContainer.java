@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.splash;
+package com.mic.splash.splash;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
@@ -8,13 +8,12 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.ViewPager;
 
-import com.mic.R;
-import com.mic.demo.activity.SplashActivity;
+import com.mic.splash.R;
+import com.mic.splash.SplashActivity;
 import com.nineoldandroids.view.ViewHelper;
 
 import java.util.ArrayList;

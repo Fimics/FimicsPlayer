@@ -1,4 +1,4 @@
-package com.mic.demo.viewwy.splash;
+package com.mic.splash.splash;
 
 import android.content.Context;
 import android.util.AttributeSet;

@@ -98,7 +98,6 @@ android {
                             'src/main/res/layouts/publish',
                             'src/main/res/layouts/sofa',
                             'src/main/res/layouts/user',
-                            'src/main/res/layouts/splash',
                             'src/main/res/layouts/material',
                             'src/main/res/layouts',
                             'src/main/res',
@@ -255,7 +254,6 @@ dependencies {
     implementation depends.buglycrashreport
     implementation depends.buglynativecrashreport
 
-    implementation 'com.nineoldandroids:library:2.4.0'
     //butterKnife
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
@@ -299,6 +297,7 @@ dependencies {
     api project(':app_demo:canvas_demo')
     api project(':app_demo:hotfix_demo')
     api project(':app_demo:skin_demo')
+    api project(':app_demo:splash_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')

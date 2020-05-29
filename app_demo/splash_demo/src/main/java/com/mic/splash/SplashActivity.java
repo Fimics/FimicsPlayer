@@ -1,20 +1,21 @@
-package com.mic.demo.activity;
+package com.mic.splash;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.mic.R;
-import com.mic.demo.viewwy.splash.ParallaxContainer;
+import com.mic.router.annotation.Router;
+import com.mic.splash.splash.ParallaxContainer;
 
-public class SplashActivity  extends FragmentActivity {
+@Router(path = "/splash_demo/SplashActivity")
+public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        ParallaxContainer container = (ParallaxContainer) findViewById(R.id.parallax_container);
+        ParallaxContainer container =findViewById(R.id.parallax_container);
         container.setUp(new int[]{
                 R.layout.view_intro_1,
                 R.layout.view_intro_2,

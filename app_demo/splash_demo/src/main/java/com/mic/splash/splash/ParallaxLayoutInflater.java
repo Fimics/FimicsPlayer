@@ -1,5 +1,6 @@
-package com.mic.demo.viewwy.splash;
+package com.mic.splash.splash;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
@@ -7,7 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.mic.R;
+import com.mic.splash.R;
 
 
 public class ParallaxLayoutInflater extends LayoutInflater {
@@ -54,6 +55,7 @@ public class ParallaxLayoutInflater extends LayoutInflater {
 //    自定义控件 com.wangyi.splashwangyi.MyView
 
         //
+        @SuppressLint("ResourceType")
         @Override
         public View onCreateView(View parent, String name, Context context, AttributeSet attributeSet) {
 

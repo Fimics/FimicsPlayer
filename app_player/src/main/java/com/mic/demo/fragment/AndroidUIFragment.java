@@ -18,7 +18,6 @@ import com.mic.demo.activity.PathBezierActivity;
 import com.mic.demo.activity.PathMeasureActivity;
 import com.mic.demo.activity.PathMultiBezierActivity;
 import com.mic.demo.activity.RecyclerViewActivity;
-import com.mic.demo.activity.SplashActivity;
 import com.mic.demo.viewwy.material.MaterialMainActivity;
 import com.mic.find.FindDetailBehaviorActivity;
 import com.mic.find.multitype.bilibili.PostItemDecoration;
@@ -131,7 +130,7 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_ANIMATOR){
             navigation("/animator_demo/AnimatorActivity");
         }else if(type==ResourceType.TYPE_SPLASH){
-            startActivity(SplashActivity.class);
+            navigation("/splash_demo/SplashActivity");
         }else if(type==ResourceType.TYPE_MATCH_PIXEL){
             navigation("/match_demo/MatchPixelActivity");
         }else if(type==ResourceType.TYPE_MATCH_PERCENT){

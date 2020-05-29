@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-<com.mic.demo.viewwy.splash.ParallaxContainer
+<com.mic.splash.splash.ParallaxContainer
     android:id="@+id/parallax_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
-</com.mic.demo.viewwy.splash.ParallaxContainer>
+</com.mic.splash.splash.ParallaxContainer>
     <ImageView
         android:id="@+id/iv_man"
         android:layout_width="67dp"
