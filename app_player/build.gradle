@@ -91,14 +91,12 @@ android {
                     [
                             'src/main/res/layouts/home',
                             'src/main/res/layouts/tabs',
-                            'src/main/res/layouts/multitype',
                             'src/main/res/layouts/main',
                             'src/main/res/layouts/view',
                             'src/main/res/layouts/find',
                             'src/main/res/layouts/publish',
                             'src/main/res/layouts/sofa',
                             'src/main/res/layouts/user',
-                            'src/main/res/layouts/material',
                             'src/main/res/layouts',
                             'src/main/res',
                     ]
@@ -218,8 +216,8 @@ dependencies {
     implementation depends.cardview
     implementation depends.material
 
-    implementation depends.vectordrawable
-    implementation depends.legacy
+//    implementation depends.vectordrawable
+//    implementation depends.legacy
 
     //网络框架
     implementation depends.okhttp
@@ -288,6 +286,7 @@ dependencies {
     api project(':app_demo:splash_demo')
     api project(':app_demo:path_demo')
     api project(':app_demo:material_demo')
+    api project(':app_demo:multitype_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')

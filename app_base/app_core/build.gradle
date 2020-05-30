@@ -99,6 +99,8 @@ dependencies {
     //aliyun oss
     api depends.aliyunoos
 
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
     // 每个功能子模块既然都要生成APT源文件，而且又是所有模块依赖的公共库
     // 那么公共基础库依赖路由arouter_api就能向每个子模块提供开放api了
 

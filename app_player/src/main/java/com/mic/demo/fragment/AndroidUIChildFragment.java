@@ -32,8 +32,8 @@ import com.mic.demo.binder.TouchViewBinder;
 import com.mic.demo.binder.TouchViewGroupBinder;
 import com.mic.demo.binder.TrackTextViewBinder;
 import com.mic.demo.binder.VerticalDragListViewBinder;
-import com.mic.find.multitype.bilibili.PostItemDecoration;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.multitype.bilibili.PostItemDecoration;
 import com.mic.view.FimRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;

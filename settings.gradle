@@ -39,6 +39,7 @@ include ':app_demo:skin_demo'
 include ':app_demo:splash_demo'
 include ':app_demo:path_demo'
 include ':app_demo:material_demo'
+include ':app_demo:multitype_demo'
 include ':app_demo:zempty_demo'
 
 //module

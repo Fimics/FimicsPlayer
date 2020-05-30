@@ -14,8 +14,8 @@ import com.mic.core.BaseFragment;
 import com.mic.R;
 import com.mic.demo.bean.Fruit;
 import com.mic.demo.binder.FruitBinder;
-import com.mic.find.multitype.bilibili.PostItemDecoration;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
+import com.mic.multitype.bilibili.PostItemDecoration;
 import com.mic.view.FimRecyclerView;
 
 import java.util.ArrayList;
