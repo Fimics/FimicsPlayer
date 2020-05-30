@@ -10,7 +10,7 @@
             type="User" />
 
         <import type="com.mic.tabs.model.User"/>
-        <import type="com.mic.utils.StringConvert"/>
+        <import type="com.mic.core.utils.StringConvert"/>
 
     </data>
 

@@ -23,7 +23,7 @@ import com.mic.sofa.VideoDetailMyScrollViewActivity;
 import com.mic.tabs.TabHomeFragment;
 import com.mic.user.detail.UserDetailNestedActivity;
 import com.mic.user.login.LoginActivity;
-import com.mic.view.FimRecyclerView;
+import com.mic.core.view.FimRecyclerView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

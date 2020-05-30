@@ -1,4 +1,4 @@
-package com.mic.utils;
+package com.mic.core.utils;
 
 import java.util.Calendar;
 

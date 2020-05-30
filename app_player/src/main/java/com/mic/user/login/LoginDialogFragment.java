@@ -23,7 +23,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.mic.R;
 import com.mic.user.model.User;
-import com.mic.view.AutoRotateView;
+import com.mic.core.view.AutoRotateView;
 
 import java.util.Objects;
 

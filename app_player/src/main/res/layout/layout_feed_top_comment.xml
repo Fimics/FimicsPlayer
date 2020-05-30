@@ -19,7 +19,7 @@
 
         <import type="android.view.View"/>
 
-        <import type="com.mic.utils.StringConvert"/>
+        <import type="com.mic.core.utils.StringConvert"/>
 
     </data>
 

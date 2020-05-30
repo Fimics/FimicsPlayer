@@ -32,7 +32,7 @@
         android:visibility="gone"
         />
 
-        <com.mic.view.AutoRotateView
+        <com.mic.core.view.AutoRotateView
             android:id="@+id/buffering"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

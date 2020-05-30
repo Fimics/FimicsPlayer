@@ -1,4 +1,4 @@
-package com.mic.view;
+package com.mic.core.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

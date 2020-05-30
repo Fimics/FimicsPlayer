@@ -15,7 +15,7 @@
 
         <import type="com.mic.tabs.model.Feed"/>
 
-        <import type="com.mic.utils.StringConvert"/>
+        <import type="com.mic.core.utils.StringConvert"/>
 
         <import type="com.mic.detail.InteractionPresenter" />
 

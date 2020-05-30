@@ -1,4 +1,4 @@
-package com.mic.view.dialog;
+package com.mic.core.view.dialog;
 
 import android.content.Context;
 import android.util.SparseArray;

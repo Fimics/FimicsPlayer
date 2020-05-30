@@ -13,7 +13,7 @@
 
         <import type="android.text.TextUtils"></import>
 
-        <import type="com.mic.utils.StringConvert"></import>
+        <import type="com.mic.core.utils.StringConvert"></import>
 
         <variable
             name="owner"

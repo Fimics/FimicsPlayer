@@ -15,7 +15,7 @@
 
         <import type="com.mic.user.login.UserManager"></import>
 
-        <import type="com.mic.utils.TimeUtils"></import>
+        <import type="com.mic.core.utils.TimeUtils"></import>
 
         <import type="com.mic.detail.InteractionPresenter"></import>
 

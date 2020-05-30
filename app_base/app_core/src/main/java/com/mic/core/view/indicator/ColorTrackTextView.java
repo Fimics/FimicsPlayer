@@ -1,5 +1,6 @@
-package com.mic.view.indicator;
+package com.mic.core.view.indicator;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -18,6 +19,7 @@ import com.mic.R;
  * Version 1.0
  * Description:  颜色跟踪的TextView
  */
+@SuppressLint("AppCompatCustomView")
 public class ColorTrackTextView extends TextView {
 
     // 1. 实现一个文字两种颜色 - 绘制不变色字体的画笔

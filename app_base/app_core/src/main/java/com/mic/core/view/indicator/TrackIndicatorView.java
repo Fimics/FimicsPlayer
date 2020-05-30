@@ -1,4 +1,4 @@
-package com.mic.view.indicator;
+package com.mic.core.view.indicator;
 
 import android.content.Context;
 import android.content.res.TypedArray;

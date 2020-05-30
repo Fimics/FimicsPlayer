@@ -16,7 +16,7 @@ import com.mic.detail.InteractionPresenter;
 import com.mic.core.architecture.mmvm.MutableItemKeyedDataSource;
 import com.mic.home.FeedAdapter;
 import com.mic.user.login.UserManager;
-import com.mic.utils.TimeUtils;
+import com.mic.core.utils.TimeUtils;
 
 public class ProfileListAdapter extends FeedAdapter {
     public ProfileListAdapter(Context context, String category) {

@@ -1,4 +1,4 @@
-package com.mic.view.indicator;
+package com.mic.core.view.indicator;
 
 import android.view.View;
 import android.view.ViewGroup;

@@ -1,4 +1,4 @@
-package com.mic.utils;
+package com.mic.core.utils;
 
 import android.graphics.Color;
 import android.graphics.Typeface;

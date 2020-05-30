@@ -265,7 +265,7 @@ dependencies {
         implementation project(':exoplayer-library-ui')
         implementation project(':exoplayer-extension-ima')
     }
-    implementation project(':app_base:app_core')
+    api project(':app_base:app_core')
 
 
     api project(':app_demo:demo')

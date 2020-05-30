@@ -17,7 +17,7 @@
             name="fullscreen"
             type="java.lang.Boolean"/>
 
-        <import type="com.mic.utils.TimeUtils" />
+        <import type="com.mic.core.utils.TimeUtils" />
 
         <import type="com.mic.detail.InteractionPresenter"/>
 

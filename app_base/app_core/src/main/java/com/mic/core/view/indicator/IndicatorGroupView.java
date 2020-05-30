@@ -1,4 +1,4 @@
-package com.mic.view.indicator;
+package com.mic.core.view.indicator;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
