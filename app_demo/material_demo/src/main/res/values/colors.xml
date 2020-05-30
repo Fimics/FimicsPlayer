@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="vip_button_bg_color">#FEB1B3</color>
+    <color name="vip_button_text_color">#FE6F70</color>
+    <color name="fuck">#46a8ba</color>
+</resources>

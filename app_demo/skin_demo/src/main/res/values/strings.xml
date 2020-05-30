@@ -1,3 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">color</string>
+    <string name="custom_typeface_string" tools:ignore="ExtraTranslation" />
 </resources>

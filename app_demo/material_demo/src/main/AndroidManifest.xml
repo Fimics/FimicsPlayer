@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mic.material">
+
+
+    <application>
+        <activity android:name=".CardViewActivity"/>
+        <activity android:name=".CoordinatorLayoutActivity"/>
+        <activity android:name=".RecyclerViewActivity"/>
+        <activity android:name=".material.MaterialMainActivity"/>
+        <activity android:name=".material.BottomNavigationViewActivity"/>
+        <activity android:name=".material.FloatTabActivity"/>
+        <activity android:name=".material.MovieDetailActivity"/>
+        <activity android:name=".material.ToolbarActivity"/>
+        <activity android:name=".material.VipActivity"/>
+
+
+    </application>
+
+</manifest>

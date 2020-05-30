@@ -12,10 +12,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.mic.R;
 import com.mic.core.BaseFragment;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
-import com.mic.demo.activity.CardViewActivity;
-import com.mic.demo.activity.CoordinatorLayoutActivity;
-import com.mic.demo.activity.RecyclerViewActivity;
-import com.mic.demo.viewwy.material.MaterialMainActivity;
 import com.mic.find.FindDetailBehaviorActivity;
 import com.mic.find.multitype.bilibili.PostItemDecoration;
 import com.mic.home.ViewPagerActivity;
@@ -137,13 +133,13 @@ public class AndroidUIFragment  extends BaseFragment {
         }else if(type==ResourceType.TYPE_MATCH_CUTOUT){
             navigation("/match_demo/MatchDisplayCutoutActivity");
         }else if(type==ResourceType.TYPE_MATERIAL){
-            startActivity(MaterialMainActivity.class);
+            navigation("/material_demo/MaterialMainActivity");
         }else if(type==ResourceType.TYPE_RECYCLER_VIEW){
-            startActivity(RecyclerViewActivity.class);
+            navigation("/material_demo/RecyclerViewActivity");
         }else if(type==ResourceType.TYPE_COORDINATOR_LAYOUT){
-            startActivity(CoordinatorLayoutActivity.class);
+            navigation("/material_demo/CoordinatorLayoutActivity");
         }else if(type==ResourceType.TYPE_CARDVIEW){
-            startActivity(CardViewActivity.class);
+            navigation("/material_demo/CardViewActivity");
         }else if(type==ResourceType.TYPE_SKIN_BUILT_IN){
             navigation("/skin_demo/SkinBuiltInActivity");
         }else if(type==ResourceType.TYPE_SKIN_CUSTOM){
