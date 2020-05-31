@@ -11,12 +11,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.mic.AndroidUIFragment;
 import com.mic.annotation.FragmentDestination;
 import com.mic.core.BaseFragment;
 import com.mic.R;
-import com.mic.demo.fragment.AndroidUIChildFragment;
-import com.mic.demo.fragment.AndroidUIFragment;
-import com.mic.demo.fragment.FruitFragment;
+import com.mic.all.fragment.AndroidUIChildFragment;
+import com.mic.all.fragment.FruitFragment;
 import com.mic.multitype.communicate.CommunicateFragment;
 import com.mic.multitype.moreapis.MoreApisPlaygroundFragment;
 import com.mic.multitype.multiselectable.MultiSelectableFragment;

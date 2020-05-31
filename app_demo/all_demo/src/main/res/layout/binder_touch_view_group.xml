@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mic.all.view.singleview.TouchViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/touch_viewgroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    >
+
+    <com.mic.all.view.singleview.TouchVIew
+        android:id="@+id/touch_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/yellow"
+        />
+
+</com.mic.all.view.singleview.TouchViewGroup>

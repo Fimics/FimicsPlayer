@@ -89,13 +89,9 @@ android {
         main {
             res.srcDirs =
                     [
-                            'src/main/res/layouts/home',
                             'src/main/res/layouts/tabs',
                             'src/main/res/layouts/main',
                             'src/main/res/layouts/view',
-                            'src/main/res/layouts/find',
-                            'src/main/res/layouts/publish',
-                            'src/main/res/layouts/sofa',
                             'src/main/res/layouts/user',
                             'src/main/res/layouts',
                             'src/main/res',
@@ -266,27 +262,7 @@ dependencies {
         implementation project(':exoplayer-extension-ima')
     }
     api project(':app_base:app_core')
-
-
-    api project(':app_demo:demo')
-    api project(':app_demo:plugin_proxy')
-    api project(':app_demo:plugin_hook')
-    api project(':app_demo:plugin_loadapk')
-    api project(':app_demo:eventbus_use')
-    api project(':app_demo:eventbus_reflect')
-    api project(':app_demo:eventbus_demo')
-    api project(':app_demo:fastjson_demo')
-    api project(':app_demo:match_demo')
-    api project(':app_demo:xfermode_demo')
-    api project(':app_demo:color_demo')
-    api project(':app_demo:animator_demo')
-    api project(':app_demo:canvas_demo')
-    api project(':app_demo:hotfix_demo')
-    api project(':app_demo:skin_demo')
-    api project(':app_demo:splash_demo')
-    api project(':app_demo:path_demo')
-    api project(':app_demo:material_demo')
-    api project(':app_demo:multitype_demo')
+    api project(':app_demo:all_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')
