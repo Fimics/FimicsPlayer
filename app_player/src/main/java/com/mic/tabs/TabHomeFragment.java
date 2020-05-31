@@ -27,6 +27,7 @@ import com.mic.core.thirdparty.indicator.view.indicator.RecyclerIndicatorView;
 import com.mic.core.thirdparty.indicator.view.indicator.slidebar.ColorBar;
 import com.mic.core.thirdparty.indicator.view.indicator.transition.OnTransitionTextListener;
 import com.mic.home.HomeFragment;
+import com.mic.router.api.RouterManager;
 
 import java.util.ArrayList;
 
@@ -57,7 +58,7 @@ public class TabHomeFragment extends BaseFragment {
         });
         fragments.add(HomeFragment.newInstance());
         fragments.add(new AndroidUIFragment());
-        fragments.add(new AndroidUIChildFragment());
+        fragments.add(navigation("/all_demo/AndroidUIChildFragment"));
         fragments.add(new CommunicateFragment());
         fragments.add(new MultiSelectableFragment());
         fragments.add(new WeiboFragment());
@@ -66,6 +67,12 @@ public class TabHomeFragment extends BaseFragment {
         fragments.add(new FruitFragment());
         initViewPager();
         return rootView;
+    }
+
+    private Fragment navigation(String path){
+        return (Fragment) RouterManager.getInstance()
+                .build(path)
+                .navigation(getActivity());
     }
 
     @Override
@@ -97,7 +104,6 @@ public class TabHomeFragment extends BaseFragment {
         indicator.setCurrentItem(0,true);
     }
 
-    @Override
     public void toNextPage(){
         if(indicatorView!=null){
             indicatorView.setCurrentItem(indicatorView.getCurrentItem()+1);

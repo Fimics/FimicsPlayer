@@ -35,6 +35,7 @@ import com.mic.all.binder.VerticalDragListViewBinder;
 import com.mic.core.thirdparty.multitype.MultiTypeAdapter;
 import com.mic.core.view.FimRecyclerView;
 import com.mic.multitype.bilibili.PostItemDecoration;
+import com.mic.router.annotation.Router;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -42,6 +43,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 
+@Router(path = "/all_demo/AndroidUIChildFragment")
 public class AndroidUIChildFragment extends BaseFragment {
 
     private static final int SPAN_COUNT = 1;
