@@ -10,6 +10,18 @@
         <activity android:name=".activity.UserDetailNestedActivity"/>
         <activity android:name=".activity.VideoDetailMyScrollViewActivity"/>
         <activity android:name=".activity.ViewPagerActivity"/>
+
+        <service android:name=".service.MessageService">
+
+            <!--  -->
+
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="com.mic.xsample.aidl.user"/> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- </intent-filter> -->
+
+        </service>
     </application>
 
 </manifest>

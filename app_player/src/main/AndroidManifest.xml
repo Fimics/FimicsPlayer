@@ -88,17 +88,6 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <service android:name=".service.MessageService">
-
-            <!--  -->
-
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="com.mic.xsample.aidl.user"/> -->
-            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
-            <!-- </intent-filter> -->
-
-        </service>
     </application>
 
 </manifest>
