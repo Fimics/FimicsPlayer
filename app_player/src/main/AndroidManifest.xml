@@ -66,25 +66,6 @@
         <activity android:name=".user.UserBehaviorListActivity"/>
 
 
-        <activity android:name=".user.detail.UserDetailNestedActivity" />
-        <activity android:name=".home.activity.MainActivity" />
-        <activity android:name=".home.activity.RxBindingActivity" />
-        <activity android:name=".home.activity.RxBitmapActivity" />
-        <activity android:name=".home.activity.RxPermissionsActivity" />
-        <activity android:name=".home.activity.UpdateUIActivity" />
-
-        <!--demo-->
-        <!--material-->
-        <activity android:name=".demo.viewwy.material.BottomNavigationViewActivity"/>
-        <activity android:name=".demo.viewwy.material.MaterialMainActivity"/>
-        <activity android:name=".demo.viewwy.material.MovieDetailActivity"/>
-        <activity android:name=".demo.viewwy.material.FloatTabActivity"/>
-        <activity android:name=".demo.viewwy.material.ToolbarActivity"/>
-        <activity android:name=".demo.viewwy.material.VipActivity"/>
-        <activity android:name=".demo.activity.RecyclerViewActivity"/>
-        <activity android:name=".demo.activity.CardViewActivity"/>
-        <activity android:name=".demo.activity.CoordinatorLayoutActivity"/>
-
         <!-- 需要配置此属性=uiMode，才能更换navigation  -->
 
 
