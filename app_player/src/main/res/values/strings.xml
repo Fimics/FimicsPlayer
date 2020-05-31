@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingTranslation">
     <string name="app_name" >Fimics</string>
+    <string name="welcome" >Welcome Fimics!</string>
     <string name="ss_share_hint">期待你的神评论</string>
 
     <string name="comment_dialog_send">发送</string>

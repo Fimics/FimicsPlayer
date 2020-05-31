@@ -2,14 +2,26 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/burlywood"
+    android:background="@color/colorPrimary"
     >
 
+
     <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_launcher"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/iv_welcome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/welcome"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/dp_36"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginBottom="50dp"
+        android:text="@string/welcome"
         />
 
 </FrameLayout>

@@ -85,7 +85,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowActionBar">false</item>
-        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowBackground">@drawable/welcome_bg</item>
     </style>
 
 
@@ -105,7 +105,7 @@
 
     <style name="launcher" parent="AppTheme">
         <item name="android:windowFullscreen">true</item>
-        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowBackground">@drawable/welcome_bg</item>
     </style>
 
     <style name="preview" parent="AppTheme">

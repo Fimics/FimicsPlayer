@@ -42,7 +42,7 @@
             app:isCircle="@{true}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/splash"/>
+            tools:src="@drawable/welcome_bg"/>
 
         <TextView
             android:id="@+id/author_name"
