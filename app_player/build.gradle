@@ -19,6 +19,15 @@ android {
         versionName androidId.versionName
         testInstrumentationRunner  depends.testrunner
 
+
+        // 在gradle文件中配置选项参数值（用于APT传参接收）
+        // 切记：必须写在defaultConfig节点下
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName(), packageNameForAPT: packageNameForAPT]
+            }
+        }
+
         // 开启分包
         multiDexEnabled true
         // 设置分包配置
@@ -261,15 +270,16 @@ dependencies {
         implementation project(':exoplayer-library-ui')
         implementation project(':exoplayer-extension-ima')
     }
-    api project(':app_base:app_core')
-    api project(':app_demo:all_demo')
+    implementation project(':app_base:app_core')
+    implementation project(':app_demo:all_demo')
 //    api project(':app_demo:sqlite_demo')
 
     implementation project(':annotation:nav_annotation')
     //如果你使用kotlin,这里需要使用 kapt project
     annotationProcessor project(":annotation:nav_processor")
-//    implementation project(':annotation:router_annotation') // 注解
-//    annotationProcessor project(':annotation:router_compiler') // 注解处理器
+    implementation project(':annotation:router_api') // 路由对外开放api模块// 公共基础库
+    implementation project(':annotation:router_annotation') // 注解
+    annotationProcessor project(':annotation:router_compiler') // 注解处理器
     //QQ快捷登录
     implementation files('libs/open_sdk_r6140_lite.jar')
 }

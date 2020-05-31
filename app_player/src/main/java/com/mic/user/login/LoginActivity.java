@@ -1,6 +1,5 @@
 package com.mic.user.login;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +12,7 @@ import com.mic.core.thirdparty.okhttp.ApiResponse;
 import com.mic.core.thirdparty.okhttp.ApiService;
 import com.mic.core.thirdparty.okhttp.JsonCallback;
 import com.mic.R;
+import com.mic.router.annotation.Router;
 import com.mic.tabs.model.User;
 import com.tencent.connect.UserInfo;
 import com.tencent.connect.auth.QQToken;
@@ -24,6 +24,7 @@ import com.tencent.tauth.UiError;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+@Router(path = "/app_player/LoginActivity")
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private View actionClose;
     private View actionLogin;

@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.mic.all.R;
 import com.mic.all.view.MyScrollView;
 import com.mic.core.utils.StatusBarUtil;
+import com.mic.router.annotation.Router;
 
+@Router(path = "/all_demo/VideoDetailMyScrollViewActivity")
 public class VideoDetailMyScrollViewActivity extends AppCompatActivity {
     private View mTitleBar;
     private MyScrollView mScrollView;

@@ -74,29 +74,30 @@ dependencies {
     implementation depends.appcompat
     implementation depends.constraint
 
-    api project(':app_base:app_core')
+    implementation project(':app_base:app_core')
+    implementation project(':app_demo:demo')
+    implementation project(':app_demo:plugin_proxy')
+    implementation project(':app_demo:plugin_hook')
+    implementation project(':app_demo:plugin_loadapk')
+    implementation project(':app_demo:eventbus_use')
+    implementation project(':app_demo:eventbus_reflect')
+    implementation project(':app_demo:eventbus_demo')
+    implementation project(':app_demo:fastjson_demo')
+    implementation project(':app_demo:xfermode_demo')
+    implementation project(':app_demo:color_demo')
+    implementation project(':app_demo:animator_demo')
+    implementation project(':app_demo:canvas_demo')
+    implementation project(':app_demo:splash_demo')
+    implementation project(':app_demo:path_demo')
+    implementation project(':app_demo:material_demo')
 
-
-    api project(':app_demo:demo')
-    api project(':app_demo:plugin_proxy')
-    api project(':app_demo:plugin_hook')
-    api project(':app_demo:plugin_loadapk')
-    api project(':app_demo:eventbus_use')
-    api project(':app_demo:eventbus_reflect')
-    api project(':app_demo:eventbus_demo')
-    api project(':app_demo:fastjson_demo')
-    api project(':app_demo:match_demo')
-    api project(':app_demo:xfermode_demo')
-    api project(':app_demo:color_demo')
-    api project(':app_demo:animator_demo')
-    api project(':app_demo:canvas_demo')
     api project(':app_demo:hotfix_demo')
     api project(':app_demo:skin_demo')
-    api project(':app_demo:splash_demo')
-    api project(':app_demo:path_demo')
-    api project(':app_demo:material_demo')
+    api project(':app_demo:match_demo')
     api project(':app_demo:multitype_demo')
-    api project(':annotation:router_api') // 路由对外开放api模块// 公共基础库
+
+    
+    implementation project(':annotation:router_api') // 路由对外开放api模块// 公共基础库
     implementation project(':annotation:router_annotation') // 注解
     annotationProcessor project(':annotation:router_compiler') // 注解处理器
 }

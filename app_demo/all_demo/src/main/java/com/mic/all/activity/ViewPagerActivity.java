@@ -14,10 +14,12 @@ import androidx.viewpager.widget.ViewPager;
 import com.mic.all.R;
 import com.mic.all.fragment.PagerItemFragment;
 import com.mic.all.view.singleview.TrackTextView;
+import com.mic.router.annotation.Router;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Router(path = "/all_demo/ViewPagerActivity")
 public class ViewPagerActivity extends AppCompatActivity {
 
     private String[] items = {"直播", "推荐", "视频", "图片", "段子", "精华"};

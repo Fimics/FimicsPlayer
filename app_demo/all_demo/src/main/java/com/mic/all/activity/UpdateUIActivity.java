@@ -8,8 +8,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mic.all.R;
+import com.mic.router.annotation.Router;
 
-
+@Router(path = "/all_demo/UpdateUIActivity")
 public class UpdateUIActivity extends AppCompatActivity {
 
     private TextView mTextView;

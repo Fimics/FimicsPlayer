@@ -14,6 +14,7 @@ import android.widget.Button;
 import com.mic.all.service.MessageService;
 import com.mic.core.BaseActivity;
 import com.mic.core.utils.hotfix.FixDexManager;
+import com.mic.router.annotation.Router;
 import com.mic.training.UserAidl;
 
 import org.greenrobot.eventbus.EventBus;
@@ -22,7 +23,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.io.File;
 
-
+@Router(path = "/all_demo/MainActivity")
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 

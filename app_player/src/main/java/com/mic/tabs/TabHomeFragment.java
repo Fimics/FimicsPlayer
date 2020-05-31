@@ -97,6 +97,7 @@ public class TabHomeFragment extends BaseFragment {
         indicator.setCurrentItem(0,true);
     }
 
+    @Override
     public void toNextPage(){
         if(indicatorView!=null){
             indicatorView.setCurrentItem(indicatorView.getCurrentItem()+1);

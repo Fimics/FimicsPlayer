@@ -13,7 +13,9 @@ import androidx.appcompat.widget.Toolbar;
 import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.mic.all.R;
+import com.mic.router.annotation.Router;
 
+@Router(path = "/all_demo/UserDetailNestedActivity")
 public class UserDetailNestedActivity extends AppCompatActivity {
 
     public static final String FRUIT_NAME = "fruit_name";

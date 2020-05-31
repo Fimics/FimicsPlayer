@@ -12,8 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mic.all.R;
+import com.mic.router.annotation.Router;
 
-
+@Router(path = "/all_demo/FindDetailBehaviorActivity")
 public class FindDetailBehaviorActivity extends AppCompatActivity {
 
     @Override

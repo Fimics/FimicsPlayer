@@ -23,6 +23,7 @@ import com.mic.core.view.FimRecyclerView;
 import com.mic.multitype.bilibili.PostItemDecoration;
 import com.mic.router.api.RouterManager;
 import com.mic.tabs.TabHomeFragment;
+import com.mic.user.login.LoginActivity;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -91,16 +92,16 @@ public class AndroidUIFragment extends BaseFragment {
         AndroidUI uiEvent = mViews.get(position);
         int type = uiEvent.type;
         if(type==ResourceType.TYPE_VIEW_PAGER){
-            startActivity(ViewPagerActivity.class);
+            navigation("/all_demo/ViewPagerActivity");
         }else if(type==ResourceType.TYPE_NESTED_SCROLLVIEW){
-            startActivity(UserDetailNestedActivity.class);
+            navigation("/all_demo/UserDetailNestedActivity");
         }else if(type==ResourceType.TYPE_MYSCROLL_VIEW){
-            startActivity(VideoDetailMyScrollViewActivity.class);
+            navigation("/all_demo/VideoDetailMyScrollViewActivity");
         }else if(type==ResourceType.TYPE_BEHAVIOR){
-            startActivity(FindDetailBehaviorActivity.class);
+            navigation("/all_demo/FindDetailBehaviorActivity");
         }else if(type==ResourceType.TYPE_LOGIN){
 //            LoginDialogFragment.instance().show(getActivity());
-//            startActivity(LoginActivity.class);
+            navigation("/app_player/LoginActivity");
         }else if(type==ResourceType.TYPE_XFERMODE){
             navigation("/xfermode_demo/XfermodeActivity");
         }else if(type==ResourceType.TYPE_XFERMODES){

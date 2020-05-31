@@ -37,4 +37,6 @@ public abstract class BaseFragment extends Fragment{
     protected abstract void initData();
 
     protected abstract int getLayoutId();
+
+    protected void toNextPage(){}
 }
