@@ -63,6 +63,7 @@ public class ResourceType {
     public static final String NAME_EVENT_BUS = "eventbus_lib";
     public static final String NAME_FAST_JSON = "fastjson";
     public static final String NAME_SQLITE = "sqlite";
+    public static final String NAME_BIG_IMAGE = "分块加载图片";
     //android ui type
     public static final int TYPE_TEXTVIEW = 0;
     public static final int TYPE_QQ_STEP = 1;
@@ -122,6 +123,7 @@ public class ResourceType {
     public static final int TYPE_EVENT_BUS= 55;
     public static final int TYPE_FAST_JSON= 56;
     public static final int TYPE_SQLITE= 57;
+    public static final int TYPE_BIG_IMAGE= 58;
 
     public static ArrayList<AndroidUI> getAndroidUiTypeList(){
         ArrayList<AndroidUI> uiArrayList = new ArrayList<>();
@@ -184,6 +186,7 @@ public class ResourceType {
         uiArrayList.add(new AndroidUI(NAME_EVENT_BUS,TYPE_EVENT_BUS));
         uiArrayList.add(new AndroidUI(NAME_FAST_JSON,TYPE_FAST_JSON));
         uiArrayList.add(new AndroidUI(NAME_SQLITE,TYPE_SQLITE));
+        uiArrayList.add(new AndroidUI(NAME_BIG_IMAGE,TYPE_BIG_IMAGE));
         return uiArrayList;
     }
 }

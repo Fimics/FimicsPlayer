@@ -20,20 +20,33 @@ import com.tencent.bugly.crashreport.CrashReport;
  */
 public class FimicsApp extends Application {
 
+    private Application application;
     @Override
     public void onCreate() {
         super.onCreate();
-        MultiDex.install(this);
-         ApiService.init(BuildConfig.host,null);
-
-        CrashReport.initCrashReport(getApplicationContext(), "eb455a94a3", true);
-        // 设置全局异常捕捉类
-        // ExceptionCrashHandler.getInstance().init(this);
-       // matchWithDenisty(this);
-        SkinManager.init(this);
-        // 加载热修复Dex文件
-        FixDexUtils.loadFixedDex(this);
+        application = this;
+        init();
     }
+
+
+    private void init(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                MultiDex.install(application);
+                ApiService.init(BuildConfig.host,null);
+
+                CrashReport.initCrashReport(getApplicationContext(), "eb455a94a3", true);
+                // 设置全局异常捕捉类
+                // ExceptionCrashHandler.getInstance().init(this);
+                // matchWithDenisty(this);
+                SkinManager.init(application);
+                // 加载热修复Dex文件
+                FixDexUtils.loadFixedDex(application);
+            }
+        }).start();
+    }
+
 
     private void matchWithDenisty(Application application){
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {

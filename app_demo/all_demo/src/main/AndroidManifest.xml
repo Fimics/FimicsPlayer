@@ -2,14 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mic.all">
 
-
     <application>
-        <activity android:name=".activity.FindDetailBehaviorActivity"/>
-        <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.UpdateUIActivity"/>
-        <activity android:name=".activity.UserDetailNestedActivity"/>
-        <activity android:name=".activity.VideoDetailMyScrollViewActivity"/>
-        <activity android:name=".activity.ViewPagerActivity"/>
+        <activity android:name=".activity.BigImageActivity"/>
+        <activity android:name=".activity.FindDetailBehaviorActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.UpdateUIActivity" />
+        <activity android:name=".activity.UserDetailNestedActivity" />
+        <activity android:name=".activity.VideoDetailMyScrollViewActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
 
         <service android:name=".service.MessageService">
 

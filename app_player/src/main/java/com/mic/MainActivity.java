@@ -3,6 +3,7 @@ package com.mic;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -69,7 +70,38 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         navViewBottom.setOnNavigationItemSelectedListener(this);
         //处理DeepLink
         // navController.handleDeepLink(getIntent());
+//        Debug.stopMethodTracing();
 
+    }
+
+    private void init(){
+        a();
+    }
+
+    private void a(){
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        b();
+        test();
+    }
+
+    private void b(){
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void test(){
+        try {
+            Thread.sleep(800);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
