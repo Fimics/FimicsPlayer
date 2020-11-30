@@ -82,9 +82,10 @@
 
 
     <style name="MyFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>//无标题
+        <item name="android:windowActionBar">false</item>//无ActionBar
+        <!-- 非常重要，不设置，后续设置无效 -->
+        <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowBackground">@drawable/welcome_bg</item>
     </style>
 

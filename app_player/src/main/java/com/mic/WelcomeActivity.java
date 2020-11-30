@@ -7,9 +7,13 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Debug;
 import android.os.Environment;
+import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.mic.core.utils.StatusBarUtil;
 
 import java.io.File;
 
@@ -23,6 +27,11 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setTheme(R.style.AppTheme);
+
+        //启用沉浸式布局，白底黑字
+        StatusBarUtil.fitSystemBar(this);
+        StatusBarUtil.setStatusBarColor(this, getResources().getColor(R.color.colorPrimary));
         // 运行时权限申请（6.0+）
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 //            String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
@@ -33,6 +42,10 @@ public class WelcomeActivity extends AppCompatActivity {
         //代码执行时间统计
 //        File file = new File(Environment.getExternalStorageDirectory(),"app.trace");
 //        Debug.startMethodTracing(file.getAbsolutePath());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
         setContentView(R.layout.activity_welcome);
         findViewById(R.id.iv_welcome).setOnClickListener(view -> {
             goHome();
