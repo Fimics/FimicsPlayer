@@ -74,6 +74,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 MainActivity.start(WelcomeActivity.this);
 //                MainJetpackActivity.start(WelcomeActivity.this);
                 finish();
