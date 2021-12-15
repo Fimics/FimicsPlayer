@@ -16,10 +16,7 @@ import androidx.annotation.Nullable;
 
 import com.mic.R;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
 public class EmptyView extends LinearLayout {
     private ImageView icon;
     private TextView title;

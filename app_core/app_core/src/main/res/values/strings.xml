@@ -1,7 +1,3 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">libcommon</string>
-=======
     <string name="app_name">app_player</string>
->>>>>>> dev
 </resources>
